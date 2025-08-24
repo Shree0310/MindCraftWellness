@@ -60,41 +60,6 @@ const Testimonials = () => {
 
     return (
         <div className="py-16 px-8">
-            {/* Statistics Section */}
-            <div className="bg-gradient-to-r from-[#f8f6f4] to-[#E7CDBF] rounded-3xl p-8 mb-16 mx-8">
-                <div className="text-center mb-8">
-                    <h3 className="text-2xl font-semibold text-[#345041] mb-2">Since 2022</h3>
-                    <p className="text-gray-600">Trusted by clients across Gurgaon</p>
-                </div>
-                
-                <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-                    <div className="text-center">
-                        <div className="text-4xl font-bold text-[#345041] mb-2">
-                            <span className="inline-block min-w-[80px]">
-                                {currentIndex === 0 ? "150+" : currentIndex === 2 ? "200+" : "175+"}
-                            </span>
-                        </div>
-                        <p className="text-gray-600 font-medium">Clients Helped</p>
-                    </div>
-                    
-                    <div className="text-center">
-                        <div className="text-4xl font-bold text-[#345041] mb-2">
-                            <span className="inline-block min-w-[80px]">
-                                {currentIndex === 0 ? "2,500+" : currentIndex === 2 ? "3,000+" : "2,750+"}
-                            </span>
-                        </div>
-                        <p className="text-gray-600 font-medium">Hours of Therapy</p>
-                    </div>
-                    
-                    <div className="text-center">
-                        <div className="text-4xl font-bold text-[#345041] mb-2">
-                            <span className="text-4xl">98%</span>
-                        </div>
-                        <p className="text-gray-600 font-medium">Client Satisfaction</p>
-                    </div>
-                </div>
-            </div>
-            
             <h2 className="text-3xl text-center mb-12" style={{ fontFamily: 'BrittanySignature, serif' }}>
                 What Our Clients Say
             </h2>
@@ -135,6 +100,41 @@ const Testimonials = () => {
                         }`}
                     />
                 ))}
+            </div>
+            
+            {/* Statistics Section */}
+            <div className="bg-gradient-to-r from-[#f8f6f4] to-[#E7CDBF] rounded-3xl p-8 my-16 mx-8">
+                <div className="text-center mb-8">
+                    <h3 className="text-2xl font-semibold text-[#345041] mb-2">Since 2022</h3>
+                    <p className="text-gray-600">Trusted by clients across Gurgaon</p>
+                </div>
+                
+                <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                    <div className="text-center">
+                        <div className="text-4xl font-bold text-[#345041] mb-2">
+                            <span className="inline-block min-w-[80px]">
+                                {currentIndex === 0 ? "150+" : currentIndex === 2 ? "200+" : "175+"}
+                            </span>
+                        </div>
+                        <p className="text-gray-600 font-medium">Clients Helped</p>
+                    </div>
+                    
+                    <div className="text-center">
+                        <div className="text-4xl font-bold text-[#345041] mb-2">
+                            <span className="inline-block min-w-[80px]">
+                                {currentIndex === 0 ? "2,500+" : currentIndex === 2 ? "3,000+" : "2,750+"}
+                            </span>
+                        </div>
+                        <p className="text-gray-600 font-medium">Hours of Therapy</p>
+                    </div>
+                    
+                    <div className="text-center">
+                        <div className="text-4xl font-bold text-[#345041] mb-2">
+                            <span className="text-4xl">98%</span>
+                        </div>
+                        <p className="text-gray-600 font-medium">Client Satisfaction</p>
+                    </div>
+                </div>
             </div>
             
             {/* Call to Action Section */}
