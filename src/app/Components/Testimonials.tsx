@@ -217,7 +217,7 @@ const Testimonials = () => {
 
                     <div className="mb-10">
                         <Link href="/book-now" className="bg-white text-[#345041] px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                            <p>{"Book Your Free Consultation"}</p>
+                            Book Your Free Consultation
                         </Link>
                     </div>
 
