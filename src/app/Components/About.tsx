@@ -125,15 +125,15 @@ const About = () => {
                                         <li className="flex items-start space-x-4">
                                             <div className="w-3 h-3 bg-[#345041] rounded-full mt-2 flex-shrink-0"></div>
                                             <div>
-                                                <span className="text-lg font-semibold text-[#345041]">Professional Diploma in Clinical Psychology</span>
-                                                <p className="text-gray-600">SGT University, Gurgaon</p>
+                                                <span className="text-lg font-semibold text-[#345041]"><p>{"Professional Diploma in Clinical Psychology"}</p></span>
+                                                <p className="text-gray-600"><p>{"SGT University, Gurgaon"}</p></p>
                                             </div>
                                         </li>
                                         <li className="flex items-start space-x-4">
                                             <div className="w-3 h-3 bg-[#345041] rounded-full mt-2 flex-shrink-0"></div>
                                             <div>
-                                                <span className="text-lg font-semibold text-[#345041]">MSc. in Counselling Psychology</span>
-                                                <p className="text-gray-600">Sampurna Montfort College, Bangalore</p>
+                                                <span className="text-lg font-semibold text-[#345041]"><p>{"MSc. in Counselling Psychology"}</p></span>
+                                                <p className="text-gray-600"><p>{"Sampurna Montfort College, Bangalore"}</p></p>
                                             </div>
                                         </li>
                                     </ul>
@@ -156,15 +156,15 @@ const About = () => {
                                             <div className="flex items-start space-x-4">
                                                 <div className="w-3 h-3 bg-[#E7CDBF] rounded-full mt-2 flex-shrink-0"></div>
                                                 <div>
-                                                    <span className="text-lg font-semibold text-[#345041]">Essential Skills Course</span>
-                                                    <p className="text-gray-600">AEDP Institute, New York (Currently pursuing)</p>
+                                                    <span className="text-lg font-semibold text-[#345041]"><p>{"Essential Skills Course"}</p></span>
+                                                    <p className="text-gray-600"><p>{"AEDP Institute, New York (Currently pursuing)"}</p></p>
                                                 </div>
                                             </div>
                                             <div className="flex items-start space-x-4">
                                                 <div className="w-3 h-3 bg-[#E7CDBF] rounded-full mt-2 flex-shrink-0"></div>
                                                 <div>
-                                                    <span className="text-lg font-semibold text-[#345041]">AEDP Immersion</span>
-                                                    <p className="text-gray-600">AEDP Institute, New York (August, 2024)</p>
+                                                    <span className="text-lg font-semibold text-[#345041]"><p>{"AEDP Immersion"}</p></span>
+                                                    <p className="text-gray-600"><p>{"AEDP Institute, New York (August, 2024)"}</p></p>
                                                 </div>
                                             </div>
                                             <div className="flex items-start space-x-4">

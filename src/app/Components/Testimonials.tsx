@@ -121,14 +121,14 @@ const Testimonials = () => {
             <div className="text-center mb-16">
                 <div className="inline-flex items-center space-x-3 mb-6">
                     <div className="w-12 h-0.5 bg-[#345041] opacity-30"></div>
-                    <span className="text-sm font-semibold text-[#345041] uppercase tracking-wider">Testimonials</span>
+                    <span className="text-sm font-semibold text-[#345041] uppercase tracking-wider"><p>{"Testimonials"}</p></span>
                     <div className="w-12 h-0.5 bg-[#345041] opacity-30"></div>
                 </div>
                 <h2 className="text-6xl font-bold text-[#345041] mb-6" style={{ fontFamily: 'BrittanySignature, serif' }}>
-                    What Our Clients Say
+                    <p>{"What Our Clients Say"}</p>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto" style={{ fontFamily: 'Lora, serif' }}>
-                    Real stories from real people who have experienced transformation through our therapy.
+                    <p>{"Real stories from real people who have experienced transformation through our therapy."}</p>
                 </p>
             </div>
             <div className="flex justify-center items-start gap-8 max-w-6xl mx-auto">
@@ -150,7 +150,7 @@ const Testimonials = () => {
                             {/* Enhanced Author info */}
                             <div className="text-right border-t border-gray-100 pt-4">
                                 <p className="font-bold text-[#345041] text-base">{testimonial.author}</p>
-                                <p className="text-gray-500 text-sm">{testimonial.role}</p>
+                                <p className="text-gray-500 text-sm"><p>{"Client"}</p></p>
                             </div>
                         </div>
                     </div>
@@ -172,8 +172,8 @@ const Testimonials = () => {
             {/* Statistics Section */}
             <div className="bg-gradient-to-r from-[#f8f6f4] to-[#E7CDBF] rounded-3xl p-8 my-16 mx-8">
                 <div className="text-center mb-8">
-                    <h3 className="text-2xl font-semibold text-[#345041] mb-2">Since 2022</h3>
-                    <p className="text-gray-600">Trusted by clients across Gurgaon</p>
+                    <h3 className="text-2xl font-semibold text-[#345041] mb-2"><p>{"Since 2022"}</p></h3>
+                    <p className="text-gray-600"><p>{"Trusted by clients across Gurgaon"}</p></p>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -183,7 +183,7 @@ const Testimonials = () => {
                                 {clientsCount}+
                             </span>
                         </div>
-                        <p className="text-gray-600 font-medium">Clients Helped</p>
+                        <p className="text-gray-600 font-medium"><p>{"Clients Helped"}</p></p>
                     </div>
 
                     <div className="text-center">
@@ -192,14 +192,14 @@ const Testimonials = () => {
                                 2,500+
                             </span>
                         </div>
-                        <p className="text-gray-600 font-medium">Hours of Therapy</p>
+                        <p className="text-gray-600 font-medium"><p>{"Hours of Therapy"}</p></p>
                     </div>
 
                     <div className="text-center">
                         <div className="text-4xl font-bold text-[#345041] mb-2">
                             <span className="text-4xl">98%</span>
                         </div>
-                        <p className="text-gray-600 font-medium">Client Satisfaction</p>
+                        <p className="text-gray-600 font-medium"><p>{"Client Satisfaction"}</p></p>
                     </div>
                 </div>
             </div>
@@ -208,35 +208,35 @@ const Testimonials = () => {
             <div className="bg-gradient-to-br from-[#345041] to-[#2a4033] text-white rounded-3xl p-12 mt-16 mx-8">
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-4xl font-bold mb-6">
-                        Ready to take the next step?
+                        <p>{"Ready to take the next step?"}</p>
                     </h2>
 
                     <p className="text-xl mb-8 leading-relaxed opacity-90">
-                        Book your free 15-minute consultation call today and be matched with the therapist who's right for you.
+                        <p>{"Book your free 15-minute consultation call today and be matched with the therapist who's right for you."}</p>
                     </p>
 
                     <div className="mb-10">
                         <Link href="/book-now" className="bg-white text-[#345041] px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                            Book Your Free Consultation
+                            <p>{"Book Your Free Consultation"}</p>
                         </Link>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-8 text-left">
                         <div className="text-center md:text-left">
                             <p className="text-lg mb-3 opacity-90">
-                                Still have questions?
+                                <p>{"Still have questions?"}</p>
                             </p>
                             <button className="text-white border-b-2 border-white hover:border-opacity-70 transition-all duration-300 font-semibold">
-                                Read our FAQs
+                                <p>{"Read our FAQs"}</p>
                             </button>
                         </div>
 
                         <div className="text-center md:text-left">
                             <p className="text-lg mb-3 opacity-90">
-                                Looking for tools and self-help materials?
+                                <p>{"Looking for tools and self-help materials?"}</p>
                             </p>
                             <button className="text-white border-b-2 border-white hover:border-opacity-70 transition-all duration-300 font-semibold">
-                                Explore our Resources
+                                <p>{"Explore our Resources"}</p>
                             </button>
                         </div>
                     </div>

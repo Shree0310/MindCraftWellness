@@ -26,7 +26,7 @@ const HowItWorks = () => {
                     {/* Right side - How it works */}
                     <div>
                         <h2 className="text-4xl font-extrabold text-[#345041] mb-8" style={{ fontFamily: 'Lora, serif' }}>
-                            How Mind Craft Wellness works
+                            <p>{"How Mind Craft Wellness works"}</p>
                         </h2>
 
                         <div className="space-y-6">
@@ -35,7 +35,7 @@ const HowItWorks = () => {
                                 <div className="flex items-start">
                                     <div className="text-5xl font-bold text-[#8B4513] mr-6 leading-none">1</div>
                                     <div className="flex-1">
-                                        <h3 className="text-xl font-semibold text-[#345041] mb-3">Schedule a Free Consultation</h3>
+                                        <h3 className="text-xl font-semibold text-[#345041] mb-3"><p>{"Schedule a Free Consultation"}</p></h3>
                                         <p className="text-gray-700 leading-relaxed">
                                             Book your free 15-minute consultation call. We'll discuss your concerns, answer questions, and explore how we can support your healing journey. No pressure, just a friendly conversation to see if we're the right fit.
                                         </p>
@@ -48,7 +48,7 @@ const HowItWorks = () => {
                                 <div className="flex items-start">
                                     <div className="text-5xl font-bold text-[#8B4513] mr-6 leading-none">2</div>
                                     <div className="flex-1">
-                                        <h3 className="text-xl font-semibold text-[#345041] mb-3">Get Matched with Your Therapist</h3>
+                                        <h3 className="text-xl font-semibold text-[#345041] mb-3"><p>{"Get Matched with Your Therapist"}</p></h3>
                                         <p className="text-gray-700 leading-relaxed">
                                             Based on your needs, preferences, and goals, we'll match you with the therapist who's best suited to support you. Our team includes specialists in trauma, anxiety, relationships, and more.
                                         </p>
@@ -61,7 +61,7 @@ const HowItWorks = () => {
                                 <div className="flex items-start">
                                     <div className="text-5xl font-bold text-[#8B4513] mr-6 leading-none">3</div>
                                     <div className="flex-1">
-                                        <h3 className="text-xl font-semibold text-[#345041] mb-3">Begin Your Healing Journey</h3>
+                                        <h3 className="text-xl font-semibold text-[#345041] mb-3"><p>{"Begin Your Healing Journey"}</p></h3>
                                         <p className="text-gray-700 leading-relaxed">
                                             Start your therapy sessions at our welcoming Gurgaon clinic or online. Sessions are 60 minutes, starting at ₹1500, with fees varying by therapist specialization and experience.
                                         </p>
@@ -74,7 +74,7 @@ const HowItWorks = () => {
                                 <div className="flex items-start">
                                     <div className="text-5xl font-bold text-[#8B4513] mr-6 leading-none">4</div>
                                     <div className="flex-1">
-                                        <h3 className="text-xl font-semibold text-[#345041] mb-3">Switch Therapists Anytime</h3>
+                                        <h3 className="text-xl font-semibold text-[#345041] mb-3"><p>{"Switch Therapists Anytime"}</p></h3>
                                         <p className="text-gray-700 leading-relaxed">
                                             If your first therapist isn't the right fit, it's easy to switch to another member of our team at no additional cost. Your comfort and connection with your therapist is our priority.
                                         </p>
@@ -93,8 +93,8 @@ const HowItWorks = () => {
                             <div className="flex items-center mb-2">
                                 <div className="w-8 h-8 bg-[#345041] rounded-full mr-2"></div>
                                 <div>
-                                    <p className="font-semibold text-sm text-gray-700">Aishwaraya G.</p>
-                                    <p className="text-xs text-gray-500">Doctor, Professional Counselor, MS, NCC</p>
+                                    <p className="font-semibold text-sm text-gray-700"><p>{"Aishwaraya G."}</p></p>
+                                    <p className="text-xs text-gray-500"><p>{"Doctor, Professional Counselor, MS, NCC"}</p></p>
                                 </div>
                             </div>
                             <p className="text-sm text-gray-700 mb-2">

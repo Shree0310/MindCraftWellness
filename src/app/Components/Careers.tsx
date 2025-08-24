@@ -26,7 +26,7 @@ const Careers = () => {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
-        
+
         // Simulate form submission
         setTimeout(() => {
             setIsSubmitting(false);
@@ -50,7 +50,7 @@ const Careers = () => {
     return (
         <div className="min-h-screen bg-[#FFFADA]">
             <Header />
-            
+
             <div className="py-20 px-8">
                 <div className="max-w-4xl mx-auto">
                     {/* Header Section */}
@@ -66,7 +66,7 @@ const Careers = () => {
                             <div className="w-16 h-0.5 bg-[#345041] opacity-30"></div>
                         </div>
                         <p className="text-lg text-gray-600 max-w-2xl mx-auto" style={{ fontFamily: 'Lora, serif' }}>
-                            Schedule your free 15-minute consultation call or book a full therapy session. 
+                            Schedule your free 15-minute consultation call or book a full therapy session.
                             We're here to support you on your journey to wellness.
                         </p>
                     </div>
@@ -103,7 +103,7 @@ const Careers = () => {
                                         placeholder="Enter your full name"
                                     />
                                 </div>
-                                
+
                                 <div>
                                     <label htmlFor="email" className="block text-sm font-semibold text-[#345041] mb-2">
                                         Email Address *
@@ -153,10 +153,10 @@ const Careers = () => {
                                         />
                                         <div>
                                             <div className="font-semibold text-[#345041]">Free Consultation</div>
-                                            <div className="text-sm text-gray-600">15-minute initial call</div>
+                                            <div className="text-sm text-gray-600"><p>{"15-minute initial call"}</p></div>
                                         </div>
                                     </label>
-                                    
+
                                     <label className="flex items-center p-4 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50 transition-colors duration-300">
                                         <input
                                             type="radio"
@@ -168,7 +168,7 @@ const Careers = () => {
                                         />
                                         <div>
                                             <div className="font-semibold text-[#345041]">Full Session</div>
-                                            <div className="text-sm text-gray-600">60-minute therapy session</div>
+                                            <div className="text-sm text-gray-600"><p>{"60-minute therapy session"}</p></div>
                                         </div>
                                     </label>
                                 </div>
@@ -191,7 +191,7 @@ const Careers = () => {
                                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#345041] focus:border-transparent transition-all duration-300"
                                     />
                                 </div>
-                                
+
                                 <div>
                                     <label htmlFor="preferredTime" className="block text-sm font-semibold text-[#345041] mb-2">
                                         Preferred Time *
@@ -249,27 +249,27 @@ const Careers = () => {
                             <div className="w-12 h-12 bg-[#E7CDBF] rounded-full flex items-center justify-center mx-auto mb-4">
                                 <span className="text-[#345041] text-xl font-bold">1</span>
                             </div>
-                            <h3 className="text-lg font-semibold text-[#345041] mb-2">Free Consultation</h3>
+                            <h3 className="text-lg font-semibold text-[#345041] mb-2"><p>{"Free Consultation"}</p></h3>
                             <p className="text-gray-600 text-sm">
                                 Start with a 15-minute free consultation to discuss your needs and see if we're a good fit.
                             </p>
                         </div>
-                        
+
                         <div className="text-center p-6 bg-white rounded-xl shadow-lg">
                             <div className="w-12 h-12 bg-[#E7CDBF] rounded-full flex items-center justify-center mx-auto mb-4">
                                 <span className="text-[#345041] text-xl font-bold">2</span>
                             </div>
-                            <h3 className="text-lg font-semibold text-[#345041] mb-2">Flexible Scheduling</h3>
+                            <h3 className="text-lg font-semibold text-[#345041] mb-2"><p>{"Flexible Scheduling"}</p></h3>
                             <p className="text-gray-600 text-sm">
                                 Choose from morning, afternoon, or evening slots that work best with your schedule.
                             </p>
                         </div>
-                        
+
                         <div className="text-center p-6 bg-white rounded-xl shadow-lg">
                             <div className="w-12 h-12 bg-[#E7CDBF] rounded-full flex items-center justify-center mx-auto mb-4">
                                 <span className="text-[#345041] text-xl font-bold">3</span>
                             </div>
-                            <h3 className="text-lg font-semibold text-[#345041] mb-2">Confidential & Safe</h3>
+                            <h3 className="text-lg font-semibold text-[#345041] mb-2"><p>{"Confidential & Safe"}</p></h3>
                             <p className="text-gray-600 text-sm">
                                 Your privacy is our priority. All sessions are confidential and conducted in a safe environment.
                             </p>
