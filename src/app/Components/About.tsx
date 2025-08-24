@@ -15,9 +15,7 @@ import OurValues from './OurValues';
 const About = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-    const nextImage = () => {
-        setCurrentImageIndex((prev: number) => (prev + 1) % 2);
-    };
+
 
     const goToImage = (index: number) => {
         setCurrentImageIndex(index);
@@ -35,9 +33,9 @@ const About = () => {
                                 About Mind Craft Wellness
                             </h1> */}
                             <p className="text-xl leading-relaxed" style={{ fontFamily: 'GlacialIndifference, serif' }}>
-                                "In my early professional years I was asking the question: How can I treat, or cure, or change this person?
+                                &ldquo;In my early professional years I was asking the question: How can I treat, or cure, or change this person?
                                 Now I would phrase the question in this way: <br />
-                                <span className="font-bold underline">How can I provide a relationship which this person may use for his own personal growth?"</span>
+                                <span className="font-bold underline">How can I provide a relationship which this person may use for his own personal growth?&rdquo;</span>
                             </p>
                             <p className="text-xl leading-relaxed" style={{ fontFamily: 'GlacialIndifference, serif' }}>
                                 At Mind Craft Wellness, we believe in the power of authentic human connection and the transformative potential of a safe,
@@ -98,7 +96,7 @@ const About = () => {
                             and a certified AEDP and CBT therapist based in Gurgaon.
                         </span>
                         <div className='flex justify-start items-start gap-6 mx-auto w-fit'>
-                            <img src={ProfilePic.src} className='w-[350px] h-[500px] object-cover pt-6 pr-6' />
+                            <img src={ProfilePic.src} className='w-[350px] h-[500px] object-cover pt-6 pr-6' alt="Aishwaraya Goud - Founder of Mind Craft Wellness" />
                             <p className='text-lg text-left w-[500px]' style={{ fontFamily: 'Lora, serif', lineHeight: '30px' }}>
                                 Hi, I’m Aishwarya, a trauma-informed therapist based in Gurgaon. My path into this work began with my own search for healing, which showed me how deeply we all long to be seen, understood, and supported.
                                 Those experiences continue to shape how I sit with others—with warmth, curiosity, and respect for each person’s pace.<br />

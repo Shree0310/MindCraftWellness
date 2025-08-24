@@ -67,7 +67,7 @@ const Careers = () => {
                         </div>
                         <p className="text-lg text-gray-600 max-w-2xl mx-auto" style={{ fontFamily: 'Lora, serif' }}>
                             Schedule your free 15-minute consultation call or book a full therapy session.
-                            We're here to support you on your journey to wellness.
+                            We&rsquo;re here to support you on your journey to wellness.
                         </p>
                     </div>
 
@@ -78,7 +78,7 @@ const Careers = () => {
                                 Thank you for your booking request!
                             </div>
                             <p className="text-green-700">
-                                We've received your request and will contact you within 24 hours to confirm your appointment.
+                                We&rsquo;ve received your request and will contact you within 24 hours to confirm your appointment.
                             </p>
                         </div>
                     )}
@@ -251,7 +251,7 @@ const Careers = () => {
                             </div>
                             <h3 className="text-lg font-semibold text-[#345041] mb-2"><p>{"Free Consultation"}</p></h3>
                             <p className="text-gray-600 text-sm">
-                                Start with a 15-minute free consultation to discuss your needs and see if we're a good fit.
+                                Start with a 15-minute free consultation to discuss your needs and see if we&rsquo;re a good fit.
                             </p>
                         </div>
 

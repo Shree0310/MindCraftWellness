@@ -4,9 +4,6 @@ import Link from 'next/link';
 import LandingPage from '../Assets/images/LandingPage.png'
 import ProfilePic from '../Assets/images/Profile-pic.png';
 import couch from '../Assets/images/Couch.jpg';
-import plantter from '../Assets/images/Plantter.jpg';
-import flowers from '../Assets/images/flowers.png';
-import ceramics2 from '../Assets/images/ceramics2.jpg';
 import Testimonials from './Testimonials';
 import HowItWorks from './HowItWorks';
 import Footer from './Footer';
@@ -53,16 +50,16 @@ const HomePage = () => {
                 <div className='bg-white rounded-2xl shadow-xl p-12 text-center relative overflow-hidden'>
                     {/* Decorative quote marks */}
                     <div className='absolute top-4 left-6 text-6xl text-[#345041] opacity-20' style={{ fontFamily: 'BrittanySignature, serif' }}>
-                        "
+                        &ldquo;
                     </div>
                     <div className='absolute bottom-4 right-6 text-6xl text-[#345041] opacity-20' style={{ fontFamily: 'BrittanySignature, serif' }}>
-                        "
+                        &rdquo;
                     </div>
 
                     {/* Main quote */}
                     <div className='relative z-10'>
                         <p className='text-3xl leading-relaxed text-[#2a4033] mb-6' style={{ fontFamily: 'BrittanySignature, serif' }}>
-                            "Owning our story and loving ourselves through that process is the bravest thing we'll ever do."
+                            &ldquo;Owning our story and loving ourselves through that process is the bravest thing we&rsquo;ll ever do.&rdquo;
                         </p>
 
                         {/* Author attribution */}
@@ -111,7 +108,7 @@ const HomePage = () => {
                             <div className="w-10 h-14 bg-[#8B4513] rounded-lg transform rotate-12 shadow-lg"></div>
                         </div>
 
-                        <img src={couch.src} className='w-[400px] h-[380px] object-cover rounded-lg shadow-lg mt-8 relative z-10' />
+                        <img src={couch.src} className='w-[400px] h-[380px] object-cover rounded-lg shadow-lg mt-8 relative z-10' alt="Comfortable therapy couch at Mind Craft Wellness" />
                         {/* <img src={flowers.src} className=' bg-[#E7CDBF] absolute w-[250px] h-[280px] object-cover rounded-lg shadow-lg transform rotate-16 mx-12 right-10 mb-10'/> */}
                     </div>
                     <div className='w-[500px] pt-6 pl-6 relative'>
@@ -221,12 +218,12 @@ const HomePage = () => {
                     and a certified AEDP and CBT therapist based in Gurgaon.
                 </span>
                 <div className='flex justify-start items-start gap-6 mx-auto w-fit'>
-                    <img src={ProfilePic.src} className='w-[300px] h-[400px] object-cover' />
+                    <img src={ProfilePic.src} className='w-[300px] h-[400px] object-cover' alt="Aishwaraya Goud - Founder of Mind Craft Wellness" />
                     <p className='text-lg text-left w-[500px] pt-6' style={{ fontFamily: 'Lora, serif', lineHeight: '30px' }}>
                         At Mind Craft Wellness, you might work with me directly, or with one of the other experienced therapists on our team. I ensure our team shares the same commitment to warmth, skill, and trauma-informed care, so that every client feels supported and understood.<br />
                         <br />
                         Therapy here isn’t about quick fixes or advice-giving — it’s about creating a container for your emotions, where you feel deeply held and supported, so you can uncover your own way forward.
-                        If you'd like to learn more about my approach and journey as a therapist, you can [read more about me here].
+                       { "If you&rsquo;d like to learn more about my approach and journey as a therapist, you can [read more about me here]."}
                     </p>
                 </div>
                 <div className='text-center block py-8 pl-8'>
@@ -335,7 +332,7 @@ const HomePage = () => {
                                 <div className="w-8 h-0.5 bg-[#345041] opacity-30"></div>
                             </div>
                             <h2 className="text-5xl font-bold text-[#345041] mb-6" style={{ fontFamily: 'BrittanySignature, serif' }}>
-                                Here's what makes us different
+                                Here&rsquo;s what makes us different
                             </h2>
                             <p className="text-lg text-gray-600 max-w-2xl mx-auto" style={{ fontFamily: 'Lora, serif' }}>
                                 We believe in creating an environment where healing happens naturally, with care that goes beyond traditional therapy.
@@ -354,7 +351,7 @@ const HomePage = () => {
                                         <div className="flex-1">
                                             <h3 className="text-lg font-semibold text-[#345041] mb-1"><p>{"Evidence-Based Care"}</p></h3>
                                             <p className="text-gray-700 text-sm leading-relaxed">
-                                                We offer evidence-based, trauma-informed care that's proven to work.
+                                                We offer evidence-based, trauma-informed care that&rsquo;s proven to work.
                                             </p>
                                         </div>
                                     </div>

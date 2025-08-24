@@ -37,7 +37,7 @@ const OurValues = () => {
                                         </div>
                                         <h3 className="text-xl font-bold text-[#345041] mb-3"><p>{"Inclusive and Compassionate"}</p></h3>
                                         <p className="text-gray-700 leading-relaxed">
-                                            Whoever you are, and whatever you carry, you'll be met here with sensitivity, respect, and care.
+                                            Whoever you are, and whatever you carry, you&rsquo;ll be met here with sensitivity, respect, and care.
                                         </p>
                                     </div>
                                 </div>
@@ -105,7 +105,7 @@ const OurValues = () => {
                                         </div>
                                         <h3 className="text-xl font-semibold text-[#345041] mb-3">Inclusive and Compassionate</h3>
                                         <p className="text-gray-700 leading-relaxed">
-                                            Whoever you are, and whatever you carry, you'll be met here with sensitivity, respect, and care.
+                                            Whoever you are, and whatever you carry, you&rsquo;ll be met here with sensitivity, respect, and care.
                                         </p>
                                     </div>
                                 </div>

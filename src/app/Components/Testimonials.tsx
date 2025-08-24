@@ -132,7 +132,7 @@ const Testimonials = () => {
                 </p>
             </div>
             <div className="flex justify-center items-start gap-8 max-w-6xl mx-auto">
-                {getCurrentTestimonials().map((testimonial, index) => (
+                {getCurrentTestimonials().map((testimonial) => (
                     <div key={testimonial.id} className="relative group">
                         {/* Enhanced Conversation bubble */}
                         <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl max-w-sm relative transition-all duration-300 transform hover:scale-105 border border-gray-100">
@@ -140,7 +140,7 @@ const Testimonials = () => {
                             <div className="absolute -bottom-3 left-8 w-0 h-0 border-l-[15px] border-r-[15px] border-t-[15px] border-l-transparent border-r-transparent border-t-white"></div>
 
                             {/* Enhanced Quote mark */}
-                            <div className="text-6xl text-[#E7CDBF] mb-4 opacity-80">"</div>
+                            <div className="text-6xl text-[#E7CDBF] mb-4 opacity-80">&ldquo;</div>
 
                             {/* Enhanced Testimonial text */}
                             <p className="text-gray-700 text-base leading-relaxed mb-6 font-medium">

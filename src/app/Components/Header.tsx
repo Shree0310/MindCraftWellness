@@ -1,13 +1,11 @@
 "use client"
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 const Header = () => {
-    const router = useRouter();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    
+
     return (
         <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -26,36 +24,36 @@ const Header = () => {
 
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex items-center space-x-8 font-bold text-xl" style={{ fontFamily: 'Lora, serif' }}>
-                        <Link 
-                            href="/About" 
+                        <Link
+                            href="/About"
                             className="text-gray-700 hover:text-[#345041] transition-colors duration-300 relative group"
                         >
                             About
                             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#345041] transition-all duration-300 group-hover:w-full"></span>
                         </Link>
-                        <Link 
-                            href="/Specialities" 
+                        <Link
+                            href="/Specialities"
                             className="text-gray-700 hover:text-[#345041] transition-colors duration-300 relative group"
                         >
                             Specialities
                             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#345041] transition-all duration-300 group-hover:w-full"></span>
                         </Link>
-                        <Link 
-                            href="/Blog" 
+                        <Link
+                            href="/Blog"
                             className="text-gray-700 hover:text-[#345041] transition-colors duration-300 relative group"
                         >
                             Blog
                             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#345041] transition-all duration-300 group-hover:w-full"></span>
                         </Link>
-                        <Link 
-                            href="/Careers" 
+                        <Link
+                            href="/Careers"
                             className="text-gray-700 hover:text-[#345041] transition-colors duration-300 relative group"
                         >
                             Careers
                             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#345041] transition-all duration-300 group-hover:w-full"></span>
                         </Link>
-                        <Link 
-                            href="/book-now" 
+                        <Link
+                            href="/book-now"
                             className="bg-[#345041] hover:bg-[#2a4033] text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg text-lg"
                         >
                             Book Now
@@ -63,7 +61,7 @@ const Header = () => {
                     </nav>
 
                     {/* Mobile Menu Button */}
-                    <button 
+                    <button
                         className="md:hidden p-2 rounded-md text-gray-700 hover:text-[#345041] hover:bg-gray-100 transition-colors duration-300"
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                     >
@@ -81,36 +79,36 @@ const Header = () => {
                 {isMenuOpen && (
                     <div className="md:hidden border-t border-gray-100 py-4" style={{ fontFamily: 'BodoniModa, serif' }}>
                         <div className="flex flex-col space-y-4">
-                            <Link 
-                                href="/About" 
+                            <Link
+                                href="/About"
                                 className="text-gray-700 hover:text-[#345041] font-medium transition-colors duration-300 px-4 py-2 rounded-md hover:bg-gray-50 text-lg"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 About
                             </Link>
-                            <Link 
-                                href="/Specialities" 
+                            <Link
+                                href="/Specialities"
                                 className="text-gray-700 hover:text-[#345041] font-medium transition-colors duration-300 px-4 py-2 rounded-md hover:bg-gray-50 text-lg"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Specialities
                             </Link>
-                            <Link 
-                                href="/Blog" 
+                            <Link
+                                href="/Blog"
                                 className="text-gray-700 hover:text-[#345041] font-medium transition-colors duration-300 px-4 py-2 rounded-md hover:bg-gray-50 text-lg"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Blog
                             </Link>
-                            <Link 
-                                href="/Careers" 
+                            <Link
+                                href="/Careers"
                                 className="text-gray-700 hover:text-[#345041] font-medium transition-colors duration-300 px-4 py-2 rounded-md hover:bg-gray-50 text-lg"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Careers
                             </Link>
-                            <Link 
-                                href="/book-now" 
+                            <Link
+                                href="/book-now"
                                 className="bg-[#345041] hover:bg-[#2a4033] text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 mx-4 text-lg"
                                 onClick={() => setIsMenuOpen(false)}
                             >

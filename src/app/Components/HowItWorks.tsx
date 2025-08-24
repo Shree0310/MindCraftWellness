@@ -37,7 +37,7 @@ const HowItWorks = () => {
                                     <div className="flex-1">
                                         <h3 className="text-xl font-semibold text-[#345041] mb-3"><p>{"Schedule a Free Consultation"}</p></h3>
                                         <p className="text-gray-700 leading-relaxed">
-                                            Book your free 15-minute consultation call. We'll discuss your concerns, answer questions, and explore how we can support your healing journey. No pressure, just a friendly conversation to see if we're the right fit.
+                                            Book your free 15-minute consultation call. We&rsquo;ll discuss your concerns, answer questions, and explore how we can support your healing journey. No pressure, just a friendly conversation to see if we&rsquo;re the right fit.
                                         </p>
                                     </div>
                                 </div>
@@ -50,7 +50,7 @@ const HowItWorks = () => {
                                     <div className="flex-1">
                                         <h3 className="text-xl font-semibold text-[#345041] mb-3"><p>{"Get Matched with Your Therapist"}</p></h3>
                                         <p className="text-gray-700 leading-relaxed">
-                                            Based on your needs, preferences, and goals, we'll match you with the therapist who's best suited to support you. Our team includes specialists in trauma, anxiety, relationships, and more.
+                                            Based on your needs, preferences, and goals, we&rsquo;ll match you with the therapist who&rsquo;s best suited to support you. Our team includes specialists in trauma, anxiety, relationships, and more.
                                         </p>
                                     </div>
                                 </div>
@@ -76,7 +76,7 @@ const HowItWorks = () => {
                                     <div className="flex-1">
                                         <h3 className="text-xl font-semibold text-[#345041] mb-3"><p>{"Switch Therapists Anytime"}</p></h3>
                                         <p className="text-gray-700 leading-relaxed">
-                                            If your first therapist isn't the right fit, it's easy to switch to another member of our team at no additional cost. Your comfort and connection with your therapist is our priority.
+                                            If your first therapist isn&rsquo;t the right fit, it&rsquo;s easy to switch to another member of our team at no additional cost. Your comfort and connection with your therapist is our priority.
                                         </p>
                                     </div>
                                 </div>
@@ -98,7 +98,7 @@ const HowItWorks = () => {
                                 </div>
                             </div>
                             <p className="text-sm text-gray-700 mb-2">
-                                Hi, how have you been feeling? I'm really happy with the progress you've made this week. Take a few moments today to try that mindfulness techniques we discussed.
+                                Hi, how have you been feeling? I&rsquo;m really happy with the progress you&rsquo;ve made this week. Take a few moments today to try that mindfulness techniques we discussed.
                             </p>
                             <div className="flex justify-end items-center text-xs text-gray-500">
                                 <span>✓✓</span>
