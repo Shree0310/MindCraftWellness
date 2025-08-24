@@ -1,5 +1,6 @@
 "use client"
 
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 const Testimonials = () => {
@@ -149,9 +150,9 @@ const Testimonials = () => {
                     </p>
                     
                     <div className="mb-10">
-                        <button className="bg-white text-[#345041] px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        <Link href="/book-now" className="bg-white text-[#345041] px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
                             Book Your Free Consultation
-                        </button>
+                        </Link>
                     </div>
                     
                     <div className="grid md:grid-cols-2 gap-8 text-left">
