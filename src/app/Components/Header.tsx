@@ -15,7 +15,7 @@ const Header = () => {
                     {/* Logo Section */}
                     <div className="flex items-center">
                         <Link href="/" className="group">
-                            <h1 className="text-3xl cursor-pointer md:text-4xl font-bold text-[#345041] transition-colors duration-300 group-hover:text-[#2a4033]" style={{ fontFamily: 'BodoniModa, serif' }}>
+                            <h1 className="text-3xl cursor-pointer md:text-4xl font-extrabold text-[#345041] transition-colors duration-300 group-hover:text-[#2a4033]" style={{ fontFamily: 'BodoniModa, serif' }}>
                                 Mind Craft Wellness
                             </h1>
                             <span className="font-sans text-xs md:text-sm text-gray-600 block mt-1">
@@ -25,31 +25,31 @@ const Header = () => {
                     </div>
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex items-center space-x-8" style={{ fontFamily: 'BodoniModa, serif' }}>
+                    <nav className="hidden md:flex items-center space-x-8 font-bold text-xl" style={{ fontFamily: 'Lora, serif' }}>
                         <Link 
                             href="/About" 
-                            className="text-gray-700 hover:text-[#345041] font-medium transition-colors duration-300 relative group text-lg"
+                            className="text-gray-700 hover:text-[#345041] transition-colors duration-300 relative group"
                         >
                             About
                             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#345041] transition-all duration-300 group-hover:w-full"></span>
                         </Link>
                         <Link 
                             href="/Specialities" 
-                            className="text-gray-700 hover:text-[#345041] font-medium transition-colors duration-300 relative group text-lg"
+                            className="text-gray-700 hover:text-[#345041] transition-colors duration-300 relative group"
                         >
                             Specialities
                             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#345041] transition-all duration-300 group-hover:w-full"></span>
                         </Link>
                         <Link 
                             href="/Blog" 
-                            className="text-gray-700 hover:text-[#345041] font-medium transition-colors duration-300 relative group text-lg"
+                            className="text-gray-700 hover:text-[#345041] transition-colors duration-300 relative group"
                         >
                             Blog
                             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#345041] transition-all duration-300 group-hover:w-full"></span>
                         </Link>
                         <Link 
                             href="/Careers" 
-                            className="text-gray-700 hover:text-[#345041] font-medium transition-colors duration-300 relative group text-lg"
+                            className="text-gray-700 hover:text-[#345041] transition-colors duration-300 relative group"
                         >
                             Careers
                             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#345041] transition-all duration-300 group-hover:w-full"></span>

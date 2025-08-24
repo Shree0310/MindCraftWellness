@@ -18,7 +18,8 @@ module.exports = {
         lora: ['Lora','monospace'],
         DMSans: ['DMSans', 'monospace'],
         BodoniModa: ['BodoniModa', 'monospace'],
-        BrittanySignature: ['BrittanySignature', 'monospace']
+        BrittanySignature: ['BrittanySignature', 'monospace'],
+        GlacialIndifference: ['GlacialIndifference', 'monospace']
       },
     },
     screens: {

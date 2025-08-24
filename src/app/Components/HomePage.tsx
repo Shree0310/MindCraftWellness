@@ -5,10 +5,11 @@ import LandingPage from '../Assets/images/LandingPage.png'
 import ProfilePic from '../Assets/images/Profile-pic.png';
 import couch from '../Assets/images/Couch.jpg';
 import plantter from '../Assets/images/Plantter.jpg';
-import takingTherapy from '../Assets/images/Taking-Therapy.jpg';
 import flowers from '../Assets/images/flowers.png';
 import ceramics2 from '../Assets/images/ceramics2.jpg';
 import Testimonials from './Testimonials';
+import HowItWorks from './HowItWorks';
+import Footer from './Footer';
 
 const HomePage = () => {
     return (
@@ -92,7 +93,7 @@ const HomePage = () => {
                     </svg>
                 </div>
                 <h1 className='font-sans font-bold text-2xl text-center pt-16 pb-8' style={{ fontFamily: 'BodoniModa, serif' }}>
-                    Life doesn’t always go as planned.
+                    Getting Started at Mind Craft Wellness
                 </h1>
                 <div className='flex justify-start items-start gap-6 mx-auto w-fit'>
                     <div className='relative'>
@@ -110,19 +111,13 @@ const HomePage = () => {
                             <div className="w-10 h-14 bg-[#8B4513] rounded-lg transform rotate-12 shadow-lg"></div>
                         </div>
                         
-                        <img src={couch.src} className='w-[500px] h-[400px] object-cover rounded-lg shadow-lg mt-24 relative z-10'/>
+                        <img src={couch.src} className='w-[400px] h-[380px] object-cover rounded-lg shadow-lg mt-8 relative z-10'/>
                         {/* <img src={flowers.src} className=' bg-[#E7CDBF] absolute w-[250px] h-[280px] object-cover rounded-lg shadow-lg transform rotate-16 mx-12 right-10 mb-10'/> */}
                     </div>
                     <div className='w-[500px] pt-6 pl-6 relative'>
-                        <p className='text-lg text-left leading-relaxed' style={{ fontFamily: 'Lora, serif', lineHeight: '30px' }}>Sometimes we move through challenges with strength. Other times, the weight of it all starts to seep into every corner — our relationships feel strained, work or studies become overwhelming, 
-                            sleep offers no real rest, and we start to feel disconnected from ourselves.<br/>
-                            <br/>
-                        In these moments, it’s easy to feel stuck — like the way forward has blurred.<br/>
-                        Whether you're navigating a heartbreak, trauma, anxiety, depression, fertility struggles, low self-esteem, or simply longing to understand yourself more deeply — you don’t have to do it alone.<br/>
-                        <br/>
-                        Therapy is a space to slow down, make sense of what you’re carrying, and begin to reconnect with yourself. It’s a space for clarity, healing, and growth.<br/>
-                        <br/>
-                        And often, the very places where we feel most stuck hold the seeds of our transformation. As David Richo says,<br/>
+                        <p className='text-lg text-left leading-relaxed py-4' style={{ fontFamily: 'Lora, serif', lineHeight: '40px' }}> At Mind Craft Wellness, we believe therapy works best when it feels personal. 
+                            Instead of leaving you to choose from a list, we begin with a free 15-minute consultation call. In this call, you’ll share what’s on your mind — your needs, preferences, and goals — 
+                            and we’ll help match you with the therapist who’s the best fit for you.
                         <br/>
                         <span className='text-xl text-left leading-relaxed font-bold' style={{ fontFamily: 'BodoniModa, serif' }}>‘Our wounds are often the openings into the best and most beautiful part of us.’”</span>
                         </p>
@@ -130,7 +125,7 @@ const HomePage = () => {
                 </div>
                 
                 {/* Diagonal Wave Connector */}
-                <div className="relative py-6">
+                <div className="relative py-2">
                     <div className="absolute inset-0 flex items-center justify-center">
                         <svg className="w-64 h-12 transform rotate-12" viewBox="0 0 256 48" preserveAspectRatio="none">
                             <path 
@@ -188,119 +183,35 @@ const HomePage = () => {
                 </div>
                 
                 <div className='flex justify-start items-start gap-6 mx-auto w-fit py-16'>
-                <p className='text-lg text-left w-[500px] pt-6' style={{ fontFamily: 'Lora, serif', lineHeight: '30px' }}>At Mind Craft Wellness, we believe therapy is most effective when it feels personal. That’s why, instead of asking you to choose a therapist from a list, we start with a 15-minute free consultation call.<br/>
+                {/* <p className='text-lg text-left w-[500px] pt-6' style={{ fontFamily: 'Lora, serif', lineHeight: '30px' }}>At Mind Craft Wellness, we believe therapy is most effective when it feels personal. That’s why, instead of asking you to choose a therapist from a list, we start with a 15-minute free consultation call.<br/>
                     You’ll share your needs, preferences, and goals — and we’ll match you with the right therapist on our team.
                     <br/>
                     Our therapists are carefully selected, trained in trauma-informed, evidence-based approaches to provide a safe, non-judgemental space for you.
                     <br/>
                     Here, we explore those openings together — with gentleness, curiosity, and care — so you can move toward the life you want to live.
                     <br/>
-                </p>
+                </p> */}
                 <div className='relative'>
                     {/* Shadow elements behind planter - brown tones */}
-                    <div className="absolute -top-4 -right-4 opacity-22 z-0">
+                    {/* <div className="absolute -top-4 -right-4 opacity-22 z-0">
                         <div className="w-18 h-22 bg-[#654321] rounded-full shadow-lg transform rotate-6"></div>
-                    </div>
-                    <div className="absolute -bottom-6 -left-6 opacity-18 z-0">
+                    </div> */}
+                    {/* <div className="absolute -bottom-6 -left-6 opacity-18 z-0">
                         <div className="w-14 h-14 bg-[#8B4513] rounded-full shadow-lg transform -rotate-12"></div>
-                    </div>
-                    <div className="absolute top-1/4 -right-3 opacity-15 z-0">
+                    </div> */}
+                    {/* <div className="absolute top-1/4 -right-3 opacity-15 z-0">
                         <div className="w-12 h-16 bg-[#A0522D] rounded-lg shadow-lg transform rotate-8"></div>
-                    </div>
+                    </div> */}
                     <div className="absolute bottom-1/3 -left-3 opacity-20 z-0">
                         <div className="w-10 h-12 bg-[#654321] rounded-lg shadow-lg transform -rotate-6"></div>
                     </div>
                     
-                    <img src={plantter.src} className='w-[400px] h-[400px] object-cover rounded-lg shadow-lg relative z-10'/>
+                    {/* <img src={plantter.src} className='w-[400px] h-[400px] object-cover rounded-lg shadow-lg relative z-10'/> */}
                 </div>
                 </div>
                 
                 {/* How it Works Section */}
-                <div className="py-16 px-8 relative">
-                    {/* Decorative elements for How it Works */}
-                    <div className="absolute top-8 left-12 opacity-20">
-                        <div className="w-16 h-20 bg-[#8B4513] rounded-lg transform rotate-12 shadow-lg"></div>
-                    </div>
-                    <div className="absolute top-24 right-16 opacity-15">
-                        <div className="w-12 h-12 bg-[#A0522D] rounded-full shadow-lg"></div>
-                    </div>
-                    <div className="absolute bottom-12 left-8 opacity-18">
-                        <svg className="w-20 h-8" viewBox="0 0 80 32" fill="none">
-                            <path d="M0,16 Q20,8 40,16 T80,16" stroke="#654321" strokeWidth="1.5" fill="none" opacity="0.6"/>
-                        </svg>
-                    </div>
-                    <div className="absolute bottom-8 right-12 opacity-15">
-                        <div className="w-14 h-18 bg-[#8B4513] rounded-lg transform -rotate-8 shadow-lg"></div>
-                    </div>
-                    
-                    <div className="max-w-6xl mx-auto">
-                        <div className="grid md:grid-cols-2 gap-12 items-start">
-                            {/* Left side - Image placeholder */}
-                            <div className="relative">
-                                <div className="bg-gray-200 rounded-lg h-[400px] overflow-hidden">
-                                    <img src={takingTherapy.src} className='w-full h-full object-cover' alt="Therapy session"/>
-                                </div>
-                                {/* Chat bubble overlay */}
-                                <div className="absolute bottom-4 left-4 bg-white rounded-lg p-4 shadow-lg max-w-xs">
-                                    <div className="flex items-center mb-2">
-                                        <div className="w-8 h-8 bg-[#345041] rounded-full mr-2"></div>
-                                        <div>
-                                            <p className="font-semibold text-sm">Aishwaraya G.</p>
-                                            <p className="text-xs text-gray-500">Doctor, Professional Counselor, MS, NCC</p>
-                                        </div>
-                                    </div>
-                                    <p className="text-sm text-gray-700 mb-2">
-                                        Hi, how have you been feeling? I'm really happy with the progress you've made this week. Take a few moments today to try that mindfulness techniques we discussed.
-                                    </p>
-                                    <div className="flex justify-end items-center text-xs text-gray-500">
-                                        <span>✓✓</span>
-                                        <span className="ml-1">1 week ago</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            {/* Right side - How it works */}
-                            <div>
-                                <h2 className="text-3xl font-bold text-[#345041] mb-4">How it works</h2>
-                                <p className="text-gray-600 mb-8 leading-relaxed">
-                                    Taking care of your mental health should feel easy and supportive. With our approach, you'll find the guidance and care you need to feel empowered on your journey to well-being.
-                                </p>
-                                
-                                <div className="space-y-6">
-                                    <div className="flex items-start">
-                                        <div className="w-3 rounded-2xl bg-[#345041] mr-6 mt-2 h-16"></div>
-                                        <div>
-                                            <h3 className="text-lg font-semibold text-gray-800 mb-2">Step 1: Schedule a Free Call</h3>
-                                            <p className="text-gray-600 text-sm leading-relaxed">
-                                                Set up a free consultation with one of our specialists to discuss your concerns and explore the best options for your needs. We'll help you find the right path forward, whether you're seeking therapy, guidance, or support.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div className="flex items-start">
-                                        <div className="w-1 bg-gray-500 mr-6 mt-2 h-16"></div>
-                                        <div>
-                                            <h3 className="text-lg font-semibold text-gray-800 mb-2">Step 2: Get Matched</h3>
-                                            <p className="text-gray-600 text-sm leading-relaxed">
-                                                Tell us what's on your mind — your concerns, preferences, and therapy goals. We'll match you with a therapist who's the best fit for your unique needs.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div className="flex items-start">
-                                        <div className="w-1 bg-gray-500 mr-6 mt-2 h-16"></div>
-                                        <div>
-                                            <h3 className="text-lg font-semibold text-gray-800 mb-2">Step 3: Begin Your Journey</h3>
-                                            <p className="text-gray-600 text-sm leading-relaxed">
-                                                Start your sessions online or in person at our Gurgaon clinic. Sessions begin at ₹1500 for 60 minutes, with fees varying by therapist.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <HowItWorks/>
                 
                 <h1 className='text-3xl pt-16 pb-3 text-center font-bold' style={{ fontFamily: 'BrittanySignature, serif' }}>
                     Hi, I’m Aishwaraya Goud —
@@ -398,7 +309,7 @@ const HomePage = () => {
                 </div>
                 
                 {/* What Makes Us Different Section */}
-                <div className="py-24 px-8 mx-8 relative bg-gradient-to-br from-white to-[#f8f6f4] rounded-3xl">
+                <div className="py-24 px-8 mx-8 relative bg-white/60 backdrop-blur-sm rounded-3xl border border-white/20 shadow-lg">
                     {/* Enhanced decorative elements */}
                     <div className="absolute top-8 left-8 opacity-20">
                         <div className="w-16 h-20 bg-[#8B4513] rounded-lg transform rotate-8 shadow-lg"></div>
@@ -432,17 +343,17 @@ const HomePage = () => {
                         </div>
                         
                         {/* Enhanced Content Grid */}
-                        <div className="grid md:grid-cols-2 gap-12">
+                        <div className="grid md:grid-cols-2 gap-8">
                             {/* Left Column */}
-                            <div className="space-y-8">
+                            <div className="space-y-6">
                                 <div className="group hover:transform hover:scale-105 transition-all duration-300">
-                                    <div className="flex items-start space-x-5 p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl border-l-4 border-[#345041] transition-all duration-300">
-                                        <div className="w-12 h-12 bg-[#345041] rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                                            <span className="text-white text-xl">🧠</span>
+                                    <div className="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-md hover:shadow-lg border-l-4 border-[#345041] transition-all duration-300 h-32">
+                                        <div className="w-10 h-10 bg-[#345041] rounded-full flex items-center justify-center flex-shrink-0 shadow-md">
+                                            <span className="text-white text-lg">🧠</span>
                                         </div>
                                         <div className="flex-1">
-                                            <h3 className="text-xl font-semibold text-[#345041] mb-2">Evidence-Based Care</h3>
-                                            <p className="text-gray-700 leading-relaxed">
+                                            <h3 className="text-lg font-semibold text-[#345041] mb-1">Evidence-Based Care</h3>
+                                            <p className="text-gray-700 text-sm leading-relaxed">
                                                 We offer evidence-based, trauma-informed care that's proven to work.
                                             </p>
                                         </div>
@@ -450,13 +361,13 @@ const HomePage = () => {
                                 </div>
                                 
                                 <div className="group hover:transform hover:scale-105 transition-all duration-300">
-                                    <div className="flex items-start space-x-5 p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl border-l-4 border-[#E7CDBF] transition-all duration-300">
-                                        <div className="w-12 h-12 bg-[#E7CDBF] rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                                            <span className="text-white text-xl">🤝</span>
+                                    <div className="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-md hover:shadow-lg border-l-4 border-[#E7CDBF] transition-all duration-300 h-32">
+                                        <div className="w-10 h-10 bg-[#E7CDBF] rounded-full flex items-center justify-center flex-shrink-0 shadow-md">
+                                            <span className="text-white text-lg">🤝</span>
                                         </div>
                                         <div className="flex-1">
-                                            <h3 className="text-xl font-semibold text-[#345041] mb-2">Safe & Inclusive</h3>
-                                            <p className="text-gray-700 leading-relaxed">
+                                            <h3 className="text-lg font-semibold text-[#345041] mb-1">Safe & Inclusive</h3>
+                                            <p className="text-gray-700 text-sm leading-relaxed">
                                                 A welcoming environment for all identities and life experiences without judgment.
                                             </p>
                                         </div>
@@ -464,13 +375,13 @@ const HomePage = () => {
                                 </div>
                                 
                                 <div className="group hover:transform hover:scale-105 transition-all duration-300">
-                                    <div className="flex items-start space-x-5 p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl border-l-4 border-[#8B4513] transition-all duration-300">
-                                        <div className="w-12 h-12 bg-[#8B4513] rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                                            <span className="text-white text-xl">❤️</span>
+                                    <div className="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-md hover:shadow-lg border-l-4 border-[#8B4513] transition-all duration-300 h-32">
+                                        <div className="w-10 h-10 bg-[#8B4513] rounded-full flex items-center justify-center flex-shrink-0 shadow-md">
+                                            <span className="text-white text-lg">❤️</span>
                                         </div>
                                         <div className="flex-1">
-                                            <h3 className="text-xl font-semibold text-[#345041] mb-2">Compassionate Standards</h3>
-                                            <p className="text-gray-700 leading-relaxed">
+                                            <h3 className="text-lg font-semibold text-[#345041] mb-1">Compassionate Standards</h3>
+                                            <p className="text-gray-700 text-sm leading-relaxed">
                                                 Ethical, confidential practice that prioritises your well-being and privacy.
                                             </p>
                                         </div>
@@ -479,15 +390,15 @@ const HomePage = () => {
                             </div>
                             
                             {/* Right Column */}
-                            <div className="space-y-8">
+                            <div className="space-y-6">
                                 <div className="group hover:transform hover:scale-105 transition-all duration-300">
-                                    <div className="flex items-start space-x-5 p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl border-l-4 border-[#654321] transition-all duration-300">
-                                        <div className="w-12 h-12 bg-[#654321] rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                                            <span className="text-white text-xl">👥</span>
+                                    <div className="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-md hover:shadow-lg border-l-4 border-[#654321] transition-all duration-300 h-32">
+                                        <div className="w-10 h-10 bg-[#654321] rounded-full flex items-center justify-center flex-shrink-0 shadow-md">
+                                            <span className="text-white text-lg">👥</span>
                                         </div>
                                         <div className="flex-1">
-                                            <h3 className="text-xl font-semibold text-[#345041] mb-2">Focused Attention</h3>
-                                            <p className="text-gray-700 leading-relaxed">
+                                            <h3 className="text-lg font-semibold text-[#345041] mb-1">Focused Attention</h3>
+                                            <p className="text-gray-700 text-sm leading-relaxed">
                                                 Our therapists see no more than five clients a day for fresh focus and presence.
                                             </p>
                                         </div>
@@ -495,13 +406,13 @@ const HomePage = () => {
                                 </div>
                                 
                                 <div className="group hover:transform hover:scale-105 transition-all duration-300">
-                                    <div className="flex items-start space-x-5 p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl border-l-4 border-[#A0522D] transition-all duration-300">
-                                        <div className="w-12 h-12 bg-[#A0522D] rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                                            <span className="text-white text-xl">🎓</span>
+                                    <div className="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-md hover:shadow-lg border-l-4 border-[#A0522D] transition-all duration-300 h-32">
+                                        <div className="w-10 h-10 bg-[#A0522D] rounded-full flex items-center justify-center flex-shrink-0 shadow-md">
+                                            <span className="text-white text-lg">🎓</span>
                                         </div>
                                         <div className="flex-1">
-                                            <h3 className="text-xl font-semibold text-[#345041] mb-2">Continuous Learning</h3>
-                                            <p className="text-gray-700 leading-relaxed">
+                                            <h3 className="text-lg font-semibold text-[#345041] mb-1">Continuous Learning</h3>
+                                            <p className="text-gray-700 text-sm leading-relaxed">
                                                 Ongoing supervision and training to maintain excellence in clinical practice.
                                             </p>
                                         </div>
@@ -509,13 +420,13 @@ const HomePage = () => {
                                 </div>
                                 
                                 <div className="group hover:transform hover:scale-105 transition-all duration-300">
-                                    <div className="flex items-start space-x-5 p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl border-l-4 border-[#345041] transition-all duration-300">
-                                        <div className="w-12 h-12 bg-[#345041] rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                                            <span className="text-white text-xl">📊</span>
+                                    <div className="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-md hover:shadow-lg border-l-4 border-[#345041] transition-all duration-300 h-32">
+                                        <div className="w-10 h-10 bg-[#345041] rounded-full flex items-center justify-center flex-shrink-0 shadow-md">
+                                            <span className="text-white text-lg">📊</span>
                                         </div>
                                         <div className="flex-1">
-                                            <h3 className="text-xl font-semibold text-[#345041] mb-2">Client Feedback</h3>
-                                            <p className="text-gray-700 leading-relaxed">
+                                            <h3 className="text-lg font-semibold text-[#345041] mb-1">Client Feedback</h3>
+                                            <p className="text-gray-700 text-sm leading-relaxed">
                                                 A structured feedback system to continually refine and improve our services.
                                             </p>
                                         </div>
@@ -540,99 +451,7 @@ const HomePage = () => {
             </div>
         
         {/* Footer */}
-        <footer className="bg-[#2a4033] text-white">
-            {/* Main Footer Content */}
-            <div className="max-w-7xl mx-auto px-8 py-16">
-                <div className="grid md:grid-cols-4 gap-8 mb-12">
-                    {/* Company Info */}
-                    <div className="md:col-span-2">
-                        <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'BrittanySignature, serif' }}>
-                            Mind Craft Wellness
-                        </h3>
-                        <p className="text-gray-300 mb-4 leading-relaxed">
-                            Providing compassionate, trauma-informed therapy in Gurgaon. 
-                            We're here to support your healing journey with warmth, skill, and care.
-                        </p>
-                        <div className="flex space-x-4">
-                            <a href="#" className="text-white hover:text-[#E7CDBF] transition-colors duration-300">
-                                <span className="text-2xl">📱</span>
-                            </a>
-                            <a href="#" className="text-white hover:text-[#E7CDBF] transition-colors duration-300">
-                                <span className="text-2xl">📧</span>
-                            </a>
-                            <a href="#" className="text-white hover:text-[#E7CDBF] transition-colors duration-300">
-                                <span className="text-2xl">💬</span>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    {/* Quick Links */}
-                    <div>
-                        <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-                        <ul className="space-y-2">
-                            <li><a href="#" className="text-gray-300 hover:text-white transition-colors duration-300">About Us</a></li>
-                            <li><a href="#" className="text-gray-300 hover:text-white transition-colors duration-300">Our Therapists</a></li>
-                            <li><a href="#" className="text-gray-300 hover:text-white transition-colors duration-300">Services</a></li>
-                            <li><a href="#" className="text-gray-300 hover:text-white transition-colors duration-300">Blog</a></li>
-                            <li><a href="#" className="text-gray-300 hover:text-white transition-colors duration-300">Careers</a></li>
-                        </ul>
-                    </div>
-                    
-                    {/* Contact & Address */}
-                    <div>
-                        <h4 className="text-lg font-semibold mb-4">Contact</h4>
-                        <div className="space-y-2 text-gray-300">
-                            <p>📍 Gurgaon, Haryana</p>
-                            <p>📞 +91 98765 43210</p>
-                            <p>📧 hello@mindcraftwellness.com</p>
-                            <p>🕒 Mon-Sat: 9 AM - 7 PM</p>
-                        </div>
-                    </div>
-                </div>
-                
-                {/* Map Section */}
-                <div className="mb-12">
-                    <h4 className="text-lg font-semibold mb-4">Find Us</h4>
-                    <div className="bg-gray-700 rounded-lg p-4 text-center">
-                        <div className="w-full h-48 bg-gray-600 rounded flex items-center justify-center">
-                            <span className="text-gray-400">📍 Interactive Map Coming Soon</span>
-                        </div>
-                    </div>
-                </div>
-                
-                {/* Disclaimer */}
-                <div className="bg-[#345041] rounded-lg p-6 mb-8">
-                    <div className="flex items-start space-x-3">
-                        <span className="text-2xl">⚠️</span>
-                        <div>
-                            <h5 className="font-semibold mb-2">Important Disclaimer</h5>
-                            <p className="text-gray-200 text-sm leading-relaxed">
-                                <strong>Mind Craft Wellness does not provide crisis intervention services.</strong> 
-                                If you are experiencing a mental health crisis, suicidal thoughts, or need immediate assistance, 
-                                please contact emergency services or a crisis helpline. We recommend referring to our 
-                                <a href="#" className="text-white underline hover:text-[#E7CDBF] transition-colors duration-300"> Resources page</a> 
-                                for crisis intervention information and emergency contacts.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                {/* Bottom Footer */}
-                <div className="border-t border-gray-600 pt-8">
-                    <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                        <div className="text-gray-300 text-sm">
-                            © 2024 Mind Craft Wellness. All rights reserved.
-                        </div>
-                        <div className="flex space-x-6 text-sm">
-                            <a href="#" className="text-gray-300 hover:text-white transition-colors duration-300">Privacy Policy</a>
-                            <a href="#" className="text-gray-300 hover:text-white transition-colors duration-300">Terms of Service</a>
-                            <a href="#" className="text-gray-300 hover:text-white transition-colors duration-300">Cookie Policy</a>
-                            <a href="#" className="text-gray-300 hover:text-white transition-colors duration-300">Accessibility</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <Footer/>
     </div>
     )
 }

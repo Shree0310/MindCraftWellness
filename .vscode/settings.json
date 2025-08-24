@@ -3,5 +3,7 @@
     "github.copilot.chat.agent.runTasks": false,
     "github.copilot.chat.codeGeneration.useInstructionFiles": false,
     "editor.inlineSuggest.syntaxHighlightingEnabled": false,
-    "editor.inlineSuggest.enabled": false
+    "editor.inlineSuggest.enabled": false,
+    "notebook.formatOnSave.enabled": true,
+    "editor.formatOnSave": true
 }
