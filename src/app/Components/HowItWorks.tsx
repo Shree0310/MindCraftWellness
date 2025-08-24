@@ -23,7 +23,6 @@ const HowItWorks = () => {
                 <div className="grid md:grid-cols-2 gap-12 items-start">
                     {/* Left side - Image placeholder */}
 
-
                     {/* Right side - How it works */}
                     <div>
                         <h2 className="text-4xl font-extrabold text-[#345041] mb-8" style={{ fontFamily: 'Lora, serif' }}>
