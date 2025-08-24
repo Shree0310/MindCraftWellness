@@ -22,7 +22,7 @@ const HowItWorks = () => {
             <div className="max-w-6xl mx-auto">
                 <div className="grid md:grid-cols-2 gap-12 items-start">
                     {/* Left side - Image placeholder */}
-                    
+
 
                     {/* Right side - How it works */}
                     <div>

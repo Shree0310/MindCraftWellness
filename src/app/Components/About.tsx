@@ -322,7 +322,7 @@ const About = () => {
                 </div>
 
                 {/* Our Values Section */}
-                <OurValues/>
+                <OurValues />
 
                 <Testimonials />
                 <Footer />
