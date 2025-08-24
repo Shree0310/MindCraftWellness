@@ -6,34 +6,28 @@ import clinic from '../Assets/images/Clinic.png';
 import Testimonials from './Testimonials';
 
 const HomePage = () => {
-    return <>
-    <div className='scroll-auto bg-white'>
-    <div className="relative">
-        <img src={LandingPage.src}/>
-        {/* Text overlay on the image */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-8">
-            <h1 className="text-5xl font-bold text-white mb-4 drop-shadow-2xl" style={{ fontFamily: 'Lora, serif' }}>
-                An in-person Therapy Clinic in Gurgaon
-            </h1>
-            <p className="text-xl text-white max-w-2xl leading-relaxed drop-shadow-lg" style={{ fontFamily: 'DMSans, serif', fontStyle: 'italic' }}>
-                A warm, private space for you to heal, grow, and reconnect — with the support of compassionate, ethical therapists.
-            </p>
-        </div>
-    </div>
-        <div className='text-black px-24 py-10 w-[500px] text-2xl text-center mx-auto' style={{ fontFamily: 'BrittanySignature, serif' }}>
-            "Owning our story and loving ourselves through that process is the bravest thing we'll ever do."
-        </div>
-        <div>
+    return (
+        <div className='scroll-auto bg-white'>
+            <img src={LandingPage.src} />
+            <div className='text-black px-24 py-10 w-[500px] text-2xl text-center mx-auto' style={{ fontFamily: 'BrittanySignature, serif' }}>
+                "Owning our story and loving ourselves through that process is the bravest thing we'll ever do."
+            </div>
             <div className='bg-[#E7CDBF] h-full w-full  text-black'>
                 <h1 className='font-sans font-bold text-2xl text-center pt-16 pb-8' style={{ fontFamily: 'BodoniModa, serif' }}>Life doesn’t always go as planned.</h1>
                 <div className='flex justify-start items-start gap-6 mx-auto w-fit'>
-                    <img src={clinic.src} className='w-[300px] h-[400px] object-cover'/>
-                    <p className='text-lg text-left w-[500px] pt-6' style={{ fontFamily: 'Lora, serif', lineHeight: '30px' }}>Sometimes we move through challenges with strength. Other times, the weight of it all starts to seep into every corner — our relationships feel strained, work or studies become overwhelming, sleep offers no real rest, and we start to feel disconnected from ourselves.
+                    <img src={clinic.src} className='w-[300px] h-[400px] object-cover rounded-lg shadow-lg'/>
+                    <div className='w-[500px] pt-6 relative'>
+                        {/* Decorative therapy elements */}
+                        <div className="absolute -top-4 -left-4 text-4xl text-[#E7CDBF] opacity-60">🫂</div>
+                        <div className="absolute top-20 -right-4 text-3xl text-[#345041] opacity-40">🌱</div>
+                        
+                        <p className='text-lg text-left leading-relaxed' style={{ fontFamily: 'Lora, serif', lineHeight: '30px' }}>Sometimes we move through challenges with strength. Other times, the weight of it all starts to seep into every corner — our relationships feel strained, work or studies become overwhelming, sleep offers no real rest, and we start to feel disconnected from ourselves.
                         In these moments, it’s easy to feel stuck — like the way forward has blurred.
                         Whether you're navigating a heartbreak, trauma, anxiety, depression, fertility struggles, low self-esteem, or simply longing to understand yourself more deeply — you don’t have to do it alone.
                         Therapy is a space to slow down, make sense of what you’re carrying, and begin to reconnect with yourself. It’s a space for clarity, healing, and growth.
                         And often, the very places where we feel most stuck hold the seeds of our transformation. As David Richo says, ‘Our wounds are often the openings into the best and most beautiful part of us.’”
-                    </p>
+                        </p>
+                    </div>
                 </div>
                 <div className='flex justify-start items-start gap-6 mx-auto w-fit py-16'>
                 <p className='text-lg text-left w-[500px] pt-6' style={{ fontFamily: 'Lora, serif', lineHeight: '30px' }}>At Mind Craft Wellness, we believe therapy is most effective when it feels personal. That’s why, instead of asking you to choose a therapist from a list, we start with a 15-minute free consultation call.
@@ -41,7 +35,7 @@ const HomePage = () => {
                     Our therapists are carefully selected, trained in trauma-informed, evidence-based approaches to provide a safe, non-judgemental space for you.
                     Here, we explore those openings together — with gentleness, curiosity, and care — so you can move toward the life you want to live.
                 </p>
-                <img src={clinic.src} className='w-[300px] h-[400px] object-cover'/>
+                <img src={clinic.src} className='w-[300px] h-[400px] object-cover rounded-lg shadow-lg'/>
                 </div>
                 <h1 className='text-2xl pt-16 pb-3 text-center ' style={{ fontFamily: 'BrittanySignature, serif' }}>
                     Hi, I’m Aishwaraya Goud —
@@ -115,7 +109,6 @@ const HomePage = () => {
                 
                 <Testimonials/>
             </div>
-        </div>
         
         {/* Footer */}
         <footer className="bg-[#2a4033] text-white">
@@ -212,7 +205,7 @@ const HomePage = () => {
             </div>
         </footer>
     </div>
-    </>
+    )
 }
 
 export default HomePage;
