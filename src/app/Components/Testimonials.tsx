@@ -65,39 +65,21 @@ const Testimonials = () => {
     const testimonials = [
         {
             id: 1,
-            text: "Aishwaraya helped me find my way back to myself. Her warmth and expertise made me feel safe to explore the deepest parts of my healing journey.",
-            author: "Sarah M.",
-            role: "Client"
+            text: "Therapy for me has worked like a magic pill. It's given me a deeper understanding of my feelings, my thoughts, and consequently my actions. It has also been a safe outlet to release both the micro and macro emotions I'd been holding inside. Through this process, I've learned the value of being authentic and vulnerable. We don't always need to be the 'tough one.' Sometimes, it's perfectly okay to step back, simply observe, and let things pass.",
+            author: "Anonymous",
+            role: "In-person Therapy sessions"
         },
         {
             id: 2,
-            text: "The therapy sessions at Mind Craft Wellness have been transformative. I finally feel understood and supported in ways I never thought possible.",
-            author: "Rahul K.",
-            role: "Client"
+            text: "Ever since I was young, all I heard was how therapy was a waste of time—a money-making scheme not to be entertained during times of turmoil—so I never gave it another thought. But choosing to tune out that noise and take a leap of faith has changed my life in ways I couldn't have imagined. With Aishwarya, I've found a safe space, genuine care, and the kind of support I didn't even know I was missing.",
+            author: "A.S.",
+            role: "22 years old, Male, India (Online & In-person Therapy)"
         },
         {
             id: 3,
-            text: "After struggling with anxiety for years, I found real relief here. The team's trauma-informed approach made all the difference in my recovery.",
-            author: "Priya S.",
-            role: "Client"
-        },
-        {
-            id: 4,
-            text: "Mind Craft Wellness provided the safe space I needed to process my trauma. The therapists here truly care about your healing and growth.",
-            author: "Michael T.",
-            role: "Client"
-        },
-        {
-            id: 5,
-            text: "I was skeptical about therapy at first, but the team here completely changed my perspective. They helped me develop tools I use every day to manage stress.",
-            author: "Anjali R.",
-            role: "Client"
-        },
-        {
-            id: 6,
-            text: "The personalized approach at Mind Craft Wellness is incredible. They took time to understand my unique situation and created a treatment plan that actually works for me.",
-            author: "David L.",
-            role: "Client"
+            text: "I've been working with Aishwarya for a year now, and the journey has been truly life-changing. Over this time, I've quit smoking—a habit I never thought I could break—and learned how to be more present, self-aware, and in control of my emotions. My anxiety levels have significantly reduced, and I feel more at peace with myself than I have in years. What I value most about our sessions is Aishwarya's ability to create a safe, non-judgmental space where I can openly share my thoughts.",
+            author: "Anonymous",
+            role: "India (In-person Therapy)"
         }
     ];
 
@@ -127,9 +109,9 @@ const Testimonials = () => {
                 <h2 className="text-6xl font-bold text-[#345041] mb-6" style={{ fontFamily: 'BrittanySignature, serif' }}>
                     <p>{"What Our Clients Say"}</p>
                 </h2>
-                <p className="text-lg text-gray-600 max-w-2xl mx-auto" style={{ fontFamily: 'Lora, serif' }}>
+                <div className="text-lg text-gray-600 max-w-2xl mx-auto" style={{ fontFamily: 'Lora, serif' }}>
                     <p>{"Real stories from real people who have experienced transformation through our therapy."}</p>
-                </p>
+                </div>
             </div>
             <div className="flex justify-center items-start gap-8 max-w-6xl mx-auto">
                 {getCurrentTestimonials().map((testimonial) => (
@@ -150,7 +132,7 @@ const Testimonials = () => {
                             {/* Enhanced Author info */}
                             <div className="text-right border-t border-gray-100 pt-4">
                                 <p className="font-bold text-[#345041] text-base">{testimonial.author}</p>
-                                <p className="text-gray-500 text-sm"><p>{"Client"}</p></p>
+                                <div className="text-gray-500 text-sm"><p>{"Client"}</p></div>
                             </div>
                         </div>
                     </div>
@@ -172,8 +154,8 @@ const Testimonials = () => {
             {/* Statistics Section */}
             <div className="bg-gradient-to-r from-[#f8f6f4] to-[#E7CDBF] rounded-3xl p-8 my-16 mx-8">
                 <div className="text-center mb-8">
-                    <h3 className="text-2xl font-semibold text-[#345041] mb-2"><p>{"Since 2022"}</p></h3>
-                    <p className="text-gray-600"><p>{"Trusted by clients across Gurgaon"}</p></p>
+                    <h3 className="text-2xl font-semibold text-[#345041] mb-2"><p>{"Supporting clients since January 2022"}</p></h3>
+                    <div className="text-gray-600"><p>{"Trusted by clients across Gurgaon"}</p></div>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -183,23 +165,23 @@ const Testimonials = () => {
                                 {clientsCount}+
                             </span>
                         </div>
-                        <p className="text-gray-600 font-medium"><p>{"Clients Helped"}</p></p>
+                        <div className="text-gray-600 font-medium"><p>{"Clients Supported (Indian & International)"}</p></div>
                     </div>
 
                     <div className="text-center">
                         <div className="text-4xl font-bold text-[#345041] mb-2">
                             <span className="inline-block min-w-[80px]">
-                                2,500+
+                                1,563+
                             </span>
                         </div>
-                        <p className="text-gray-600 font-medium"><p>{"Hours of Therapy"}</p></p>
+                        <div className="text-gray-600 font-medium"><p>{"Therapy Hours Conducted"}</p></div>
                     </div>
 
                     <div className="text-center">
                         <div className="text-4xl font-bold text-[#345041] mb-2">
                             <span className="text-4xl">98%</span>
                         </div>
-                        <p className="text-gray-600 font-medium"><p>{"Client Satisfaction"}</p></p>
+                        <div className="text-gray-600 font-medium"><p>{"Client Satisfaction"}</p></div>
                     </div>
                 </div>
             </div>
@@ -211,9 +193,9 @@ const Testimonials = () => {
                         <p>{"Ready to take the next step?"}</p>
                     </h2>
 
-                    <p className="text-xl mb-8 leading-relaxed opacity-90">
+                    <div className="text-xl mb-8 leading-relaxed opacity-90">
                         <p>{"Book your free 15-minute consultation call today and be matched with the therapist who's right for you."}</p>
-                    </p>
+                    </div>
 
                     <div className="mb-10">
                         <Link href="/book-now" className="bg-white text-[#345041] px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
@@ -223,18 +205,18 @@ const Testimonials = () => {
 
                     <div className="grid md:grid-cols-2 gap-8 text-left">
                         <div className="text-center md:text-left">
-                            <p className="text-lg mb-3 opacity-90">
+                            <div className="text-lg mb-3 opacity-90">
                                 <p>{"Still have questions?"}</p>
-                            </p>
+                            </div>
                             <button className="text-white border-b-2 border-white hover:border-opacity-70 transition-all duration-300 font-semibold">
                                 <p>{"Read our FAQs"}</p>
                             </button>
                         </div>
 
                         <div className="text-center md:text-left">
-                            <p className="text-lg mb-3 opacity-90">
+                            <div className="text-lg mb-3 opacity-90">
                                 <p>{"Looking for tools and self-help materials?"}</p>
-                            </p>
+                            </div>
                             <button className="text-white border-b-2 border-white hover:border-opacity-70 transition-all duration-300 font-semibold">
                                 <p>{"Explore our Resources"}</p>
                             </button>

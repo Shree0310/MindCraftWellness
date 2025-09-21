@@ -223,7 +223,7 @@ const HomePage = () => {
                         At Mind Craft Wellness, you might work with me directly, or with one of the other experienced therapists on our team. I ensure our team shares the same commitment to warmth, skill, and trauma-informed care, so that every client feels supported and understood.<br />
                         <br />
                         Therapy here isn’t about quick fixes or advice-giving — it’s about creating a container for your emotions, where you feel deeply held and supported, so you can uncover your own way forward.
-                       { "If you&rsquo;d like to learn more about my approach and journey as a therapist, you can [read more about me here]."}
+                        {"If you&rsquo;d like to learn more about my approach and journey as a therapist, you can [read more about me here]."}
                     </p>
                 </div>
                 <div className='text-center block py-8 pl-8'>

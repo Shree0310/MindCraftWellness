@@ -93,8 +93,8 @@ const HowItWorks = () => {
                             <div className="flex items-center mb-2">
                                 <div className="w-8 h-8 bg-[#345041] rounded-full mr-2"></div>
                                 <div>
-                                    <p className="font-semibold text-sm text-gray-700"><p>{"Aishwaraya G."}</p></p>
-                                    <p className="text-xs text-gray-500"><p>{"Doctor, Professional Counselor, MS, NCC"}</p></p>
+                                    <div className="font-semibold text-sm text-gray-700"><p>{"Aishwaraya G."}</p></div>
+                                    <div className="text-xs text-gray-500"><p>{"Doctor, Professional Counselor, MS, NCC"}</p></div>
                                 </div>
                             </div>
                             <p className="text-sm text-gray-700 mb-2">
