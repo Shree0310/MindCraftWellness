@@ -32,7 +32,7 @@ const Header = () => {
                             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#345041] transition-all duration-300 group-hover:w-full"></span>
                         </Link>
                         <Link
-                            href="/Specialities"
+                            href="/what-we-work-with"
                             className="text-gray-700 hover:text-[#345041] transition-colors duration-300 relative group"
                         >
                             Specialities
@@ -87,7 +87,7 @@ const Header = () => {
                                 About
                             </Link>
                             <Link
-                                href="/Specialities"
+                                href="/what-we-work-with"
                                 className="text-gray-700 hover:text-[#345041] font-medium transition-colors duration-300 px-4 py-2 rounded-md hover:bg-gray-50 text-lg"
                                 onClick={() => setIsMenuOpen(false)}
                             >
