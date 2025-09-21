@@ -264,7 +264,7 @@ const TestimonialsPage = () => {
                                             </span>
                                         </div>
                                         <p className="text-gray-700 leading-relaxed text-sm">
-                                            "{testimonial.text}"
+                                            &ldquo;{testimonial.text}&rdquo;
                                         </p>
                                     </div>
                                     <div className="border-t pt-4">
@@ -295,7 +295,7 @@ const TestimonialsPage = () => {
                                         <span className="text-sm text-gray-500 ml-2">{review.date}</span>
                                     </div>
                                     <p className="text-gray-700 leading-relaxed text-sm">
-                                        "{review.text}"
+                                        &ldquo;{review.text}&rdquo;
                                     </p>
                                 </div>
                             ))}
@@ -321,7 +321,7 @@ const TestimonialsPage = () => {
                                         <span className="text-sm text-gray-500 ml-2">{review.date}</span>
                                     </div>
                                     <p className="text-gray-700 leading-relaxed text-sm">
-                                        "{review.text}"
+                                        &ldquo;{review.text}&rdquo;
                                     </p>
                                 </div>
                             ))}
