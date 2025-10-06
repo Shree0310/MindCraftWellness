@@ -48,7 +48,7 @@ const Blog = () => {
                     {blogImages.map((image, index) => (
                         <div key={index} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
                             {/* Image Container */}
-                            <div className="relative" style={{ width: '100%', height: '340px' }}>
+                            <div className="relative cursor-pointer" style={{ width: '100%', height: '340px' }}>
                                 <img
                                     src={image.src}
                                     alt={image.alt}
