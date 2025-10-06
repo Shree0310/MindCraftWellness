@@ -10,12 +10,47 @@ export default function BookNow() {
     return (
         <div className="bg-[#E7CDBF] h-full scroll-auto">
             <Header />
-            <HowItWorks />
-            <div className='flex justify-center'>
-                <Link href="/book-now" className='bg-[#345041] cursor-pointer text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#2a4033] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl'>
-                    Book Your Free Consultation
-                </Link>
+
+            {/* Tealfeed Calendar Section */}
+            <div className="bg-white rounded-3xl p-8 my-16 mx-8">
+                <div className="text-center mb-8">
+                    <h2 className="text-3xl font-bold text-[#345041] mb-4" style={{ fontFamily: 'BrittanySignature, serif' }}>
+                        Book Your Free Consultation
+                    </h2>
+                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Choose a convenient time for your 15-minute discovery call. We&apos;ll discuss your needs and see if we&apos;re a good fit for your healing journey.
+                    </p>
+                </div>
+
+                <div className="max-w-4xl mx-auto">
+                    <iframe
+                        width="100%"
+                        height="560"
+                        title="Book Your Consultation"
+                        src="https://www.tealfeed.com/goud_387923/connect/call?callType=67120307b554f31cdc8d94f9&embed=true&theme=light&brandColor=008080&hideDescription=false"
+                        frameBorder="0"
+                        allowFullScreen
+                        className="rounded-2xl shadow-lg"
+                    >
+                    </iframe>
+                </div>
+
+                <div className="text-center mt-6">
+                    <p className="text-sm text-gray-500">
+                        Having trouble with the calendar?
+                        <a
+                            href="https://www.tealfeed.com/goud_387923/connect/call?callType=67120307b554f31cdc8d94f9"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-[#345041] hover:text-[#2a4033] font-semibold underline ml-1"
+                        >
+                            Open in new tab
+                        </a>
+                    </p>
+                </div>
             </div>
+
+            <HowItWorks />
 
             {/* Review Ratings Section */}
             <div className="bg-white rounded-3xl p-8 my-16 mx-8">
