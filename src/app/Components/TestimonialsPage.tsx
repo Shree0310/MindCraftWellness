@@ -201,140 +201,128 @@ const TestimonialsPage = () => {
         <div className="min-h-screen flex flex-col">
             <Header />
             <div className="bg-[#FFFADA] text-black w-full font-sans py-16 overflow-x-hidden flex-grow">
-                <div className="max-w-7xl mx-auto px-8">
-                    {/* Header Section */}
-                    <div className="text-center mb-16">
-                        <h1 className="text-5xl font-bold text-[#345041] mb-6" style={{ fontFamily: 'Lora, serif' }}>
-                            Client Testimonials
-                        </h1>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                            Hear from our clients about their transformative therapy experiences at Mind Craft Wellness
-                        </p>
+                <div>
+                    <div className="max-w-7xl mx-auto px-8">
+                        {/* Header Section */}
+                        <div className="text-center mb-16">
+                            <h1 className="text-5xl font-bold text-[#345041] mb-6" style={{ fontFamily: 'Lora, serif' }}>
+                                Client Testimonials
+                            </h1>
+                            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                                Hear from our clients about their transformative therapy experiences at Mind Craft Wellness
+                            </p>
+                        </div>
                     </div>
 
-                    {/* Review Ratings Summary */}
-                    <div className="bg-gradient-to-r from-[#f8f6f4] to-[#E7CDBF] rounded-3xl p-8 mb-16">
+                    {/* Review Ratings Summary - Full Width */}
+                    <div className="bg-gradient-to-r from-[#f8f6f4] to-[#E7CDBF] py-16 mb-16 ">
                         <div className="text-center">
                             <h2 className="text-3xl font-semibold text-[#345041] mb-8">What Our Clients Say</h2>
-                            <div className="flex justify-center space-x-12">
+                            <div className="flex justify-center space-x-16">
                                 <div className="text-center">
-                                    <div className="flex items-center justify-center mb-2">
-                                        <span className="text-4xl font-bold text-[#345041]">4.9</span>
-                                        <span className="text-xl text-gray-600 ml-1">/5</span>
-                                    </div>
-                                    <div className="flex justify-center mb-2">
+                                    <div className="flex justify-center mb-4">
                                         {[...Array(5)].map((_, i) => (
-                                            <svg key={i} className="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                            <svg key={i} className="w-8 h-8 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
                                                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                             </svg>
                                         ))}
                                     </div>
-                                    <p className="text-lg font-medium text-gray-600">Google Reviews</p>
+                                    <p className="text-lg font-semibold text-gray-800 mb-4">5/5 – Rating</p>
+                                    <div className="flex justify-center">
+                                        <img
+                                            src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                                            alt="Google"
+                                            className="h-8"
+                                            loading="lazy"
+                                        />
+                                    </div>
                                 </div>
                                 <div className="text-center">
-                                    <div className="flex items-center justify-center mb-2">
-                                        <span className="text-4xl font-bold text-[#345041]">5.0</span>
-                                        <span className="text-xl text-gray-600 ml-1">/5</span>
-                                    </div>
-                                    <div className="flex justify-center mb-2">
+                                    <div className="flex justify-center mb-4">
                                         {[...Array(5)].map((_, i) => (
-                                            <svg key={i} className="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                            <svg key={i} className="w-8 h-8 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
                                                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                             </svg>
                                         ))}
                                     </div>
-                                    <p className="text-lg font-medium text-gray-600">Practo Reviews</p>
+                                    <p className="text-lg font-semibold text-gray-800 mb-4">5/5 – Rating</p>
+                                    <div className="flex justify-center">
+                                        <img
+                                            src="https://untangle.co.in/wp-content/uploads/2023/03/unnamed.png.webp"
+                                            alt="Practo"
+                                            className="h-8"
+                                            loading="lazy"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    {/* Detailed Testimonials */}
-                    <div className="mb-16">
-                        <h2 className="text-3xl font-bold text-[#345041] mb-8 text-center" style={{ fontFamily: 'Lora, serif' }}>
-                            Detailed Client Stories
-                        </h2>
+
+
+                    {/* Google Reviews Section */}
+                    <div className="mb-16 max-w-7xl mx-auto px-8">
                         <div className="space-y-8">
-                            {allTestimonials.map((testimonial) => (
-                                <div key={testimonial.id} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            {googleReviews.map((review) => (
+                                <div key={review.id} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
                                     <div className="flex items-center justify-start mb-6">
                                         <div className="flex space-x-1">
                                             {[...Array(5)].map((_, i) => (
-                                                <svg
-                                                    key={i}
-                                                    className="w-6 h-6 text-yellow-400 animate-pulse"
-                                                    fill="currentColor"
-                                                    viewBox="0 0 20 20"
-                                                    style={{ animationDelay: `${i * 0.1}s` }}
-                                                >
+                                                <svg key={i} className={`w-6 h-6 ${i < review.rating ? 'text-yellow-400' : 'text-gray-300'}`} fill="currentColor" viewBox="0 0 20 20">
                                                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                                 </svg>
                                             ))}
                                         </div>
+                                        <span className="text-sm text-gray-500 ml-4">{review.date}</span>
                                     </div>
-
-                                    <blockquote className="text-lg leading-relaxed text-gray-700 mb-6 italic">
-                                        &ldquo;{testimonial.text}&rdquo;
-                                    </blockquote>
-
-                                    <div className="flex justify-between items-center border-t pt-4">
-                                        <div>
-                                            <p className="font-semibold text-[#345041] text-lg">{testimonial.author}</p>
-                                            <p className="text-gray-600">{testimonial.role}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* Google Reviews Section */}
-                    <div className="mb-16">
-                        <h2 className="text-3xl font-bold text-[#345041] mb-8 text-center" style={{ fontFamily: 'Lora, serif' }}>
-                            Google Reviews
-                        </h2>
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            {googleReviews.map((review) => (
-                                <div key={review.id} className="bg-white rounded-2xl p-6 shadow-lg">
-                                    <div className="flex items-center mb-4">
-                                        <div className="flex">
-                                            {[...Array(5)].map((_, i) => (
-                                                <svg key={i} className={`w-5 h-5 ${i < review.rating ? 'text-yellow-400' : 'text-gray-300'}`} fill="currentColor" viewBox="0 0 20 20">
-                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                                </svg>
-                                            ))}
-                                        </div>
-                                        <span className="text-sm text-gray-500 ml-2">{review.date}</span>
-                                    </div>
-                                    <p className="text-gray-700 leading-relaxed text-sm">
+                                    <blockquote className="text-lg leading-relaxed text-gray-700 italic mb-6">
                                         &ldquo;{review.text}&rdquo;
-                                    </p>
+                                    </blockquote>
+                                    <div className="flex items-center space-x-3 border-t pt-4">
+                                        <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                                            <span className="text-white font-bold text-sm">G</span>
+                                        </div>
+                                        <div className="flex flex-col">
+                                            <span className="text-sm font-semibold text-gray-800">Anonymous</span>
+                                            <span className="text-xs text-gray-600">Customer</span>
+                                        </div>
+                                    </div>
                                 </div>
                             ))}
                         </div>
                     </div>
 
                     {/* Practo Reviews Section */}
-                    <div className="mb-16">
-                        <h2 className="text-3xl font-bold text-[#345041] mb-8 text-center" style={{ fontFamily: 'Lora, serif' }}>
-                            Practo Reviews
-                        </h2>
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="max-w-7xl mx-auto px-8 mb-16">
+                        <div className="space-y-8">
                             {practoReviews.map((review) => (
-                                <div key={review.id} className="bg-white rounded-2xl p-6 shadow-lg">
-                                    <div className="flex items-center mb-4">
-                                        <div className="flex">
+                                <div key={review.id} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                                    <div className="flex items-center justify-start mb-6">
+                                        <div className="flex space-x-1">
                                             {[...Array(5)].map((_, i) => (
-                                                <svg key={i} className={`w-5 h-5 ${i < review.rating ? 'text-yellow-400' : 'text-gray-300'}`} fill="currentColor" viewBox="0 0 20 20">
+                                                <svg key={i} className={`w-6 h-6 ${i < review.rating ? 'text-yellow-400' : 'text-gray-300'}`} fill="currentColor" viewBox="0 0 20 20">
                                                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                                 </svg>
                                             ))}
                                         </div>
-                                        <span className="text-sm text-gray-500 ml-2">{review.date}</span>
+                                        <span className="text-sm text-gray-500 ml-4">{review.date}</span>
                                     </div>
-                                    <p className="text-gray-700 leading-relaxed text-sm">
+                                    <blockquote className="text-lg leading-relaxed text-gray-700 italic mb-6">
                                         &ldquo;{review.text}&rdquo;
-                                    </p>
+                                    </blockquote>
+                                    <div className="flex items-center space-x-3 border-t pt-4">
+                                        <img
+                                            src="https://untangle.co.in/wp-content/uploads/2023/03/unnamed.png.webp"
+                                            alt="Practo"
+                                            className="w-8 h-8 rounded"
+                                            loading="lazy"
+                                        />
+                                        <div className="flex flex-col">
+                                            <span className="text-sm font-semibold text-gray-800">Anonymous</span>
+                                            <span className="text-xs text-gray-600">Customer</span>
+                                        </div>
+                                    </div>
                                 </div>
                             ))}
                         </div>
