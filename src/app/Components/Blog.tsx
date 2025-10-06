@@ -1,6 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
-import Link from "next/link";
+import BookFreeConsultationBtn from "./BookFreeConsulationBtn";
 
 const Blog = () => {
     const blogImages = [
@@ -12,7 +12,7 @@ const Blog = () => {
         { src: "/Assets/images/Blog6.jpg", alt: "Blog Image 6" },
     ];
 
-    return <div>
+    return <div className="bg-white">
         <Header />
 
         {/* Quote Section */}
@@ -88,7 +88,7 @@ const Blog = () => {
         </div>
 
         {/* Book Free Consultation Section */}
-        <div className="bg-gradient-to-r from-[#345041] to-[#2a4033] py-20 px-8">
+        <div className="bg-gradient-to-r from-[#345041] to-[#2a4033] py-20 px-8 mb-16">
             <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-4xl font-bold text-white mb-6" style={{ fontFamily: 'BrittanySignature, serif' }}>
                     Ready to Begin Your Healing Journey?
@@ -96,12 +96,7 @@ const Blog = () => {
                 <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
                     Take the first step towards a more peaceful and fulfilling life. Book your free consultation today.
                 </p>
-                <Link
-                    href="/book-now"
-                    className="inline-block bg-white text-[#345041] px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300"
-                >
-                    Book a Free Consultation
-                </Link>
+                <BookFreeConsultationBtn/>
             </div>
         </div>
 

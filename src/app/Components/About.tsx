@@ -8,6 +8,7 @@ import AboutImg2 from '../Assets/images/About 5.png'
 import ourSpace from '../Assets/images/ourSpace.png';
 import ProfilePic from '../Assets/images/Profile-pic.png';
 import Testimonials from './Testimonials';
+import BookFreeConsultationBtn from './BookFreeConsulationBtn';
 import { useState } from 'react';
 import Footer from './Footer';
 import OurValues from './OurValues';
@@ -47,9 +48,7 @@ const About = () => {
                                 greater self-awareness, healing, and growth.
                             </p>
                             <div className='flex justify-center'>
-                                <Link href="/book-now" className='bg-[#ADC3E3] cursor-pointer text-black px-8 py-4 my-16 rounded-full font-semibold text-lg hover:bg-[#92b0dc] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl'>
-                                    Book Your Free Consultation
-                                </Link>
+                                <BookFreeConsultationBtn/>
                             </div>
                         </div>
 
