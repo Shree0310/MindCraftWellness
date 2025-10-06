@@ -33,11 +33,11 @@ const Footer = () => {
                     <div>
                         <h4 className="text-lg font-semibold mb-4"><p>{"Quick Links"}</p></h4>
                         <ul className="space-y-2">
-                            <li><a href="#" className="text-gray-300 hover:text-white transition-colors duration-300"><p>{"About Us"}</p></a></li>
-                            <li><a href="#" className="text-gray-300 hover:text-white transition-colors duration-300"><p>{"Our Therapists"}</p></a></li>
-                            <li><a href="#" className="text-gray-300 hover:text-white transition-colors duration-300"><p>{"Services"}</p></a></li>
-                            <li><a href="#" className="text-gray-300 hover:text-white transition-colors duration-300"><p>{"Blog"}</p></a></li>
-                            <li><a href="#" className="text-gray-300 hover:text-white transition-colors duration-300"><p>{"Careers"}</p></a></li>
+                            <li><a href="/About" className="text-gray-300 hover:text-white transition-colors duration-300"><p>{"About Us"}</p></a></li>
+                            <li><a href="/what-we-work-with" className="text-gray-300 hover:text-white transition-colors duration-300"><p>{"What We Work With"}</p></a></li>
+                            <li><a href="/testimonials" className="text-gray-300 hover:text-white transition-colors duration-300"><p>{"Testimonials"}</p></a></li>
+                            <li><a href="/book-now" className="text-gray-300 hover:text-white transition-colors duration-300"><p>{"Book Now"}</p></a></li>
+                            <li><a href="/Careers" className="text-gray-300 hover:text-white transition-colors duration-300"><p>{"Careers"}</p></a></li>
                         </ul>
                     </div>
 
