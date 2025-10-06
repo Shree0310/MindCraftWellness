@@ -260,7 +260,6 @@ const TestimonialsPage = () => {
                     </div>
 
 
-
                     {/* Google Reviews Section */}
                     <div className="mb-16 max-w-7xl mx-auto px-8">
                         <div className="space-y-8">

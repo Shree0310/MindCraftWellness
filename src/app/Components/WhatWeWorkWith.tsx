@@ -14,17 +14,17 @@ const WhatWeWorkWith = () => {
                 <div className="max-w-7xl mx-auto px-8">
                     {/* Hero Quote Section */}
                     <div className="text-center mb-20">
-                        <blockquote className="text-4xl md:text-5xl font-bold text-[#345041] mb-8 leading-tight" style={{ fontFamily: 'BrittanySignature, serif' }}>
+                        <blockquote className="text-3xl font-bold text-[#345041] mb-8 leading-tight" style={{ fontFamily: 'BrittanySignature, serif' }}>
                             &ldquo;There is no greater agony than bearing an untold story inside you.&rdquo;
                         </blockquote>
-                        <p className="text-xl text-gray-600" style={{ fontFamily: 'Lora, serif' }}>
+                        <p className="text-lg text-gray-600" style={{ fontFamily: 'Lora, serif' }}>
                             - Maya Angelou
                         </p>
                     </div>
 
                     {/* Introduction Section */}
                     <div className="max-w-4xl mx-auto mb-20">
-                        <h1 className="text-4xl font-bold text-[#345041] mb-8 text-center" style={{ fontFamily: 'BrittanySignature, serif' }}>
+                        <h1 className="text-4xl font-bold text-[#345041] mb-8 text-center" style={{ fontFamily: 'BodoniModa, serif' }}>
                             What We Support You Through
                         </h1>
                         
