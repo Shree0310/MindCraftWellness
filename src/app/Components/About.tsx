@@ -47,7 +47,7 @@ const About = () => {
                                 We are committed to creating a space where you feel truly seen, heard, and supported on your journey toward
                                 greater self-awareness, healing, and growth.
                             </p>
-                            <div className='flex justify-center'>
+                            <div className='flex justify-center mb-10'>
                                 <BookFreeConsultationBtn/>
                             </div>
                         </div>
