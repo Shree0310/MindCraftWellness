@@ -112,10 +112,10 @@ const HomePage = () => {
                     </div>
                     <div className='w-full lg:w-[500px] pt-6 lg:pl-6 relative'>
                         <p className='text-base md:text-lg text-left leading-relaxed py-4' style={{ fontFamily: 'Lora, serif', lineHeight: '1.6' }}> At Mind Craft Wellness, we believe therapy works best when it feels personal.
-                            Instead of leaving you to choose from a list, we begin with a free 15-minute consultation call. In this call, you'll share what's on your mind — your needs, preferences, and goals —
-                            and we'll help match you with the therapist who's the best fit for you.
+                            Instead of leaving you to choose from a list, we begin with a free 15-minute consultation call. In this call, you&apos;ll share what&apos;s on your mind — your needs, preferences, and goals —
+                            and we&apos;ll help match you with the therapist who&apos;s the best fit for you.
                             <br />
-                            <span className='text-lg md:text-xl text-left leading-relaxed font-bold' style={{ fontFamily: 'BodoniModa, serif' }}>'Our wounds are often the openings into the best and most beautiful part of us.'"</span>
+                            <span className='text-lg md:text-xl text-left leading-relaxed font-bold' style={{ fontFamily: 'BodoniModa, serif' }}>&lsquo;Our wounds are often the openings into the best and most beautiful part of us.&rsquo;</span>
                         </p>
                     </div>
                 </div>
@@ -210,7 +210,7 @@ const HomePage = () => {
                 <HowItWorks />
 
                 <h1 className='text-2xl md:text-3xl pt-8 md:pt-16 pb-3 text-center font-bold px-4' style={{ fontFamily: 'BrittanySignature, serif' }}>
-                    Hi, I'm Aishwaraya Goud —
+                    Hi, I&apos;m Aishwaraya Goud —
                 </h1>
                 <span className='text-base md:text-lg py-2 text-center block pb-6 md:pb-8 px-4' style={{ fontFamily: 'Lora, serif' }}>
                     Founder of Mind Craft Wellness,<br />
@@ -221,7 +221,7 @@ const HomePage = () => {
                     <p className='text-base md:text-lg text-left w-full md:w-[500px] pt-6' style={{ fontFamily: 'Lora, serif', lineHeight: '1.6' }}>
                         At Mind Craft Wellness, you might work with me directly, or with one of the other experienced therapists on our team. I ensure our team shares the same commitment to warmth, skill, and trauma-informed care, so that every client feels supported and understood.<br />
                         <br />
-                        Therapy here isn't about quick fixes or advice-giving — it's about creating a container for your emotions, where you feel deeply held and supported, so you can uncover your own way forward.
+                        Therapy here isn&apos;t about quick fixes or advice-giving — it&apos;s about creating a container for your emotions, where you feel deeply held and supported, so you can uncover your own way forward.
                         {"If you&rsquo;d like to learn more about my approach and journey as a therapist, you can [read more about me here]."}
                     </p>
                 </div>

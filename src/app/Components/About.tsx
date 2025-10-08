@@ -1,6 +1,6 @@
 
 "use client"
-import Link from 'next/link';
+// import Link from 'next/link';
 import Header from "./Header";
 import AboutImg from '../Assets/images/About.png'
 import AboutImg1 from '../Assets/images/About2.png'
@@ -48,7 +48,7 @@ const About = () => {
                                 greater self-awareness, healing, and growth.
                             </p>
                             <div className='flex justify-center mb-6 md:mb-10 px-4 md:px-0'>
-                                <BookFreeConsultationBtn/>
+                                <BookFreeConsultationBtn />
                             </div>
                         </div>
 
@@ -88,7 +88,7 @@ const About = () => {
                 <div>
                     <div className='bg-[#FBF4F1] w-full'>
                         <h1 className='text-2xl md:text-3xl pt-8 md:pt-16 pb-3 text-center font-bold px-4' style={{ fontFamily: 'BrittanySignature, serif' }}>
-                            Hi, I'm Aishwaraya Goud —
+                            Hi, I&apos;m Aishwaraya Goud —
                         </h1>
                         <span className='text-base md:text-lg py-2 mb-6 md:mb-10 text-center block pb-6 md:pb-8 px-4' style={{ fontFamily: 'Lora, serif' }}>
                             Founder of Mind Craft Wellness,<br />

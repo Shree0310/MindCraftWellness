@@ -89,6 +89,8 @@ const TestimonialsPage = () => {
         }
     ];
 
+    console.log('All testimonials:', allTestimonials.length);
+
     const googleReviews = [
         {
             id: 1,
