@@ -25,57 +25,57 @@ const About = () => {
     return (
         <div className="min-h-screen flex flex-col">
             <Header />
-            <div className="bg-[#FFFADA] text-black w-full font-sans py-16 overflow-x-hidden flex-grow">
-                <div className="max-w-7xl mx-auto px-8">
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="bg-[#FFFADA] text-black w-full font-sans py-8 md:py-16 overflow-x-hidden flex-grow">
+                <div className="max-w-7xl mx-auto px-4 md:px-8">
+                    <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
                         {/* Left side - Text content */}
-                        <div className="space-y-8">
+                        <div className="space-y-6 md:space-y-8 order-2 lg:order-1">
                             {/* <h1 className="text-4xl font-bold" style={{ fontFamily: 'BrittanySignature, serif' }}>
                                 About Mind Craft Wellness
                             </h1> */}
-                            <p className="text-xl leading-relaxed" style={{ fontFamily: 'GlacialIndifference, serif' }}>
+                            <p className="text-lg md:text-xl leading-relaxed px-4 md:px-0" style={{ fontFamily: 'GlacialIndifference, serif' }}>
                                 &ldquo;In my early professional years I was asking the question: How can I treat, or cure, or change this person?
                                 Now I would phrase the question in this way: <br />
                                 <span className="font-bold underline">How can I provide a relationship which this person may use for his own personal growth?&rdquo;</span>
                             </p>
-                            <p className="text-xl leading-relaxed" style={{ fontFamily: 'GlacialIndifference, serif' }}>
+                            <p className="text-lg md:text-xl leading-relaxed px-4 md:px-0" style={{ fontFamily: 'GlacialIndifference, serif' }}>
                                 At Mind Craft Wellness, we believe in the power of authentic human connection and the transformative potential of a safe,
                                 nurturing therapeutic relationship. Our approach is rooted in the understanding that healing happens within the context
                                 of genuine care and understanding.
                             </p>
-                            <p className="text-xl leading-relaxed" style={{ fontFamily: 'GlacialIndifference, serif' }}>
+                            <p className="text-lg md:text-xl leading-relaxed px-4 md:px-0" style={{ fontFamily: 'GlacialIndifference, serif' }}>
                                 We are committed to creating a space where you feel truly seen, heard, and supported on your journey toward
                                 greater self-awareness, healing, and growth.
                             </p>
-                            <div className='flex justify-center mb-10'>
+                            <div className='flex justify-center mb-6 md:mb-10 px-4 md:px-0'>
                                 <BookFreeConsultationBtn/>
                             </div>
                         </div>
 
                         {/* Right side - Images */}
-                        <div className="ml-24 relative">
+                        <div className="ml-0 lg:ml-24 relative order-1 lg:order-2">
                             {/* Large background image */}
-                            <div className="relative">
+                            <div className="relative flex justify-center lg:justify-start">
                                 <img
                                     src={AboutImg.src}
                                     alt="About Mind Craft Wellness"
-                                    className="w-[330px] h-[330px] object-cover mt-24"
+                                    className="w-[280px] md:w-[330px] h-[280px] md:h-[330px] object-cover mt-12 md:mt-24"
                                 />
 
                                 {/* Two smaller images positioned on top */}
 
-                                <div className="absolute -top-6 right-2 mr-48">
+                                <div className="absolute -top-3 md:-top-6 right-1 md:right-2 mr-24 md:mr-48">
                                     <img
                                         src={AboutImg2.src}
                                         alt="Wellness space"
-                                        className="w-24 h-16 object-cover transform -rotate-6"
+                                        className="w-20 md:w-24 h-12 md:h-16 object-cover transform -rotate-6"
                                     />
                                 </div>
-                                <div className="absolute -top-8 -left-8">
+                                <div className="absolute -top-4 md:-top-8 -left-4 md:-left-8">
                                     <img
                                         src={AboutImg1.src}
                                         alt="Therapy session"
-                                        className="w-48 h-32 object-cover transform -rotate-6"
+                                        className="w-36 md:w-48 h-24 md:h-32 object-cover transform -rotate-6"
                                     />
                                 </div>
 
@@ -87,16 +87,16 @@ const About = () => {
 
                 <div>
                     <div className='bg-[#FBF4F1] w-full'>
-                        <h1 className='text-3xl pt-16 pb-3 text-center font-bold' style={{ fontFamily: 'BrittanySignature, serif' }}>
-                            Hi, I’m Aishwaraya Goud —
+                        <h1 className='text-2xl md:text-3xl pt-8 md:pt-16 pb-3 text-center font-bold px-4' style={{ fontFamily: 'BrittanySignature, serif' }}>
+                            Hi, I'm Aishwaraya Goud —
                         </h1>
-                        <span className='text-lg py-2 mb-10 text-center block pb-8' style={{ fontFamily: 'Lora, serif' }}>
+                        <span className='text-base md:text-lg py-2 mb-6 md:mb-10 text-center block pb-6 md:pb-8 px-4' style={{ fontFamily: 'Lora, serif' }}>
                             Founder of Mind Craft Wellness,<br />
                             and a certified AEDP and CBT therapist based in Gurgaon.
                         </span>
-                        <div className='flex justify-start items-start gap-6 mx-auto w-fit'>
-                            <img src={ProfilePic.src} className='w-[350px] h-[500px] object-cover pt-6 pr-6' alt="Aishwaraya Goud - Founder of Mind Craft Wellness" />
-                            <p className='text-lg text-left w-[500px]' style={{ fontFamily: 'Lora, serif', lineHeight: '30px' }}>
+                        <div className='flex flex-col md:flex-row justify-start items-start gap-6 mx-auto max-w-6xl px-4'>
+                            <img src={ProfilePic.src} className='w-full max-w-[350px] h-[400px] md:h-[500px] object-cover pt-6 pr-0 md:pr-6 mx-auto md:mx-0' alt="Aishwaraya Goud - Founder of Mind Craft Wellness" />
+                            <p className='text-base md:text-lg text-left w-full md:w-[500px]' style={{ fontFamily: 'Lora, serif', lineHeight: '1.6' }}>
                                 Hi, I’m Aishwarya, a trauma-informed therapist based in Gurgaon. My path into this work began with my own search for healing, which showed me how deeply we all long to be seen, understood, and supported.
                                 Those experiences continue to shape how I sit with others—with warmth, curiosity, and respect for each person’s pace.<br />
                                 <br />
@@ -109,28 +109,28 @@ const About = () => {
                             </p>
                         </div>
                         {/* Educational Qualifications Section */}
-                        <div className="mt-16 mb-12">
-                            <div className="text-center mb-8">
-                                <h2 className="text-3xl font-bold text-[#345041] mb-4" style={{ fontFamily: 'Lora, serif' }}>
+                        <div className="mt-12 md:mt-16 mb-8 md:mb-12 px-4">
+                            <div className="text-center mb-6 md:mb-8">
+                                <h2 className="text-2xl md:text-3xl font-bold text-[#345041] mb-4 px-4" style={{ fontFamily: 'Lora, serif' }}>
                                     Educational Qualifications
                                 </h2>
-                                <div className="w-16 h-0.5 bg-[#345041] mx-auto opacity-30"></div>
+                                <div className="w-12 md:w-16 h-0.5 bg-[#345041] mx-auto opacity-30"></div>
                             </div>
                             <div className="max-w-4xl mx-auto">
-                                <div className="bg-white rounded-2xl shadow-lg p-8">
+                                <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
                                     <ul className="space-y-4">
-                                        <li className="flex items-start space-x-4">
+                                        <li className="flex items-start space-x-3 md:space-x-4">
                                             <div className="w-3 h-3 bg-[#345041] rounded-full mt-2 flex-shrink-0"></div>
                                             <div>
-                                                <span className="text-lg font-semibold text-[#345041]"><p>{"Professional Diploma in Clinical Psychology"}</p></span>
-                                                <p className="text-gray-600"><p>{"SGT University, Gurgaon"}</p></p>
+                                                <span className="text-base md:text-lg font-semibold text-[#345041]"><p>{"Professional Diploma in Clinical Psychology"}</p></span>
+                                                <p className="text-sm md:text-base text-gray-600"><p>{"SGT University, Gurgaon"}</p></p>
                                             </div>
                                         </li>
-                                        <li className="flex items-start space-x-4">
+                                        <li className="flex items-start space-x-3 md:space-x-4">
                                             <div className="w-3 h-3 bg-[#345041] rounded-full mt-2 flex-shrink-0"></div>
                                             <div>
-                                                <span className="text-lg font-semibold text-[#345041]"><p>{"MSc. in Counselling Psychology"}</p></span>
-                                                <p className="text-gray-600"><p>{"Sampurna Montfort College, Bangalore"}</p></p>
+                                                <span className="text-base md:text-lg font-semibold text-[#345041]"><p>{"MSc. in Counselling Psychology"}</p></span>
+                                                <p className="text-sm md:text-base text-gray-600"><p>{"Sampurna Montfort College, Bangalore"}</p></p>
                                             </div>
                                         </li>
                                     </ul>
@@ -139,12 +139,12 @@ const About = () => {
                         </div>
 
                         {/* Additional Certifications & Trainings Section */}
-                        <div className="mb-16">
-                            <div className="text-center mb-8">
-                                <h2 className="text-3xl font-bold text-[#345041] mb-4" style={{ fontFamily: 'Lora, serif' }}>
+                        <div className="mb-12 md:mb-16 px-4">
+                            <div className="text-center mb-6 md:mb-8">
+                                <h2 className="text-2xl md:text-3xl font-bold text-[#345041] mb-4 px-4" style={{ fontFamily: 'Lora, serif' }}>
                                     Additional Certifications & Trainings
                                 </h2>
-                                <div className="w-16 h-0.5 bg-[#345041] mx-auto opacity-30"></div>
+                                <div className="w-12 md:w-16 h-0.5 bg-[#345041] mx-auto opacity-30"></div>
                             </div>
                             <div className="max-w-5xl mx-auto">
                                 <div className="bg-white rounded-2xl shadow-lg p-8">
