@@ -31,44 +31,44 @@ const HomePage = () => {
 
                 <img className='w-full h-auto' src={LandingPage.src} alt="Landing Page" />
                 <div className='absolute inset-0 flex flex-col justify-center items-center'>
-                    <div className='text-center text-white max-w-4xl px-8'>
-                        <h1 className='text-5xl font-bold mb-6 tracking-wide drop-shadow-lg' style={{ fontFamily: 'BrittanySignature, serif' }}>
+                    <div className='text-center text-white max-w-4xl px-4 md:px-8'>
+                        <h1 className='hidden md:block text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 tracking-wide drop-shadow-lg' style={{ fontFamily: 'BrittanySignature, serif' }}>
                             An in-person Therapy Clinic in Gurgaon
                         </h1>
-                        <p className='text-xl leading-relaxed mb-8 drop-shadow-lg italic' style={{ fontFamily: 'Lora, serif' }}>
+                        <p className='hidden md:block text-lg md:text-xl leading-relaxed mb-6 md:mb-8 drop-shadow-lg italic px-4' style={{ fontFamily: 'Lora, serif' }}>
                             A warm, private space for you to heal, grow, and reconnect — with the support of compassionate, ethical therapists.
                         </p>
-                        <div className='flex justify-center'>
-                            <Link href="/book-now" className='bg-[#345041] cursor-pointer text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#2a4033] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl'>
+                        <div className='flex justify-center px-4'>
+                            <Link href="/book-now" className='bg-[#345041] cursor-pointer text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold text-base md:text-lg hover:bg-[#2a4033] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl'>
                                 Book Your Free Consultation
                             </Link>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='relative max-w-4xl mx-auto px-8 py-16'>
-                <div className='bg-white rounded-2xl shadow-xl p-12 text-center relative overflow-hidden'>
+            <div className='relative max-w-4xl mx-auto px-4 md:px-8 py-8 md:py-16'>
+                <div className='bg-white rounded-2xl shadow-xl p-6 md:p-12 text-center relative overflow-hidden'>
                     {/* Decorative quote marks */}
-                    <div className='absolute top-4 left-6 text-6xl text-[#345041] opacity-20' style={{ fontFamily: 'BrittanySignature, serif' }}>
+                    <div className='absolute top-2 md:top-4 left-3 md:left-6 text-4xl md:text-6xl text-[#345041] opacity-20' style={{ fontFamily: 'BrittanySignature, serif' }}>
                         &ldquo;
                     </div>
-                    <div className='absolute bottom-4 right-6 text-6xl text-[#345041] opacity-20' style={{ fontFamily: 'BrittanySignature, serif' }}>
+                    <div className='absolute bottom-2 md:bottom-4 right-3 md:right-6 text-4xl md:text-6xl text-[#345041] opacity-20' style={{ fontFamily: 'BrittanySignature, serif' }}>
                         &rdquo;
                     </div>
 
                     {/* Main quote */}
                     <div className='relative z-10'>
-                        <p className='text-3xl leading-relaxed text-[#2a4033] mb-6' style={{ fontFamily: 'BrittanySignature, serif' }}>
+                        <p className='text-xl md:text-2xl lg:text-3xl leading-relaxed text-[#2a4033] mb-4 md:mb-6 px-2' style={{ fontFamily: 'BrittanySignature, serif' }}>
                             &ldquo;Owning our story and loving ourselves through that process is the bravest thing we&rsquo;ll ever do.&rdquo;
                         </p>
 
                         {/* Author attribution */}
-                        <div className='flex items-center justify-center space-x-3'>
-                            <div className='w-1 h-8 bg-[#345041] rounded-full'></div>
-                            <span className='text-lg text-[#345041] font-semibold' style={{ fontFamily: 'Lora, serif' }}>
+                        <div className='flex items-center justify-center space-x-2 md:space-x-3'>
+                            <div className='w-1 h-6 md:h-8 bg-[#345041] rounded-full'></div>
+                            <span className='text-base md:text-lg text-[#345041] font-semibold' style={{ fontFamily: 'Lora, serif' }}>
                                 — Brené Brown
                             </span>
-                            <div className='w-1 h-8 bg-[#345041] rounded-full'></div>
+                            <div className='w-1 h-6 md:h-8 bg-[#345041] rounded-full'></div>
                         </div>
                     </div>
 
@@ -89,11 +89,11 @@ const HomePage = () => {
                         <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="#345041" opacity=".15"></path>
                     </svg>
                 </div>
-                <h1 className='font-sans font-bold text-2xl text-center pt-16 pb-8' style={{ fontFamily: 'BodoniModa, serif' }}>
+                <h1 className='font-sans font-bold text-xl md:text-2xl text-center pt-8 md:pt-16 pb-6 md:pb-8 px-4' style={{ fontFamily: 'BodoniModa, serif' }}>
                     Getting Started at Mind Craft Wellness
                 </h1>
-                <div className='flex justify-start items-start gap-6 mx-auto w-fit'>
-                    <div className='relative'>
+                <div className='flex flex-col lg:flex-row justify-start items-start gap-6 mx-auto max-w-6xl px-4'>
+                    <div className='relative w-full lg:w-auto'>
                         {/* Shadow elements behind couch - brown tones */}
                         <div className="absolute -top-6 -left-6 opacity-25 z-0">
                             <div className="w-20 h-24 bg-[#8B4513] rounded-lg transform rotate-8 shadow-lg"></div>
@@ -108,15 +108,14 @@ const HomePage = () => {
                             <div className="w-10 h-14 bg-[#8B4513] rounded-lg transform rotate-12 shadow-lg"></div>
                         </div>
 
-                        <img src={couch.src} className='w-[400px] h-[380px] object-cover rounded-lg shadow-lg mt-8 relative z-10' alt="Comfortable therapy couch at Mind Craft Wellness" />
-                        {/* <img src={flowers.src} className=' bg-[#E7CDBF] absolute w-[250px] h-[280px] object-cover rounded-lg shadow-lg transform rotate-16 mx-12 right-10 mb-10'/> */}
+                        <img src={couch.src} className='w-full max-w-[400px] h-[300px] md:h-[380px] object-cover rounded-lg shadow-lg mt-8 relative z-10 mx-auto' alt="Comfortable therapy couch at Mind Craft Wellness" />
                     </div>
-                    <div className='w-[500px] pt-6 pl-6 relative'>
-                        <p className='text-lg text-left leading-relaxed py-4' style={{ fontFamily: 'Lora, serif', lineHeight: '40px' }}> At Mind Craft Wellness, we believe therapy works best when it feels personal.
-                            Instead of leaving you to choose from a list, we begin with a free 15-minute consultation call. In this call, you’ll share what’s on your mind — your needs, preferences, and goals —
-                            and we’ll help match you with the therapist who’s the best fit for you.
+                    <div className='w-full lg:w-[500px] pt-6 lg:pl-6 relative'>
+                        <p className='text-base md:text-lg text-left leading-relaxed py-4' style={{ fontFamily: 'Lora, serif', lineHeight: '1.6' }}> At Mind Craft Wellness, we believe therapy works best when it feels personal.
+                            Instead of leaving you to choose from a list, we begin with a free 15-minute consultation call. In this call, you'll share what's on your mind — your needs, preferences, and goals —
+                            and we'll help match you with the therapist who's the best fit for you.
                             <br />
-                            <span className='text-xl text-left leading-relaxed font-bold' style={{ fontFamily: 'BodoniModa, serif' }}>‘Our wounds are often the openings into the best and most beautiful part of us.’”</span>
+                            <span className='text-lg md:text-xl text-left leading-relaxed font-bold' style={{ fontFamily: 'BodoniModa, serif' }}>'Our wounds are often the openings into the best and most beautiful part of us.'"</span>
                         </p>
                     </div>
                 </div>
@@ -210,19 +209,19 @@ const HomePage = () => {
                 {/* How it Works Section */}
                 <HowItWorks />
 
-                <h1 className='text-3xl pt-16 pb-3 text-center font-bold' style={{ fontFamily: 'BrittanySignature, serif' }}>
-                    Hi, I’m Aishwaraya Goud —
+                <h1 className='text-2xl md:text-3xl pt-8 md:pt-16 pb-3 text-center font-bold px-4' style={{ fontFamily: 'BrittanySignature, serif' }}>
+                    Hi, I'm Aishwaraya Goud —
                 </h1>
-                <span className='text-lg py-2 text-center block pb-8' style={{ fontFamily: 'Lora, serif' }}>
+                <span className='text-base md:text-lg py-2 text-center block pb-6 md:pb-8 px-4' style={{ fontFamily: 'Lora, serif' }}>
                     Founder of Mind Craft Wellness,<br />
                     and a certified AEDP and CBT therapist based in Gurgaon.
                 </span>
-                <div className='flex justify-start items-start gap-6 mx-auto w-fit'>
-                    <img src={ProfilePic.src} className='w-[300px] h-[400px] object-cover' alt="Aishwaraya Goud - Founder of Mind Craft Wellness" />
-                    <p className='text-lg text-left w-[500px] pt-6' style={{ fontFamily: 'Lora, serif', lineHeight: '30px' }}>
+                <div className='flex flex-col md:flex-row justify-start items-start gap-6 mx-auto max-w-6xl px-4'>
+                    <img src={ProfilePic.src} className='w-full max-w-[300px] h-[300px] md:h-[400px] object-cover mx-auto md:mx-0' alt="Aishwaraya Goud - Founder of Mind Craft Wellness" />
+                    <p className='text-base md:text-lg text-left w-full md:w-[500px] pt-6' style={{ fontFamily: 'Lora, serif', lineHeight: '1.6' }}>
                         At Mind Craft Wellness, you might work with me directly, or with one of the other experienced therapists on our team. I ensure our team shares the same commitment to warmth, skill, and trauma-informed care, so that every client feels supported and understood.<br />
                         <br />
-                        Therapy here isn’t about quick fixes or advice-giving — it’s about creating a container for your emotions, where you feel deeply held and supported, so you can uncover your own way forward.
+                        Therapy here isn't about quick fixes or advice-giving — it's about creating a container for your emotions, where you feel deeply held and supported, so you can uncover your own way forward.
                         {"If you&rsquo;d like to learn more about my approach and journey as a therapist, you can [read more about me here]."}
                     </p>
                 </div>

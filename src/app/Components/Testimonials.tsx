@@ -98,41 +98,41 @@ const Testimonials = () => {
     };
 
     return (
-        <div className="py-20 px-8">
+        <div className="py-12 md:py-20 px-4 md:px-8">
             {/* Enhanced Header Section */}
-            <div className="text-center mb-16">
-                <div className="inline-flex items-center space-x-3 mb-6">
-                    <div className="w-12 h-0.5 bg-[#345041] opacity-30"></div>
-                    <span className="text-sm font-semibold text-[#345041] uppercase tracking-wider"><p>{"Testimonials"}</p></span>
-                    <div className="w-12 h-0.5 bg-[#345041] opacity-30"></div>
+            <div className="text-center mb-12 md:mb-16">
+                <div className="inline-flex items-center space-x-3 mb-4 md:mb-6">
+                    <div className="w-8 md:w-12 h-0.5 bg-[#345041] opacity-30"></div>
+                    <span className="text-xs md:text-sm font-semibold text-[#345041] uppercase tracking-wider"><p>{"Testimonials"}</p></span>
+                    <div className="w-8 md:w-12 h-0.5 bg-[#345041] opacity-30"></div>
                 </div>
-                <h2 className="text-6xl font-bold text-[#345041] mb-6" style={{ fontFamily: 'BrittanySignature, serif' }}>
+                <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-[#345041] mb-4 md:mb-6 px-4" style={{ fontFamily: 'BrittanySignature, serif' }}>
                     <p>{"What Our Clients Say"}</p>
                 </h2>
-                <div className="text-lg text-gray-600 max-w-2xl mx-auto" style={{ fontFamily: 'Lora, serif' }}>
+                <div className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-4" style={{ fontFamily: 'Lora, serif' }}>
                     <p>{"Real stories from real people who have experienced transformation through our therapy."}</p>
                 </div>
             </div>
-            <div className="flex justify-center items-start gap-8 max-w-6xl mx-auto">
+            <div className="flex flex-col md:flex-row justify-center items-start gap-6 md:gap-8 max-w-6xl mx-auto">
                 {getCurrentTestimonials().map((testimonial) => (
-                    <div key={testimonial.id} className="relative group">
+                    <div key={testimonial.id} className="relative group w-full md:w-auto">
                         {/* Enhanced Conversation bubble */}
-                        <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl max-w-sm relative transition-all duration-300 transform hover:scale-105 border border-gray-100">
+                        <div className="bg-white rounded-3xl p-6 md:p-8 shadow-xl hover:shadow-2xl w-full max-w-sm mx-auto md:mx-0 relative transition-all duration-300 transform hover:scale-105 border border-gray-100">
                             {/* Speech bubble tail */}
-                            <div className="absolute -bottom-3 left-8 w-0 h-0 border-l-[15px] border-r-[15px] border-t-[15px] border-l-transparent border-r-transparent border-t-white"></div>
+                            <div className="absolute -bottom-3 left-6 md:left-8 w-0 h-0 border-l-[12px] md:border-l-[15px] border-r-[12px] md:border-r-[15px] border-t-[12px] md:border-t-[15px] border-l-transparent border-r-transparent border-t-white"></div>
 
                             {/* Enhanced Quote mark */}
-                            <div className="text-6xl text-[#E7CDBF] mb-4 opacity-80">&ldquo;</div>
+                            <div className="text-4xl md:text-6xl text-[#E7CDBF] mb-3 md:mb-4 opacity-80">&ldquo;</div>
 
                             {/* Enhanced Testimonial text */}
-                            <p className="text-gray-700 text-base leading-relaxed mb-6 font-medium">
+                            <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-4 md:mb-6 font-medium">
                                 {testimonial.text}
                             </p>
 
                             {/* Enhanced Author info */}
-                            <div className="text-right border-t border-gray-100 pt-4">
-                                <p className="font-bold text-[#345041] text-base">{testimonial.author}</p>
-                                <div className="text-gray-500 text-sm"><p>{"Client"}</p></div>
+                            <div className="text-right border-t border-gray-100 pt-3 md:pt-4">
+                                <p className="font-bold text-[#345041] text-sm md:text-base">{testimonial.author}</p>
+                                <div className="text-gray-500 text-xs md:text-sm"><p>{"Client"}</p></div>
                             </div>
                         </div>
                     </div>
@@ -152,53 +152,53 @@ const Testimonials = () => {
             </div>
 
             {/* Statistics Section */}
-            <div className="bg-gradient-to-r from-[#f8f6f4] to-[#E7CDBF] rounded-3xl p-8 my-16 mx-8">
-                <div className="text-center mb-8">
-                    <h3 className="text-2xl font-semibold text-[#345041] mb-2"><p>{"Supporting clients since January 2022"}</p></h3>
-                    <div className="text-gray-600"><p>{"Trusted by clients across Gurgaon"}</p></div>
+            <div className="bg-gradient-to-r from-[#f8f6f4] to-[#E7CDBF] rounded-3xl p-6 md:p-8 my-12 md:my-16 mx-4 md:mx-8">
+                <div className="text-center mb-6 md:mb-8">
+                    <h3 className="text-xl md:text-2xl font-semibold text-[#345041] mb-2 px-4"><p>{"Supporting clients since January 2022"}</p></h3>
+                    <div className="text-sm md:text-base text-gray-600 px-4"><p>{"Trusted by clients across Gurgaon"}</p></div>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto">
                     <div className="text-center" ref={clientsRef}>
-                        <div className="text-4xl font-bold text-[#345041] mb-2">
-                            <span className="inline-block min-w-[80px]">
+                        <div className="text-3xl md:text-4xl font-bold text-[#345041] mb-2">
+                            <span className="inline-block min-w-[60px] md:min-w-[80px]">
                                 {clientsCount}+
                             </span>
                         </div>
-                        <div className="text-gray-600 font-medium"><p>{"Clients Supported (Indian & International)"}</p></div>
+                        <div className="text-sm md:text-base text-gray-600 font-medium px-2"><p>{"Clients Supported (Indian & International)"}</p></div>
                     </div>
 
                     <div className="text-center">
-                        <div className="text-4xl font-bold text-[#345041] mb-2">
-                            <span className="inline-block min-w-[80px]">
+                        <div className="text-3xl md:text-4xl font-bold text-[#345041] mb-2">
+                            <span className="inline-block min-w-[60px] md:min-w-[80px]">
                                 1,563+
                             </span>
                         </div>
-                        <div className="text-gray-600 font-medium"><p>{"Therapy Hours Conducted"}</p></div>
+                        <div className="text-sm md:text-base text-gray-600 font-medium px-2"><p>{"Therapy Hours Conducted"}</p></div>
                     </div>
 
                     <div className="text-center">
-                        <div className="text-4xl font-bold text-[#345041] mb-2">
-                            <span className="text-4xl">98%</span>
+                        <div className="text-3xl md:text-4xl font-bold text-[#345041] mb-2">
+                            <span className="text-3xl md:text-4xl">98%</span>
                         </div>
-                        <div className="text-gray-600 font-medium"><p>{"Client Satisfaction"}</p></div>
+                        <div className="text-sm md:text-base text-gray-600 font-medium px-2"><p>{"Client Satisfaction"}</p></div>
                     </div>
                 </div>
             </div>
 
             {/* Call to Action Section */}
-            <div className="bg-gradient-to-br from-[#345041] to-[#2a4033] text-white rounded-3xl p-12 mt-16 mx-8">
+            <div className="bg-gradient-to-br from-[#345041] to-[#2a4033] text-white rounded-3xl p-8 md:p-12 mt-12 md:mt-16 mx-4 md:mx-8">
                 <div className="max-w-4xl mx-auto text-center">
-                    <h2 className="text-4xl font-bold mb-6">
+                    <h2 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 px-4">
                         <p>{"Ready to take the next step?"}</p>
                     </h2>
 
-                    <div className="text-xl mb-8 leading-relaxed opacity-90">
+                    <div className="text-lg md:text-xl mb-6 md:mb-8 leading-relaxed opacity-90 px-4">
                         <p>{"Book your free 15-minute consultation call today and be matched with the therapist who's right for you."}</p>
                     </div>
 
-                    <div className="mb-10">
-                        <Link href="/book-now" className="bg-white text-[#345041] px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                    <div className="mb-8 md:mb-10">
+                        <Link href="/book-now" className="bg-white text-[#345041] px-6 md:px-10 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
                             Book Your Free Consultation
                         </Link>
                     </div>
