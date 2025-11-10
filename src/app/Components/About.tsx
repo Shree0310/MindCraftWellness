@@ -5,8 +5,12 @@ import Header from "./Header";
 import AboutImg from '../Assets/images/About.png'
 import AboutImg1 from '../Assets/images/About2.png'
 import AboutImg2 from '../Assets/images/About 5.png'
-import ourSpace from '../Assets/images/ourSpace.png';
-import ProfilePic from '../Assets/images/Profile-pic.png';
+import OurStory from '../Assets/images/OurStory.jpg';
+import OurSpace from '../Assets/images/OurSpace.jpg';
+import OurStory2 from '../Assets/images/OurStory2.jpg';
+import OurSpace2 from '../Assets/images/OurSpace2.jpg';
+import ProfilePic from '../Assets/images/Profile-pic2.jpg';
+import Books from '../Assets/images/AboutPage.jpg';
 import Testimonials from './Testimonials';
 import BookFreeConsultationBtn from './BookFreeConsulationBtn';
 import { useState } from 'react';
@@ -94,19 +98,27 @@ const About = () => {
                             Founder of Mind Craft Wellness,<br />
                             and a certified AEDP and CBT therapist based in Gurgaon.
                         </span>
-                        <div className='flex flex-col md:flex-row justify-start items-start gap-6 mx-auto max-w-6xl px-4'>
-                            <img src={ProfilePic.src} className='w-full max-w-[350px] h-[400px] md:h-[500px] object-cover pt-6 pr-0 md:pr-6 mx-auto md:mx-0' alt="Aishwaraya Goud - Founder of Mind Craft Wellness" />
-                            <p className='text-base md:text-lg text-left w-full md:w-[500px]' style={{ fontFamily: 'Lora, serif', lineHeight: '1.6' }}>
-                                Hi, I’m Aishwarya, a trauma-informed therapist based in Gurgaon. My path into this work began with my own search for healing, which showed me how deeply we all long to be seen, understood, and supported.
-                                Those experiences continue to shape how I sit with others—with warmth, curiosity, and respect for each person’s pace.<br />
-                                <br />
-                                I work with adults (21+) navigating trauma recovery, relationship well-being, identity questions, and the emotional challenges of conceiving, pregnancy, and postpartum.
-                                My approach is not about “fixing,” but about creating a safe, collaborative space where you can listen to yourself, gain clarity, and move toward the life you want.
-                                Clients often tell me that therapy with me feels steady, supportive, and less like treatment—more like being accompanied through difficult terrain.<br />
-                                <br />
-                                Outside the therapy room, I love reading, tending to plants, exploring food and music, and planning my next beach trip. These small joys remind me of balance and presence—values I carry into my work too.<br />
-                                <br />
-                            </p>
+                        <div className='flex flex-col md:flex-col justify-center items-center  gap-6 mx-auto max-w-6xl px-4'>
+                            <div className="flex">
+                                <img src={ProfilePic.src} className='w-full max-w-[350px] h-[400px] md:h-[500px] rounded-xl object-cover pt-6 pr-0 md:pr-6 mx-auto md:mx-0' alt="Aishwaraya Goud - Founder of Mind Craft Wellness" />
+                                <p className='text-base md:text-lg text-left w-full md:w-[500px] pt-10 pl-10' style={{ fontFamily: 'Lora, serif', lineHeight: '1.6' }}>
+                                    Hi, I’m Aishwarya, a trauma-informed therapist based in Gurgaon. My path into this work began with my own search for healing, which showed me how deeply we all long to be seen, understood, and supported.
+                                    Those experiences continue to shape how I sit with others—with warmth, curiosity, and respect for each person’s pace.<br />
+                                    <br />
+                                    I work with adults (21+) navigating trauma recovery, relationship well-being, identity questions, and the emotional challenges of conceiving, pregnancy, and postpartum.
+                                </p>
+                            </div>
+                            <div className="flex">
+                                <p className='text-base p-16 md:text-lg text-right w-full md:w-[500px] rounded-lg' style={{ fontFamily: 'Lora, serif', lineHeight: '1.6' }}>    
+                                    My approach is not about “fixing,” but about creating a safe, collaborative space where you can listen to yourself, gain clarity, and move toward the life you want.
+                                    Clients often tell me that therapy with me feels steady, supportive, and less like treatment—more like being accompanied through difficult terrain.<br />
+                                    <br />
+                                    Outside the therapy room, I love reading, tending to plants, exploring food and music, and planning my next beach trip. These small joys remind me of balance and presence—values I carry into my work too.<br />
+                                    <br />
+                                </p>
+                                <img src={Books.src} className='w-full max-w-[350px] h-[400px] md:h-[500px] object-cover pt-6 pr-0 l-10 md:pr-6 mx-auto md:mx-0' alt="Aishwaraya Goud - Books in her space" />
+                            </div>
+                            
                         </div>
                         {/* Educational Qualifications Section */}
                         <div className="mt-12 md:mt-16 mb-8 md:mb-12 px-4">
@@ -260,7 +272,7 @@ const About = () => {
                                                 {/* First Image */}
                                                 <div className="w-full flex-shrink-0">
                                                     <img
-                                                        src={ourSpace.src}
+                                                        src={OurStory.src}
                                                         alt="Mind Craft Wellness Clinic Space"
                                                         className="w-full h-[400px] object-cover"
                                                     />
@@ -270,7 +282,25 @@ const About = () => {
                                                 {/* Second Image */}
                                                 <div className="w-full flex-shrink-0">
                                                     <img
-                                                        src={ourSpace.src}
+                                                        src={OurSpace.src}
+                                                        alt="Therapy Room Details"
+                                                        className="w-full h-[400px] object-cover"
+                                                    />
+                                                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
+                                                </div>
+
+                                                <div className="w-full flex-shrink-0">
+                                                    <img
+                                                        src={OurSpace2.src}
+                                                        alt="Therapy Room Details"
+                                                        className="w-full h-[400px] object-cover"
+                                                    />
+                                                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
+                                                </div>
+
+                                                <div className="w-full flex-shrink-0">
+                                                    <img
+                                                        src={OurStory2.src}
                                                         alt="Therapy Room Details"
                                                         className="w-full h-[400px] object-cover"
                                                     />

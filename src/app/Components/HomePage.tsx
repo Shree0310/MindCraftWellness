@@ -1,8 +1,8 @@
 "use client"
 
 import Link from 'next/link';
-import LandingPage from '../Assets/images/LandingPage.png'
-import ProfilePic from '../Assets/images/Profile-pic.png';
+import LandingPage from '../Assets/images/LandingPage.jpg'
+import ProfilePic from '../Assets/images/Profile-pic.jpg';
 import couch from '../Assets/images/Couch.jpg';
 import Testimonials from './Testimonials';
 import HowItWorks from './HowItWorks';
@@ -32,7 +32,7 @@ const HomePage = () => {
                 <img className='w-full h-auto' src={LandingPage.src} alt="Landing Page" />
                 <div className='absolute inset-0 flex flex-col justify-center items-center'>
                     <div className='text-center text-white max-w-4xl px-4 md:px-8'>
-                        <h1 className='hidden md:block text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 tracking-wide drop-shadow-lg' style={{ fontFamily: 'BrittanySignature, serif' }}>
+                        <h1 className='hidden md:block text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 tracking-wide drop-shadow-2xl' style={{ fontFamily: 'BrittanySignature, serif' }}>
                             An in-person Therapy Clinic in Gurgaon
                         </h1>
                         <p className='hidden md:block text-lg md:text-xl leading-relaxed mb-6 md:mb-8 drop-shadow-lg italic px-4' style={{ fontFamily: 'Lora, serif' }}>
@@ -208,27 +208,29 @@ const HomePage = () => {
 
                 {/* How it Works Section */}
                 <HowItWorks />
-
-                <h1 className='text-2xl md:text-3xl pt-8 md:pt-16 pb-3 text-center font-bold px-4' style={{ fontFamily: 'BrittanySignature, serif' }}>
-                    Hi, I&apos;m Aishwaraya Goud —
-                </h1>
-                <span className='text-base md:text-lg py-2 text-center block pb-6 md:pb-8 px-4' style={{ fontFamily: 'Lora, serif' }}>
-                    Founder of Mind Craft Wellness,<br />
-                    and a certified AEDP and CBT therapist based in Gurgaon.
-                </span>
-                <div className='flex flex-col md:flex-row justify-start items-start gap-6 mx-auto max-w-6xl px-4'>
-                    <img src={ProfilePic.src} className='w-full max-w-[300px] h-[300px] md:h-[400px] object-cover mx-auto md:mx-0' alt="Aishwaraya Goud - Founder of Mind Craft Wellness" />
-                    <p className='text-base md:text-lg text-left w-full md:w-[500px] pt-6' style={{ fontFamily: 'Lora, serif', lineHeight: '1.6' }}>
-                        At Mind Craft Wellness, you might work with me directly, or with one of the other experienced therapists on our team. I ensure our team shares the same commitment to warmth, skill, and trauma-informed care, so that every client feels supported and understood.<br />
-                        <br />
-                        Therapy here isn&apos;t about quick fixes or advice-giving — it&apos;s about creating a container for your emotions, where you feel deeply held and supported, so you can uncover your own way forward.
-                        {"If you&rsquo;d like to learn more about my approach and journey as a therapist, you can [read more about me here]."}
-                    </p>
-                </div>
-                <div className='text-center block py-8 pl-8'>
-                    <button className="bg-[#345041] font-sans text-xl rounded-md text-white font-medium p-2 cursor-pointer shadow-md w-72 h-12 m-2 hover:bg-[#2a4033] transition-colors duration-300 transform hover:scale-105">
-                        Book a free consultation
-                    </button>
+                
+                <div className="mx-auto">
+                    <h1 className='text-2xl md:text-3xl pt-8 md:pt-16 pb-3 text-center font-bold px-4' style={{ fontFamily: 'BrittanySignature, serif' }}>
+                        Hi, I&apos;m Aishwaraya Goud —
+                    </h1>
+                    <span className='text-base md:text-lg py-2 text-center block pb-6 md:pb-8 px-4' style={{ fontFamily: 'Lora, serif' }}>
+                        Founder of Mind Craft Wellness,<br />
+                        and a certified AEDP and CBT therapist based in Gurgaon.
+                    </span>
+                    <div className='flex flex-col md:flex-row justify-start items-start gap-6 mx-auto max-w-6xl px-4'>
+                        <img src={ProfilePic.src} className='w-full max-w-[300px] h-[300px] md:h-[400px] object-cover mx-auto md:mx-0' alt="Aishwaraya Goud - Founder of Mind Craft Wellness" />
+                        <p className='text-base md:text-lg text-left w-full md:w-[500px] pt-6' style={{ fontFamily: 'Lora, serif', lineHeight: '1.6' }}>
+                            At Mind Craft Wellness, you might work with me directly, or with one of the other experienced therapists on our team. I ensure our team shares the same commitment to warmth, skill, and trauma-informed care, so that every client feels supported and understood.<br />
+                            <br />
+                            Therapy here isn&apos;t about quick fixes or advice-giving — it&apos;s about creating a container for your emotions, where you feel deeply held and supported, so you can uncover your own way forward.
+                            {"If you&rsquo;d like to learn more about my approach and journey as a therapist, you can [read more about me here]."}
+                        </p>
+                    </div>
+                    <div className='text-center block py-8 pl-8'>
+                        <button className="bg-[#345041] font-sans text-xl rounded-md text-white font-medium p-2 cursor-pointer shadow-md w-72 h-12 m-2 hover:bg-[#2a4033] transition-colors duration-300 transform hover:scale-105">
+                            Book a free consultation
+                        </button>
+                    </div>
                 </div>
 
                 {/* Services and Support Areas */}
