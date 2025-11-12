@@ -67,7 +67,6 @@ const OurValues = () => {
                                     </div>
                                 </div>
                             ))}
-
                         </Marquee>
                     </div>
                 </div>

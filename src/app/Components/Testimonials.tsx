@@ -209,7 +209,7 @@ const Testimonials = () => {
                                 <p>{"Still have questions?"}</p>
                             </div>
                             <button className="text-white border-b-2 border-white hover:border-opacity-70 transition-all duration-300 font-semibold">
-                                <p>{"Read our FAQs"}</p>
+                                <Link href='/FAQs'>{"Read our FAQs"}</Link>
                             </button>
                         </div>
 
