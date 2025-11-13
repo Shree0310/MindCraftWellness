@@ -1,4 +1,4 @@
-import FAQs from "../Components/FAQs";
+import FAQs from "../Components/FAQ/FAQs";
 
 const FAQsPage = () => {
 return <div className="div">

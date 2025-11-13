@@ -1,7 +1,6 @@
 "use client"
-import { IconChevronCompactDown } from "@tabler/icons-react";
-import Header from "./Header";
-import { useState } from "react";
+import Header from "../Header";
+import FAQItem from "./FAQItem";
 
 const FAQs = () => {
     const faqData = [
@@ -242,7 +241,6 @@ const FAQs = () => {
 ];
 
     const uniqueCategories = [...new Set(faqData.map(data => data.category))];
-    const [isExpanded, setIsExpanded] = useState(false);
 
     return <div className="div">
         <Header/>
@@ -253,29 +251,18 @@ const FAQs = () => {
                 </h2>
             </div>
             <div className="div">
-            {uniqueCategories.map(categories => (
+                {uniqueCategories.map(categories => (
                 <div key={categories} className="flex flex-col gap-8 mx-24">
                     <h2 className="text-[#345041] font-bold tracking-tighter font-sans text-3xl my-10">{categories}</h2>
                 {faqData.map((faq,idx)=> (
-                    <div className="max-w-[880px]" key={`faq - ${idx}`}>
-                        <div className="flex justify-between shadow-2xl rounded-4xl py-2 px-3">
-                            <h2 className="flex justify-start text-xl drop-shadow-gray-500 text-gray-500">{faq.question}</h2>
-                            <IconChevronCompactDown stroke={2} className="w-6 h-4 my-2 cursor-pointer" onClick={() => setIsExpanded(!isExpanded) }/>
-                        </div>
-                        <div className="div">
-                            {isExpanded && <p className="py-8 text-lg mx-8 font-sans">{faq.answer}</p>}
-                        </div>
+                    <div className="w-[880px]" key={`faq - ${idx}`}>
+                        <FAQItem question={faq.question} answer={faq.answer}  />
                     </div>
                 ))}
                 </div>      
             ))}
             </div>
-        </div>
-        {/* <div className="div">
-            <h2 className=" flex justify-start tracking-wide text-3xl font-bold text-[#345041] py-24 ml-48" style={{ fontFamily: 'Lora, serif' }}>About Mind Craft Wellness</h2>
-        </div> */}
-       
-        
+        </div>        
     </div>
 }
 export default FAQs;
