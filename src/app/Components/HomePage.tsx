@@ -32,10 +32,10 @@ const HomePage = () => {
                 <img className='w-full h-auto' src={LandingPage.src} alt="Landing Page" />
                 <div className='absolute inset-0 flex flex-col justify-center items-center'>
                     <div className='text-center text-white max-w-4xl px-4 md:px-8'>
-                        <h1 className='hidden md:block text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 tracking-wide drop-shadow-2xl' style={{ fontFamily: 'BrittanySignature, serif' }}>
+                        <h1 className='hidden md:block text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 tracking-wide drop-shadow-2xl backdrop-blur-2xl' style={{ fontFamily: 'BrittanySignature, serif' }}>
                             An in-person Therapy Clinic in Gurgaon
                         </h1>
-                        <p className='hidden md:block text-lg md:text-xl leading-relaxed mb-6 md:mb-8 drop-shadow-lg italic px-4' style={{ fontFamily: 'Lora, serif' }}>
+                        <p className='hidden md:block text-lg md:text-xl leading-relaxed mb-6 md:mb-8 drop-shadow-lg italic px-4 backdrop-blur-md' style={{ fontFamily: 'Lora, serif' }}>
                             A warm, private space for you to heal, grow, and reconnect — with the support of compassionate, ethical therapists.
                         </p>
                         <div className='flex justify-center px-4'>
