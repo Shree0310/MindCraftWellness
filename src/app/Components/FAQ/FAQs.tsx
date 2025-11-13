@@ -251,14 +251,19 @@ const FAQs = () => {
                 </h2>
             </div>
             <div className="div">
-                {uniqueCategories.map(categories => (
-                <div key={categories} className="flex flex-col gap-8 mx-24">
-                    <h2 className="text-[#345041] font-bold tracking-tighter font-sans text-3xl my-10">{categories}</h2>
-                {faqData.map((faq,idx)=> (
-                    <div className="w-[880px]" key={`faq - ${idx}`}>
-                        <FAQItem question={faq.question} answer={faq.answer}  />
-                    </div>
-                ))}
+            {uniqueCategories.map(category => (
+                <div key={category} className="flex flex-col gap-8 mx-24">
+                    <h2 className="text-[#345041] font-bold tracking-tighter font-sans text-3xl my-10">
+                        {category}
+                    </h2>
+                    {faqData
+                        .filter(faq => faq.category === category)
+                        .map((faq, idx) => (
+                            <div className="w-[880px]" key={`faq-${category}-${idx}`}>
+                                <FAQItem question={faq.question} answer={faq.answer} />
+                            </div>
+                        ))
+                    }
                 </div>      
             ))}
             </div>
