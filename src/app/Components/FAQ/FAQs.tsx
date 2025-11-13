@@ -253,7 +253,7 @@ const FAQs = () => {
             <div className="div">
             {uniqueCategories.map(category => (
                 <div key={category} className="flex flex-col gap-8 mx-24">
-                    <h2 className="text-[#345041] font-bold tracking-tighter font-sans text-3xl my-10">
+                    <h2 className="text-[#345041] font-semibold tracking-wide font-serif  text-3xl my-10">
                         {category}
                     </h2>
                     {faqData
