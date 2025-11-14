@@ -92,7 +92,7 @@ const HomePage = () => {
                 <h1 className='font-sans font-bold text-xl md:text-2xl text-center pt-8 md:pt-16 pb-6 md:pb-8 px-4' style={{ fontFamily: 'BodoniModa, serif' }}>
                     Getting Started at Mind Craft Wellness
                 </h1>
-                <div className='flex flex-col lg:flex-row justify-start items-start gap-6 mx-auto max-w-6xl px-4'>
+                <div className='flex flex-col lg:flex-row justify-center items-start gap-6 mx-auto max-w-6xl px-4'>
                     <div className='relative w-full lg:w-auto'>
                         {/* Shadow elements behind couch - brown tones */}
                         <div className="absolute -top-6 -left-6 opacity-25 z-0">
@@ -111,9 +111,19 @@ const HomePage = () => {
                         <img src={couch.src} className='w-full max-w-[400px] h-[300px] md:h-[380px] object-cover rounded-lg shadow-lg mt-8 relative z-10 mx-auto' alt="Comfortable therapy couch at Mind Craft Wellness" />
                     </div>
                     <div className='w-full lg:w-[500px] pt-6 lg:pl-6 relative'>
-                        <p className='text-base md:text-lg text-left leading-relaxed py-4' style={{ fontFamily: 'Lora, serif', lineHeight: '1.6' }}> At Mind Craft Wellness, we believe therapy works best when it feels personal.
-                            Instead of leaving you to choose from a list, we begin with a free 15-minute consultation call. In this call, you&apos;ll share what&apos;s on your mind — your needs, preferences, and goals —
-                            and we&apos;ll help match you with the therapist who&apos;s the best fit for you.
+                        <p className='text-base md:text-lg text-left leading-relaxed py-4' style={{ fontFamily: 'Lora, serif', lineHeight: '1.6' }}> 
+                            Sometimes, life falls apart loudly like the crashing heartbreak, the vacuum of a loss, the internal loudness of anxiety, or the disintegrating experience of a burnout.
+
+                            Other times, it is quieter like a slow fading of joy, a sense of distance from yourself, a life that looks fine from the outside but feels empty within.
+
+                            Whether loud or quiet, when pain or disconnection lingers, it can seep into every part of life. Relationships feel strained. Work feels harder. Sleep doesn’t bring rest.
+
+                            We know this place. We meet people here every day.
+                            And we believe you don’t have to stay here. 
+
+                            “Our wounds are often the openings into the best and most beautiful part of us.” - David Richo
+
+                            Therapy is where we explore those openings together with gentleness, curiosity, and care.
                             <br />
                             <span className='text-lg md:text-xl text-left leading-relaxed font-bold' style={{ fontFamily: 'BodoniModa, serif' }}>&lsquo;Our wounds are often the openings into the best and most beautiful part of us.&rsquo;</span>
                         </p>
@@ -177,39 +187,8 @@ const HomePage = () => {
                     <div className="absolute bottom-1/3 left-1/3 w-8 h-8 bg-[#E7CDBF] rounded-full opacity-10"></div>
                     <div className="absolute top-1/2 right-1/3 w-6 h-6 border border-[#345041] rounded-full opacity-6"></div>
                 </div>
-
-                <div className='flex justify-start items-start gap-6 mx-auto w-fit py-16'>
-                    {/* <p className='text-lg text-left w-[500px] pt-6' style={{ fontFamily: 'Lora, serif', lineHeight: '30px' }}>At Mind Craft Wellness, we believe therapy is most effective when it feels personal. That’s why, instead of asking you to choose a therapist from a list, we start with a 15-minute free consultation call.<br/>
-                    You’ll share your needs, preferences, and goals — and we’ll match you with the right therapist on our team.
-                    <br/>
-                    Our therapists are carefully selected, trained in trauma-informed, evidence-based approaches to provide a safe, non-judgemental space for you.
-                    <br/>
-                    Here, we explore those openings together — with gentleness, curiosity, and care — so you can move toward the life you want to live.
-                    <br/>
-                </p> */}
-                    <div className='relative'>
-                        {/* Shadow elements behind planter - brown tones */}
-                        {/* <div className="absolute -top-4 -right-4 opacity-22 z-0">
-                        <div className="w-18 h-22 bg-[#654321] rounded-full shadow-lg transform rotate-6"></div>
-                    </div> */}
-                        {/* <div className="absolute -bottom-6 -left-6 opacity-18 z-0">
-                        <div className="w-14 h-14 bg-[#8B4513] rounded-full shadow-lg transform -rotate-12"></div>
-                    </div> */}
-                        {/* <div className="absolute top-1/4 -right-3 opacity-15 z-0">
-                        <div className="w-12 h-16 bg-[#A0522D] rounded-lg shadow-lg transform rotate-8"></div>
-                    </div> */}
-                        <div className="absolute bottom-1/3 -left-3 opacity-20 z-0">
-                            <div className="w-10 h-12 bg-[#654321] rounded-lg shadow-lg transform -rotate-6"></div>
-                        </div>
-
-                        {/* <img src={plantter.src} className='w-[400px] h-[400px] object-cover rounded-lg shadow-lg relative z-10'/> */}
-                    </div>
-                </div>
-
-                {/* How it Works Section */}
-                <HowItWorks />
                 
-                <div className="mx-auto">
+                <div className="mx-auto flex flex-col justify-center">
                     <h1 className='text-2xl md:text-3xl pt-8 md:pt-16 pb-3 text-center font-bold px-4' style={{ fontFamily: 'BrittanySignature, serif' }}>
                         Hi, I&apos;m Aishwaraya Goud —
                     </h1>
@@ -444,6 +423,8 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
+                {/* How it Works Section */}
+                <HowItWorks />
 
                 <Testimonials />
             </div>

@@ -28,7 +28,7 @@ const Header = () => {
                             href="/About"
                             className="text-gray-700 hover:text-[#345041] transition-colors duration-300 relative group"
                         >
-                            About
+                            About Us
                             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#345041] transition-all duration-300 group-hover:w-full"></span>
                         </Link>
                         <Link

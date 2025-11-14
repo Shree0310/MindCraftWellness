@@ -135,14 +135,14 @@ const About = () => {
                                             <div className="w-3 h-3 bg-[#345041] rounded-full mt-2 flex-shrink-0"></div>
                                             <div>
                                                 <span className="text-base md:text-lg font-semibold text-[#345041]"><p>{"Professional Diploma in Clinical Psychology"}</p></span>
-                                                <p className="text-sm md:text-base text-gray-600"><p>{"SGT University, Gurgaon"}</p></p>
+                                                <div className="text-sm md:text-base text-gray-600"><p>{"SGT University, Gurgaon"}</p></div>
                                             </div>
                                         </li>
                                         <li className="flex items-start space-x-3 md:space-x-4">
                                             <div className="w-3 h-3 bg-[#345041] rounded-full mt-2 flex-shrink-0"></div>
                                             <div>
                                                 <span className="text-base md:text-lg font-semibold text-[#345041]"><p>{"MSc. in Counselling Psychology"}</p></span>
-                                                <p className="text-sm md:text-base text-gray-600"><p>{"Sampurna Montfort College, Bangalore"}</p></p>
+                                                <div className="text-sm md:text-base text-gray-600"><p>{"Sampurna Montfort College, Bangalore"}</p></div>
                                             </div>
                                         </li>
                                     </ul>
