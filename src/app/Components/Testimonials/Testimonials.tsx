@@ -66,6 +66,8 @@ interface TestimonialsProps {
 const Testimonials = ({category}: TestimonialsProps) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const { count: clientsCount, ref: clientsRef } = useCountUp(200, 2500);
+    const { count: therapyHRS, ref: therapyHRSRef} =useCountUp(1563, 2500);
+    const {count: ClientSatisfaction, ref: clientSatisfactionRef} = useCountUp(98, 2500);
 
     const testimonials = [
         {
@@ -95,7 +97,7 @@ const Testimonials = ({category}: TestimonialsProps) => {
         {
             id: 4,
             category: 'about us',
-            text: `Whilst I would consider myself relatively new into therapy, the experience has been super insightful and telling - especially with Aishwarya. Working with her has helped me develop the skills that I need to handle situations independently and has given me a chance to chat with someone so kind and caring, when I’m feeling down. 
+            text: `Whilst I would consider myself relatively new into therapy, the experience has been super insightful and telling - especially with Aishwarya. Working with her has helped me develop the skills that I need to handle situations independently. 
                    Aishwarya’s gentle approach to psychotherapy has really helped me ease into the process and truly make the most out of my experience.`,            
             author: "M.L.",
             role: "19,  female, Dubai, UAE (United Arab Emirates) / Spain (Online Therapy)"
@@ -127,8 +129,7 @@ const Testimonials = ({category}: TestimonialsProps) => {
             id: 8,
             category: 'specialities',
             text: `I had the privilege of first seeking guidance from Aishwarya in 2022 , during one of the most tumultuous and transformative chapters of my life. Her support guided me through a toxic relationship, moments of deep self-doubt, deep seated resentment with my family and some of the hardest emotional battles I’ve faced.
-                    What I cherish most is that she didn’t just help me heal—she gave me tools I didn’t even know I desperately needed: the ability to set and honor healthy boundaries. That understanding has changed my life in ways I can’t overstate.
-                    Because of her guidance, I’ve grown into a version of myself that is stronger, happier, and more self-respecting. I will always be grateful for the clarity, compassion, and wisdom she brought into my life when I needed it most.`,
+                    What I cherish most is that she didn’t just help me heal—she gave me tools I didn’t even know I desperately needed: the ability to set and honor healthy boundaries.`,
             author: "M.L.",
             role: "Female, 25 Years Old, Gurgaon (In-person Therapy)"
         },
@@ -136,8 +137,7 @@ const Testimonials = ({category}: TestimonialsProps) => {
             id: 9,
             category: 'specialities',
             text: `I have been Ms. Aishwarya’s client for over 2 years now and I have experienced immense self reflection, growth and increase in self esteem during this time. Not only have I been able to work on my relationships and my difficulties to manage my work, but also my anxieties and past traumas. 
-                I would highly recommend Aishwarya because she is a professional who keeps evolving and working hard to help clients (new and old) grow and gain the most out of their therapy. In addition, she is the right combination of being a kind and flexible, yet stern and disciplined professional. 
-                I highly recommend Aishwarya!`,
+                I would highly recommend Aishwarya because she is a professional who keeps evolving and working hard to help clients (new and old) grow and gain the most out of their therapy.`,
             author: "S.K.",
             role: "Female, New Delhi (Online therapy)"
         },
@@ -157,8 +157,6 @@ const Testimonials = ({category}: TestimonialsProps) => {
         const second = testimonials[(currentIndex + 1) % testimonials.length];
         return [first, second];
     };
-
-    const uniqueCategories = [...new Set(testimonials.map(testimonial => testimonial.category))];
 
     const filteredTestimonials = category ?  testimonials.filter(testimonial => testimonial.category === category) : testimonials;
 
@@ -188,13 +186,14 @@ const Testimonials = ({category}: TestimonialsProps) => {
                             id={testimonial.id}
                             text={testimonial.text} 
                             author= {testimonial.author}
+                            role={testimonial.role}
                         />
                     ))}
                 </div>
             
 
             {/* Dots indicator */}
-            <div className="flex justify-center mt-8 gap-2">
+            {/* <div className="flex justify-center mt-8 gap-2">
                 {[0, 1].map((dotIndex) => (
                     <button
                         key={dotIndex}
@@ -203,13 +202,13 @@ const Testimonials = ({category}: TestimonialsProps) => {
                             }`}
                     />
                 ))}
-            </div>
+            </div> */}
 
             {/* Statistics Section */}
             <div className="bg-gradient-to-r from-[#f8f6f4] to-[#E7CDBF] rounded-3xl p-6 md:p-8 my-12 md:my-16 mx-4 md:mx-8">
                 <div className="text-center mb-6 md:mb-8">
                     <h3 className="text-xl md:text-2xl font-semibold text-[#345041] mb-2 px-4"><p>{"Supporting clients since January 2022"}</p></h3>
-                    <div className="text-sm md:text-base text-gray-600 px-4"><p>{"Trusted by clients across Gurgaon"}</p></div>
+                    <div className="text-sm md:text-base text-gray-600 px-4"><p>{"Trusted by Indian and International Clients"}</p></div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto">
@@ -219,21 +218,29 @@ const Testimonials = ({category}: TestimonialsProps) => {
                                 {clientsCount}+
                             </span>
                         </div>
-                        <div className="text-sm md:text-base text-gray-600 font-medium px-2"><p>{"Clients Supported (Indian & International)"}</p></div>
+                        <div className="flex flex-col text-sm md:text-base text-gray-600 font-medium px-2">
+                            <div>
+                                {"Clients Supported"} 
+                            </div>
+                            <div>{"(Indian & International)"}</div>
+                        </div>
                     </div>
 
-                    <div className="text-center">
+                    <div className="text-center" ref={therapyHRSRef}>
                         <div className="text-3xl md:text-4xl font-bold text-[#345041] mb-2">
                             <span className="inline-block min-w-[60px] md:min-w-[80px]">
-                                1,563+
+                                {therapyHRS}+
                             </span>
                         </div>
-                        <div className="text-sm md:text-base text-gray-600 font-medium px-2"><p>{"Therapy Hours Conducted"}</p></div>
+                        <div className=" flex flex-col text-sm md:text-base text-gray-600 font-medium px-2">
+                            <div>{"Therapy Hours Conducted"}</div>
+                            <div className="div">{"(Online & In-Person Sessions)"}</div>
+                        </div>
                     </div>
 
-                    <div className="text-center">
+                    <div className="text-center" ref={clientSatisfactionRef}>
                         <div className="text-3xl md:text-4xl font-bold text-[#345041] mb-2">
-                            <span className="text-3xl md:text-4xl">98%</span>
+                            <span className="text-3xl md:text-4xl">{ClientSatisfaction}%</span>
                         </div>
                         <div className="text-sm md:text-base text-gray-600 font-medium px-2"><p>{"Client Satisfaction"}</p></div>
                     </div>
