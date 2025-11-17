@@ -13,7 +13,7 @@ const HowItWorks = () => {
                         </svg>
                     </div>
                     <blockquote className="text-2xl md:text-3xl font-medium text-[#345041] leading-relaxed italic mb-6" style={{ fontFamily: 'BrittanySignature, serif' }}>
-                        &ldquo;There is no greater agony than bearing an untold story inside you.&rdquo;
+                        &ldquo;There is no greater agony than bearing an untold story inside you. -  Maya Angelou &rdquo;
                     </blockquote>
                     <div className="w-24 h-1 bg-[#345041] mx-auto rounded-full"></div>
                 </div>
@@ -102,25 +102,8 @@ const HowItWorks = () => {
                     </div>
 
                     <div className="relative mt-24">
-                        <div className="bg-gray-200 rounded-lg h-[400px] w-[552px] overflow-hidden">
-                            <img src={HowMCWWorks.src} className='w-full h-full object-cover rotate-180' alt="Therapy session" />
-                        </div>
-                        {/* Chat bubble overlay */}
-                        <div className="absolute bottom-4 left-4 bg-white rounded-lg p-4 shadow-lg max-w-xs mb-24">
-                            <div className="flex items-center mb-2">
-                                <div className="w-8 h-8 bg-[#345041] rounded-full mr-2"></div>
-                                <div>
-                                    <div className="font-semibold text-sm text-gray-700"><p>{"Aishwaraya G."}</p></div>
-                                    <div className="text-xs text-gray-500"><p>{"Doctor, Professional Counselor, MS, NCC"}</p></div>
-                                </div>
-                            </div>
-                            <p className="text-sm text-gray-700 mb-2">
-                                Hi, how have you been feeling? I&rsquo;m really happy with the progress you&rsquo;ve made this week. Take a few moments today to try that mindfulness techniques we discussed.
-                            </p>
-                            <div className="flex justify-end items-center text-xs text-gray-500">
-                                <span>✓✓</span>
-                                <span className="ml-1">1 week ago</span>
-                            </div>
+                        <div className="bg-gray-200 rounded-lg max-h-[650px] w-[552px] overflow-hidden">
+                            <img src={HowMCWWorks.src} className='w-full max-w-[552px] max-h- h-full object-cover rotate-180' alt="Therapy session" />
                         </div>
                     </div>
                 </div>
