@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState, useEffect, useRef } from 'react';
 import TestimonialGroup from './TestimonialGroup';
+import { IconChevronRight } from '@tabler/icons-react';
 
 // Custom hook for counting animation
 const useCountUp = (end: number, duration: number = 2000) => {
@@ -67,7 +68,7 @@ const Testimonials = ({category}: TestimonialsProps) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const { count: clientsCount, ref: clientsRef } = useCountUp(200, 2500);
     const { count: therapyHRS, ref: therapyHRSRef} =useCountUp(1563, 2500);
-    const {count: ClientSatisfaction, ref: clientSatisfactionRef} = useCountUp(98, 2500);
+    const {count: ClientSatisfaction, ref: clientSatisfactionRef} = useCountUp(98, 3000);
 
     const testimonials = [
         {
@@ -169,10 +170,10 @@ const Testimonials = ({category}: TestimonialsProps) => {
                     <span className="text-xs md:text-sm font-semibold text-[#345041] uppercase tracking-wider"><p>{"Testimonials"}</p></span>
                     <div className="w-8 md:w-12 h-0.5 bg-[#345041] opacity-30"></div>
                 </div>
-                <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-[#345041] mb-4 md:mb-6 px-4" style={{ fontFamily: 'BrittanySignature, serif' }}>
-                    <p>{"What Our Clients Say"}</p>
+                <h2 className="text-xl md:text-2xl lg:text-6xl font-bold text-[#345041] mb-12 md:mb-6 lg:mb-10 px-4 tracking-wider " style={{ fontFamily: 'BrittanySignature, serif' }}>
+                    <p className='mb-4'>{"What Our Clients Say"}</p>
                 </h2>
-                <div className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-4" style={{ fontFamily: 'Lora, serif' }}>
+                <div className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-4 mt-3" style={{ fontFamily: 'Lora, serif' }}>
                     <p>{"Real stories from real people who have experienced transformation through our therapy."}</p>
                 </div>
             </div>
@@ -190,6 +191,17 @@ const Testimonials = ({category}: TestimonialsProps) => {
                         />
                     ))}
                 </div>
+
+                <div className='text-center block py-8 pl-8'>
+                        <Link href="/testimonials">
+                            <button className=" bg-[#345041] font-sans text-xl rounded-3xl text-white font-medium p-2 cursor-pointer shadow-2xl w-42 h-12 m-2 hover:bg-[#2a4033] transition-colors duration-300 transform hover:scale-105">
+                                <div className="flex justify-center">
+                                    <span className='mr-1'>Read More</span>                                 
+                                    <span className="mt-1"><IconChevronRight stroke={1} /></span>
+                                </div>
+                            </button>
+                        </Link>
+                    </div>
             
 
             {/* Dots indicator */}
@@ -258,13 +270,13 @@ const Testimonials = ({category}: TestimonialsProps) => {
                         <p>{"Book your free 15-minute consultation call today and be matched with the therapist who's right for you."}</p>
                     </div>
 
-                    <div className="mb-8 md:mb-10">
+                    <div className="mb-8 md:mb-10 ">
                         <Link href="/book-now" className="bg-white text-[#345041] px-6 md:px-10 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
                             Book Your Free Consultation
                         </Link>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-8 text-left">
+                    <div className="grid md:grid-cols-2 gap-24 text-center">
                         <div className="text-center md:text-left">
                             <div className="text-lg mb-3 opacity-90">
                                 <p>{"Still have questions?"}</p>
@@ -274,13 +286,15 @@ const Testimonials = ({category}: TestimonialsProps) => {
                             </button>
                         </div>
 
-                        <div className="text-center md:text-left">
-                            <div className="text-lg mb-3 opacity-90">
-                                <p>{"Looking for tools and self-help materials?"}</p>
+                        <div className="text-center md:text-left md:flex md:items-center md:justify-end ml-24">
+                            <div>
+                                <div className="text-lg mb-3 opacity-90 ml-24">
+                                    <p>{"Looking for tools and self-help materials?"}</p>
+                                </div>
+                                <button className="text-white border-b-2 border-white hover:border-opacity-70 transition-all duration-300 font-semibold ml-24">
+                                    <p>{"Explore our Resources"}</p>
+                                </button>
                             </div>
-                            <button className="text-white border-b-2 border-white hover:border-opacity-70 transition-all duration-300 font-semibold">
-                                <p>{"Explore our Resources"}</p>
-                            </button>
                         </div>
                     </div>
                 </div>

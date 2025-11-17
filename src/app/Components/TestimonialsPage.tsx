@@ -219,7 +219,7 @@ const TestimonialsPage = () => {
                     {/* Review Ratings Summary - Full Width */}
                     <div className="bg-gradient-to-r from-[#f8f6f4] to-[#E7CDBF] py-16 mb-16 ">
                         <div className="text-center">
-                            <h2 className="text-3xl font-semibold text-[#345041] mb-8">What Our Clients Say</h2>
+                            <h2 className="text-2xl font-semibold text-[#345041] mb-8">What Our Clients Say</h2>
                             <div className="flex justify-center space-x-16">
                                 <div className="text-center">
                                     <div className="flex justify-center mb-4">

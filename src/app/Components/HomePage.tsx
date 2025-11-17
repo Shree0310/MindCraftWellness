@@ -9,6 +9,7 @@ import HowItWorks from './HowItWorks';
 import Footer from './Footer';
 import DiagWaveConnector from './SVGs/DiagWaveConnector';
 import WhatMakesUsDiff from './WhatMakesUsDiff';
+import { IconChevronRight } from '@tabler/icons-react';
 
 const HomePage = () => {
     return (
@@ -190,8 +191,11 @@ const HomePage = () => {
                     </div>
                     <div className='text-center block py-8 pl-8'>
                         <Link href="/About">
-                            <button className="bg-[#345041] font-sans text-xl rounded-xl text-white font-medium p-2 cursor-pointer shadow-2xl w-72 h-12 m-2 hover:bg-[#2a4033] transition-colors duration-300 transform hover:scale-105">
-                                Know More About Me
+                            <button className="bg-[#345041] font-sans text-xl rounded-3xl text-white font-medium p-2 cursor-pointer shadow-3xl w-72 h-12 m-2 hover:bg-[#2a4033] transition-colors duration-300 transform hover:scale-105">
+                                <div className="flex justify-center">
+                                    <span className='mr-1'>Know More About Me</span>                                 
+                                    <span className="mt-1"><IconChevronRight stroke={1} /></span>
+                                </div>                            
                             </button>
                         </Link>
                     </div>

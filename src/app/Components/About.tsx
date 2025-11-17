@@ -173,7 +173,7 @@ const About = () => {
                                                 <div className="w-3 h-3 bg-[#E7CDBF] rounded-full mt-2 flex-shrink-0"></div>
                                                 <div>
                                                     <span className="text-lg font-semibold text-[#345041]"><p>{"AEDP Immersion"}</p></span>
-                                                    <p className="text-gray-600"><p>{"AEDP Institute, New York (August, 2024)"}</p></p>
+                                                    <div className="text-gray-600"><p>{"AEDP Institute, New York (August, 2024)"}</p></div>
                                                 </div>
                                             </div>
                                             <div className="flex items-start space-x-4">

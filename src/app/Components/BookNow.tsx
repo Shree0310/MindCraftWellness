@@ -8,7 +8,7 @@ import Testimonials from "./Testimonials/Testimonials";
 export default function BookNow() {
 
     return (
-        <div className="bg-[#E7CDBF] h-full scroll-auto">
+        <div className="bg-[#E7CDBF] h-full pb-10 scroll-auto">
             <Header />
 
             {/* Tealfeed Calendar Section */}
@@ -53,8 +53,8 @@ export default function BookNow() {
             <HowItWorks />
 
             {/* Review Ratings Section */}
-            <div className="bg-white rounded-3xl p-8 my-16 mx-8">
-                <div className="text-center mb-8">
+            <div className="bg-white rounded-3xl p-8 my-16 mx-8 pb-10">
+                <div className="text-center mb-8 pb-10">
                     <h3 className="text-2xl font-semibold text-[#345041] mb-4">What Our Clients Say</h3>
                     <div className="flex justify-center space-x-8">
                         <div className="text-center">
@@ -93,8 +93,6 @@ export default function BookNow() {
                     </Link>
                 </div>
             </div>
-
-            <Testimonials />
         </div>
     );
 }
