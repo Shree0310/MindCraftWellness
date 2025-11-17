@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState, useEffect, useRef } from 'react';
+import TestimonialGroup from './TestimonialGroup';
 
 // Custom hook for counting animation
 const useCountUp = (end: number, duration: number = 2000) => {
@@ -58,29 +59,89 @@ const useCountUp = (end: number, duration: number = 2000) => {
     return { count, ref };
 };
 
-const Testimonials = () => {
+interface TestimonialsProps {
+    category?: string; // optional, so it works on all pages
+}
+
+const Testimonials = ({category}: TestimonialsProps) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const { count: clientsCount, ref: clientsRef } = useCountUp(200, 2500);
 
     const testimonials = [
         {
             id: 1,
-            text: "Therapy for me has worked like a magic pill. It's given me a deeper understanding of my feelings, my thoughts, and consequently my actions. It has also been a safe outlet to release both the micro and macro emotions I'd been holding inside. Through this process, I've learned the value of being authentic and vulnerable. We don't always need to be the 'tough one.' Sometimes, it's perfectly okay to step back, simply observe, and let things pass.",
+            category: 'landing page',
+            text: `Therapy for me has worked like a magic pill. It's given me a deeper understanding of my feelings, my thoughts, and consequently my actions. It has also been a safe outlet to release both the micro and macro emotions I'd been holding inside. 
+                   Through this process, I've learned the value of being authentic and vulnerable. We don't always need to be the 'tough one.' Sometimes, it's perfectly okay to step back, simply observe, and let things pass.`,
             author: "Anonymous",
             role: "In-person Therapy sessions"
         },
         {
             id: 2,
-            text: "Ever since I was young, all I heard was how therapy was a waste of time—a money-making scheme not to be entertained during times of turmoil—so I never gave it another thought. But choosing to tune out that noise and take a leap of faith has changed my life in ways I couldn't have imagined. With Aishwarya, I've found a safe space, genuine care, and the kind of support I didn't even know I was missing.",
+            category: 'landing page',
+            text: `Ever since I was young, all I heard was how therapy was a waste of time—a money-making scheme not to be entertained during times of turmoil—so I never gave it another thought. But choosing to tune out that noise and take a leap of faith has changed my life in ways I couldn't have imagined. 
+                  With Aishwarya, I've found a safe space, genuine care, and the kind of support I didn't even know I was missing.`,
             author: "A.S.",
             role: "22 years old, Male, India (Online & In-person Therapy)"
         },
         {
             id: 3,
-            text: "I've been working with Aishwarya for a year now, and the journey has been truly life-changing. Over this time, I've quit smoking—a habit I never thought I could break—and learned how to be more present, self-aware, and in control of my emotions. My anxiety levels have significantly reduced, and I feel more at peace with myself than I have in years. What I value most about our sessions is Aishwarya's ability to create a safe, non-judgmental space where I can openly share my thoughts.",
+            category: 'landing page',
+            text: `I've been working with Aishwarya for a year now, and the journey has been truly life-changing. Over this time, I've quit smoking—a habit I never thought I could break—and learned how to be more present, self-aware, and in control of my emotions. 
+                  My anxiety levels have significantly reduced, and I feel more at peace with myself than I have in years. What I value most about our sessions is Aishwarya's ability to create a safe, non-judgmental space where I can openly share my thoughts.`,
             author: "Anonymous",
             role: "India (In-person Therapy)"
-        }
+        },
+        {
+            id: 4,
+            category: 'about us',
+            text: `Whilst I would consider myself relatively new into therapy, the experience has been super insightful and telling - especially with Aishwarya. Working with her has helped me develop the skills that I need to handle situations independently and has given me a chance to chat with someone so kind and caring, when I’m feeling down. 
+                   Aishwarya’s gentle approach to psychotherapy has really helped me ease into the process and truly make the most out of my experience.`,            
+            author: "M.L.",
+            role: "19,  female, Dubai, UAE (United Arab Emirates) / Spain (Online Therapy)"
+        },
+        {
+            id: 5,
+            category: 'about us',
+            text: `Had incredible experience though our sessions; She was very empathetic & helpful through some of the very hard periods of my life. Incredibly grounded & professional; Highly recommend her.`,
+            author: "Anonymous",
+            role: "47, Male, Startup Founder, India (In-person Therapy)"
+        },
+        {
+            id: 6,
+            category: 'about us',
+            text: `I have been working with Aishwarya for over a year through psychotherapy to manage my anxiety, and my experience has been excellent. 
+                  I attend in-person sessions with her, and she stands out as a psychologist who truly applies effective psychological practices. Her approach is both genuine and practical, and the serene, thoughtfully designed environment of her clinic further enhances the sense of calm and comfort during each session.`,
+            author: "S.B.",
+            role: "Female, 25 Years Old, Gurgaon (In-person Therapy)"
+        },
+        {
+            id: 7,
+            category: 'specialities',
+            text: `I have been working with Aishwarya for over a year through psychotherapy to manage my anxiety, and my experience has been excellent. 
+                  I attend in-person sessions with her, and she stands out as a psychologist who truly applies effective psychological practices. Her approach is both genuine and practical, and the serene, thoughtfully designed environment of her clinic further enhances the sense of calm and comfort during each session.`,
+            author: "Anonymous",
+            role: "India (In-person Therapy)"
+        },
+        {
+            id: 8,
+            category: 'specialities',
+            text: `I had the privilege of first seeking guidance from Aishwarya in 2022 , during one of the most tumultuous and transformative chapters of my life. Her support guided me through a toxic relationship, moments of deep self-doubt, deep seated resentment with my family and some of the hardest emotional battles I’ve faced.
+                    What I cherish most is that she didn’t just help me heal—she gave me tools I didn’t even know I desperately needed: the ability to set and honor healthy boundaries. That understanding has changed my life in ways I can’t overstate.
+                    Because of her guidance, I’ve grown into a version of myself that is stronger, happier, and more self-respecting. I will always be grateful for the clarity, compassion, and wisdom she brought into my life when I needed it most.`,
+            author: "M.L.",
+            role: "Female, 25 Years Old, Gurgaon (In-person Therapy)"
+        },
+        {
+            id: 9,
+            category: 'specialities',
+            text: `I have been Ms. Aishwarya’s client for over 2 years now and I have experienced immense self reflection, growth and increase in self esteem during this time. Not only have I been able to work on my relationships and my difficulties to manage my work, but also my anxieties and past traumas. 
+                I would highly recommend Aishwarya because she is a professional who keeps evolving and working hard to help clients (new and old) grow and gain the most out of their therapy. In addition, she is the right combination of being a kind and flexible, yet stern and disciplined professional. 
+                I highly recommend Aishwarya!`,
+            author: "S.K.",
+            role: "Female, New Delhi (Online therapy)"
+        },
+
     ];
 
     useEffect(() => {
@@ -96,6 +157,10 @@ const Testimonials = () => {
         const second = testimonials[(currentIndex + 1) % testimonials.length];
         return [first, second];
     };
+
+    const uniqueCategories = [...new Set(testimonials.map(testimonial => testimonial.category))];
+
+    const filteredTestimonials = category ?  testimonials.filter(testimonial => testimonial.category === category) : testimonials;
 
     return (
         <div className="py-12 md:py-20 px-4 md:px-8">
@@ -113,31 +178,20 @@ const Testimonials = () => {
                     <p>{"Real stories from real people who have experienced transformation through our therapy."}</p>
                 </div>
             </div>
-            <div className="flex flex-col md:flex-row justify-center items-start gap-6 md:gap-8 max-w-6xl mx-auto">
-                {getCurrentTestimonials().map((testimonial) => (
-                    <div key={testimonial.id} className="relative group w-full md:w-auto">
-                        {/* Enhanced Conversation bubble */}
-                        <div className="bg-white rounded-3xl p-6 md:p-8 shadow-xl hover:shadow-2xl w-full max-w-sm mx-auto md:mx-0 relative transition-all duration-300 transform hover:scale-105 border border-gray-100">
-                            {/* Speech bubble tail */}
-                            <div className="absolute -bottom-3 left-6 md:left-8 w-0 h-0 border-l-[12px] md:border-l-[15px] border-r-[12px] md:border-r-[15px] border-t-[12px] md:border-t-[15px] border-l-transparent border-r-transparent border-t-white"></div>
 
-                            {/* Enhanced Quote mark */}
-                            <div className="text-4xl md:text-6xl text-[#E7CDBF] mb-3 md:mb-4 opacity-80">&ldquo;</div>
-
-                            {/* Enhanced Testimonial text */}
-                            <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-4 md:mb-6 font-medium">
-                                {testimonial.text}
-                            </p>
-
-                            {/* Enhanced Author info */}
-                            <div className="text-right border-t border-gray-100 pt-3 md:pt-4">
-                                <p className="font-bold text-[#345041] text-sm md:text-base">{testimonial.author}</p>
-                                <div className="text-gray-500 text-xs md:text-sm"><p>{"Client"}</p></div>
-                            </div>
-                        </div>
-                    </div>
-                ))}
-            </div>
+                <div key={category} className="flex flex-col md:flex-row justify-center items-start gap-6 md:gap-8 max-w-6xl mx-auto">
+                    {filteredTestimonials
+                        .map((testimonial) => (
+                        <TestimonialGroup
+                            key={testimonial.id}
+                            category= {category}
+                            id={testimonial.id}
+                            text={testimonial.text} 
+                            author= {testimonial.author}
+                        />
+                    ))}
+                </div>
+            
 
             {/* Dots indicator */}
             <div className="flex justify-center mt-8 gap-2">

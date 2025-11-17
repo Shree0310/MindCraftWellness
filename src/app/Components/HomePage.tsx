@@ -4,7 +4,7 @@ import Link from 'next/link';
 import LandingPage from '../Assets/images/LandingPage.jpg'
 import ProfilePic from '../Assets/images/Profile-pic.jpg';
 import couch from '../Assets/images/Couch.jpg';
-import Testimonials from './Testimonials';
+import Testimonials from './Testimonials/Testimonials';
 import HowItWorks from './HowItWorks';
 import Footer from './Footer';
 import DiagWaveConnector from './SVGs/DiagWaveConnector';
@@ -275,7 +275,7 @@ const HomePage = () => {
                 {/* How it Works Section */}
                 <HowItWorks />
 
-                <Testimonials />
+                <Testimonials category='landing page' />
             </div>
 
             {/* Footer */}

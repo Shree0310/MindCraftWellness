@@ -3,7 +3,7 @@
 import Header from "./Header";
 import HowItWorks from "./HowItWorks";
 import Link from 'next/link';
-import Testimonials from "./Testimonials";
+import Testimonials from "./Testimonials/Testimonials";
 
 export default function BookNow() {
 

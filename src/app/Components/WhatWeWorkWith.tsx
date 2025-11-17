@@ -3,7 +3,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import OurValues from "./OurValues";
-import Testimonials from "./Testimonials";
+import Testimonials from "./Testimonials/Testimonials";
 import Link from 'next/link';
 import TakingTherapy from '../Assets/images/Taking-Therapy.jpg';
 import OurSpace from '../Assets/images/ourSpace.png';
@@ -348,7 +348,7 @@ const WhatWeWorkWith = () => {
                     <OurValues />
 
                     {/* Testimonials Section */}
-                    <Testimonials />
+                    <Testimonials category="specialities"/>
 
                     {/* Final Call to Action */}
                     <div className="text-center mt-16">

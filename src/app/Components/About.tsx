@@ -11,7 +11,7 @@ import OurStory2 from '../Assets/images/OurStory2.jpg';
 import OurSpace2 from '../Assets/images/OurSpace2.jpg';
 import ProfilePic from '../Assets/images/Profile-pic2.jpg';
 import Books from '../Assets/images/AboutPage.jpg';
-import Testimonials from './Testimonials';
+import Testimonials from './Testimonials/Testimonials';
 import BookFreeConsultationBtn from './BookFreeConsulationBtn';
 import { useState } from 'react';
 import Footer from './Footer';
@@ -351,7 +351,7 @@ const About = () => {
                 {/* Our Values Section */}
                 <OurValues />
 
-                <Testimonials />
+                <Testimonials category="about us" />
                 <Footer />
             </div>
         </div>
