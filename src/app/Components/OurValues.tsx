@@ -1,7 +1,12 @@
 "use client"
+import { cn } from "@/lib/utils";
+import React from "react";
 import Marquee from "react-fast-marquee";
 
-const OurValues = () => {
+const OurValues = ({className, children}: {
+    className?: string,
+    children?: React.ReactNode
+}) => {
     const data = [
         {
             heading: "Mind-Body Approach",
@@ -39,8 +44,9 @@ const OurValues = () => {
 
     ]
     return (
-        <>
-            <div className="py-20 bg-gradient-to-br from-[#f8f6f4] to-[#E7CDBF] rounded-3xl">
+        <div className={cn("w-full", className)}>
+            {children}
+            <div className="py-20  rounded-3xl">
                 <div className="max-w-6xl mx-auto px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-extrabold text-[#345041] mb-6" style={{ fontFamily: 'Lora, serif' }}>
@@ -71,7 +77,7 @@ const OurValues = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

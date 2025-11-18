@@ -277,7 +277,7 @@ const HomePage = () => {
                 {/* What Makes Us Different Section */}
                 <WhatMakesUsDiff/>
                 {/* How it Works Section */}
-                <HowItWorks />
+                <HowItWorks className='' />
 
                 <Testimonials category='landing page' />
             </div>

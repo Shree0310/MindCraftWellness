@@ -251,7 +251,7 @@ const About = () => {
                 </div>
 
                 {/* Our Values Section */}
-                <OurValues />
+                <OurValues className="bg-gradient-to-br from-[#f8f6f4] to-[#E7CDBF]" />
 
                 <Testimonials category="about us" />
                 <Footer />

@@ -1,6 +1,5 @@
 "use client"
 import { useState } from 'react';
-import Header from './Header';
 const Careers = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -49,26 +48,19 @@ const Careers = () => {
     ];
     return (
         <div className="min-h-screen bg-[#FFFADA]">
-            <Header />
-
             <div className="py-20 px-8">
                 <div className="max-w-4xl mx-auto">
                     {/* Header Section */}
                     <div className="text-center mb-16">
-                        <h1 className="text-5xl font-bold text-[#345041] mb-6" style={{ fontFamily: 'BrittanySignature, serif' }}>
-                            Book Your Session
-                        </h1>
-                        <div className="flex items-center justify-center space-x-4 mb-6">
-                            <div className="w-16 h-0.5 bg-[#345041] opacity-30"></div>
-                            <span className="text-xl text-[#345041] font-medium" style={{ fontFamily: 'Lora, serif' }}>
-                                Take the first step towards healing
-                            </span>
-                            <div className="w-16 h-0.5 bg-[#345041] opacity-30"></div>
-                        </div>
-                        <p className="text-lg text-gray-600 max-w-2xl mx-auto" style={{ fontFamily: 'Lora, serif' }}>
-                            Schedule your free 15-minute consultation call or book a full therapy session.
-                            We&rsquo;re here to support you on your journey to wellness.
+                        <h1 className='text-4xl font-bold text-[#345041] mb-6' style={{ fontFamily: 'Lora, serif' }} >Our Commitment to You</h1>
+                        <p className="text-lg text-gray-600 max-w-2xl mx-auto my-10" style={{ fontFamily: 'Lora, serif' }}>
+                            We honour confidentiality and privacy throughout the hiring process. Your application is
+                            held with the same respect we offer to our clients’ stories.
                         </p>
+                        <h1 className="text-5xl font-bold text-[#345041] mb-10" style={{ fontFamily: 'BrittanySignature, serif' }}>
+                            Apply Below
+                        </h1>
+                        <div className="w-16 h-0.5 bg-[#345041] mx-auto opacity-30"></div>
                     </div>
 
                     {/* Success Message */}
@@ -123,12 +115,13 @@ const Careers = () => {
 
                             <div>
                                 <label htmlFor="phone" className="block text-sm font-semibold text-[#345041] mb-2">
-                                    Phone Number
+                                    Phone Number *
                                 </label>
                                 <input
                                     type="tel"
                                     id="phone"
                                     name="phone"
+                                    required
                                     value={formData.phone}
                                     onChange={handleInputChange}
                                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#345041] focus:border-transparent transition-all duration-300"
@@ -136,97 +129,20 @@ const Careers = () => {
                                 />
                             </div>
 
-                            {/* Consultation Type */}
-                            <div>
-                                <label className="block text-sm font-semibold text-[#345041] mb-4">
-                                    Consultation Type *
-                                </label>
-                                <div className="grid md:grid-cols-2 gap-4">
-                                    <label className="flex items-center p-4 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50 transition-colors duration-300">
-                                        <input
-                                            type="radio"
-                                            name="consultationType"
-                                            value="free"
-                                            checked={formData.consultationType === 'free'}
-                                            onChange={handleInputChange}
-                                            className="mr-3 text-[#345041] focus:ring-[#345041]"
-                                        />
-                                        <div>
-                                            <div className="font-semibold text-[#345041]">Free Consultation</div>
-                                            <div className="text-sm text-gray-600"><p>{"15-minute initial call"}</p></div>
-                                        </div>
-                                    </label>
-
-                                    <label className="flex items-center p-4 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50 transition-colors duration-300">
-                                        <input
-                                            type="radio"
-                                            name="consultationType"
-                                            value="full"
-                                            checked={formData.consultationType === 'full'}
-                                            onChange={handleInputChange}
-                                            className="mr-3 text-[#345041] focus:ring-[#345041]"
-                                        />
-                                        <div>
-                                            <div className="font-semibold text-[#345041]">Full Session</div>
-                                            <div className="text-sm text-gray-600"><p>{"60-minute therapy session"}</p></div>
-                                        </div>
-                                    </label>
-                                </div>
-                            </div>
-
-                            {/* Preferred Date and Time */}
-                            <div className="grid md:grid-cols-2 gap-6">
-                                <div>
-                                    <label htmlFor="preferredDate" className="block text-sm font-semibold text-[#345041] mb-2">
-                                        Preferred Date *
-                                    </label>
-                                    <input
-                                        type="date"
-                                        id="preferredDate"
-                                        name="preferredDate"
-                                        value={formData.preferredDate}
-                                        onChange={handleInputChange}
-                                        required
-                                        min={new Date().toISOString().split('T')[0]}
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#345041] focus:border-transparent transition-all duration-300"
-                                    />
-                                </div>
-
-                                <div>
-                                    <label htmlFor="preferredTime" className="block text-sm font-semibold text-[#345041] mb-2">
-                                        Preferred Time *
-                                    </label>
-                                    <select
-                                        id="preferredTime"
-                                        name="preferredTime"
-                                        value={formData.preferredTime}
-                                        onChange={handleInputChange}
-                                        required
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#345041] focus:border-transparent transition-all duration-300"
-                                    >
-                                        <option value="">Select a time</option>
-                                        {timeSlots.map((time) => (
-                                            <option key={time} value={time}>
-                                                {time}
-                                            </option>
-                                        ))}
-                                    </select>
-                                </div>
-                            </div>
-
                             {/* Message */}
                             <div>
                                 <label htmlFor="message" className="block text-sm font-semibold text-[#345041] mb-2">
-                                    Additional Information
+                                    Purpose *
                                 </label>
                                 <textarea
                                     id="message"
                                     name="message"
+                                    required
                                     value={formData.message}
                                     onChange={handleInputChange}
                                     rows={4}
                                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#345041] focus:border-transparent transition-all duration-300 resize-none"
-                                    placeholder="Tell us about your concerns, preferences, or any specific topics you'd like to discuss..."
+                                    placeholder="Tell us a little about yourself, and why you are reaching out to us..."
                                 />
                             </div>
 
@@ -237,7 +153,7 @@ const Careers = () => {
                                     disabled={isSubmitting}
                                     className="bg-[#345041] text-white px-12 py-4 rounded-full font-semibold text-lg hover:bg-[#2a4033] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                                 >
-                                    {isSubmitting ? 'Submitting...' : 'Book Your Session'}
+                                    {isSubmitting ? 'Submitting...' : 'Submit'}
                                 </button>
                             </div>
                         </form>

@@ -1,8 +1,14 @@
 'use client'
+import React from 'react';
+import { cn } from "../../lib/utils";
 import HowMCWWorks from '../Assets/images/HowItWorks.jpg';
 
-const HowItWorks = () => {
-    return <>
+const HowItWorks = ({className, children}:{
+    className?: string,
+    children?: React.ReactNode
+}) => {
+    return <div className={cn("w-full", className)}>
+        {children}
         {/* Quote Section */}
         <div className="bg-gradient-to-r from-[#f8f6f4] to-[#E7CDBF] py-20 px-8">
             <div className="max-w-4xl mx-auto text-center">
@@ -109,7 +115,7 @@ const HowItWorks = () => {
                 </div>
             </div>
         </div>
-    </>
+    </div>
 }
 
 export default HowItWorks;
