@@ -30,9 +30,9 @@ const Concerns = () => {
                                 Anxiety, Stress, Depression & Burnout
                             </h2>
                             <div className="space-y-3 mb-6 border-l-4 border-[#E7CDBF] pl-4">
-                                <p className="text-base md:text-lg italic text-gray-600">"I feel like I'm always on edge. I can't switch off, even when I try."</p>
-                                <p className="text-base md:text-lg italic text-gray-600">"I feel too numb and disconnected from everything."</p>
-                                <p className="text-base md:text-lg italic text-gray-600">"I feel like I have to keep on working even though I feel exhausted; I am finding it hard to stop".</p>
+                                <p className="text-base md:text-lg italic text-gray-600">&ldquo;I feel like I&rsquo;m always on edge. I can&rsquo;t switch off, even when I try.&rdquo;</p>
+                                <p className="text-base md:text-lg italic text-gray-600">&ldquo;I feel too numb and disconnected from everything.&rdquo;</p>
+                                <p className="text-base md:text-lg italic text-gray-600">&ldquo;I feel like I have to keep on working even though I feel exhausted; I am finding it hard to stop.&rdquo;</p>
                             </div>
                         </div>
                         <div className="bg-gradient-to-br from-[#345041] to-[#2a4033] rounded-2xl p-8 h-64 flex items-center justify-center shadow-lg">
@@ -45,7 +45,7 @@ const Concerns = () => {
                     
                     <div className="mt-8 text-base md:text-lg leading-relaxed text-gray-700 space-y-4 relative z-10" style={{ fontFamily: 'Lora, serif' }}>
                         <p>
-                            Life today moves fast, and the pressure to keep up can feel overwhelming. For some, this shows up as anxiety, a constant hum of worry about work, relationships, health, or the future. For others, it's the heaviness of depression, where even simple tasks feel exhausting and joy seems out of reach.
+                            Life today moves fast, and the pressure to keep up can feel overwhelming. For some, this shows up as anxiety, a constant hum of worry about work, relationships, health, or the future. For others, it&rsquo;s the heaviness of depression, where even simple tasks feel exhausting and joy seems out of reach.
                         </p>
                         <p>
                             Burnout on the other hand often hides behind endless to-do lists and the sense that no amount of effort is ever enough, leaving you mentally foggy and emotionally drained. Whether it feels like restlessness, sadness, or complete numbness, these experiences are signals, not flaws, they are signs that something within you needs care and attention.
@@ -89,7 +89,7 @@ const Concerns = () => {
                             </h2>
                             <div className="bg-[#f8f6f4] p-6 rounded-xl border-l-4 border-[#345041]">
                                 <blockquote className="text-lg italic text-gray-700">
-                                    "The quality of your life ultimately depends on the quality of your relationships."
+                                    &ldquo;The quality of your life ultimately depends on the quality of your relationships.&rdquo;
                                     <span className="block mt-2 text-sm font-semibold text-[#345041]">- Esther Perel</span>
                                 </blockquote>
                             </div>
@@ -98,13 +98,13 @@ const Concerns = () => {
                     
                     <div className="mt-8 text-base md:text-lg leading-relaxed text-gray-700 space-y-4 relative z-10" style={{ fontFamily: 'Lora, serif' }}>
                         <p>
-                            Relationships can be deeply rewarding, yet they often become the space where our oldest wounds show up. Maybe you find yourself stuck in recurring conflicts, feeling like you're never understood, or shutting down when things get hard. Sometimes challenges in relationships look like wanting closeness, other times needing space and feeling overwhelmed when someone gets "too near".
+                            Relationships can be deeply rewarding, yet they often become the space where our oldest wounds show up. Maybe you find yourself stuck in recurring conflicts, feeling like you&rsquo;re never understood, or shutting down when things get hard. Sometimes challenges in relationships look like wanting closeness, other times needing space and feeling overwhelmed when someone gets &ldquo;too near&rdquo;.
                         </p>
                         <p>
-                            It can also show up as a tendency to please, avoid conflict at all costs, or carry the weight of other people's feelings because saying "no" feels impossible.
+                            It can also show up as a tendency to please, avoid conflict at all costs, or carry the weight of other people&rsquo;s feelings because saying &ldquo;no&rdquo; feels impossible.
                         </p>
                         <p>
-                            These patterns aren't random, they often trace back to early attachment experiences and unmet needs that shaped how we learned to stay safe in connection. As children, we generally take the shape of the container (environment, parental dynamics, financial circumstance, life events, etc) we are born into.
+                            These patterns aren&rsquo;t random, they often trace back to early attachment experiences and unmet needs that shaped how we learned to stay safe in connection. As children, we generally take the shape of the container (environment, parental dynamics, financial circumstance, life events, etc) we are born into.
                         </p>
                         <div className="bg-gradient-to-r from-[#f8f6f4] to-[#E7CDBF] p-6 rounded-xl border-l-4 border-[#345041]">
                             <p className="font-medium">
@@ -142,8 +142,8 @@ const Concerns = () => {
                                 Perinatal Mental Health & Fertility Challenges
                             </h2>
                             <div className="space-y-3 mb-6 border-l-4 border-[#E7CDBF] pl-4">
-                                <p className="text-base md:text-lg italic text-gray-600">"Why am I not happier?"</p>
-                                <p className="text-base md:text-lg italic text-gray-600">"This isn't what I imagined"</p>
+                                <p className="text-base md:text-lg italic text-gray-600">&ldquo;Why am I not happier?&rdquo;</p>
+                                <p className="text-base md:text-lg italic text-gray-600">&ldquo;This isn&rsquo;t what I imagined&rdquo;</p>
                             </div>
                         </div>
                         <div className="bg-gradient-to-br from-[#345041] to-[#2a4033] rounded-2xl p-8 h-64 flex items-center justify-center shadow-lg">
@@ -156,10 +156,10 @@ const Concerns = () => {
                     
                     <div className="mt-8 text-base md:text-lg leading-relaxed text-gray-700 space-y-4 relative z-10" style={{ fontFamily: 'Lora, serif' }}>
                         <p>
-                            Pregnancy and postpartum can bring joy and also anxiety, loneliness, guilt, and overwhelm. If you've ever thought, 'Why am I not happier?' or 'This isn't what I imagined,' you are not alone. There's nothing wrong with you. This is the part no one talks about, and that's where I come in.
+                            Pregnancy and postpartum can bring joy and also anxiety, loneliness, guilt, and overwhelm. If you&rsquo;ve ever thought, &lsquo;Why am I not happier?&rsquo; or &lsquo;This isn&rsquo;t what I imagined,&rsquo; you are not alone. There&rsquo;s nothing wrong with you. This is the part no one talks about, and that&rsquo;s where I come in.
                         </p>
                         <p>
-                            The journey to parenthood can stir unexpected emotions like hope, fears, grief, and everything in between. Whether you're navigating fertility struggles, pregnancy changes, postpartum shifts, grief of miscarriage(s), or adjusting to life with a baby, this is a safe space to feel, grieve, question, rage, or wonder, without any judgment.
+                            The journey to parenthood can stir unexpected emotions like hope, fears, grief, and everything in between. Whether you&rsquo;re navigating fertility struggles, pregnancy changes, postpartum shifts, grief of miscarriage(s), or adjusting to life with a baby, this is a safe space to feel, grieve, question, rage, or wonder, without any judgment.
                         </p>
                         <p>
                             In therapy, we also explore how to stay connected to your own identity and redefine your identity while embracing this all-encompassing role of parenthood.
@@ -207,7 +207,7 @@ const Concerns = () => {
                             </h2>
                             <div className="bg-[#f8f6f4] p-6 rounded-xl border-l-4 border-[#345041]">
                                 <blockquote className="text-lg italic text-gray-700">
-                                    "Trauma is not what happens to you. Trauma is what happens inside you as a result of what happened to you."
+                                    &ldquo;Trauma is not what happens to you. Trauma is what happens inside you as a result of what happened to you.&rdquo;
                                     <span className="block mt-2 text-sm font-semibold text-[#345041]">- Gabor Maté</span>
                                 </blockquote>
                             </div>
@@ -216,17 +216,17 @@ const Concerns = () => {
                     
                     <div className="mt-8 text-base md:text-lg leading-relaxed text-gray-700 space-y-4 relative z-10" style={{ fontFamily: 'Lora, serif' }}>
                         <p>
-                            Sometimes, past pain quietly lingers and shows up in unexpected ways, in relationships, work, or as stress. Trauma isn't only about what happened to you it's also about what didn't happen.
+                            Sometimes, past pain quietly lingers and shows up in unexpected ways, in relationships, work, or as stress. Trauma isn&rsquo;t only about what happened to you — it&rsquo;s also about what didn&rsquo;t happen.
                         </p>
                         <p>
                             It can arise from overwhelming events like accidents, abuse, or loss, but just as often, it comes from the absence of what you deeply needed: comfort, safety, protection, or being truly seen and understood. When these essential experiences are missing, when no one is there to soothe you, protect you, or affirm who you are, it can leave an imprint just as deep as any visible wound.
                         </p>
                         <p>
-                            Trauma often lives in the body and shows up quietly, long after the experience, through anxiety, relationship struggles, hypervigilance, numbness, or feeling like something is "wrong" with you.
+                            Trauma often lives in the body and shows up quietly, long after the experience, through anxiety, relationship struggles, hypervigilance, numbness, or feeling like something is &ldquo;wrong&rdquo; with you.
                         </p>
                         <div className="bg-gradient-to-br from-[#345041] to-[#2a4033] p-6 rounded-xl text-white">
                             <p>
-                                In therapy, we work gently and at your pace to process what happened and what didn't happen, helping you reclaim safety, connection, and a sense of wholeness. <strong className="text-[#E7CDBF]">At Mind Craft Wellness, all our therapists are trauma-informed</strong>, so that they can bring in the sensitivity and personalised attention to you and your wounds.
+                                In therapy, we work gently and at your pace to process what happened and what didn&rsquo;t happen, helping you reclaim safety, connection, and a sense of wholeness. <strong className="text-[#E7CDBF]">At Mind Craft Wellness, all our therapists are trauma-informed</strong>, so that they can bring in the sensitivity and personalised attention to you and your wounds.
                             </p>
                         </div>
                     </div>
@@ -256,9 +256,9 @@ const Concerns = () => {
                                 Self-Worth & Confidence
                             </h2>
                             <div className="space-y-3 mb-6 bg-[#f8f6f4] p-6 rounded-xl border-l-4 border-[#E7CDBF]">
-                                <p className="text-base md:text-lg italic text-gray-600">"No matter what I achieve, it never feels enough." - anonymous</p>
+                                <p className="text-base md:text-lg italic text-gray-600">&ldquo;No matter what I achieve, it never feels enough.&rdquo; - anonymous</p>
                                 <blockquote className="text-base md:text-lg italic text-gray-700 mt-4">
-                                    "Owning our story and loving ourselves through that process is the bravest thing that we will ever do."
+                                    &ldquo;Owning our story and loving ourselves through that process is the bravest thing that we will ever do.&rdquo;
                                     <span className="block mt-2 text-sm font-semibold text-[#345041]">- Brené Brown</span>
                                 </blockquote>
                             </div>
@@ -273,17 +273,17 @@ const Concerns = () => {
                     
                     <div className="mt-8 text-base md:text-lg leading-relaxed text-gray-700 space-y-4 relative z-10" style={{ fontFamily: 'Lora, serif' }}>
                         <p>
-                            Struggles with self-worth can show up in many ways - feeling like you're never doing enough, constantly comparing yourself to others, seeking validation, or fearing failure.
+                            Struggles with self-worth can show up in many ways - feeling like you&rsquo;re never doing enough, constantly comparing yourself to others, seeking validation, or fearing failure.
                         </p>
                         <p>
-                            It can feel like your sense of value depends on achievements, roles, or other people's approval and it can look like constantly seeking validation, saying yes when you want to say no, or feeling guilty for prioritizing your needs. Sometimes struggles with self-worth can also show up in our relationship with food and/or our body image.
+                            It can feel like your sense of value depends on achievements, roles, or other people&rsquo;s approval and it can look like constantly seeking validation, saying yes when you want to say no, or feeling guilty for prioritizing your needs. Sometimes struggles with self-worth can also show up in our relationship with food and/or our body image.
                         </p>
                         <p>
-                            The truth is, these patterns often come from early experiences, from the messages we received (or didn't receive) about being lovable and worthy. Over time, they can create an inner voice and belief system that says, "You're not good enough."
+                            The truth is, these patterns often come from early experiences, from the messages we received (or didn&rsquo;t receive) about being lovable and worthy. Over time, they can create an inner voice and belief system that says, &ldquo;You&rsquo;re not good enough.&rdquo;
                         </p>
                         <div className="bg-gradient-to-r from-[#f8f6f4] to-[#E7CDBF] p-6 rounded-xl border-l-4 border-[#345041]">
-                            <p className="font-medium">
-                                In therapy, we work with you to uncover and transform the beliefs that keep you stuck in self-doubt. The goal isn't to "become someone else", it is to reconnect with the version of you that already feels whole, enough, and deeply grounded in your own value.
+                                <p className="font-medium">
+                                In therapy, we work with you to uncover and transform the beliefs that keep you stuck in self-doubt. The goal isn&rsquo;t to &ldquo;become someone else&rdquo;, it is to reconnect with the version of you that already feels whole, enough, and deeply grounded in your own value.
                             </p>
                         </div>
                     </div>
@@ -323,9 +323,9 @@ const Concerns = () => {
                                 Life Transitions & Identity Shifts
                             </h2>
                             <div className="space-y-3 mb-6 bg-[#f8f6f4] p-6 rounded-xl border-l-4 border-[#345041]">
-                                <p className="text-base md:text-lg italic text-gray-600">"I don't know who I am anymore." - Anonymous</p>
+                                <p className="text-base md:text-lg italic text-gray-600">&ldquo;I don&rsquo;t know who I am anymore.&rdquo; - Anonymous</p>
                                 <blockquote className="text-base md:text-lg italic text-gray-700 mt-4">
-                                    "We must be willing to let go of the life we planned so as to have the life that is waiting for us."
+                                    &ldquo;We must be willing to let go of the life we planned so as to have the life that is waiting for us.&rdquo;
                                     <span className="block mt-2 text-sm font-semibold text-[#345041]">- Joseph Campbell</span>
                                 </blockquote>
                             </div>
@@ -334,18 +334,18 @@ const Concerns = () => {
                     
                     <div className="mt-8 text-base md:text-lg leading-relaxed text-gray-700 space-y-4 relative z-10" style={{ fontFamily: 'Lora, serif' }}>
                         <p>
-                            Big changes - like moving cities or countries, shifting careers, or getting married (whether love or arranged), can feel overwhelming, even when they're chosen or expected. These transitions often bring with them a sense of disorientation, like the ground beneath your feet isn't as steady as it used to be.
+                            Big changes - like moving cities or countries, shifting careers, or getting married (whether love or arranged), can feel overwhelming, even when they&rsquo;re chosen or expected. These transitions often bring with them a sense of disorientation, like the ground beneath your feet isn&rsquo;t as steady as it used to be.
                         </p>
                         <p>
                             You may feel unanchored, disconnected from yourself, or unsure where you truly belong. Displacement, whether physical or emotional, can have a ripple effect on our sense of self.
                         </p>
                         <p>
-                            Roles change, relationships shift, and the familiar markers of identity often fall away. Questions like "Who am I now?" or "What does this new chapter mean for me?" can feel daunting to hold alone.
+                            Roles change, relationships shift, and the familiar markers of identity often fall away. Questions like &ldquo;Who am I now?&rdquo; or &ldquo;What does this new chapter mean for me?&rdquo; can feel daunting to hold alone.
                         </p>
                         <div className="bg-gradient-to-r from-[#f8f6f4] to-[#E7CDBF] p-6 rounded-xl border-l-4 border-[#345041]">
                             <p className="font-medium">
-                                Therapy can be a grounding space in these times, a place to pause, process, and make sense of what feels unfamiliar. Together, we work on re-rooting you in this new reality while honoring the old one, helping you rediscover strengths you may have forgotten, and exploring what you need to feel whole and steady again. It's not just about adjusting to change, it's about finding clarity, belongingness, and a deeper sense of self in the midst of it all.
-                            </p>
+                                    Therapy can be a grounding space in these times, a place to pause, process, and make sense of what feels unfamiliar. Together, we work on re-rooting you in this new reality while honoring the old one, helping you rediscover strengths you may have forgotten, and exploring what you need to feel whole and steady again. It&rsquo;s not just about adjusting to change, it&rsquo;s about finding clarity, belongingness, and a deeper sense of self in the midst of it all.
+                                </p>
                         </div>
                     </div>
                 </div>
@@ -385,17 +385,17 @@ const Concerns = () => {
                     
                     <div className="mt-8 text-base md:text-lg leading-relaxed text-gray-700 space-y-4 relative z-10" style={{ fontFamily: 'Lora, serif' }}>
                         <p>
-                            When clients tell me they feel "stuck," it's rarely about doing nothing, it's about being caught in cycles that no longer feel helpful.
+                            When clients tell me they feel &ldquo;stuck,&rdquo; it&rsquo;s rarely about doing nothing, it&rsquo;s about being caught in cycles that no longer feel helpful.
                         </p>
                         <p>
-                            It can show up as procrastination, avoidance, or habits like binge-watching, endless scrolling, smoking, drinking, overworking, or shopping when stressed. These patterns often get labeled as "bad," but in my experience, they usually have a function. They've protected you from something, maybe big feelings, overwhelming stress, or a sense of loneliness.
+                            It can show up as procrastination, avoidance, or habits like binge-watching, endless scrolling, smoking, drinking, overworking, or shopping when stressed. These patterns often get labeled as &ldquo;bad,&rdquo; but in my experience, they usually have a function. They&rsquo;ve protected you from something, maybe big feelings, overwhelming stress, or a sense of loneliness.
                         </p>
                         <p>
-                            At some point, they made sense. The thing is, what once kept you safe can start to feel limiting. Coping strategies that worked for years might begin to leave you feeling disconnected or restless, like you're living life on autopilot.
+                            At some point, they made sense. The thing is, what once kept you safe can start to feel limiting. Coping strategies that worked for years might begin to leave you feeling disconnected or restless, like you&rsquo;re living life on autopilot.
                         </p>
                         <div className="bg-gradient-to-r from-[#f8f6f4] to-[#E7CDBF] p-6 rounded-xl border-l-4 border-[#345041]">
                             <p className="font-medium">
-                                When that happens, therapy becomes a place to pause and really understand what's underneath. We explore the role these behaviors play, what they're protecting you from, and what you truly need now. From there, we work together to build new ways of coping, establishing approaches that feel sustainable, nourishing, and aligned with the life you want to create.
+                                When that happens, therapy becomes a place to pause and really understand what&rsquo;s underneath. We explore the role these behaviors play, what they&rsquo;re protecting you from, and what you truly need now. From there, we work together to build new ways of coping, establishing approaches that feel sustainable, nourishing, and aligned with the life you want to create.
                             </p>
                         </div>
                     </div>
