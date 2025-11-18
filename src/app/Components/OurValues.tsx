@@ -13,7 +13,7 @@ const OurValues = () => {
         },
         {
             heading: "Inclusive and Compassionate",
-            content: `Whoever you are, and whatever you carry, you&rsquo;ll be met here with sensitivity, respect, and care.`,
+            content: `Whoever you are, and whatever you carry, you'll be met here with sensitivity, respect, and care.`,
             image: "🤝",
             color: "#E7CDBF"
         },
@@ -49,11 +49,11 @@ const OurValues = () => {
                         <div className="w-16 h-0.5 bg-[#345041] mx-auto opacity-30"></div>
                     </div>
 
-                    <div className="flex">
-                        <Marquee speed={50}>
+                    <div className="flex overflow-visible">
+                        <Marquee speed={50} pauseOnHover={true}>
                             {data.map((value,idx) => (
-                                <div key={`value - ${idx}`} className="group hover:transform hover:scale-105 transition-all duration-300 max-w-80 h-[308px] flex-shrink-0 ml-10">
-                                    <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl p-6 h-full border-l-4 transition-all duration-300"
+                                <div key={`value - ${idx}`} className="group hover:transform transition-all duration-300 max-w-80 h-[308px] flex-shrink-0 ml-10">
+                                    <div className="bg-white rounded-2xl hover:scale-110 shadow-lg hover:shadow-2xl p-6 h-full border-l-4 transition-all duration-300"
                                          style={{borderColor: value.color}}>
 
                                         <div className="w-12 h-12 rounded-full flex items-center justify-center mb-4"

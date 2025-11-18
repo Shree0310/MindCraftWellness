@@ -2,6 +2,7 @@ import OurStory from '../../Assets/images/OurStory.jpg';
 import OurSpace from '../../Assets/images/OurSpace.jpg';
 import OurStory2 from '../../Assets/images/OurStory2.jpg';
 import OurSpace2 from '../../Assets/images/OurSpace2.jpg';
+import OurStory3 from '../../Assets/images/OurStory2.jpg';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
@@ -16,7 +17,7 @@ const OurStoryOurSpace = () => {
     const [activeImage, setActiveImage] = useState(0);
 
     const images = [
-        OurStory, OurSpace, OurStory2, OurSpace2
+        OurStory, OurSpace, OurStory2, OurSpace2, OurStory3
     ];
 
     const slideLeftImage = () => {
