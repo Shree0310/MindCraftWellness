@@ -142,7 +142,7 @@ const Careers = () => {
                                     onChange={handleInputChange}
                                     rows={4}
                                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#345041] focus:border-transparent transition-all duration-300 resize-none"
-                                    placeholder="Tell us a little about yourself, and why you are reaching out to us..."
+                                    placeholder="Tell us a little about you and what draws you to working with us. We’ll get back to you soon...."
                                 />
                             </div>
 

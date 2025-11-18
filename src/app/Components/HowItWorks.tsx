@@ -11,7 +11,7 @@ const HowItWorks = ({className, children}:{
         {children}
         {/* Quote Section */}
         <div className="bg-gradient-to-r from-[#f8f6f4] to-[#E7CDBF] py-20 px-8">
-            <div className="max-w-4xl mx-auto text-center">
+            <div className="max-w-5xl mx-auto text-center">
                 <div className="bg-white rounded-3xl p-12 shadow-lg">
                     <div className="mb-6">
                         <svg className="w-12 h-12 text-[#345041] mx-auto" fill="currentColor" viewBox="0 0 24 24">
@@ -19,7 +19,15 @@ const HowItWorks = ({className, children}:{
                         </svg>
                     </div>
                     <blockquote className="text-2xl md:text-4xl text-[#345041] leading-relaxed italic mb-6 font-medium" style={{ fontFamily: 'BrittanySignature, serif' }}>
-                        &ldquo;There is no greater agony than bearing an untold story inside you. -  Maya Angelou &rdquo;
+                        &ldquo;There is no greater agony than bearing an untold story inside you.&rdquo;
+                        {/* Author attribution */}
+                        <div className='flex items-center justify-center space-x-2 md:space-x-3'>
+                            <div className='w-1 h-6 md:h-8 bg-[#345041] rounded-full mt-6'></div>
+                            <span className='text-base md:text-lg text-[#345041] font-semibold mt-6' style={{ fontFamily: 'Lora, serif' }}>
+                                — Maya Angelou 
+                            </span>
+                            <div className='w-1 h-6 md:h-8 bg-[#345041] rounded-full mt-6'></div>
+                        </div>
                     </blockquote>
                     <div className="w-24 h-1 bg-[#345041] mx-auto rounded-full"></div>
                 </div>

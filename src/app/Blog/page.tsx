@@ -1,5 +1,9 @@
 import Blog from '../Components/Blog';
+import Header from '../Components/Header';
 
 export default function BlogPage() {
-    return <Blog/>
+    return <div className="div">
+        <Header/>
+        <Blog/>
+        </div>
 }

@@ -1,6 +1,5 @@
-import Header from "./Header";
-import Footer from "./Footer";
 import BookFreeConsultationBtn from "./BookFreeConsulationBtn";
+import Footer from "./Footer";
 
 const Blog = () => {
     const blogImages = [
@@ -12,14 +11,13 @@ const Blog = () => {
         { src: "/Assets/images/Blog6.jpg", alt: "Blog Image 6" },
     ];
 
-    return <div className="bg-white">
-        <Header />
+    return <div className="bg-gradient-to-t from-[#eeac56] via-[#dbb28f] to-[#f5e6d3]">
 
         {/* Quote Section */}
-        <div className="bg-gradient-to-r from-[#f8f6f4] to-[#E7CDBF] py-12 md:py-20 px-4 md:px-8">
+        <div className="py-12 md:py-12 px-4 md:px-8">
             <div className="max-w-4xl mx-auto text-center">
                 <div className="bg-white rounded-3xl p-6 md:p-12 shadow-lg">
-                    <div className="mb-4 md:mb-6">
+                    <div className="mb-4 md:mb-4">
                         <svg className="w-10 md:w-12 h-10 md:h-12 text-[#345041] mx-auto" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z" />
                         </svg>
@@ -33,7 +31,7 @@ const Blog = () => {
         </div>
 
         {/* Blog Images Grid Section */}
-        <div className="py-12 md:py-20 px-4 md:px-8 bg-white">
+        <div className="py-12 md:py-12 px-4 md:px-8">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-12 md:mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-[#345041] mb-4 md:mb-6 px-4" style={{ fontFamily: 'BrittanySignature, serif' }}>
@@ -88,7 +86,7 @@ const Blog = () => {
         </div>
 
         {/* Book Free Consultation Section */}
-        <div className="bg-gradient-to-r from-[#345041] to-[#2a4033] py-12 md:py-20 px-4 md:px-8 mb-8 md:mb-16">
+        <div className="bg-gradient-to-r from-[#345041] to-[#2a4033] py-12 md:py-20 px-4 md:px-8 mb-8 md:mb-16 bg-[#eeac56]">
             <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-2xl md:text-4xl font-bold text-white mb-4 md:mb-6 px-4" style={{ fontFamily: 'BrittanySignature, serif' }}>
                     Ready to Begin Your Healing Journey?
