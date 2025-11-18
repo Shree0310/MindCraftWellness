@@ -14,7 +14,7 @@ const WhoWeFitFor = ({className}:{
                         <div className="w-12 h-0.5 bg-[#345041] opacity-30"></div>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-bold text-[#345041] mb-4" style={{ fontFamily: 'BodoniModa, serif' }}>
-                        Who We're a Good Fit For
+                        Who We&rsquo;re a Good Fit For
                     </h2>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto" style={{ fontFamily: 'Lora, serif' }}>
                         We work well with therapists who share these values
@@ -89,13 +89,13 @@ const WhoWeFitFor = ({className}:{
                                     Does This Sound Like You?
                                 </h3>
                                 
-                                <p className="text-lg text-gray-700 leading-relaxed mb-6" style={{ fontFamily: 'Lora, serif' }}>
-                                    We're looking for therapists who bring curiosity, compassion, and a commitment to growth—both for themselves and their clients.
+                                    <p className="text-lg text-gray-700 leading-relaxed mb-6" style={{ fontFamily: 'Lora, serif' }}>
+                                    We&rsquo;re looking for therapists who bring curiosity, compassion, and a commitment to growth—both for themselves and their clients.
                                 </p>
 
                                 <div className="bg-white rounded-2xl p-6 shadow-lg">
                                     <p className="text-xl font-medium text-[#345041] italic" style={{ fontFamily: 'Lora, serif' }}>
-                                        "If this resonates, you'll likely find a home here."
+                                        &ldquo;If this resonates, you&rsquo;ll likely find a home here.&rdquo;
                                     </p>
                                 </div>
                             </div>
@@ -114,7 +114,7 @@ const WhoWeFitFor = ({className}:{
                             Ready to Explore a Partnership?
                         </h3>
                         <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto" style={{ fontFamily: 'Lora, serif' }}>
-                            We'd love to hear from you. Let's talk about how we might support your practice and growth.
+                            We&rsquo;d love to hear from you. Let&rsquo;s talk about how we might support your practice and growth.
                         </p>
                         <button className="bg-white text-[#345041] px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
                             Get in Touch

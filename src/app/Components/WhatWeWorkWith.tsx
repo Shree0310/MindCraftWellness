@@ -27,7 +27,7 @@ const WhatWeWorkWith = () => {
                                 <div className="relative z-10">
                                     <div className="text-6xl md:text-8xl text-[#E7CDBF] opacity-30 mb-4">&ldquo;</div>
                                     <blockquote className="text-2xl md:text-3xl font-light text-white leading-relaxed mb-8" style={{ fontFamily: 'Lora, serif' }}>
-                                        We can't change the past but we can change the way the past lives in us.
+                                        We can&rsquo;t change the past but we can change the way the past lives in us.
                                     </blockquote>
                                     <div className="flex items-center justify-end">
                                         <div className="w-16 h-0.5 bg-[#E7CDBF] mr-4"></div>
@@ -59,23 +59,23 @@ const WhatWeWorkWith = () => {
                         {/* Opening Paragraph */}
                         <div className="max-w-4xl mx-auto">
                             <p className="text-lg md:text-xl leading-relaxed text-gray-700 text-center" style={{ fontFamily: 'Lora, serif' }}>
-                                Over the last five years, We have had the privilege of working with people through some of life's most challenging and transformative moments. Many clients come to therapy feeling stuck, overwhelmed, or unsure if what they're feeling is "serious enough."
+                                Over the last five years, We have had the privilege of working with people through some of life&rsquo;s most challenging and transformative moments. Many clients come to therapy feeling stuck, overwhelmed, or unsure if what they&rsquo;re feeling is &ldquo;serious enough.&rdquo;
                             </p>
                         </div>
                         <div className="max-w-4xl mx-auto">
-                            `<div className="flex gap-6 items-start">
+                            <div className="flex gap-6 items-start">
                                 {/* Large quote mark on left */}
                                 <div className="text-[120px] leading-none text-[#345041] opacity-20 font-serif">&ldquo;</div>
                                 
                                 <div className="flex-1">
                                     <blockquote className="text-2xl md:text-3xl font-medium text-[#345041] leading-relaxed mb-6" style={{ fontFamily: 'Lora, serif' }}>
-                                        If you've ever asked yourself, 'Do I really need therapy?' - you are not alone.
+                                        If you&rsquo;ve ever asked yourself, &lsquo;Do I really need therapy?&rsquo; - you are not alone.
                                     </blockquote>
                                     <div className="flex items-center gap-4">
                                         <div className="w-12 h-1 bg-[#345041] rounded-full"></div>
                                     </div>
                                 </div>
-                            </div>`
+                            </div>
                         </div>
 
                         {/* Image + Text Grid Section 1 */}
@@ -92,7 +92,7 @@ const WhatWeWorkWith = () => {
                                     <span className="text-sm font-semibold text-[#345041] uppercase tracking-wide">Our Philosophy</span>
                                 </div>
                                 <p className="text-lg leading-relaxed text-gray-700" style={{ fontFamily: 'Lora, serif' }}>
-                                    Therapy isn't just for crises. It's for anyone wanting more clarity, ease, and emotional freedom in their life. Below we have created a short list of concerns we have worked with, this list is merely here to help you explore & identify your experience.
+                                    Therapy isn&rsquo;t just for crises. It&rsquo;s for anyone wanting more clarity, ease, and emotional freedom in their life. Below we have created a short list of concerns we have worked with, this list is merely here to help you explore &amp; identify your experience.
                                 </p>
                             </div>
                         </div>

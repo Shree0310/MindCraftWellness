@@ -150,7 +150,7 @@ const WhatWeOffer = ({className, children}:{
                 <div className="mt-16 text-center">
                     <div className="bg-gradient-to-br from-[#345041] to-[#2a4033] rounded-3xl p-10 text-white max-w-3xl mx-auto shadow-2xl">
                         <p className="text-xl md:text-2xl font-light leading-relaxed mb-6" style={{ fontFamily: 'Lora, serif' }}>
-                            "We believe therapists do their best work when they feel supported, valued, and free to grow."
+                            &ldquo;We believe therapists do their best work when they feel supported, valued, and free to grow.&rdquo;
                         </p>
                         <div className="w-16 h-1 bg-[#E7CDBF] mx-auto rounded-full"></div>
                     </div>

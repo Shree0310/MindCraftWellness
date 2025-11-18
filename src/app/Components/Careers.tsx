@@ -165,7 +165,7 @@ const Careers = () => {
                             <div className="w-12 h-12 bg-[#E7CDBF] rounded-full flex items-center justify-center mx-auto mb-4">
                                 <span className="text-[#345041] text-xl font-bold">1</span>
                             </div>
-                            <h3 className="text-lg font-semibold text-[#345041] mb-2"><p>{"Free Consultation"}</p></h3>
+                            <h3 className="text-lg font-semibold text-[#345041] mb-2">Free Consultation</h3>
                             <p className="text-gray-600 text-sm">
                                 Start with a 15-minute free consultation to discuss your needs and see if we&rsquo;re a good fit.
                             </p>
@@ -175,7 +175,7 @@ const Careers = () => {
                             <div className="w-12 h-12 bg-[#E7CDBF] rounded-full flex items-center justify-center mx-auto mb-4">
                                 <span className="text-[#345041] text-xl font-bold">2</span>
                             </div>
-                            <h3 className="text-lg font-semibold text-[#345041] mb-2"><p>{"Flexible Scheduling"}</p></h3>
+                            <h3 className="text-lg font-semibold text-[#345041] mb-2">Flexible Scheduling</h3>
                             <p className="text-gray-600 text-sm">
                                 Choose from morning, afternoon, or evening slots that work best with your schedule.
                             </p>
@@ -185,7 +185,7 @@ const Careers = () => {
                             <div className="w-12 h-12 bg-[#E7CDBF] rounded-full flex items-center justify-center mx-auto mb-4">
                                 <span className="text-[#345041] text-xl font-bold">3</span>
                             </div>
-                            <h3 className="text-lg font-semibold text-[#345041] mb-2"><p>{"Confidential & Safe"}</p></h3>
+                            <h3 className="text-lg font-semibold text-[#345041] mb-2">Confidential &amp; Safe</h3>
                             <p className="text-gray-600 text-sm">
                                 Your privacy is our priority. All sessions are confidential and conducted in a safe environment.
                             </p>
