@@ -277,24 +277,24 @@ const Testimonials = ({category}: TestimonialsProps) => {
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-8 text-center md:text-left">
-    <div>
-        <div className="text-lg mb-3 opacity-90">
-            <p>{"Still have questions?"}</p>
-        </div>
-        <button className="text-white border-b-2 border-white hover:border-opacity-70 transition-all duration-300 font-semibold">
-            <Link href='/FAQs'>{"Read our FAQs"}</Link>
-        </button>
-    </div>
+                        <div>
+                            <div className="text-lg mb-3 opacity-90">
+                                <p>{"Still have questions?"}</p>
+                            </div>
+                            <button className="text-white border-b-2 border-white hover:border-opacity-70 transition-all duration-300 font-semibold">
+                                <Link href='/FAQs'>{"Read our FAQs"}</Link>
+                            </button>
+                        </div>
 
-    <div className="md:text-right">
-        <div className="text-lg mb-3 opacity-90">
-            <p>{"Looking for tools and materials?"}</p>
-        </div>
-        <button className="text-white border-b-2 border-white hover:border-opacity-70 transition-all duration-300 font-semibold">
-            <p>{"Explore our Resources"}</p>
-        </button>
-    </div>
-</div>
+                        <div className="md:text-right">
+                            <div className="text-lg mb-3 opacity-90">
+                                <p>{"Looking for tools and materials?"}</p>
+                            </div>
+                            <button className="text-white border-b-2 border-white hover:border-opacity-70 transition-all duration-300 font-semibold">
+                                <p>{"Explore our Resources"}</p>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
