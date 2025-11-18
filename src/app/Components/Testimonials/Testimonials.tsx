@@ -260,7 +260,7 @@ const Testimonials = ({category}: TestimonialsProps) => {
             </div>
 
             {/* Call to Action Section */}
-            <div className="bg-gradient-to-br from-[#345041] to-[#2a4033] text-white rounded-3xl p-8 md:p-12 mt-12 md:mt-16 mx-4 md:mx-8">
+            <div className="bg-gradient-to-br from-[#345041] to-[#2a4033] text-white rounded-3xl p-8 md:p-12 mt-12 md:mt-16 mx-4 md:mx-4">
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 px-4">
                         <p>{"Ready to take the next step?"}</p>
@@ -276,27 +276,25 @@ const Testimonials = ({category}: TestimonialsProps) => {
                         </Link>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-24 text-center">
-                        <div className="text-center md:text-left">
-                            <div className="text-lg mb-3 opacity-90">
-                                <p>{"Still have questions?"}</p>
-                            </div>
-                            <button className="text-white border-b-2 border-white hover:border-opacity-70 transition-all duration-300 font-semibold">
-                                <Link href='/FAQs'>{"Read our FAQs"}</Link>
-                            </button>
-                        </div>
+                    <div className="grid md:grid-cols-2 gap-8 text-center md:text-left">
+    <div>
+        <div className="text-lg mb-3 opacity-90">
+            <p>{"Still have questions?"}</p>
+        </div>
+        <button className="text-white border-b-2 border-white hover:border-opacity-70 transition-all duration-300 font-semibold">
+            <Link href='/FAQs'>{"Read our FAQs"}</Link>
+        </button>
+    </div>
 
-                        <div className="text-center md:text-left md:flex md:items-center md:justify-end ml-24">
-                            <div>
-                                <div className="text-lg mb-3 opacity-90 ml-24">
-                                    <p>{"Looking for tools and self-help materials?"}</p>
-                                </div>
-                                <button className="text-white border-b-2 border-white hover:border-opacity-70 transition-all duration-300 font-semibold ml-24">
-                                    <p>{"Explore our Resources"}</p>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+    <div className="md:text-right">
+        <div className="text-lg mb-3 opacity-90">
+            <p>{"Looking for tools and materials?"}</p>
+        </div>
+        <button className="text-white border-b-2 border-white hover:border-opacity-70 transition-all duration-300 font-semibold">
+            <p>{"Explore our Resources"}</p>
+        </button>
+    </div>
+</div>
                 </div>
             </div>
         </div>
