@@ -88,14 +88,6 @@ const Testimonials = ({category}: TestimonialsProps) => {
             role: "22 years old, Male, India (Online & In-person Therapy)"
         },
         {
-            id: 3,
-            category: 'landing page',
-            text: `I've been working with Aishwarya for a year now, and the journey has been truly life-changing. Over this time, I've quit smoking—a habit I never thought I could break—and learned how to be more present, self-aware, and in control of my emotions. 
-                  My anxiety levels have significantly reduced, and I feel more at peace with myself than I have in years. What I value most about our sessions is Aishwarya's ability to create a safe, non-judgmental space where I can openly share my thoughts.`,
-            author: "Anonymous",
-            role: "India (In-person Therapy)"
-        },
-        {
             id: 4,
             category: 'about us',
             text: `Whilst I would consider myself relatively new into therapy, the experience has been super insightful and telling - especially with Aishwarya. Working with her has helped me develop the skills that I need to handle situations independently. 
@@ -109,14 +101,6 @@ const Testimonials = ({category}: TestimonialsProps) => {
             text: `Had incredible experience though our sessions; She was very empathetic & helpful through some of the very hard periods of my life. Incredibly grounded & professional; Highly recommend her.`,
             author: "Anonymous",
             role: "47, Male, Startup Founder, India (In-person Therapy)"
-        },
-        {
-            id: 6,
-            category: 'about us',
-            text: `I have been working with Aishwarya for over a year through psychotherapy to manage my anxiety, and my experience has been excellent. 
-                  I attend in-person sessions with her, and she stands out as a psychologist who truly applies effective psychological practices. Her approach is both genuine and practical, and the serene, thoughtfully designed environment of her clinic further enhances the sense of calm and comfort during each session.`,
-            author: "S.B.",
-            role: "Female, 25 Years Old, Gurgaon (In-person Therapy)"
         },
         {
             id: 7,
@@ -134,15 +118,6 @@ const Testimonials = ({category}: TestimonialsProps) => {
             author: "M.L.",
             role: "Female, 25 Years Old, Gurgaon (In-person Therapy)"
         },
-        {
-            id: 9,
-            category: 'specialities',
-            text: `I have been Ms. Aishwarya’s client for over 2 years now and I have experienced immense self reflection, growth and increase in self esteem during this time. Not only have I been able to work on my relationships and my difficulties to manage my work, but also my anxieties and past traumas. 
-                I would highly recommend Aishwarya because she is a professional who keeps evolving and working hard to help clients (new and old) grow and gain the most out of their therapy.`,
-            author: "S.K.",
-            role: "Female, New Delhi (Online therapy)"
-        },
-
     ];
 
     useEffect(() => {
@@ -194,9 +169,9 @@ const Testimonials = ({category}: TestimonialsProps) => {
 
                 <div className='text-center block py-8 pl-8'>
                         <Link href="/testimonials">
-                            <button className=" bg-[#345041] font-sans text-xl rounded-3xl text-white font-medium p-2 cursor-pointer shadow-2xl w-42 h-12 m-2 hover:bg-[#2a4033] transition-colors duration-300 transform hover:scale-105">
+                            <button className=" bg-[#345041] font-sans text-xl rounded-3xl text-white font-medium p-2 cursor-pointer shadow-2xl w-72 h-12 m-2 hover:bg-[#2a4033] transition-colors duration-300 transform hover:scale-105">
                                 <div className="flex justify-center">
-                                    <span className='mr-1'>Read More</span>                                 
+                                    <span className='mr-1'>Read More Testimonials</span>                                 
                                     <span className="mt-1"><IconChevronRight stroke={1} /></span>
                                 </div>
                             </button>

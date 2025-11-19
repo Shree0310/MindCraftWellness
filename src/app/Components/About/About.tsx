@@ -37,8 +37,8 @@ const About = () => {
                             </h1> */}
                             <p className="text-xl md:text-xl leading-relaxed px-4 md:px-0 italic" style={{ fontFamily: 'GlacialIndifference, serif' }}>
                                 &ldquo;In my early professional years I was asking the question: How can I treat, or cure, or change this person?
-                                Now I would phrase the question in this way: <br />
-                                <span className="font-bold">How can I provide a relationship which this person may use for his own personal growth?&rdquo;</span>
+                                Now I would phrase the question in this way:
+                                <span className="font-bold"> How can I provide a relationship which this person may use for his own personal growth?&rdquo; - Carl Rogers</span>
                             </p>
                             <p className="text-lg md:text-xl leading-relaxed px-4 md:px-0" style={{ fontFamily: 'GlacialIndifference, serif' }}>
                                 At Mind Craft Wellness, we believe in the power of authentic human connection and the transformative potential of a safe,
@@ -137,13 +137,6 @@ const About = () => {
                                         <li className="flex items-start space-x-3 md:space-x-4">
                                             <div className="w-3 h-3 bg-[#345041] rounded-full mt-2 flex-shrink-0"></div>
                                             <div>
-                                                <span className="text-base md:text-lg font-semibold text-[#345041]"><p>{"Bachelors of Arts in Psychology, Sociology, and English"}</p></span>
-                                                <div className="text-sm md:text-base text-gray-600"><p>{"Christ University, Bangalore"}</p></div>
-                                            </div>
-                                        </li>
-                                        <li className="flex items-start space-x-3 md:space-x-4">
-                                            <div className="w-3 h-3 bg-[#345041] rounded-full mt-2 flex-shrink-0"></div>
-                                            <div>
                                                 <span className="text-base md:text-lg font-semibold text-[#345041]"><p>{"Professional Diploma in Clinical Psychology"}</p></span>
                                                 <div className="text-sm md:text-base text-gray-600"><p>{"SGT University, Gurgaon"}</p></div>
                                             </div>
@@ -153,6 +146,13 @@ const About = () => {
                                             <div>
                                                 <span className="text-base md:text-lg font-semibold text-[#345041]"><p>{"MSc. in Counselling Psychology"}</p></span>
                                                 <div className="text-sm md:text-base text-gray-600"><p>{"Sampurna Montfort College, Bangalore"}</p></div>
+                                            </div>
+                                        </li>
+                                        <li className="flex items-start space-x-3 md:space-x-4">
+                                            <div className="w-3 h-3 bg-[#345041] rounded-full mt-2 flex-shrink-0"></div>
+                                            <div>
+                                                <span className="text-base md:text-lg font-semibold text-[#345041]"><p>{"Bachelors of Arts in Psychology, Sociology, and English"}</p></span>
+                                                <div className="text-sm md:text-base text-gray-600"><p>{"Christ University, Bangalore"}</p></div>
                                             </div>
                                         </li>
                                     </ul>
