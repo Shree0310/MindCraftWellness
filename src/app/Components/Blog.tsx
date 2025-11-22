@@ -4,16 +4,19 @@ import Footer from "./Footer";
 import { POSTS_QUERY } from "@/sanity/lib/queries";
 import { urlFor } from "@/sanity/lib/image";
 import Link from "next/link";
+import { SanityImageSource } from "@sanity/image-url/lib/types/types";
+
+type Post = {
+    _id: string;
+    title?: string;
+    slug?: { current?: string };
+    mainImage?: SanityImageSource;
+    excerpt?: string;
+    publishedAt?: string;
+};
+
 
 const Blog = async() => {
-    const blogImages = [
-        { src: "/Assets/images/Blog1.jpg", alt: "Blog Image 1" },
-        { src: "/Assets/images/Blog2.jpg", alt: "Blog Image 2" },
-        { src: "/Assets/images/Blog3.jpg", alt: "Blog Image 3" },
-        { src: "/Assets/images/Blog4.jpg", alt: "Blog Image 4" },
-        { src: "/Assets/images/Blog5.jpg", alt: "Blog Image 5" },
-        { src: "/Assets/images/Blog6.jpg", alt: "Blog Image 6" },
-    ];
 
     const posts = await client.fetch(POSTS_QUERY);
 
@@ -49,18 +52,20 @@ const Blog = async() => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                        {posts.map((post: any, index: number) => (
+                        {posts.map((post: Post, index: number) => (
                             <Link href={`/Blog/${post.slug?.current}`} key={post._id}>
                             <div key={index} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
                                 {/* Image Container */}
                                 <div className="relative cursor-pointer" style={{ width: '100%', height: '280px' }}>
-                                    <img
+                                    {post.mainImage && (
+                                        <img
                                         src={urlFor(post.mainImage).width(400).height(280).url()}
                                         alt={post.title}
                                         width="340"
                                         height="340"
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                     />
+                                    )}
                                 </div>
 
                                 {/* Content Section */}
