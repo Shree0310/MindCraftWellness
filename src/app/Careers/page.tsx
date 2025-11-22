@@ -13,7 +13,6 @@ export default function CareersPage() {
         <WhatWeOffer className='bg-[#FFFADA]'/>
         {/* <HowItWorks className='bg-[#FFFADA]'/> */}
         <WhoWeFitFor className='bg-[#FFFADA]'/>
-        <OurValues className='bg-[#FFFADA]'/>
         <Careers/>
         <Footer/>
     </>

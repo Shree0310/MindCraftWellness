@@ -1,7 +1,11 @@
+import { client } from "@/sanity/lib/client";
 import BookFreeConsultationBtn from "./BookFreeConsulationBtn";
 import Footer from "./Footer";
+import { POSTS_QUERY } from "@/sanity/lib/queries";
+import { urlFor } from "@/sanity/lib/image";
+import Link from "next/link";
 
-const Blog = () => {
+const Blog = async() => {
     const blogImages = [
         { src: "/Assets/images/Blog1.jpg", alt: "Blog Image 1" },
         { src: "/Assets/images/Blog2.jpg", alt: "Blog Image 2" },
@@ -11,7 +15,9 @@ const Blog = () => {
         { src: "/Assets/images/Blog6.jpg", alt: "Blog Image 6" },
     ];
 
-    return <div className="bg-gradient-to-t from-[#eeac56] via-[#dbb28f] to-[#f5e6d3]">
+    const posts = await client.fetch(POSTS_QUERY);
+
+    return <div className="bg-gradient-to-t from-[#ee7e1b] to-[#e9e0d3]">
 
         {/* Quote Section */}
         <div className="py-12 md:py-12 px-4 md:px-8">
@@ -43,44 +49,46 @@ const Blog = () => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                    {blogImages.map((image, index) => (
-                        <div key={index} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
-                            {/* Image Container */}
-                            <div className="relative cursor-pointer" style={{ width: '100%', height: '280px' }}>
-                                <img
-                                    src={image.src}
-                                    alt={image.alt}
-                                    width="340"
-                                    height="340"
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                />
-                            </div>
+                        {posts.map((post: any, index: number) => (
+                            <Link href={`/Blog/${post.slug?.current}`} key={post._id}>
+                            <div key={index} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                                {/* Image Container */}
+                                <div className="relative cursor-pointer" style={{ width: '100%', height: '280px' }}>
+                                    <img
+                                        src={urlFor(post.mainImage).width(400).height(280).url()}
+                                        alt={post.title}
+                                        width="340"
+                                        height="340"
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
 
-                            {/* Content Section */}
-                            <div className="p-4 md:p-6">
-                                <h3 className="text-lg md:text-xl font-bold text-[#345041] mb-2 md:mb-3 group-hover:text-[#2a4033] transition-colors duration-300">
-                                    Healing Journey: {index + 1}
-                                </h3>
+                                {/* Content Section */}
+                                <div className="p-4 md:p-6">
+                                    <h3 className="text-lg md:text-xl font-bold text-[#345041] mb-2 md:mb-3 group-hover:text-[#2a4033] transition-colors duration-300">
+                                        {post.title}
+                                    </h3>
 
-                                <p className="text-gray-600 text-xs md:text-sm leading-relaxed mb-3 md:mb-4">
-                                    Discover the transformative power of therapy and healing through our carefully curated insights and experiences.
-                                </p>
+                                    <p className="text-gray-600 text-xs md:text-sm leading-relaxed mb-3 md:mb-4">
+                                        {post.excerpt}
+                                    </p>
 
-                                <div className="flex items-center justify-between">
-                                    <span className="text-xs text-gray-500">
-                                        {new Date().toLocaleDateString('en-US', {
-                                            month: 'short',
-                                            day: 'numeric',
-                                            year: 'numeric'
-                                        })}
-                                    </span>
-                                    <button className="text-[#345041] hover:text-[#2a4033] text-xs md:text-sm font-medium transition-colors duration-300">
-                                        Read More →
-                                    </button>
+                                    <div className="flex items-center justify-between">
+                                        <span className="text-xs text-gray-500">
+                                            {post.publishedAt ? new Date(post.publishedAt).toLocaleDateString('en-US', {
+                                                        month: 'short',
+                                                        day: 'numeric',
+                                                        year: 'numeric'
+                                                    }) : 'No date'}
+                                        </span>
+                                        <button className="text-[#345041] hover:text-[#2a4033] text-xs md:text-sm font-medium transition-colors duration-300">
+                                            Read More →
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        </Link>
+                        ))}
                 </div>
             </div>
         </div>
@@ -98,8 +106,7 @@ const Blog = () => {
             </div>
         </div>
 
-        {/* Footer */}
-        <Footer />
+        
     </div>
 }
 export default Blog;

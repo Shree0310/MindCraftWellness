@@ -69,6 +69,7 @@ const Testimonials = ({category}: TestimonialsProps) => {
     const { count: clientsCount, ref: clientsRef } = useCountUp(200, 2500);
     const { count: therapyHRS, ref: therapyHRSRef} =useCountUp(1563, 2500);
     const {count: ClientSatisfaction, ref: clientSatisfactionRef} = useCountUp(98, 3000);
+    const [activeTestimonial, setActiveTestimonial] = useState(0);
 
     const testimonials = [
         {
