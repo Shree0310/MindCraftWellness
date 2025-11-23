@@ -1,4 +1,4 @@
-import { client } from "@/sanity/lib/client";
+import { sanityAPIClient } from "@/sanity/lib/client";
 import BookFreeConsultationBtn from "./BookFreeConsulationBtn";
 import Footer from "./Footer";
 import { urlFor } from "@/sanity/lib/image";
@@ -17,7 +17,7 @@ type Post = {
 
 const Blog = async() => {
 
-    const posts = await client.getAllPosts();
+    const posts = await sanityAPIClient.getAllPosts();
 
     return <div className="bg-gradient-to-t from-[#ee7e1b] to-[#e9e0d3]">
 

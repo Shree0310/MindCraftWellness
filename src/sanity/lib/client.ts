@@ -1,14 +1,14 @@
-// import { createClient } from 'next-sanity'
+import { createClient } from 'next-sanity'
 import { apiVersion, dataset, projectId } from '../env'
 import axios from 'axios';
 
-// export const client = createClient({
-//   projectId,
-//   dataset,
-//   apiVersion,
-//   useCdn: false, // Change to false for fresh data
-//   perspective: 'published', // Only fetch published content
-// })
+export const client = createClient({
+  projectId,
+  dataset,
+  apiVersion,
+  useCdn: false, // Change to false for fresh data
+  perspective: 'published', // Only fetch published content
+})
 
 // import { defineQuery } from "next-sanity";
 
@@ -72,6 +72,6 @@ export class SanityAPI {
 
 }
 
-export const client = new SanityAPI(
+export const sanityAPIClient = new SanityAPI(
   projectId, apiVersion, dataset
 )

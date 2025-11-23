@@ -1,6 +1,6 @@
 import Footer from "@/app/Components/Footer";
 import Header from "@/app/Components/Header";
-import { client } from "@/sanity/lib/client";
+import { sanityAPIClient } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 
 import { PortableText } from "next-sanity";
@@ -15,7 +15,7 @@ const SingleBlogPage = async ({
     const { slug } = await params;
     console.log("Slug:", slug);
 
-    const blog = await client.getPost(slug);
+    const blog = await sanityAPIClient.getPost(slug);
     console.log("Blog data:", blog);
 
     if(!blog){
