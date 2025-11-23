@@ -2,7 +2,7 @@ import Footer from "@/app/Components/Footer";
 import Header from "@/app/Components/Header";
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
-import { POST_QUERY } from "@/sanity/lib/queries";
+
 import { PortableText } from "next-sanity";
 import Link from "next/link";
 
@@ -15,7 +15,7 @@ const SingleBlogPage = async ({
     const { slug } = await params;
     console.log("Slug:", slug);
 
-    const blog = await client.fetch(POST_QUERY, { slug });
+    const blog = await client.getPost(slug);
     console.log("Blog data:", blog);
 
     if(!blog){
@@ -23,7 +23,7 @@ const SingleBlogPage = async ({
             <div className="min-h-screen flex items-center justify-center">
                 <div className="text-center">
                     <h1 className="text-2xl font-bold text-[#345041] mb-4">Post not found</h1>
-                    <Link href="/blog" className="text-[#ee7e1b] hover:underline">
+                    <Link href="/Blog" className="text-[#ee7e1b] hover:underline">
                         ← Back to Blog
                     </Link>
                 </div>
@@ -37,7 +37,7 @@ const SingleBlogPage = async ({
                 <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
                     
                     {/* Back Button */}
-                    <Link href="/blog" className="inline-flex items-center text-[#345041] hover:text-[#2a4033] mb-8 transition-colors">
+                    <Link href="/Blog" className="inline-flex items-center text-[#345041] hover:text-[#2a4033] mb-8 transition-colors">
                         ← Back to Blog
                     </Link>
 

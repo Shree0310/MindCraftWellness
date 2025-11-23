@@ -1,7 +1,6 @@
 import { client } from "@/sanity/lib/client";
 import BookFreeConsultationBtn from "./BookFreeConsulationBtn";
 import Footer from "./Footer";
-import { POSTS_QUERY } from "@/sanity/lib/queries";
 import { urlFor } from "@/sanity/lib/image";
 import Link from "next/link";
 import { SanityImageSource } from "@sanity/image-url/lib/types/types";
@@ -18,7 +17,7 @@ type Post = {
 
 const Blog = async() => {
 
-    const posts = await client.fetch(POSTS_QUERY);
+    const posts = await client.getAllPosts();
 
     return <div className="bg-gradient-to-t from-[#ee7e1b] to-[#e9e0d3]">
 
