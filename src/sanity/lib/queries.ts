@@ -1,13 +1,13 @@
 import { defineQuery } from "next-sanity";
 
 export const POSTS_QUERY = defineQuery(`
-    *[_type == "post"] | order(publishedAt desc) {
+    *[_type == "post" && defined(slug.current)] | order(publishedAt desc) {
         _id,
         title,
         slug,
         mainImage,
         publishedAt,
-        "excerpt": pt::text(body)[0...150]
+        "excerpt": array::join(string::split((pt::text(body)), "")[0..150], "")
        }
     `)
 
