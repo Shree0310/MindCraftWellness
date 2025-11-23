@@ -1,5 +1,3 @@
-'use server'
-
 import { revalidatePath } from 'next/cache'
 import { NextRequest, NextResponse } from 'next/server'
 
@@ -11,10 +9,10 @@ export async function POST(request: NextRequest) {
   console.log('@@ slug:', slug)
 
   if (_type === 'post') {
-    revalidatePath(`/posts`)
+    revalidatePath(`/Blog`)
 
     if (slug) {
-      revalidatePath(`/posts/${slug.current}`)
+      revalidatePath(`/Blog/${slug.current}`)
     }
 
     return NextResponse.json({ message: 'Cache invalidated' }, { status: 200 })
@@ -22,3 +20,4 @@ export async function POST(request: NextRequest) {
 
   return NextResponse.json({ message: 'Invalid type' }, { status: 200 })
 }
+
