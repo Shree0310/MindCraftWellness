@@ -58,6 +58,9 @@ export class SanityAPI {
       {
         params: {
           'query': query
+        },
+        fetchOptions: {
+          'cache': 'no-store'
         }
       }
     )
