@@ -1,6 +1,6 @@
 import { createClient } from 'next-sanity'
 import { apiVersion, dataset, projectId } from '../env'
-import axios from 'axios';
+import { BlogPost } from '@/types/blog'
 
 export const client = createClient({
   projectId,
@@ -16,9 +16,9 @@ export class SanityAPI {
   // baseURL: string
   // datasetURL: string;
 
-  async getPost(slug: string) {
+  async getPost(slug: string): Promise<BlogPost | null> {
     console.log('@@ slug:', slug)
-    return client.fetch(`
+    return client.fetch<BlogPost | null>(`
     *[_type == "post" && slug.current == "${slug}"][0] {
         _id,
         title,
@@ -32,8 +32,8 @@ export class SanityAPI {
     `)
   }
 
-  async getAllPosts() {
-    return client.fetch(`
+  async getAllPosts(): Promise<BlogPost[]> { 
+    return client.fetch<BlogPost[]>(`      // Must fetch BlogPost[]
     *[_type == "post" && defined(slug.current)] | order(publishedAt desc) {
         _id,
         title,
@@ -45,7 +45,7 @@ export class SanityAPI {
         "excerpt": array::join(string::split((pt::text(body)), "")[0..150], "")
        }
     `)
-  }
+}
 
   // constructor(private projectId: string, private apiVersion: string, private dataset: string) {
   //   this.apiVersion = apiVersion

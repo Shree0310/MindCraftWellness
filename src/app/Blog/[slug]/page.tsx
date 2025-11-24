@@ -2,7 +2,7 @@ import Footer from "@/app/Components/Footer";
 import Header from "@/app/Components/Header";
 import { sanityAPIClient } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
-
+import { BlogPost } from "@/types/blog";
 import { PortableText } from "next-sanity";
 import Link from "next/link";
 
@@ -72,7 +72,7 @@ const SingleBlogPage = async ({
 }
 
 // Default Template
-const DefaultTemplate = ({ blog }: any) => (
+const DefaultTemplate = ({ blog }: { blog: BlogPost }) => (
     <article className="bg-gradient-to-t from-[#ee7e1b] to-[#e9e0d3] min-h-screen">
         <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
             
@@ -130,7 +130,7 @@ const DefaultTemplate = ({ blog }: any) => (
 );
 
 // Featured Template - Large Hero Style
-const FeaturedTemplate = ({ blog }: any) => (
+const FeaturedTemplate = ({ blog }: { blog: BlogPost }) => (
     <article className="bg-white min-h-screen">
         {/* Full-width hero image */}
         {blog.mainImage && (
@@ -189,7 +189,7 @@ const FeaturedTemplate = ({ blog }: any) => (
 );
 
 // Minimal Template - Text-Focused
-const MinimalTemplate = ({ blog }: any) => (
+const MinimalTemplate = ({ blog }: { blog: BlogPost }) => (
     <article className="bg-white min-h-screen">
         <div className="max-w-2xl mx-auto px-4 py-12 md:py-20">
             

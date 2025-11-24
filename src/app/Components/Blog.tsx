@@ -1,6 +1,7 @@
 import { sanityAPIClient } from "@/sanity/lib/client";
 import BookFreeConsultationBtn from "./BookFreeConsulationBtn";
 import { urlFor } from "@/sanity/lib/image";
+import { BlogPost } from "@/types/blog";
 import Link from "next/link";
 import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 
@@ -35,7 +36,7 @@ const categoryLabels: Record<string, string> = {
 
 const Blog = async() => {
 
-    const posts = await sanityAPIClient.getAllPosts();
+const posts = await sanityAPIClient.getAllPosts();
 
     return <div className="bg-gradient-to-t from-[#ee7e1b] to-[#e9e0d3]">
 
@@ -69,7 +70,7 @@ const Blog = async() => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                        {posts.map((post: Post, index: number) => (
+                        {posts.map((post: BlogPost, index: number) => (
                             <Link href={`/Blog/${post.slug?.current}`} key={post._id}>
                             <div key={index} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
                                 {/* Image Container */}
