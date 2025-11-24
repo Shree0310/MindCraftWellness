@@ -126,8 +126,6 @@ const Testimonials = ({category}: TestimonialsProps) => {
         console.log(testimonialsToShow);
     }, [category]);
 
-    const filteredTestimonials = category ?  testimonials.filter(testimonial => testimonial.category === category) : testimonials;
-
     const groupedTestimonials = testimonials.reduce((acc, testimonial) => {
         if(!acc[testimonial.category]){
             acc[testimonial.category] = [];
@@ -137,8 +135,6 @@ const Testimonials = ({category}: TestimonialsProps) => {
     },{} as Record<string, typeof testimonials> );
 
     const categories = Object.keys(groupedTestimonials);
-
-    const maxStartIndex = Math.max(0, filteredTestimonials.length - 2);
 
     const slideRightTestimonials = () => {
         setActiveCategoryIndex((prev) => {
