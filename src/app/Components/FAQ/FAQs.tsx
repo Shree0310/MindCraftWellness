@@ -1,4 +1,5 @@
 "use client"
+import { useEffect } from "react";
 import Footer from "../Footer";
 import Header from "../Header";
 import FAQItem from "./FAQItem";
@@ -241,6 +242,10 @@ const FAQs = () => {
     }
 ];
 
+useEffect(() => {
+    console.log("uniqueCategories",uniqueCategories);
+})
+
     const uniqueCategories = [...new Set(faqData.map(data => data.category))];
 
     return <div className="div">
@@ -257,6 +262,7 @@ const FAQs = () => {
                 <h2 className="text-5xl font-extrabold text-[#345041] mb-6 py-24 " style={{ fontFamily: 'Lora, serif' }}>
                     FAQs
                 </h2>
+                <input type="dropdown"/>
             </div>
             <div className="mb-20">
             {uniqueCategories.map(category => (

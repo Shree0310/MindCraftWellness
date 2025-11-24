@@ -1,6 +1,5 @@
 import { sanityAPIClient } from "@/sanity/lib/client";
 import BookFreeConsultationBtn from "./BookFreeConsulationBtn";
-import Footer from "./Footer";
 import { urlFor } from "@/sanity/lib/image";
 import Link from "next/link";
 import { SanityImageSource } from "@sanity/image-url/lib/types/types";
@@ -12,7 +11,26 @@ type Post = {
     mainImage?: SanityImageSource;
     excerpt?: string;
     publishedAt?: string;
+    category?:string;
 };
+
+const categoryColors: Record<string, string> = {
+    'mental-health' : 'bg-blue-100 text-blue-800',
+    'anxiety-stress': 'bg-purple-100 text-purple-800',
+    'relationships': 'bg-pink-100 text-pink-800',
+    'self-care': 'bg-green-100 text-green-800',
+    'therapy-tips': 'bg-yellow-100 text-yellow-800',
+    'wellness': 'bg-teal-100 text-teal-800',
+}
+
+const categoryLabels: Record<string, string> = {
+    'mental-health': 'Mental Health',
+    'anxiety-stress': 'Anxiety & Stress',
+    'relationships': 'Relationships',
+    'self-care': 'Self-Care',
+    'therapy-tips': 'Therapy Tips',
+    'wellness': 'Wellness',
+}
 
 
 const Blog = async() => {
@@ -64,6 +82,13 @@ const Blog = async() => {
                                         height="340"
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                     />
+                                    )}
+                                    {post.category && (
+                                        <div className="absolute top-4 left-4">
+                                            <span className={`px-3 py-1 rounded-full text-xs font-semibold ${categoryColors[post.category] || 'bg-gray-100 text-gray-800'}`}>
+                                                {categoryLabels[post.category] || post.category}
+                                            </span>
+                                        </div>
                                     )}
                                 </div>
 
