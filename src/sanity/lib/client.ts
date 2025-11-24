@@ -25,6 +25,8 @@ export class SanityAPI {
         slug,
         mainImage,
         publishedAt,
+        category,
+        template,
         body
         }
     `)
@@ -38,6 +40,8 @@ export class SanityAPI {
         slug,
         mainImage,
         publishedAt,
+        category,
+        template,
         "excerpt": array::join(string::split((pt::text(body)), "")[0..150], "")
        }
     `)
