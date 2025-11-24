@@ -65,12 +65,6 @@ interface TestimonialsProps {
 }
 
 const Testimonials = ({category}: TestimonialsProps) => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const { count: clientsCount, ref: clientsRef } = useCountUp(200, 2500);
-    const { count: therapyHRS, ref: therapyHRSRef} =useCountUp(1563, 2500);
-    const {count: ClientSatisfaction, ref: clientSatisfactionRef} = useCountUp(98, 3000);
-    const [activeTestimonial, setActiveTestimonial] = useState(0);
-
     const testimonials = [
         {
             id: 1,
@@ -121,21 +115,45 @@ const Testimonials = ({category}: TestimonialsProps) => {
         },
     ];
 
+    const { count: clientsCount, ref: clientsRef } = useCountUp(200, 2500);
+    const { count: therapyHRS, ref: therapyHRSRef} =useCountUp(1563, 2500);
+    const {count: ClientSatisfaction, ref: clientSatisfactionRef} = useCountUp(98, 3000);
+    const [activeCategoryIndex, setActiveCategoryIndex] = useState(0);
+
     useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 2) % testimonials.length);
-        }, 3000);
-
-        return () => clearInterval(interval);
-    }, [testimonials.length]);
-
-    const getCurrentTestimonials = () => {
-        const first = testimonials[currentIndex];
-        const second = testimonials[(currentIndex + 1) % testimonials.length];
-        return [first, second];
-    };
+        console.log(groupedTestimonials);
+        console.log(categories);
+        console.log(testimonialsToShow);
+    }, [category]);
 
     const filteredTestimonials = category ?  testimonials.filter(testimonial => testimonial.category === category) : testimonials;
+
+    const groupedTestimonials = testimonials.reduce((acc, testimonial) => {
+        if(!acc[testimonial.category]){
+            acc[testimonial.category] = [];
+        }
+        acc[testimonial.category].push(testimonial);
+        return acc;
+    },{} as Record<string, typeof testimonials> );
+
+    const categories = Object.keys(groupedTestimonials);
+
+    const maxStartIndex = Math.max(0, filteredTestimonials.length - 2);
+
+    const slideRightTestimonials = () => {
+        setActiveCategoryIndex((prev) => {
+            return prev >= categories.length -1 ? 0 : prev + 1;
+        });
+    }
+
+    const slideLeftTestimonials = () => {
+        setActiveCategoryIndex((prev) => {
+            return prev <= 0 ? categories.length-1 : prev - 1;
+        });
+    }
+
+    const currCategory = categories[activeCategoryIndex];
+    const testimonialsToShow = groupedTestimonials[currCategory] || [];
 
     return (
         <div className="py-12 md:py-20 px-4 md:px-8">
@@ -154,18 +172,36 @@ const Testimonials = ({category}: TestimonialsProps) => {
                 </div>
             </div>
 
-                <div key={category} className="flex flex-col md:flex-row justify-center items-start gap-6 md:gap-8 max-w-6xl mx-auto">
-                    {filteredTestimonials
+                <div className="relative flex flex-col md:flex-row justify-center items-start gap-6 md:gap-8 max-w-6xl mx-auto">
+                    {testimonialsToShow
                         .map((testimonial) => (
                         <TestimonialGroup
                             key={testimonial.id}
-                            category= {category}
+                            category= {testimonial.category}
                             id={testimonial.id}
                             text={testimonial.text} 
                             author= {testimonial.author}
                             role={testimonial.role}
                         />
                     ))}
+                    {/* Navigation Arrows */}
+                                <button
+                                    onClick={() => slideRightTestimonials()}
+                                    className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/80 cursor-pointer hover:bg-white text-[#345041] p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
+                                >
+                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+
+                                <button
+                                    onClick={() => slideLeftTestimonials()}
+                                    className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/80 hover:bg-white text-[#345041] p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
+                                >
+                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                                    </svg>
+                                </button>
                 </div>
 
                 <div className='text-center block py-8 pl-8'>

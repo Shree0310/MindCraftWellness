@@ -21,11 +21,11 @@ const OurStoryOurSpace = () => {
     ];
 
     const slideLeftImage = () => {
-        setActiveImage(prev => (prev + 1) % images.length);
+         setActiveImage(prev => (prev - 1 < 0 ? images.length-1 : prev-1 ));
     }
 
     const slideRightImage = () => {
-        setActiveImage(prev => (prev - 1 < 0 ? images.length-1 : prev-1 ));
+        setActiveImage(prev => (prev + 1) % images.length);
     }
 
 return <div className="div">
