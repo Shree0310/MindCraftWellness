@@ -1,4 +1,6 @@
 import { SanityImageSource } from "@sanity/image-url/lib/types/types";
+import { PortableTextBlock } from "next-sanity";
+
 
 export interface BlogPost {
     _id: string;
@@ -10,6 +12,6 @@ export interface BlogPost {
     publishedAt?: string;
     category?: string;
     template?: 'default' | 'featured' | 'minimal';
-    body?: any[]; // Portable Text array
+    body?: PortableTextBlock[];
     excerpt?: string;
 }
