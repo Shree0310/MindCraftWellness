@@ -1,5 +1,5 @@
 "use client"
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Footer from "../Footer";
 import Header from "../Header";
 import FAQItem from "./FAQItem";
@@ -242,11 +242,30 @@ const FAQs = () => {
     }
 ];
 
-useEffect(() => {
-    console.log("uniqueCategories",uniqueCategories);
-})
-
     const uniqueCategories = [...new Set(faqData.map(data => data.category))];
+    const [inputValue, setInputValue] = useState("");
+    const [results, setResults] = useState(faqData);
+
+    const fetchData = () => {
+        if (!inputValue.trim()) {
+            setResults(faqData);
+            return;
+        }
+
+        const query = inputValue.toLowerCase();
+        const filtered = faqData.filter((item) =>
+            item.category.toLowerCase().includes(query) ||
+            item.question.toLowerCase().includes(query) ||
+            item.answer.toLowerCase().includes(query)
+        );
+
+        setResults(filtered);
+        //console.log(filtered);
+    }
+
+    useEffect(() => {
+            fetchData();
+    }, [inputValue])
 
     return <div className="div">
         <Header/>
@@ -262,26 +281,39 @@ useEffect(() => {
                 <h2 className="text-5xl font-extrabold text-[#345041] mb-6 py-24 " style={{ fontFamily: 'Lora, serif' }}>
                     FAQs
                 </h2>
-                <input type="dropdown"/>
+                <div className="">
+                    <input type="text" 
+                           placeholder="Search in FAQs" 
+                           value={inputValue} 
+                           onChange={(e) => setInputValue(e.target.value)}
+                           className="flex justify-center h-10 w-80 mb-24 px-4 border-2 border-y-green-800 rounded-lg"/>
+                </div>              
             </div>
-            <div className="mb-20">
-            {uniqueCategories.map(category => (
-                <div key={category} className="flex flex-col gap-8 mx-24">
-                    <h2 className="text-[#345041] font-semibold tracking-wide font-serif  text-3xl my-10">
-                        {category}
-                    </h2>
-                    {faqData
-                        .filter(faq => faq.category === category)
-                        .map((faq, idx) => (
-                            <div className="w-[880px]" key={`faq-${category}-${idx}`}>
-                                <FAQItem question={faq.question} answer={faq.answer} />
+            {results && results.length > 0 ? (
+                <div className="div">
+                    {uniqueCategories.map(category => {
+                        const filteredResults = results.filter(faq => faq.category === category);
+                        if (filteredResults.length === 0) return null;
+                        return (
+                            <div key={category} className="flex flex-col gap-8 mx-24">
+                                <h2 className="text-[#345041] font-semibold tracking-wide font-serif  text-3xl my-10">
+                                    {category}
+                                </h2>
+                                {filteredResults.map((faq, idx) => (
+                                    <div className="w-full max-w-[880px]" key={`faq-${category}-${idx}`}>
+                                        <FAQItem question={faq.question} answer={faq.answer} />
+                                    </div>
+                                ))}
                             </div>
-                        ))
-                    }
-                </div>      
-            ))}
-            </div>
-        </div>  
+                        );
+                    })}
+                    </div>
+                ) : (
+                    <div className="div">
+                        <p className="text-gray-500">No FAQs found.</p>
+                    </div>
+                )}
+                </div>  
         <Footer/>      
     </div>
 }
