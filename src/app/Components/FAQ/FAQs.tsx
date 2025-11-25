@@ -290,7 +290,7 @@ const FAQs = () => {
                 </div>              
             </div>
             {results && results.length > 0 ? (
-                <div className="div">
+                <div className="mb-10">
                     {uniqueCategories.map(category => {
                         const filteredResults = results.filter(faq => faq.category === category);
                         if (filteredResults.length === 0) return null;

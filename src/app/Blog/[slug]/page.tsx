@@ -87,7 +87,7 @@ const DefaultTemplate = ({ blog }: { blog: BlogPost }) => (
                     </span>
                 )}
                 
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#345041] mb-4" style={{ fontFamily: 'BrittanySignature, serif' }}>
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#345041] mb-4" style={{ fontFamily: 'Lora, serif' }}>
                     {blog.title}
                 </h1>
                 
@@ -150,7 +150,7 @@ const FeaturedTemplate = ({ blog }: { blog: BlogPost }) => (
                                 {categoryLabels[blog.category] || blog.category}
                             </span>
                         )}
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4" style={{ fontFamily: 'BrittanySignature, serif' }}>
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4" style={{ fontFamily: 'Lora, serif' }}>
                             {blog.title}
                         </h1>
                         {blog.publishedAt && (
