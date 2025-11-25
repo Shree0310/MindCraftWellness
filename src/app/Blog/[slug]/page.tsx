@@ -42,7 +42,7 @@ const SingleBlogPage = async ({
             <div className="min-h-screen flex items-center justify-center">
                 <div className="text-center">
                     <h1 className="text-2xl font-bold text-[#345041] mb-4">Post not found</h1>
-                    <Link href="/blog" className="text-[#ee7e1b] hover:underline">
+                    <Link href="/Blog" className="text-[#ee7e1b] hover:underline">
                         ← Back to Blog
                     </Link>
                 </div>
@@ -76,7 +76,7 @@ const DefaultTemplate = ({ blog }: { blog: BlogPost }) => (
     <article className="bg-gradient-to-t from-[#ee7e1b] to-[#e9e0d3] min-h-screen">
         <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
             
-            <Link href="/blog" className="inline-flex items-center text-[#345041] hover:text-[#2a4033] mb-8 transition-colors">
+            <Link href="/Blog" className="inline-flex items-center text-[#345041] hover:text-[#2a4033] mb-8 transition-colors">
                 ← Back to Blog
             </Link>
 
@@ -168,7 +168,7 @@ const FeaturedTemplate = ({ blog }: { blog: BlogPost }) => (
         )}
 
         <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
-            <Link href="/blog" className="inline-flex items-center text-[#345041] hover:text-[#2a4033] mb-8 transition-colors">
+            <Link href="/Blog" className="inline-flex items-center text-[#345041] hover:text-[#2a4033] mb-8 transition-colors">
                 ← Back to Blog
             </Link>
 
