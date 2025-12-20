@@ -5,6 +5,8 @@ import Header from "../Header";
 import FAQItem from "./FAQItem";
 
 const FAQs = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     const faqData = [
     // Getting Started with Therapy
     {
@@ -268,7 +270,15 @@ const FAQs = () => {
     }, [inputValue])
 
     return <div className="div">
-        <Header/>
+        <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+            {/* Blur the whole homepage when menu is open */}
+            <div
+                className={`${
+                isMenuOpen
+                    ? "filter blur-sm pointer-events-none transition-filter duration-300"
+                    : "transition-filter duration-300"
+                }`}
+            >
         <div className="flex flex-col justify-center items-center">
             <div className="bg-yellow-50 w-full flex flex-col justify-center items-center">
                  <div className="absolute top-0 left-0 w-full h-32 opacity-20">
@@ -315,6 +325,7 @@ const FAQs = () => {
                 )}
                 </div>  
         <Footer/>      
+    </div>
     </div>
 }
 export default FAQs;

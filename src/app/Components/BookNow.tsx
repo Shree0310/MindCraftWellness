@@ -4,12 +4,22 @@ import Header from "./Header";
 import HowItWorks from "./HowItWorks";
 import Link from 'next/link';
 import Testimonials from "./Testimonials/Testimonials";
+import { useState } from "react";
 
 export default function BookNow() {
-
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    
     return (
         <div className="bg-[#E7CDBF] h-full pb-10 scroll-auto">
-            <Header />
+            <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+            {/* Blur the whole homepage when menu is open */}
+            <div
+                className={`${
+                isMenuOpen
+                    ? "filter blur-sm pointer-events-none transition-filter duration-300"
+                    : "transition-filter duration-300"
+                }`}
+            >
 
             {/* Tealfeed Calendar Section */}
             <div className="bg-white rounded-3xl p-8 my-16 mx-8">
@@ -93,6 +103,7 @@ export default function BookNow() {
                     </Link>
                 </div>
             </div>
+        </div>
         </div>
     );
 }

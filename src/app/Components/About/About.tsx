@@ -16,6 +16,7 @@ import DiagWaveConnector from "../SVGs/DiagWaveConnector";
 import OurStoryOurSpace from "./OurStoryOurSpace";
 
 const About = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [activeImage, setActiveImage] = useState(0);
 
 
@@ -26,7 +27,15 @@ const About = () => {
 
     return (
         <div className="min-h-screen flex flex-col">
-            <Header />
+            <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+                {/* Blur the whole homepage when menu is open */}
+                <div
+                    className={`${
+                    isMenuOpen
+                        ? "filter blur-sm pointer-events-none transition-filter duration-300"
+                        : "transition-filter duration-300"
+                    }`}
+                >
             <div className="bg-[#FFFADA] text-black w-full font-sans py-8 md:py-16 overflow-x-hidden flex-grow">
                 <div className="max-w-7xl mx-auto px-4 md:px-8">
                     <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -256,6 +265,7 @@ const About = () => {
                 <Testimonials category="about us" />
                 <Footer />
             </div>
+        </div>
         </div>
     )
 }

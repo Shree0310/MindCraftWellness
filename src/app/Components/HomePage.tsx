@@ -13,7 +13,7 @@ import { IconChevronRight } from '@tabler/icons-react';
 
 const HomePage = () => {
     return (
-        <div className='scroll-auto bg-white'>
+        <div className='scroll-auto bg-white relative'>
             {/* Landing page section with text overlay */}
             <div className='relative'>
                 {/* Decorative elements for landing page */}

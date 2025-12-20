@@ -1,3 +1,5 @@
+"use client"
+
 import Footer from "@/app/Components/Footer";
 import Header from "@/app/Components/Header";
 import { sanityAPIClient } from "@/sanity/lib/client";
@@ -5,6 +7,7 @@ import { urlFor } from "@/sanity/lib/image";
 import { BlogPost } from "@/types/blog";
 import { PortableText } from "next-sanity";
 import Link from "next/link";
+import { useState } from "react";
 
 const categoryColors: Record<string, string> = {
     'mental-health': 'bg-blue-100 text-blue-800',
@@ -23,6 +26,9 @@ const categoryLabels: Record<string, string> = {
     'therapy-tips': 'Therapy Tips',
     'wellness': 'Wellness',
 };
+
+const [isMenuOpen, setIsMenuOpen] = useState(false);
+
 
 
 const SingleBlogPage = async ({
@@ -64,9 +70,18 @@ const SingleBlogPage = async ({
 
     return (
         <div>
-            <Header/>
+            <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      {/* Blur the whole homepage when menu is open */}
+      <div
+        className={`${
+          isMenuOpen
+            ? "filter blur-sm pointer-events-none transition-filter duration-300"
+            : "transition-filter duration-300"
+        }`}
+      >
             {renderTemplate()}
             <Footer className='bg-[#ee7e1b]' />
+        </div>
         </div>
     )
 }

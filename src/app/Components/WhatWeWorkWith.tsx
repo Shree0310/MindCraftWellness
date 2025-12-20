@@ -8,12 +8,23 @@ import Link from 'next/link';
 import TakingTherapy from '../Assets/images/Taking-Therapy.jpg';
 import OurSpace from '../Assets/images/ourSpace.png';
 import Concerns from "./Concerns/Concerns";
+import { useState } from "react";
 
 
 const WhatWeWorkWith = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    
     return (
         <div className="min-h-screen flex flex-col">
-            <Header />
+            <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+            {/* Blur the whole homepage when menu is open */}
+            <div
+                className={`${
+                isMenuOpen
+                    ? "filter blur-sm pointer-events-none transition-filter duration-300"
+                    : "transition-filter duration-300"
+                }`}
+            >
             <div className="bg-[#FFFADA] text-black w-full font-sans py-16 overflow-x-hidden flex-grow">
                 <div className="max-w-7xl mx-auto px-8">
                     {/* Hero Quote Section */}
@@ -168,6 +179,7 @@ const WhatWeWorkWith = () => {
                 </div>
             </div>
             <Footer />
+        </div>
         </div>
     );
 };
