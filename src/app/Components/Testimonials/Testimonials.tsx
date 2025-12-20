@@ -160,7 +160,7 @@ const Testimonials = ({category}: TestimonialsProps) => {
                     <span className="text-xs md:text-sm font-semibold text-[#345041] uppercase tracking-wider"><p>{"Testimonials"}</p></span>
                     <div className="w-8 md:w-12 h-0.5 bg-[#345041] opacity-30"></div>
                 </div>
-                <h2 className="text-xl md:text-2xl lg:text-6xl font-bold text-[#345041] mb-12 md:mb-6 lg:mb-10 px-4 tracking-wider " style={{ fontFamily: 'BrittanySignature, serif' }}>
+                <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-[#345041] mb-12 md:mb-6 lg:mb-10 px-4 tracking-wider " style={{ fontFamily: 'BrittanySignature, serif' }}>
                     <p className='mb-4'>{"What Our Clients Say"}</p>
                 </h2>
                 <div className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-4 mt-3" style={{ fontFamily: 'Lora, serif' }}>
@@ -183,7 +183,8 @@ const Testimonials = ({category}: TestimonialsProps) => {
                     {/* Navigation Arrows */}
                                 <button
                                     onClick={() => slideRightTestimonials()}
-                                    className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/80 cursor-pointer hover:bg-white text-[#345041] p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
+                                    className="hidden md:block absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/80 cursor-pointer hover:bg-white text-[#345041] p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
+                                    aria-hidden="false"
                                 >
                                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -192,7 +193,8 @@ const Testimonials = ({category}: TestimonialsProps) => {
 
                                 <button
                                     onClick={() => slideLeftTestimonials()}
-                                    className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/80 hover:bg-white text-[#345041] p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
+                                    className="hidden md:block absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/80 hover:bg-white text-[#345041] p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
+                                    aria-hidden="false"
                                 >
                                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />

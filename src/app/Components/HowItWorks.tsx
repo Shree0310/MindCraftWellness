@@ -56,17 +56,17 @@ const HowItWorks = ({className, children}:{
 
                     {/* Right side - How it works */}
                     <div>
-                        <h2 className="text-4xl font-extrabold text-[#345041] mb-8" style={{ fontFamily: 'Lora, serif' }}>
+                        <h2 className="md:text-4xl text-2xl font-extrabold text-[#345041] mb-8" style={{ fontFamily: 'Lora, serif' }}>
                             <p>{"How Mind Craft Wellness works"}</p>
                         </h2>
 
                         <div className="space-y-6">
                             {/* Step 1 */}
-                            <div className="bg-white rounded-2xl p-6 border border-[#E7CDBF] shadow-sm hover:shadow-md transition-shadow duration-300">
+                            <div className="bg-white rounded-2xl md:p-6 p-2 border border-[#E7CDBF] shadow-sm hover:shadow-md transition-shadow duration-300 md:w-full w-[350px]">
                                 <div className="flex items-start">
-                                    <div className="text-5xl font-bold text-[#8B4513] mr-6 leading-none">1</div>
+                                    <div className="md:text-5xl text-2xl font-bold text-[#8B4513] md:mr-6 mr-2 leading-none">1</div>
                                     <div className="flex-1">
-                                        <h3 className="text-xl font-semibold text-[#345041] mb-3"><p>{"Schedule a Free Consultation"}</p></h3>
+                                        <h3 className="text-xl font-semibold text-[#345041] md:mb-3 mb-1"><p>{"Schedule a Free Consultation"}</p></h3>
                                         <p className="text-gray-700 leading-relaxed text-sm">
                                             Book your free 15-minute consultation call. We&rsquo;ll discuss your concerns, answer questions, and explore how we can support your healing journey. No pressure, just a friendly conversation to see if we&rsquo;re the right fit.
                                         </p>
@@ -75,11 +75,11 @@ const HowItWorks = ({className, children}:{
                             </div>
 
                             {/* Step 2 */}
-                            <div className="bg-white rounded-2xl p-6 border border-[#E7CDBF] shadow-sm hover:shadow-md transition-shadow duration-300">
+                            <div className="bg-white rounded-2xl md:p-6 p-2 border border-[#E7CDBF] shadow-sm hover:shadow-md transition-shadow duration-300 md:w-full w-[350px]">
                                 <div className="flex items-start">
-                                    <div className="text-5xl font-bold text-[#8B4513] mr-6 leading-none">2</div>
+                                    <div className="md:text-5xl text-2xl font-bold text-[#8B4513] md:mr-6 mr-2 leading-none">2</div>
                                     <div className="flex-1">
-                                        <h3 className="text-xl font-semibold text-[#345041] mb-3"><p>{"Get Matched with Your Therapist"}</p></h3>
+                                        <h3 className="text-xl font-semibold text-[#345041] md:mb-3 mb-1"><p>{"Get Matched with Your Therapist"}</p></h3>
                                         <p className="text-gray-700 leading-relaxed text-sm">
                                             Based on your needs, preferences, and goals, we&rsquo;ll match you with the therapist who&rsquo;s best suited to support you. Our team includes specialists in trauma, anxiety, relationships, and more.
                                         </p>
@@ -88,11 +88,11 @@ const HowItWorks = ({className, children}:{
                             </div>
 
                             {/* Step 3 */}
-                            <div className="bg-white rounded-2xl p-6 border border-[#E7CDBF] shadow-sm hover:shadow-md transition-shadow duration-300">
+                            <div className="bg-white rounded-2xl md:p-6 p-2 border border-[#E7CDBF] shadow-sm hover:shadow-md transition-shadow duration-300 md:w-full w-[350px]">
                                 <div className="flex items-start">
-                                    <div className="text-5xl font-bold text-[#8B4513] mr-6 leading-none">3</div>
+                                    <div className="md:text-5xl text-2xl font-bold text-[#8B4513] md:mr-6 mr-2 leading-none">3</div>
                                     <div className="flex-1">
-                                        <h3 className="text-xl font-semibold text-[#345041] mb-3"><p>{"Begin Your Healing Journey"}</p></h3>
+                                        <h3 className="text-xl font-semibold text-[#345041] md:mb-3 mb-1"><p>{"Begin Your Healing Journey"}</p></h3>
                                         <p className="text-gray-700 leading-relaxed text-sm">
                                             Start your therapy sessions at our welcoming Gurgaon clinic or online. Sessions are 60 minutes, starting at ₹1500, with fees varying by therapist specialization and experience.
                                         </p>
@@ -101,11 +101,11 @@ const HowItWorks = ({className, children}:{
                             </div>
 
                             {/* Step 4 */}
-                            <div className="bg-white rounded-2xl p-6 border border-[#E7CDBF] shadow-sm hover:shadow-md transition-shadow duration-300">
+                            <div className="bg-white rounded-2xl md:p-6 p-2 border border-[#E7CDBF] shadow-sm hover:shadow-md transition-shadow duration-300 md:w-full w-[350px]">
                                 <div className="flex items-start">
-                                    <div className="text-5xl font-bold text-[#8B4513] mr-6 leading-none">4</div>
+                                    <div className="md:text-5xl text-2xl font-bold text-[#8B4513] md:mr-6 mr-2 leading-none">4</div>
                                     <div className="flex-1">
-                                        <h3 className="text-xl font-semibold text-[#345041] mb-3"><p>{"Switch Therapists Anytime"}</p></h3>
+                                        <h3 className="text-xl font-semibold text-[#345041] md:mb-3 mb-1"><p>{"Switch Therapists Anytime"}</p></h3>
                                         <p className="text-gray-700 leading-relaxed text-sm">
                                             If your first therapist isn&rsquo;t the right fit, it&rsquo;s easy to switch to another member of our team at no additional cost. Your comfort and connection with your therapist is our priority.
                                         </p>
@@ -115,9 +115,9 @@ const HowItWorks = ({className, children}:{
                         </div>
                     </div>
 
-                    <div className="relative mt-24">
-                        <div className="bg-gray-200 rounded-lg max-h-[650px] w-[552px] overflow-hidden">
-                            <img src={HowMCWWorks.src} className='w-full max-w-[552px] max-h- h-full object-cover rotate-180' alt="Therapy session" />
+                    <div className="relative md:mt-24 mt-12">
+                        <div className="rounded-lg max-h-[650px] w-[552px] overflow-hidden">
+                            <img src={HowMCWWorks.src} className='md:w-full max-w-[350px] md:max-w-[552px]  h-full object-cover rotate-180' alt="Therapy session" />
                         </div>
                     </div>
                 </div>

@@ -27,10 +27,10 @@ const WhatMakesUsDiff = () => {
                         <span className="text-sm font-semibold text-[#345041] uppercase tracking-wider"><p>{"Why Choose Us"}</p></span>
                         <div className="w-8 h-0.5 bg-[#345041] opacity-30"></div>
                     </div>
-                    <h2 className="text-5xl font-bold text-[#345041] mb-6" style={{ fontFamily: 'BrittanySignature, serif' }}>
+                    <h2 className="md:text-5xl text-3xl font-bold text-[#345041] mb-6" style={{ fontFamily: 'BrittanySignature, serif' }}>
                         Here&rsquo;s what makes us different
                     </h2>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto" style={{ fontFamily: 'Lora, serif' }}>
+                    <p className="md:text-lg text-lg text-gray-600 max-w-2xl mx-auto" style={{ fontFamily: 'Lora, serif' }}>
                         We believe in creating an environment where healing happens naturally, with care that goes beyond traditional therapy.
                     </p>
                 </div>
@@ -46,7 +46,7 @@ const WhatMakesUsDiff = () => {
                                 </div>
                                 <div className="flex-1">
                                     <h3 className="text-lg font-semibold text-[#345041] mb-1"><p>{"Evidence-Based Care"}</p></h3>
-                                    <p className="text-gray-700 text-lg leading-relaxed">
+                                    <p className="text-gray-700 md:text-lg text-sm leading-relaxed">
                                         We offer evidence-based, trauma-informed care that&rsquo;s proven to work.
                                     </p>
                                 </div>
@@ -60,7 +60,7 @@ const WhatMakesUsDiff = () => {
                                 </div>
                                 <div className="flex-1">
                                     <h3 className="text-lg font-semibold text-[#345041] mb-1"><p>{"Safe & Inclusive"}</p></h3>
-                                    <p className="text-gray-700 text-lg leading-relaxed">
+                                    <p className="text-gray-700 md:text-lg text-sm leading-relaxed">
                                         We strive to offer a welcoming environment for all identities and life experiences without judgement.
                                     </p>
                                 </div>
@@ -73,9 +73,9 @@ const WhatMakesUsDiff = () => {
                                     <span className="text-white text-lg">❤️</span>
                                 </div>
                                 <div className="flex-1">
-                                    <h3 className="text-lg font-semibold text-[#345041] mb-1"><p>{"Compassionate Standards"}</p></h3>
-                                    <p className="text-gray-700 text-lg leading-relaxed mb-10">
-                                        We mindfully work toward offering an Ethical and Compassionate practice that prioritises your wellbeing and privacy.
+                                    <h3 className="text-lg font-semibold text-[#345041] mb-1"><p>{"Compassionate Ways"}</p></h3>
+                                    <p className="text-gray-700 md:text-lg text-sm leading-relaxed mb-10">
+                                        We mindfully work toward a Compassionate and Ethical, practice that prioritises your wellbeing and privacy.
                                     </p>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@ const WhatMakesUsDiff = () => {
                                 </div>
                                 <div className="flex-1">
                                     <h3 className="text-lg font-semibold text-[#345041] mb-1"><p>{"Focused Attention"}</p></h3>
-                                    <p className="text-gray-700 text-lg leading-relaxed">
+                                    <p className="text-gray-700 md:text-lg text-sm leading-relaxed">
                                         Our therapists see no more than four clients a day for fresh focus and presence.
                                     </p>
                                 </div>
@@ -105,7 +105,7 @@ const WhatMakesUsDiff = () => {
                                 </div>
                                 <div className="flex-1">
                                     <h3 className="text-lg font-semibold text-[#345041] mb-1"><p>{"Continuous Learning"}</p></h3>
-                                    <p className="text-gray-700 text-lg leading-relaxed">
+                                    <p className="text-gray-700 md:text-lg text-sm leading-relaxed">
                                         Our therapists undergo ongoing supervision and training to maintain excellence in clinical practice.
                                     </p>
                                 </div>
@@ -119,7 +119,7 @@ const WhatMakesUsDiff = () => {
                                 </div>
                                 <div className="flex-1">
                                     <h3 className="text-lg font-semibold text-[#345041] mb-1"><p>{"Client Feedback"}</p></h3>
-                                    <p className="text-gray-700 text-lg leading-relaxed">
+                                    <p className="text-gray-700 md:text-lg text-sm leading-relaxed">
                                         We implement a structured feedback system with our clients to continually refine and improve our services.
                                     </p>
                                 </div>
@@ -130,9 +130,9 @@ const WhatMakesUsDiff = () => {
 
                 {/* Call to Action */}
                 <div className="text-center mt-16">
-                    <div className="inline-flex items-center space-x-4 bg-white rounded-full px-8 py-4 shadow-lg">
-                        <span className="text-[#345041] font-semibold"><p>{"Ready to experience the difference?"}</p></span>
-                        <Link href="/book-now" className="bg-[#345041] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2a4033] transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">
+                    <div className="inline-flex items-center space-x-4 bg-white rounded-full md:px-8 px-4 md:py-4 py-2 shadow-lg">
+                        <span className="text-[#345041] font-semibold md:text-lg text-sm"><p>{"Ready to experience the difference?"}</p></span>
+                        <Link href="/book-now" className="bg-[#345041] md:text-lg text-sm text-white md:px-6 px-4 md:py-2 py-1 rounded-full font-semibold hover:bg-[#2a4033] transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">
                             Book Your Session
                         </Link>
                     </div>

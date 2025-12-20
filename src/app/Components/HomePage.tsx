@@ -179,7 +179,7 @@ const HomePage = () => {
                         and a certified AEDP and CBT therapist based in Gurgaon.
                     </span>
                     <div className='flex flex-col md:flex-row justify-start items-start gap-6 mx-auto max-w-6xl px-4 relative'>
-                        <img src={ProfilePic.src} className='relative w-full max-w-[350px] max-h-[400px] h-[300px] md:h-[400px] object-cover mx-auto md:mx-8 rounded-2xl shadow-2xl' alt="Aishwaraya Goud - Founder of Mind Craft Wellness" />
+                        <img src={ProfilePic.src} className='relative w-full md:max-w-[350px] max-w-[250px]  md:max-h-[400px] max-h-[250px] h-[250px] md:h-[400px] object-fill mx-auto md:mx-8 rounded-2xl shadow-2xl' alt="Aishwaraya Goud - Founder of Mind Craft Wellness" />
                         <p className='relative text-base md:text-lg text-left w-full md:w-[500px] pt-2' style={{ fontFamily: 'Lora, serif', lineHeight: '1.6' }}>
                             At Mind Craft Wellness, you might work with me directly, or with one of the other experienced therapists on our team. I ensure our team shares the same commitment to warmth, skill, and trauma-informed care, so that every client feels supported and understood.<br />
                             <br />
@@ -220,7 +220,7 @@ const HomePage = () => {
                     </div>
 
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-4xl mb-12 text-center tracking-widest" style={{ fontFamily: 'BrittanySignature, serif' }}>
+                        <h2 className="text-3xl md:text-4xl mb-12 text-center tracking-widest" style={{ fontFamily: 'BrittanySignature, serif' }}>
                             We support adults above 21 years of age through -
                         </h2>
 
@@ -228,7 +228,7 @@ const HomePage = () => {
                             <div className="flex items-start space-x-4">
                                 <div className="w-3 h-3 bg-[#345041] rounded-full mt-3 flex-shrink-0"></div>
                                 <div>
-                                    <h3 className="text-2xl font-semibold text-[#345041] mb-2"><p>{"Life Transitions & Identity Work"}</p></h3>
+                                    <h3 className="md:text-2xl text-xl font-semibold text-[#345041] mb-2"><p>{"Life Transitions & Identity Work"}</p></h3>
                                     <p className="text-lg text-gray-700 leading-relaxed">
                                         Navigating change, loss, or uncertainty.
                                     </p>
@@ -238,7 +238,7 @@ const HomePage = () => {
                             <div className="flex items-start space-x-4">
                                 <div className="w-3 h-3 bg-[#345041] rounded-full mt-3 flex-shrink-0"></div>
                                 <div>
-                                    <h3 className="text-2xl font-semibold text-[#345041] mb-2"><p>{"Trauma Recovery"}</p></h3>
+                                    <h3 className="md:text-2xl text-xl font-semibold text-[#345041] mb-2"><p>{"Trauma Recovery"}</p></h3>
                                     <p className="text-lg text-gray-700 leading-relaxed">
                                         Including developmental and relational trauma, abuse, and neglect.
                                     </p>
@@ -248,7 +248,7 @@ const HomePage = () => {
                             <div className="flex items-start space-x-4">
                                 <div className="w-3 h-3 bg-[#345041] rounded-full mt-3 flex-shrink-0"></div>
                                 <div>
-                                    <h3 className="text-2xl font-semibold text-[#345041] mb-2"><p>{"Perinatal Mental Health"}</p></h3>
+                                    <h3 className="md:text-2xl text-xl font-semibold text-[#345041] mb-2"><p>{"Perinatal Mental Health"}</p></h3>
                                     <p className="text-lg text-gray-700 leading-relaxed">
                                         Emotional well-being during conception, pregnancy, and postpartum for women and men.
                                     </p>
@@ -258,7 +258,7 @@ const HomePage = () => {
                             <div className="flex items-start space-x-4">
                                 <div className="w-3 h-3 bg-[#345041] rounded-full mt-3 flex-shrink-0"></div>
                                 <div>
-                                    <h3 className="text-2xl font-semibold text-[#345041] mb-2"><p>{"Mood, Anxiety, and Stress-Related Concerns"}</p></h3>
+                                    <h3 className="md:text-2xl text-xl font-semibold text-[#345041] mb-2"><p>{"Mood, Anxiety, and Stress-Related Concerns"}</p></h3>
                                     <p className="text-lg text-gray-700 leading-relaxed">
                                         Including depression, generalised anxiety, social anxiety, low self-esteem, body image difficulties, and eating disorders.
                                     </p>
