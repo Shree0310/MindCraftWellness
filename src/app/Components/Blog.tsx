@@ -1,3 +1,4 @@
+"use client"
 import { sanityAPIClient } from "@/sanity/lib/client";
 import BookFreeConsultationBtn from "./BookFreeConsulationBtn";
 import { urlFor } from "@/sanity/lib/image";
