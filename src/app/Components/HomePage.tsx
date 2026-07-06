@@ -319,7 +319,7 @@ const HomePage = () => {
                 </div>
             </div>
 
-            <div className='bg-[#B6724F] h-full w-full text-white relative overflow-hidden py-16 md:py-20'>
+            <div className='bg-[#B6724F] h-full w-full text-white relative overflow-hidden py-12 md:py-16'>
                 <Testimonials category='landing page' />
             </div>
 

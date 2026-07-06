@@ -163,7 +163,7 @@ const Testimonials = ({category}: TestimonialsProps) => {
                 <h2 className="text-3xl md:text-4xl lg:text-5xl text-white mb-12 md:mb-6 lg:mb-10 px-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                     <p className='mb-4'>{"What Our Clients Say"}</p>
                 </h2>
-                <div className="text-base md:text-lg text-white/90 max-w-2xl mx-auto px-4 mt-3" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                <div className="text-base md:text-lg text-[#95573A] max-w-2xl mx-auto px-4 mt-3" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                     <p>{"Real stories from real people who have experienced transformation through our therapy."}</p>
                 </div>
             </div>
@@ -232,7 +232,7 @@ const Testimonials = ({category}: TestimonialsProps) => {
                     <h3 className="text-xl md:text-2xl text-[#2B231C] mb-2 px-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}><p>{"Supporting clients since January 2020"}</p></h3>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 max-w-5xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
                     <div className="text-center" ref={clientsRef}>
                         <div className="text-3xl md:text-4xl text-[#B6724F] mb-2" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
                             <span className="inline-block min-w-[60px] md:min-w-[80px]">
