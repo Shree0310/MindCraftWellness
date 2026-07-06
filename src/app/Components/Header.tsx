@@ -31,31 +31,31 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: { isMenuOpen: boolean; setIsMenuO
     ]
 
     return (
-        <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+        <header className="sticky top-0 z-50 bg-[#FAF6F0]/95 backdrop-blur-sm border-b border-[#E8DBC9] shadow-sm">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center py-4">
                     {/* Logo Section */}
                     <div className="flex items-center">
                         <Link href="/" className="group">
-                            <h1 className="text-3xl cursor-pointer md:text-4xl font-extrabold text-[#345041] transition-colors duration-300 group-hover:text-[#2a4033]" style={{ fontFamily: 'BodoniModa, serif' }}>
+                            <h1 className="text-3xl cursor-pointer md:text-4xl text-[#2B231C] transition-colors duration-300 group-hover:text-[#B6724F]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
                                 Mind Craft Wellness
                             </h1>
-                            <span className="font-sans text-xs md:text-sm text-gray-600 block mt-1">
-                                THERAPY THAT HOLDS, HEALS AND GROWS
+                            <span className="text-xs md:text-sm text-[#5C4B3C] block mt-1" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500, letterSpacing: '0.08em' }}>
+                                Therapy that holds, heals, and grows
                             </span>
                         </Link>
                     </div>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex items-center space-x-8 font-bold text-xl" style={{ fontFamily: 'Lora, serif' }}>
+                    <div className="hidden md:flex items-center space-x-8 text-base" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500 }}>
                         {navItems.map((item, idx) => (
                             <div key={idx} className="nav-item">
                                 <Link
                                     href={item.href}
-                                    className="text-gray-700 hover:text-[#345041] transition-colors duration-300 relative group"
+                                    className="text-[#2B231C] hover:text-[#B6724F] transition-colors duration-300 relative group"
                                 >
                                     {item.title}
-                                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#345041] transition-all duration-300 group-hover:w-full"></span>
+                                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#B6724F] transition-all duration-300 group-hover:w-full"></span>
                                 </Link>
                             </div>
                         ))}
@@ -65,7 +65,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: { isMenuOpen: boolean; setIsMenuO
 
                     {/* Mobile Menu Button */}
                     <button
-                        className="md:hidden p-2 rounded-md text-gray-700 hover:text-[#345041] hover:bg-gray-100 transition-colors duration-300"
+                        className="md:hidden p-2 rounded-md text-[#2B231C] hover:text-[#B6724F] hover:bg-[#F2E8DD] transition-colors duration-300"
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                     >
                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -91,20 +91,21 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: { isMenuOpen: boolean; setIsMenuO
 
                         {/* Mobile menu panel above the overlay */}
                         <div
-                            className="absolute z-50 md:hidden border-t inset-x-4 top-8 p-8 rounded-3xl ring-1 ring-zinc-900/5 border-gray-100 bg-white w-96 h-96 shadow-2xl"
-                            style={{ fontFamily: 'BodoniModa, serif' }}
+                            className="absolute z-50 md:hidden border-t inset-x-4 top-8 p-8 ring-1 ring-zinc-900/5 border-[#E8DBC9] bg-[#FAF6F0] w-96 h-96 shadow-2xl"
+                            style={{ fontFamily: 'var(--font-dm-sans), sans-serif', borderRadius: '20px' }}
                         >
                              <button
                                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                                 aria-label="Close menu"
-                                className="absolute right-4 top-4 p-2 rounded-full ring-1 ring-neutral-200 dark:ring-neutral-600 bg-white dark:bg-neutral-800 shadow">
+                                className="absolute right-4 top-4 p-2 rounded-full ring-1 ring-[#E8DBC9] bg-[#FAF6F0] shadow">
                                 <IconX size={10}/>
                             </button>
                             {navItems.map((item, idx) => (
                                 <div key={idx} className="flex flex-col space-y-4">
                                     <Link
                                         href={item.href}
-                                        className="text-gray-700 hover:text-[#345041] font-medium transition-colors duration-300 px-4 py-2 rounded-md hover:bg-gray-50 text-lg"
+                                        className="text-[#2B231C] hover:text-[#B6724F] transition-colors duration-300 px-4 py-2 rounded-md hover:bg-[#F2E8DD] text-lg"
+                                        style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 400 }}
                                         onClick={() => setIsMenuOpen(false)}
                                     >
                                         {item.title}

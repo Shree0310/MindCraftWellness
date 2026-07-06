@@ -36,25 +36,22 @@ const About = () => {
                         : "transition-filter duration-300"
                     }`}
                 >
-            <div className="bg-[#FFFADA] text-black w-full font-sans py-8 md:py-16 overflow-x-hidden flex-grow">
+            <div className="bg-[#FAF6F0] text-black w-full font-sans py-8 md:py-16 overflow-x-hidden flex-grow">
                 <div className="max-w-7xl mx-auto px-4 md:px-8">
                     <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
                         {/* Left side - Text content */}
                         <div className="space-y-6 md:space-y-8 order-2 lg:order-1">
-                            {/* <h1 className="text-4xl font-bold" style={{ fontFamily: 'BrittanySignature, serif' }}>
-                                About Mind Craft Wellness
-                            </h1> */}
-                            <p className="text-xl md:text-xl leading-relaxed px-4 md:px-0 italic" style={{ fontFamily: 'GlacialIndifference, serif' }}>
+                            <p className="text-xl md:text-xl leading-relaxed px-4 md:px-0 text-[#2B231C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300, fontStyle: 'italic' }}>
                                 &ldquo;In my early professional years I was asking the question: How can I treat, or cure, or change this person?
                                 Now I would phrase the question in this way:
-                                <span className="font-bold"> How can I provide a relationship which this person may use for his own personal growth?&rdquo; - Carl Rogers</span>
+                                <span style={{ fontWeight: 400 }}> How can I provide a relationship which this person may use for his own personal growth?&rdquo; - Carl Rogers</span>
                             </p>
-                            <p className="text-lg md:text-xl leading-relaxed px-4 md:px-0" style={{ fontFamily: 'GlacialIndifference, serif' }}>
+                            <p className="text-lg md:text-xl leading-relaxed px-4 md:px-0 text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                                 At Mind Craft Wellness, we believe in the power of authentic human connection and the transformative potential of a safe,
                                 nurturing therapeutic relationship. Our approach is rooted in the understanding that healing happens within the context
                                 of genuine care and understanding.
                             </p>
-                            <p className="text-lg md:text-xl leading-relaxed px-4 md:px-0" style={{ fontFamily: 'GlacialIndifference, serif' }}>
+                            <p className="text-lg md:text-xl leading-relaxed px-4 md:px-0 text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                                 We are committed to creating a space where you feel truly seen, heard, and supported on your journey toward
                                 greater self-awareness, healing, and growth.
                             </p>
@@ -97,30 +94,30 @@ const About = () => {
                 </div>
 
                 <div>
-                    <div className='bg-[#FBF4F1] w-full'>
-                        <h1 className='text-2xl md:text-3xl pt-8 md:pt-16 pb-3 text-center font-bold px-4' style={{ fontFamily: 'BrittanySignature, serif' }}>
+                    <div className='bg-[#F2E8DD] w-full'>
+                        <h1 className='text-2xl md:text-3xl pt-8 md:pt-16 pb-3 text-center text-[#2B231C] px-4' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                             Hi, I&apos;m Aishwaraya Goud —
                         </h1>
-                        <span className='text-base md:text-lg py-2 mb-6 md:mb-10 text-center block pb-6 md:pb-8 px-4' style={{ fontFamily: 'Lora, serif' }}>
+                        <span className='text-base md:text-lg py-2 mb-6 md:mb-10 text-center text-[#5C4B3C] block pb-6 md:pb-8 px-4' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                             Founder of Mind Craft Wellness,<br />
                             and a certified AEDP and CBT therapist based in Gurgaon.
                         </span>
                         <div className='flex flex-col md:flex-col justify-center items-center  gap-6 mx-auto max-w-6xl px-4 relative'>
-                            <div className="flex">
+                            <div className="flex md:flex-row flex-col">
                                 <div className='relative w-full max-w-[350px] h-[400px] md:h-[500px] pt-6 pr-0 md:pr-6 mx-auto md:mx-0 rounded-xl overflow-hidden'>
-                                    <img src={ProfilePic.src} className='w-full h-full object-cover rounded-xl shadow-2xl' alt="Aishwaraya Goud - Founder of Mind Craft Wellness" />
+                                    <img src={ProfilePic.src} className='w-full h-full md:object-cover rounded-xl shadow-2xl' alt="Aishwaraya Goud - Founder of Mind Craft Wellness" />
                                 </div>
-                                <p className='text-base md:text-lg text-left w-full md:w-[500px] pt-10 pl-10' style={{ fontFamily: 'Lora, serif', lineHeight: '1.6' }}>
-                                    Hi, I’m Aishwarya, a trauma-informed therapist based in Gurgaon. My path into this work began with my own search for healing, which showed me how deeply we all long to be seen, understood, and supported.
-                                    Those experiences continue to shape how I sit with others—with warmth, curiosity, and respect for each person’s pace.<br />
+                                <p className='text-base md:text-lg text-left text-[#5C4B3C] w-full md:w-[500px] pt-10 pl-10' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.6' }}>
+                                    Hi, I'm Aishwarya, a trauma-informed therapist based in Gurgaon. My path into this work began with my own search for healing, which showed me how deeply we all long to be seen, understood, and supported.
+                                    Those experiences continue to shape how I sit with others—with warmth, curiosity, and respect for each person's pace.<br />
                                     <br />
                                     I work with adults (21+) navigating trauma recovery, relationship well-being, identity questions, and the emotional challenges of conceiving, pregnancy, and postpartum.
                                 </p>
                             </div>
 
-                            <div className="flex">
-                                <p className='text-base text-left p-16 md:text-lg  w-full md:w-[500px] rounded-lg mb-10' style={{ fontFamily: 'Lora, serif', lineHeight: '1.6' }}>    
-                                    My approach is not about “fixing,” but about creating a safe, collaborative space where you can listen to yourself, gain clarity, and move toward the life you want.
+                            <div className="flex md:flex-row flex-col">
+                                <p className='text-base md:text-left md:p-16 p-10 md:text-lg text-[#5C4B3C] w-full md:w-[500px] rounded-lg mb-10' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.6' }}>
+                                    My approach is not about "fixing," but about creating a safe, collaborative space where you can listen to yourself, gain clarity, and move toward the life you want.
                                     Clients often tell me that therapy with me feels steady, supportive, and less like treatment—more like being accompanied through difficult terrain.<br />
                                     <br />
                                     Outside the therapy room, I love reading, tending to plants, exploring food and music, and planning my next beach trip. These small joys remind me of balance and presence—values I carry into my work too.<br />
@@ -135,33 +132,33 @@ const About = () => {
                         {/* Educational Qualifications Section */}
                         <div className="mt-12 md:mt-16 mb-8 md:mb-12 px-4">
                             <div className="text-center mb-6 md:mb-8">
-                                <h2 className="text-2xl md:text-3xl font-bold text-[#345041] mb-4 px-4" style={{ fontFamily: 'Lora, serif' }}>
+                                <h2 className="text-2xl md:text-3xl text-[#2B231C] mb-4 px-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                                     Educational Qualifications
                                 </h2>
-                                <div className="w-12 md:w-16 h-0.5 bg-[#345041] mx-auto opacity-30"></div>
+                                <div className="w-12 md:w-16 h-0.5 bg-[#B6724F] mx-auto opacity-40"></div>
                             </div>
                             <div className="max-w-4xl mx-auto">
-                                <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+                                <div className="bg-[#FAF6F0] shadow-lg p-6 md:p-8" style={{ borderRadius: '16px' }}>
                                     <ul className="space-y-4">
                                         <li className="flex items-start space-x-3 md:space-x-4">
-                                            <div className="w-3 h-3 bg-[#345041] rounded-full mt-2 flex-shrink-0"></div>
+                                            <div className="w-3 h-3 bg-[#B6724F] rounded-full mt-2 flex-shrink-0"></div>
                                             <div>
-                                                <span className="text-base md:text-lg font-semibold text-[#345041]"><p>{"Professional Diploma in Clinical Psychology"}</p></span>
-                                                <div className="text-sm md:text-base text-gray-600"><p>{"SGT University, Gurgaon"}</p></div>
+                                                <span className="text-base md:text-lg text-[#2B231C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}><p>{"Professional Diploma in Clinical Psychology"}</p></span>
+                                                <div className="text-sm md:text-base text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}><p>{"SGT University, Gurgaon"}</p></div>
                                             </div>
                                         </li>
                                         <li className="flex items-start space-x-3 md:space-x-4">
-                                            <div className="w-3 h-3 bg-[#345041] rounded-full mt-2 flex-shrink-0"></div>
+                                            <div className="w-3 h-3 bg-[#B6724F] rounded-full mt-2 flex-shrink-0"></div>
                                             <div>
-                                                <span className="text-base md:text-lg font-semibold text-[#345041]"><p>{"MSc. in Counselling Psychology"}</p></span>
-                                                <div className="text-sm md:text-base text-gray-600"><p>{"Sampurna Montfort College, Bangalore"}</p></div>
+                                                <span className="text-base md:text-lg text-[#2B231C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}><p>{"MSc. in Counselling Psychology"}</p></span>
+                                                <div className="text-sm md:text-base text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}><p>{"Sampurna Montfort College, Bangalore"}</p></div>
                                             </div>
                                         </li>
                                         <li className="flex items-start space-x-3 md:space-x-4">
-                                            <div className="w-3 h-3 bg-[#345041] rounded-full mt-2 flex-shrink-0"></div>
+                                            <div className="w-3 h-3 bg-[#B6724F] rounded-full mt-2 flex-shrink-0"></div>
                                             <div>
-                                                <span className="text-base md:text-lg font-semibold text-[#345041]"><p>{"Bachelors of Arts in Psychology, Sociology, and English"}</p></span>
-                                                <div className="text-sm md:text-base text-gray-600"><p>{"Christ University, Bangalore"}</p></div>
+                                                <span className="text-base md:text-lg text-[#2B231C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}><p>{"Bachelors of Arts in Psychology, Sociology, and English"}</p></span>
+                                                <div className="text-sm md:text-base text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}><p>{"Christ University, Bangalore"}</p></div>
                                             </div>
                                         </li>
                                     </ul>
@@ -172,78 +169,78 @@ const About = () => {
                         {/* Additional Certifications & Trainings Section */}
                         <div className="mb-12 md:mb-16 px-4">
                             <div className="text-center mb-6 md:mb-8">
-                                <h2 className="text-2xl md:text-3xl font-bold text-[#345041] mb-4 px-4" style={{ fontFamily: 'Lora, serif' }}>
+                                <h2 className="text-2xl md:text-3xl text-[#2B231C] mb-4 px-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                                     Additional Certifications & Trainings
                                 </h2>
-                                <div className="w-12 md:w-16 h-0.5 bg-[#345041] mx-auto opacity-30"></div>
+                                <div className="w-12 md:w-16 h-0.5 bg-[#B6724F] mx-auto opacity-40"></div>
                             </div>
                             <div className="max-w-5xl mx-auto">
-                                <div className="bg-white rounded-2xl shadow-lg p-8">
+                                <div className="bg-[#FAF6F0] shadow-lg p-8" style={{ borderRadius: '16px' }}>
                                     <div className="grid md:grid-cols-2 gap-6">
                                         <div className="space-y-4">
                                             <div className="flex items-start space-x-4">
-                                                <div className="w-3 h-3 bg-[#E7CDBF] rounded-full mt-2 flex-shrink-0"></div>
+                                                <div className="w-3 h-3 bg-[#B6724F] rounded-full mt-2 flex-shrink-0"></div>
                                                 <div>
-                                                    <span className="text-lg font-semibold text-[#345041]"><p>{"Essential Skills Course"}</p></span>
-                                                    <div className="text-gray-600"><p>{"AEDP Institute, New York (June 2025 to February 2026)"}</p></div>
+                                                    <span className="text-lg text-[#2B231C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}><p>{"Essential Skills Course"}</p></span>
+                                                    <div className="text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}><p>{"AEDP Institute, New York (June 2025 to February 2026)"}</p></div>
                                                 </div>
                                             </div>
                                             <div className="flex items-start space-x-4">
-                                                <div className="w-3 h-3 bg-[#E7CDBF] rounded-full mt-2 flex-shrink-0"></div>
+                                                <div className="w-3 h-3 bg-[#B6724F] rounded-full mt-2 flex-shrink-0"></div>
                                                 <div>
-                                                    <span className="text-lg font-semibold text-[#345041]"><p>{"AEDP Immersion"}</p></span>
-                                                    <div className="text-gray-600"><p>{"AEDP Institute, New York (August, 2024)"}</p></div>
+                                                    <span className="text-lg text-[#2B231C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}><p>{"AEDP Immersion"}</p></span>
+                                                    <div className="text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}><p>{"AEDP Institute, New York (August, 2024)"}</p></div>
                                                 </div>
                                             </div>
                                             <div className="flex items-start space-x-4">
-                                                <div className="w-3 h-3 bg-[#E7CDBF] rounded-full mt-2 flex-shrink-0"></div>
+                                                <div className="w-3 h-3 bg-[#B6724F] rounded-full mt-2 flex-shrink-0"></div>
                                                 <div>
-                                                    <span className="text-lg font-semibold text-[#345041]">Trauma Informed Approach Workshop</span>
-                                                    <p className="text-gray-600">12-Hours online workshop by Syam K Ravindran (February, 2023)</p>
+                                                    <span className="text-lg text-[#2B231C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>Trauma Informed Approach Workshop</span>
+                                                    <p className="text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>12-Hours online workshop by Syam K Ravindran (February, 2023)</p>
                                                 </div>
                                             </div>
                                             <div className="flex items-start space-x-4">
-                                                <div className="w-3 h-3 bg-[#E7CDBF] rounded-full mt-2 flex-shrink-0"></div>
+                                                <div className="w-3 h-3 bg-[#B6724F] rounded-full mt-2 flex-shrink-0"></div>
                                                 <div>
-                                                    <span className="text-lg font-semibold text-[#345041]">CBT for Personality Disorders</span>
-                                                    <p className="text-gray-600">Beck Institute, Pennsylvania (2022)</p>
+                                                    <span className="text-lg text-[#2B231C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>CBT for Personality Disorders</span>
+                                                    <p className="text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>Beck Institute, Pennsylvania (2022)</p>
                                                 </div>
                                             </div>
                                             <div className="flex items-start space-x-4">
-                                                <div className="w-3 h-3 bg-[#E7CDBF] rounded-full mt-2 flex-shrink-0"></div>
+                                                <div className="w-3 h-3 bg-[#B6724F] rounded-full mt-2 flex-shrink-0"></div>
                                                 <div>
-                                                    <span className="text-lg font-semibold text-[#345041]">Essentials of CBT</span>
-                                                    <p className="text-gray-600">Beck Institute, Pennsylvania (2021)</p>
+                                                    <span className="text-lg text-[#2B231C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>Essentials of CBT</span>
+                                                    <p className="text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>Beck Institute, Pennsylvania (2021)</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="space-y-4">
                                             <div className="flex items-start space-x-4">
-                                                <div className="w-3 h-3 bg-[#E7CDBF] rounded-full mt-2 flex-shrink-0"></div>
+                                                <div className="w-3 h-3 bg-[#B6724F] rounded-full mt-2 flex-shrink-0"></div>
                                                 <div>
-                                                    <span className="text-lg font-semibold text-[#345041]">CBT for Anxiety Disorders</span>
-                                                    <p className="text-gray-600">Beck Institute, Pennsylvania (2021)</p>
+                                                    <span className="text-lg text-[#2B231C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>CBT for Anxiety Disorders</span>
+                                                    <p className="text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>Beck Institute, Pennsylvania (2021)</p>
                                                 </div>
                                             </div>
                                             <div className="flex items-start space-x-4">
-                                                <div className="w-3 h-3 bg-[#E7CDBF] rounded-full mt-2 flex-shrink-0"></div>
+                                                <div className="w-3 h-3 bg-[#B6724F] rounded-full mt-2 flex-shrink-0"></div>
                                                 <div>
-                                                    <span className="text-lg font-semibold text-[#345041]">CBT for Depression</span>
-                                                    <p className="text-gray-600">Beck Institute, Pennsylvania (2021)</p>
+                                                    <span className="text-lg text-[#2B231C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>CBT for Depression</span>
+                                                    <p className="text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>Beck Institute, Pennsylvania (2021)</p>
                                                 </div>
                                             </div>
                                             <div className="flex items-start space-x-4">
-                                                <div className="w-3 h-3 bg-[#E7CDBF] rounded-full mt-2 flex-shrink-0"></div>
+                                                <div className="w-3 h-3 bg-[#B6724F] rounded-full mt-2 flex-shrink-0"></div>
                                                 <div>
-                                                    <span className="text-lg font-semibold text-[#345041]">Maternal Mental Health</span>
-                                                    <p className="text-gray-600">Postpartum Support International (2020-2021)</p>
+                                                    <span className="text-lg text-[#2B231C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>Maternal Mental Health</span>
+                                                    <p className="text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>Postpartum Support International (2020-2021)</p>
                                                 </div>
                                             </div>
                                             <div className="flex items-start space-x-4">
-                                                <div className="w-3 h-3 bg-[#E7CDBF] rounded-full mt-2 flex-shrink-0"></div>
+                                                <div className="w-3 h-3 bg-[#B6724F] rounded-full mt-2 flex-shrink-0"></div>
                                                 <div>
-                                                    <span className="text-lg font-semibold text-[#345041]">Perinatal Mental Health</span>
-                                                    <p className="text-gray-600">NIMHANS, India (June – July 2022)</p>
+                                                    <span className="text-lg text-[#2B231C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>Perinatal Mental Health</span>
+                                                    <p className="text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>NIMHANS, India (June – July 2022)</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -260,7 +257,7 @@ const About = () => {
                 </div>
 
                 {/* Our Values Section */}
-                <OurValues className="bg-gradient-to-br from-[#f8f6f4] to-[#E7CDBF]" />
+                <OurValues className="bg-[#F2E8DD]" />
 
                 <Testimonials category="about us" />
                 <Footer />

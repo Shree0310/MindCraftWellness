@@ -10,7 +10,7 @@ export default function BookNow() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     
     return (
-        <div className="bg-[#E7CDBF] h-full pb-10 scroll-auto">
+        <div className="bg-[#F2E8DD] h-full pb-10 scroll-auto">
             <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
             {/* Blur the whole homepage when menu is open */}
             <div
@@ -22,12 +22,12 @@ export default function BookNow() {
             >
 
             {/* Tealfeed Calendar Section */}
-            <div className="bg-white rounded-3xl p-8 my-16 mx-8">
+            <div className="bg-[#FAF6F0] p-8 my-16 mx-8" style={{ borderRadius: '20px' }}>
                 <div className="text-center mb-8">
-                    <h2 className="text-3xl font-bold text-[#345041] mb-4" style={{ fontFamily: 'BrittanySignature, serif' }}>
+                    <h2 className="text-3xl text-[#2B231C] mb-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                         Book Your Free Consultation
                     </h2>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                    <p className="text-lg text-[#5C4B3C] max-w-2xl mx-auto" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                         Choose a convenient time for your 15-minute discovery call. We&apos;ll discuss your needs and see if we&apos;re a good fit for your healing journey.
                     </p>
                 </div>
@@ -46,13 +46,14 @@ export default function BookNow() {
                 </div>
 
                 <div className="text-center mt-6">
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                         Having trouble with the calendar?
                         <a
                             href="https://www.tealfeed.com/goud_387923/connect/call?callType=67120307b554f31cdc8d94f9"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-[#345041] hover:text-[#2a4033] font-semibold underline ml-1"
+                            className="text-[#B6724F] hover:text-[#95573A] underline ml-1"
+                            style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 400 }}
                         >
                             Open in new tab
                         </a>
@@ -63,14 +64,14 @@ export default function BookNow() {
             <HowItWorks />
 
             {/* Review Ratings Section */}
-            <div className="bg-white rounded-3xl p-8 my-16 mx-8 pb-10">
+            <div className="bg-[#FAF6F0] p-8 my-16 mx-8 pb-10" style={{ borderRadius: '20px' }}>
                 <div className="text-center mb-8 pb-10">
-                    <h3 className="text-2xl font-semibold text-[#345041] mb-4">What Our Clients Say</h3>
+                    <h3 className="text-2xl text-[#2B231C] mb-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>What Our Clients Say</h3>
                     <div className="flex justify-center space-x-8">
                         <div className="text-center">
                             <div className="flex items-center justify-center mb-2">
-                                <span className="text-3xl font-bold text-[#345041]">4.9</span>
-                                <span className="text-lg text-gray-600 ml-1">/5</span>
+                                <span className="text-3xl text-[#B6724F]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>4.9</span>
+                                <span className="text-lg text-[#5C4B3C] ml-1" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>/5</span>
                             </div>
                             <div className="flex justify-center mb-2">
                                 {[...Array(5)].map((_, i) => (
@@ -79,12 +80,12 @@ export default function BookNow() {
                                     </svg>
                                 ))}
                             </div>
-                            <p className="text-sm text-gray-600">Google Reviews</p>
+                            <p className="text-sm text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>Google Reviews</p>
                         </div>
                         <div className="text-center">
                             <div className="flex items-center justify-center mb-2">
-                                <span className="text-3xl font-bold text-[#345041]">5.0</span>
-                                <span className="text-lg text-gray-600 ml-1">/5</span>
+                                <span className="text-3xl text-[#B6724F]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>5.0</span>
+                                <span className="text-lg text-[#5C4B3C] ml-1" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>/5</span>
                             </div>
                             <div className="flex justify-center mb-2">
                                 {[...Array(5)].map((_, i) => (
@@ -93,12 +94,12 @@ export default function BookNow() {
                                     </svg>
                                 ))}
                             </div>
-                            <p className="text-sm text-gray-600">Practo Reviews</p>
+                            <p className="text-sm text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>Practo Reviews</p>
                         </div>
                     </div>
                 </div>
                 <div className="text-center">
-                    <Link href="/testimonials" className="text-[#345041] hover:text-[#2a4033] font-semibold underline transition-colors duration-300">
+                    <Link href="/testimonials" className="text-[#B6724F] hover:text-[#95573A] underline transition-colors duration-300" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 400 }}>
                         Read All Testimonials →
                     </Link>
                 </div>

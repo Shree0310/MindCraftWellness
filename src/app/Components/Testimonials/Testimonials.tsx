@@ -156,14 +156,14 @@ const Testimonials = ({category}: TestimonialsProps) => {
             {/* Enhanced Header Section */}
             <div className="text-center mb-12 md:mb-16">
                 <div className="inline-flex items-center space-x-3 mb-4 md:mb-6">
-                    <div className="w-8 md:w-12 h-0.5 bg-[#345041] opacity-30"></div>
-                    <span className="text-xs md:text-sm font-semibold text-[#345041] uppercase tracking-wider"><p>{"Testimonials"}</p></span>
-                    <div className="w-8 md:w-12 h-0.5 bg-[#345041] opacity-30"></div>
+                    <div className="w-8 md:w-12 h-0.5 bg-[#B6724F] opacity-40"></div>
+                    <span className="eyebrow-label"><p>{"Testimonials"}</p></span>
+                    <div className="w-8 md:w-12 h-0.5 bg-[#B6724F] opacity-40"></div>
                 </div>
-                <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-[#345041] mb-12 md:mb-6 lg:mb-10 px-4 tracking-wider " style={{ fontFamily: 'BrittanySignature, serif' }}>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl text-white mb-12 md:mb-6 lg:mb-10 px-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                     <p className='mb-4'>{"What Our Clients Say"}</p>
                 </h2>
-                <div className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-4 mt-3" style={{ fontFamily: 'Lora, serif' }}>
+                <div className="text-base md:text-lg text-white/90 max-w-2xl mx-auto px-4 mt-3" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                     <p>{"Real stories from real people who have experienced transformation through our therapy."}</p>
                 </div>
             </div>
@@ -204,10 +204,10 @@ const Testimonials = ({category}: TestimonialsProps) => {
 
                 <div className='text-center block py-8 pl-8'>
                         <Link href="/testimonials">
-                            <button className=" bg-[#345041] font-sans text-xl rounded-3xl text-white font-medium p-2 cursor-pointer shadow-2xl w-72 h-12 m-2 hover:bg-[#2a4033] transition-colors duration-300 transform hover:scale-105">
-                                <div className="flex justify-center">
-                                    <span className='mr-1'>Read More Testimonials</span>                                 
-                                    <span className="mt-1"><IconChevronRight stroke={1} /></span>
+                            <button className="bg-white/20 backdrop-blur-sm text-sm rounded-full text-white p-2 cursor-pointer shadow-lg w-72 h-12 m-2 hover:bg-white/30 transition-all duration-300 transform hover:scale-105 uppercase tracking-wider border border-white/30" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500, letterSpacing: '0.08em' }}>
+                                <div className="flex justify-center items-center">
+                                    <span className='mr-1'>Read More Testimonials</span>
+                                    <span><IconChevronRight stroke={1} size={18} /></span>
                                 </div>
                             </button>
                         </Link>
@@ -227,86 +227,50 @@ const Testimonials = ({category}: TestimonialsProps) => {
             </div> */}
 
             {/* Statistics Section */}
-            <div className="bg-gradient-to-r from-[#f8f6f4] to-[#E7CDBF] rounded-3xl p-6 md:p-8 my-12 md:my-16 mx-4 md:mx-8">
+            <div className="bg-[#F2E8DD] p-6 md:p-8 my-12 md:my-16 mx-4 md:mx-8" style={{ borderRadius: '20px' }}>
                 <div className="text-center mb-6 md:mb-8">
-                    <h3 className="text-xl md:text-2xl font-semibold text-[#345041] mb-2 px-4"><p>{"Supporting clients since January 2022"}</p></h3>
-                    <div className="text-sm md:text-base text-gray-600 px-4"><p>{"Trusted by Indian and International Clients"}</p></div>
+                    <h3 className="text-xl md:text-2xl text-[#2B231C] mb-2 px-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}><p>{"Supporting clients since January 2020"}</p></h3>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 max-w-5xl mx-auto">
                     <div className="text-center" ref={clientsRef}>
-                        <div className="text-3xl md:text-4xl font-bold text-[#345041] mb-2">
+                        <div className="text-3xl md:text-4xl text-[#B6724F] mb-2" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
                             <span className="inline-block min-w-[60px] md:min-w-[80px]">
                                 {clientsCount}+
                             </span>
                         </div>
-                        <div className="flex flex-col text-sm md:text-base text-gray-600 font-medium px-2">
+                        <div className="flex flex-col text-sm md:text-base text-[#5C4B3C] px-2" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 400 }}>
                             <div>
-                                {"Clients Supported"} 
+                                {"Clients Supported"}
                             </div>
                             <div>{"(Indian & International)"}</div>
                         </div>
                     </div>
 
                     <div className="text-center" ref={therapyHRSRef}>
-                        <div className="text-3xl md:text-4xl font-bold text-[#345041] mb-2">
+                        <div className="text-3xl md:text-4xl text-[#B6724F] mb-2" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
                             <span className="inline-block min-w-[60px] md:min-w-[80px]">
                                 {therapyHRS}+
                             </span>
                         </div>
-                        <div className=" flex flex-col text-sm md:text-base text-gray-600 font-medium px-2">
+                        <div className=" flex flex-col text-sm md:text-base text-[#5C4B3C] px-2" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 400 }}>
                             <div>{"Therapy Hours Conducted"}</div>
                             <div className="div">{"(Online & In-Person Sessions)"}</div>
                         </div>
                     </div>
 
-                    <div className="text-center" ref={clientSatisfactionRef}>
-                        <div className="text-3xl md:text-4xl font-bold text-[#345041] mb-2">
-                            <span className="text-3xl md:text-4xl">{ClientSatisfaction}%</span>
+                    <div className="text-center">
+                        <div className="text-3xl md:text-4xl text-[#B6724F] mb-2" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
+                            <span className="text-3xl md:text-4xl">98%</span>
                         </div>
-                        <div className="text-sm md:text-base text-gray-600 font-medium px-2"><p>{"Client Satisfaction"}</p></div>
-                    </div>
-                </div>
-            </div>
-
-            {/* Call to Action Section */}
-            <div className="bg-gradient-to-br from-[#345041] to-[#2a4033] text-white rounded-3xl p-8 md:p-12 mt-12 md:mt-16 mx-4 md:mx-4">
-                <div className="max-w-4xl mx-auto text-center">
-                    <h2 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 px-4">
-                        <p>{"Ready to take the next step?"}</p>
-                    </h2>
-
-                    <div className="text-lg md:text-xl mb-6 md:mb-8 leading-relaxed opacity-90 px-4">
-                        <p>{"Book your free 15-minute consultation call today and be matched with the therapist who's right for you."}</p>
-                    </div>
-
-                    <div className="mb-8 md:mb-10 ">
-                        <Link href="/book-now" className="bg-white text-[#345041] px-6 md:px-10 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                            Book Your Free Consultation
-                        </Link>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 gap-8 text-center md:text-left">
-                        <div>
-                            <div className="text-lg mb-3 opacity-90">
-                                <p>{"Still have questions?"}</p>
-                            </div>
-                            <button className="text-white border-b-2 border-white hover:border-opacity-70 transition-all duration-300 font-semibold">
-                                <Link href='/FAQs'>{"Read our FAQs"}</Link>
-                            </button>
-                        </div>
-
-                        <div className="md:text-right">
-                            <div className="text-lg mb-3 opacity-90">
-                                <p>{"Looking for tools and materials?"}</p>
-                            </div>
-                            <button className="text-white border-b-2 border-white hover:border-opacity-70 transition-all duration-300 font-semibold">
-                                <p>{"Explore our Resources"}</p>
-                            </button>
+                        <div className="text-sm md:text-base text-[#5C4B3C] px-2" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 400 }}>
+                            <div>{"Client Satisfaction"}</div>
+                            <div className="text-xs text-[#5C4B3C]/80">{"(Based on qualitative client feedback)"}</div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     );
 };

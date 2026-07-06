@@ -30,30 +30,30 @@ const OurStoryOurSpace = () => {
 
 return <div className="div">
             {/* Our Story, Our Space Section */}
-            <div className="py-20 bg-white rounded-3xl">
+            <div className="py-20 bg-[#FAF6F0]" style={{ borderRadius: '20px' }}>
                 <div className="max-w-7xl mx-auto px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-[#345041] mb-6" style={{ fontFamily: 'BrittanySignature, serif' }}>
+                        <h2 className="text-4xl text-[#2B231C] mb-6" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                             Our Story, Our Space
                         </h2>
-                        <div className="w-16 h-0.5 bg-[#345041] mx-auto opacity-30"></div>
+                        <div className="w-16 h-0.5 bg-[#B6724F] mx-auto opacity-40"></div>
                     </div>
 
                     {/* Combined Section: Text Left, Image Carousel Right */}
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         {/* Left side - Combined Text Content */}
                         <div>
-                            <h3 className="text-2xl font-semibold text-[#345041] mb-6" style={{ fontFamily: 'Lora, serif' }}>
+                            <h3 className="text-2xl text-[#2B231C] mb-6" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
                                 Our Story
                             </h3>
-                            <p className="text-lg leading-relaxed text-gray-700 mb-6" style={{ fontFamily: 'Lora, serif' }}>
+                            <p className="text-lg leading-relaxed text-[#5C4B3C] mb-6" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                                 Mind Craft Wellness was founded in 2022 with a simple vision — to make therapy more personal, accessible, and human. What began as a solo practice has grown into a team of therapists committed to putting clients first.
                             </p>
 
-                            <h3 className="text-2xl font-semibold text-[#345041] mb-4" style={{ fontFamily: 'Lora, serif' }}>
+                            <h3 className="text-2xl text-[#2B231C] mb-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
                                 Our Space
                             </h3>
-                            <p className="text-lg leading-relaxed text-gray-700" style={{ fontFamily: 'Lora, serif' }}>
+                            <p className="text-lg leading-relaxed text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                                 Located in the heart of Gurgaon, our clinic is designed to feel welcoming and safe — a quiet pause from the rush of daily life. With two thoughtfully curated therapy rooms and calming details, the space is built to help you feel at ease the moment you step in. At Mind Craft Wellness, inclusivity and sensitivity are at the heart of our work. We welcome people of all backgrounds, identities, and life experiences, ensuring therapy is a space where trust, openness, and growth can unfold.
                             </p>
                         </div>
@@ -92,7 +92,7 @@ return <div className="div">
                                 {/* Navigation Arrows */}
                                 <button
                                     onClick={() => slideRightImage()}
-                                    className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/80 cursor-pointer hover:bg-white text-[#345041] p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
+                                    className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/80 cursor-pointer hover:bg-white text-[#B6724F] p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
                                 >
                                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -101,7 +101,7 @@ return <div className="div">
 
                                 <button
                                     onClick={() => slideLeftImage()}
-                                    className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/80 hover:bg-white text-[#345041] p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
+                                    className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/80 hover:bg-white text-[#B6724F] p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
                                 >
                                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
