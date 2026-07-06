@@ -17,7 +17,6 @@ import OurStoryOurSpace from "./OurStoryOurSpace";
 
 const About = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [activeImage, setActiveImage] = useState(0);
 
 
 
@@ -125,8 +124,8 @@ const About = () => {
                                 </div>
                                 <div className='space-y-6'>
                                     <p className='text-base md:text-lg text-left text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
-                                        Hi, I'm Aishwarya, a trauma-informed therapist based in Gurgaon. My path into this work began with my own search for healing, which showed me how deeply we all long to be seen, understood, and supported.
-                                        Those experiences continue to shape how I sit with others—with warmth, curiosity, and respect for each person's pace.
+                                        Hi, I&apos;m Aishwarya, a trauma-informed therapist based in Gurgaon. My path into this work began with my own search for healing, which showed me how deeply we all long to be seen, understood, and supported.
+                                        Those experiences continue to shape how I sit with others—with warmth, curiosity, and respect for each person&apos;s pace.
                                     </p>
                                     <p className='text-base md:text-lg text-left text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
                                         I work with adults (21+) navigating trauma recovery, relationship well-being, identity questions, and the emotional challenges of conceiving, pregnancy, and postpartum.
@@ -137,7 +136,7 @@ const About = () => {
                             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center w-full">
                                 <div className='space-y-6 order-2 md:order-1'>
                                     <p className='text-base md:text-lg text-left text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
-                                        My approach is not about "fixing," but about creating a safe, collaborative space where you can listen to yourself, gain clarity, and move toward the life you want.
+                                        My approach is not about &ldquo;fixing,&rdquo; but about creating a safe, collaborative space where you can listen to yourself, gain clarity, and move toward the life you want.
                                         Clients often tell me that therapy with me feels steady, supportive, and less like treatment—more like being accompanied through difficult terrain.
                                     </p>
                                     <p className='text-base md:text-lg text-left text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
