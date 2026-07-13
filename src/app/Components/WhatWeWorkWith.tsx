@@ -219,7 +219,7 @@ At some point, they made sense. What once kept you safe can start to feel limiti
                                                     <span className={`text-6xl md:text-7xl tracking-wider ${section.textColor || 'text-[#95573A]'} opacity-30`} style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500, letterSpacing: '0.15em' }}>
                                                         {section.number}
                                                     </span>
-                                                    <h3 className={`text-xs md:text-sm tracking-widest mt-2 ${section.textColor || 'text-[#5C4B3C]'}`} style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 600, letterSpacing: '0.2em', color: section.title === 'SPECIALISATION' ? 'white' : (['PERSONAL GROWTH', 'TRAUMA-INFORMED CARE', 'CONNECTION & INTIMACY', 'MENTAL WELLBEING'].includes(section.title)) ? '#B6724F' : undefined }}>
+                                                    <h3 className={`text-xs md:text-sm tracking-widest mt-2 ${section.textColor || 'text-[#5C4B3C]'}`} style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 600, letterSpacing: '0.2em', color: section.title === 'SPECIALISATION' ? 'white' : (['PERSONAL GROWTH', 'TRAUMA-INFORMED CARE', 'CONNECTION & INTIMACY', 'MENTAL WELLBEING', 'LIFE CHANGES', 'BREAKING PATTERNS'].includes(section.title)) ? '#B6724F' : undefined }}>
                                                         {section.title}
                                                     </h3>
                                                 </div>
@@ -240,7 +240,7 @@ At some point, they made sense. What once kept you safe can start to feel limiti
                                                     <span className={`text-6xl md:text-7xl tracking-wider ${section.textColor || 'text-[#95573A]'} opacity-30`} style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500, letterSpacing: '0.15em' }}>
                                                         {section.number}
                                                     </span>
-                                                    <h3 className={`text-xs md:text-sm tracking-widest mt-2 ${section.textColor || 'text-[#5C4B3C]'}`} style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 600, letterSpacing: '0.2em', color: section.title === 'SPECIALISATION' ? 'white' : (['PERSONAL GROWTH', 'TRAUMA-INFORMED CARE', 'CONNECTION & INTIMACY', 'MENTAL WELLBEING'].includes(section.title)) ? '#B6724F' : undefined }}>
+                                                    <h3 className={`text-xs md:text-sm tracking-widest mt-2 ${section.textColor || 'text-[#5C4B3C]'}`} style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 600, letterSpacing: '0.2em', color: section.title === 'SPECIALISATION' ? 'white' : (['PERSONAL GROWTH', 'TRAUMA-INFORMED CARE', 'CONNECTION & INTIMACY', 'MENTAL WELLBEING', 'LIFE CHANGES', 'BREAKING PATTERNS'].includes(section.title)) ? '#B6724F' : undefined }}>
                                                         {section.title}
                                                     </h3>
                                                 </div>
