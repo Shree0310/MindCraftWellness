@@ -6,7 +6,7 @@ export default async function BlogPage() {
     return (
         <BlogPageWrapper>
             <Blog />
-            <Footer className='bg-[#ee7e1b]' />
+            <Footer className='bg-[#B6724F]' />
         </BlogPageWrapper>
     );
 }

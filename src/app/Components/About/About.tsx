@@ -39,7 +39,7 @@ const About = () => {
                 <div className="max-w-7xl mx-auto px-4 md:px-8">
                     <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
                         {/* Left side - Text content */}
-                        <div className="space-y-6 md:space-y-8 order-2 lg:order-1">
+                        <div className="space-y-6 md:space-y-8 order-last lg:order-1">
                             <blockquote className="text-xl md:text-2xl leading-relaxed px-4 md:px-0 text-[#5C4B3C] border-l-4 border-[#B6724F] pl-6 md:pl-8" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300, fontStyle: 'italic' }}>
                                 &ldquo;In my early professional years I was asking the question: How can I treat, or cure, or change this person?
                                 Now I would phrase the question in this way:
@@ -66,13 +66,13 @@ const About = () => {
                         </div>
 
                         {/* Right side - Images */}
-                        <div className="ml-0 lg:ml-24 relative order-1 lg:order-2">
+                        <div className="ml-0 lg:ml-24 relative order-first lg:order-2">
                             {/* Large background image */}
                             <div className="relative flex justify-center lg:justify-start">
                                 <img
                                     src={AboutImg.src}
                                     alt="About Mind Craft Wellness"
-                                    className="w-[280px] md:w-[330px] h-[280px] md:h-[330px] object-cover mt-12 md:mt-24 shadow-lg"
+                                    className="w-[280px] md:w-[330px] h-[280px] md:h-[330px] object-cover lg:mt-24 shadow-lg"
                                     style={{ borderRadius: '20px' }}
                                 />
 
@@ -118,11 +118,11 @@ const About = () => {
                             </p>
                         </div>
                         <div className='flex flex-col justify-center items-center gap-12 md:gap-16 mx-auto max-w-6xl px-4 relative'>
-                            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center w-full">
-                                <div className='relative w-full max-w-[400px] h-[450px] md:h-[500px] mx-auto md:mx-0 order-1 md:order-1'>
+                            <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center w-full">
+                                <div className='relative w-full max-w-[400px] h-[450px] md:h-[500px] mx-auto md:mx-0 order-first md:order-1'>
                                     <img src={ProfilePic.src} className='w-full h-full object-cover shadow-lg' style={{ borderRadius: '20px' }} alt="Aishwaraya Goud - Founder of Mind Craft Wellness" />
                                 </div>
-                                <div className='space-y-6 order-2 md:order-2'>
+                                <div className='space-y-6 order-last md:order-2'>
                                     <p className='text-base md:text-lg text-left text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
                                         Hi, I&apos;m Aishwarya, a trauma-informed therapist based in Gurgaon. My path into this work began with my own search for healing, which showed me how deeply we all long to be seen, understood, and supported.
                                         Those experiences continue to shape how I sit with others—with warmth, curiosity, and respect for each person&apos;s pace.

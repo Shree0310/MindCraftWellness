@@ -163,7 +163,7 @@ const Testimonials = ({category}: TestimonialsProps) => {
                 <h2 className="text-3xl md:text-4xl lg:text-5xl text-white mb-12 md:mb-6 lg:mb-10 px-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                     <p className='mb-4'>{"What Our Clients Say"}</p>
                 </h2>
-                <div className="text-base md:text-lg text-[#95573A] max-w-2xl mx-auto px-4 mt-3" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                <div className="text-base md:text-lg text-[#F2E8DD] max-w-2xl mx-auto px-4 mt-3" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                     <p>{"Real stories from real people who have experienced transformation through our therapy."}</p>
                 </div>
             </div>

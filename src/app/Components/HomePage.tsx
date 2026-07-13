@@ -1,7 +1,7 @@
 "use client"
 
 import Link from 'next/link';
-import LandingPage from '../Assets/images/LandingPage.jpg'
+import Image from 'next/image';
 import ProfilePic from '../Assets/images/Profile-pic.jpg';
 import couch from '../Assets/images/Couch.jpg';
 import AboutPage from '../Assets/images/AboutPage.jpg';
@@ -14,9 +14,9 @@ import { IconChevronRight } from '@tabler/icons-react';
 
 const HomePage = () => {
     return (
-        <div className='scroll-auto bg-[#F2E8DD] relative'>
+        <div className='bg-[#F2E8DD] relative'>
             {/* Landing page section with text overlay */}
-            <div className='relative'>
+            <div className='relative w-full overflow-hidden h-[400px] md:h-[500px] lg:h-[600px]' style={{ margin: 0, padding: 0 }}>
                 {/* Decorative elements for landing page */}
                 <div className="absolute top-20 left-10 opacity-15 z-10">
                     <div className="w-16 h-20 border border-white rounded-lg transform rotate-12"></div>
@@ -33,16 +33,28 @@ const HomePage = () => {
                     <div className="w-14 h-18 bg-white rounded-lg transform -rotate-8"></div>
                 </div>
 
-                <img className='w-full h-auto' src={LandingPage.src} alt="Landing Page" />
+                <Image
+                    src="/Assets/images/HomePageOption1.png"
+                    alt="Mind Craft Wellness - Therapy that holds, heals, and grows"
+                    width={1920}
+                    height={1080}
+                    className='w-full h-full'
+                    style={{
+                        objectFit: 'cover',
+                        objectPosition: 'center center',
+                        transform: 'scale(1.05)'
+                    }}
+                    priority
+                />
             </div>
             {/* HERO SECTION - Life can be messy */}
             <div className='relative max-w-5xl mx-auto px-4 md:px-8 py-20 md:py-28'>
                 <div className='text-left'>
-                    <h1 className='text-3xl md:text-4xl lg:text-5xl mb-8 md:mb-10 text-[#2B231C]' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
+                    <h1 className='text-2xl md:text-3xl lg:text-4xl mb-8 md:mb-10 text-[#2B231C]' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                         Life can be messy. So can being human.
                     </h1>
 
-                    <div className='space-y-6 text-lg md:text-xl leading-relaxed text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                    <div className='space-y-6 text-base md:text-lg leading-relaxed text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                         <p>
                             To feel deeply. To struggle. To question yourself. To grieve. To feel anxious, angry, lonely, or uncertain - these aren&apos;t signs that something is wrong with you. They&apos;re part of being human.
                         </p>
@@ -74,11 +86,11 @@ const HomePage = () => {
 
                         {/* Right side - Text Content */}
                         <div className="order-1 md:order-2">
-                            <h2 className='text-3xl md:text-4xl mb-6 text-white' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
+                            <h2 className='text-2xl md:text-3xl mb-6 text-white' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                                 Hi, I&apos;m Aishwaraya.
                             </h2>
 
-                            <div className='space-y-6 text-lg md:text-xl leading-relaxed text-white/90' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                            <div className='space-y-6 text-base md:text-lg leading-relaxed text-white/90' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                                 <p>
                                     I&apos;m a Clinical Psychologist based in Gurgaon, supporting adults aged 21+ since 2020. My work is grounded in trauma-informed care, with advanced trainings in AEDP (Level 2), CBT (Level 2), and a special interest in perinatal mental health.
                                 </p>
@@ -110,7 +122,7 @@ const HomePage = () => {
                         <span className="eyebrow-label">MY APPROACH</span>
                     </div>
 
-                    <h2 className='text-3xl md:text-4xl mb-10 text-[#2B231C]' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
+                    <h2 className='text-2xl md:text-3xl mb-10 text-[#2B231C]' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                         Therapy that&apos;s practical about something deeply human.
                     </h2>
 
@@ -127,40 +139,40 @@ const HomePage = () => {
                     <div className="space-y-6">
                         {/* We work toward what's underneath */}
                         <div className="bg-white border-l-4 border-[#95573A] p-6 shadow-md" style={{ borderRadius: '12px' }}>
-                            <h3 className='text-2xl mb-3 text-[#2B231C]' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
+                            <h3 className='text-xl mb-3 text-[#2B231C]' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
                                 We work toward what&apos;s underneath
                             </h3>
-                            <p className='text-lg leading-relaxed text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                            <p className='text-base leading-relaxed text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                                 My approach is AEDP-oriented — we work toward the core emotional experience beneath the fears and defences that get in the way, because healing is already innate in us.
                             </p>
                         </div>
 
                         {/* We also work with thought patterns */}
                         <div className="bg-white border-l-4 border-[#95573A] p-6 shadow-md" style={{ borderRadius: '12px' }}>
-                            <h3 className='text-2xl mb-3 text-[#2B231C]' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
+                            <h3 className='text-xl mb-3 text-[#2B231C]' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
                                 We also work with thought patterns
                             </h3>
-                            <p className='text-lg leading-relaxed text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                            <p className='text-base leading-relaxed text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                                 Where useful, I draw on CBT to work directly with the thoughts and behaviours keeping you stuck.
                             </p>
                         </div>
 
                         {/* Sessions are collaborative */}
                         <div className="bg-white border-l-4 border-[#95573A] p-6 shadow-md" style={{ borderRadius: '12px' }}>
-                            <h3 className='text-2xl mb-3 text-[#2B231C]' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
+                            <h3 className='text-xl mb-3 text-[#2B231C]' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
                                 Sessions are collaborative, not prescriptive
                             </h3>
-                            <p className='text-lg leading-relaxed text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                            <p className='text-base leading-relaxed text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                                 This isn&apos;t a doctor-patient process. At the end of each session, I ask what the experience was like for you — because your experience shapes how we work together.
                             </p>
                         </div>
 
                         {/* Pacing is led by safety */}
                         <div className="bg-white border-l-4 border-[#95573A] p-6 shadow-md" style={{ borderRadius: '12px' }}>
-                            <h3 className='text-2xl mb-3 text-[#2B231C]' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
+                            <h3 className='text-xl mb-3 text-[#2B231C]' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
                                 Pacing is led by safety
                             </h3>
-                            <p className='text-lg leading-relaxed text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                            <p className='text-base leading-relaxed text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                                 Every session is trauma-informed — meaning we move at a pace that respects your history and your nervous system, not a fixed agenda.
                             </p>
                         </div>
@@ -175,17 +187,17 @@ const HomePage = () => {
                         <span className="eyebrow-label">WHAT I WORK WITH</span>
                     </div>
 
-                    <h2 className="text-3xl md:text-4xl mb-10 text-[#2B231C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
+                    <h2 className="text-2xl md:text-3xl mb-10 text-[#2B231C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                         The human challenges I see most often.
                     </h2>
 
                     <div className="bg-white shadow-lg overflow-hidden" style={{ borderRadius: '16px' }}>
                         {/* Anxiety & overthinking */}
                         <div className="p-6 hover:bg-[#95573A] hover:text-white transition-all duration-300 group cursor-pointer">
-                            <h3 className="text-xl mb-2 text-[#2B231C] group-hover:text-white transition-colors" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
+                            <h3 className="text-lg mb-2 text-[#2B231C] group-hover:text-white transition-colors" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
                                 Anxiety & overthinking
                             </h3>
-                            <p className="text-base text-[#5C4B3C] group-hover:text-white/90 transition-colors" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                            <p className="text-sm text-[#5C4B3C] group-hover:text-white/90 transition-colors" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                                 Generalised anxiety, self-criticism, low confidence
                             </p>
                         </div>
@@ -194,10 +206,10 @@ const HomePage = () => {
 
                         {/* Relationships */}
                         <div className="p-6 hover:bg-[#95573A] hover:text-white transition-all duration-300 group cursor-pointer">
-                            <h3 className="text-xl mb-2 text-[#2B231C] group-hover:text-white transition-colors" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
+                            <h3 className="text-lg mb-2 text-[#2B231C] group-hover:text-white transition-colors" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
                                 Relationships
                             </h3>
-                            <p className="text-base text-[#5C4B3C] group-hover:text-white/90 transition-colors" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                            <p className="text-sm text-[#5C4B3C] group-hover:text-white/90 transition-colors" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                                 Partners, parents, joint families, friendships
                             </p>
                         </div>
@@ -206,10 +218,10 @@ const HomePage = () => {
 
                         {/* Perinatal mental health */}
                         <div className="p-6 hover:bg-[#95573A] hover:text-white transition-all duration-300 group cursor-pointer">
-                            <h3 className="text-xl mb-2 text-[#2B231C] group-hover:text-white transition-colors" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
+                            <h3 className="text-lg mb-2 text-[#2B231C] group-hover:text-white transition-colors" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
                                 Perinatal mental health
                             </h3>
-                            <p className="text-base text-[#5C4B3C] group-hover:text-white/90 transition-colors" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                            <p className="text-sm text-[#5C4B3C] group-hover:text-white/90 transition-colors" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                                 Pregnancy, postpartum, early parenthood
                             </p>
                         </div>
@@ -218,10 +230,10 @@ const HomePage = () => {
 
                         {/* Life transitions */}
                         <div className="p-6 hover:bg-[#95573A] hover:text-white transition-all duration-300 group cursor-pointer">
-                            <h3 className="text-xl mb-2 text-[#2B231C] group-hover:text-white transition-colors" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
+                            <h3 className="text-lg mb-2 text-[#2B231C] group-hover:text-white transition-colors" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
                                 Life transitions
                             </h3>
-                            <p className="text-base text-[#5C4B3C] group-hover:text-white/90 transition-colors" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                            <p className="text-sm text-[#5C4B3C] group-hover:text-white/90 transition-colors" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                                 New cities, marriages, identity shifts
                             </p>
                         </div>
@@ -230,10 +242,10 @@ const HomePage = () => {
 
                         {/* Low mood & burnout */}
                         <div className="p-6 hover:bg-[#95573A] hover:text-white transition-all duration-300 group cursor-pointer">
-                            <h3 className="text-xl mb-2 text-[#2B231C] group-hover:text-white transition-colors" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
+                            <h3 className="text-lg mb-2 text-[#2B231C] group-hover:text-white transition-colors" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
                                 Low mood & burnout
                             </h3>
-                            <p className="text-base text-[#5C4B3C] group-hover:text-white/90 transition-colors" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                            <p className="text-sm text-[#5C4B3C] group-hover:text-white/90 transition-colors" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                                 Depression, exhaustion, emotional flatness
                             </p>
                         </div>
@@ -242,10 +254,10 @@ const HomePage = () => {
 
                         {/* Trauma */}
                         <div className="p-6 hover:bg-[#95573A] hover:text-white transition-all duration-300 group cursor-pointer">
-                            <h3 className="text-xl mb-2 text-[#2B231C] group-hover:text-white transition-colors" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
+                            <h3 className="text-lg mb-2 text-[#2B231C] group-hover:text-white transition-colors" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
                                 Trauma
                             </h3>
-                            <p className="text-base text-[#5C4B3C] group-hover:text-white/90 transition-colors" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                            <p className="text-sm text-[#5C4B3C] group-hover:text-white/90 transition-colors" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                                 Childhood neglect, relational and developmental trauma
                             </p>
                         </div>
@@ -276,11 +288,11 @@ const HomePage = () => {
 
                 {/* Quote Text */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 md:px-12">
-                    <blockquote className="text-white text-2xl md:text-4xl lg:text-5xl mb-6 leading-relaxed" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300, fontStyle: 'italic' }}>
+                    <blockquote className="text-white text-xl md:text-2xl lg:text-3xl mb-6 leading-relaxed" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300, fontStyle: 'italic' }}>
                         &ldquo;This is not a doctor-patient relation, it&apos;s a human one.&rdquo;
                     </blockquote>
-                    <div className="text-white text-lg md:text-xl" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 400 }}>
-                        — Aishwarya, MindCraft Wellness
+                    <div className="text-white text-base md:text-lg" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 400 }}>
+                        — Aishwaraya, Mind Craft Wellness
                     </div>
                 </div>
             </div>
