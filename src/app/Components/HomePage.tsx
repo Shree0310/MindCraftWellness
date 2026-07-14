@@ -43,6 +43,7 @@ const HomePage = () => {
                         objectPosition: 'center center'
                     }}
                     priority
+                    placeholder="blur"
                 />
             </div>
             {/* HERO SECTION - Life can be messy */}
@@ -73,11 +74,14 @@ const HomePage = () => {
                         {/* Left side - Image */}
                         <div className="order-2 md:order-1 flex justify-center md:justify-start">
                             <div className="w-64 md:w-80 lg:w-96">
-                                <img
-                                    src={ProfilePic.src}
+                                <Image
+                                    src={ProfilePic}
                                     alt="Aishwarya - Clinical Psychologist"
                                     className="w-full h-auto shadow-2xl"
                                     style={{ borderRadius: '50%', aspectRatio: '3/4', objectFit: 'cover' }}
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    sizes="(max-width: 768px) 256px, (max-width: 1024px) 320px, 384px"
                                 />
                             </div>
                         </div>
@@ -126,11 +130,14 @@ const HomePage = () => {
 
                     {/* Couch Image */}
                     <div className="mb-10">
-                        <img
-                            src={couch.src}
+                        <Image
+                            src={couch}
                             alt="Therapy couch at MindCraft Wellness"
                             className="w-full h-auto shadow-lg"
                             style={{ borderRadius: '16px', objectFit: 'cover' }}
+                            loading="lazy"
+                            placeholder="blur"
+                            sizes="(max-width: 768px) 100vw, 896px"
                         />
                     </div>
 
@@ -274,11 +281,14 @@ const HomePage = () => {
             {/* Quote Image Section */}
             <div className="relative w-full overflow-hidden">
                 {/* Background Image */}
-                <img
-                    src={AboutPage.src}
+                <Image
+                    src={AboutPage}
                     alt="Therapy session at MindCraft Wellness"
                     className="w-full h-auto object-cover"
                     style={{ minHeight: '400px', maxHeight: '600px', objectFit: 'cover' }}
+                    loading="lazy"
+                    placeholder="blur"
+                    sizes="100vw"
                 />
 
                 {/* Translucent Overlay */}

@@ -2,6 +2,7 @@
 "use client"
 // import Link from 'next/link';
 import Header from "../Header";
+import Image from 'next/image';
 import AboutPageBanner from '../../Assets/images/AboutPageBanner.png'
 import AboutImg1 from '../../Assets/images/About2.png'
 import AboutImg2 from '../../Assets/images/About 5.png'
@@ -45,11 +46,14 @@ const About = () => {
                         {/* Right side - Illustration */}
                         <div className="ml-0 lg:ml-24 relative order-first lg:order-2">
                             <div className="relative flex justify-center lg:justify-start">
-                                <img
-                                    src={AboutPageBanner.src}
+                                <Image
+                                    src={AboutPageBanner}
                                     alt="About Mind Craft Wellness"
                                     className="w-[380px] md:w-[450px] h-[380px] md:h-[450px] object-cover lg:mt-12 shadow-xs"
                                     style={{ borderRadius: '20px', filter: 'blur(1px) brightness(0.95)' }}
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    sizes="(max-width: 768px) 380px, 450px"
                                 />
                             </div>
                         </div>
@@ -73,7 +77,7 @@ const About = () => {
                         <div className='flex flex-col justify-center items-center gap-12 md:gap-16 mx-auto max-w-6xl relative'>
                             <div className="flex flex-col md:grid md:grid-cols-2 gap-4 items-start w-full">
                                 <div className='relative w-full max-w-[400px] h-[450px] md:h-[500px] mx-auto md:mx-0 order-first md:order-1'>
-                                    <img src={ProfilePic.src} className='w-full h-full object-cover shadow-lg' style={{ borderRadius: '20px' }} alt="Aishwaraya Goud - Founder of Mind Craft Wellness" />
+                                    <Image src={ProfilePic} className='w-full h-full object-cover shadow-lg' style={{ borderRadius: '20px' }} alt="Aishwaraya Goud - Founder of Mind Craft Wellness" loading="lazy" placeholder="blur" sizes="(max-width: 768px) 100vw, 400px" />
                                 </div>
                                 <div className='space-y-6 order-last md:order-2'>
                                     <p className='text-2xl md:text-3xl text-[#5C4B3C] leading-relaxed' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
@@ -103,7 +107,7 @@ const About = () => {
                                         Outside the therapy room, I love reading, tending to my plants, exploring food and music, and planning my next beach trip.
                                     </p>
                                 </div>
-                                <img src={Books.src} className='w-full max-w-[400px] h-[450px] md:h-[500px] object-cover mx-auto md:mx-0 shadow-lg order-1 md:order-2' style={{ borderRadius: '20px' }} alt="Aishwaraya Goud - Books in her space" />
+                                <Image src={Books} className='w-full max-w-[400px] h-[450px] md:h-[500px] object-cover mx-auto md:mx-0 shadow-lg order-1 md:order-2' style={{ borderRadius: '20px' }} alt="Aishwaraya Goud - Books in her space" loading="lazy" placeholder="blur" sizes="(max-width: 768px) 100vw, 400px" />
                             </div>
                         </div>
                     </div>

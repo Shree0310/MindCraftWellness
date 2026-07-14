@@ -154,7 +154,7 @@ const Testimonials = ({category}: TestimonialsProps) => {
     return (
         <div className="py-12 md:py-20 px-4 md:px-8">
             {/* Enhanced Header Section */}
-            <div className="text-center mb-12 md:mb-16">
+            <div className="text-center mb-8 md:mb-10">
                 <div className="inline-flex items-center space-x-3 mb-4 md:mb-6">
                     <div className="w-8 md:w-12 h-0.5 bg-[#B6724F] opacity-40"></div>
                     <span className="eyebrow-label"><p>{"Testimonials"}</p></span>

@@ -26,15 +26,15 @@ const OurStoryOurSpace = () => {
         setActiveImage(prev => (prev + 1) % images.length);
     }
 
-return <div className="bg-[#F2E8DD] py-16 md:py-20">
+return <div className="bg-[#F2E8DD] py-8 md:py-12">
             {/* The Space Section */}
             <div className="max-w-7xl mx-auto px-4 md:px-8">
-                <div className="text-center mb-12 md:mb-16">
+                <div className="text-center mb-8 md:mb-10">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl text-[#5C4B3C] mb-4 px-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                         The Space
                     </h2>
                     <p className="text-xl md:text-2xl text-[#5C4B3C] italic max-w-3xl mx-auto" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
-                        A room designed for real conversations.
+                        A room designed for <span style={{ color: '#B6724F' }}>real conversations.</span>
                     </p>
                 </div>
 
@@ -59,7 +59,9 @@ return <div className="bg-[#F2E8DD] py-16 md:py-20">
                                         className="w-full h-[400px] md:h-[500px] object-cover"
                                         width={1200}
                                         height={500}
-                                        priority
+                                        loading="lazy"
+                                        placeholder="blur"
+                                        sizes="(max-width: 768px) 100vw, 1200px"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" style={{ borderRadius: '20px' }}></div>
                                 </div>
