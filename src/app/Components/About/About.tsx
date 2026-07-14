@@ -2,7 +2,7 @@
 "use client"
 // import Link from 'next/link';
 import Header from "../Header";
-import AboutImg from '../../Assets/images/About.png'
+import AboutPageBanner from '../../Assets/images/AboutPageBanner.png'
 import AboutImg1 from '../../Assets/images/About2.png'
 import AboutImg2 from '../../Assets/images/About 5.png'
 import ProfilePic from '../../Assets/images/Profile-pic2.jpg';
@@ -11,18 +11,11 @@ import Testimonials from '../Testimonials/Testimonials';
 import BookFreeConsultationBtn from '../BookFreeConsulationBtn';
 import { useState } from 'react';
 import Footer from '../Footer';
-import OurValues from '../OurValues';
 import DiagWaveConnector from "../SVGs/DiagWaveConnector";
 import OurStoryOurSpace from "./OurStoryOurSpace";
 
 const About = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-
-
-    // const goToImage = (index: number) => {
-    //     setCurrentImageIndex(index);
-    // };
 
     return (
         <div className="min-h-screen flex flex-col">
@@ -36,99 +29,64 @@ const About = () => {
                     }`}
                 >
             <div className="bg-[#F2E8DD] text-black w-full font-sans py-16 md:py-20 overflow-x-hidden flex-grow">
-                <div className="max-w-7xl mx-auto px-4 md:px-8">
+                {/* Opening Section */}
+                <div className="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-20">
                     <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
                         {/* Left side - Text content */}
                         <div className="space-y-6 md:space-y-8 order-last lg:order-1">
-                            <blockquote className="text-xl md:text-2xl leading-relaxed px-4 md:px-0 text-[#5C4B3C] border-l-4 border-[#B6724F] pl-6 md:pl-8" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300, fontStyle: 'italic' }}>
-                                &ldquo;In my early professional years I was asking the question: How can I treat, or cure, or change this person?
-                                Now I would phrase the question in this way:
-                                <span style={{ fontWeight: 400 }}> How can I provide a relationship which this person may use for his own personal growth?&rdquo;</span>
-                            </blockquote>
-                            <div className="flex items-center space-x-4 px-4 md:px-0 md:pl-8">
-                                <div className="w-12 h-0.5 bg-[#B6724F] opacity-40"></div>
-                                <p className="text-base text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 400 }}>
-                                    Carl Rogers
-                                </p>
-                            </div>
-                            <p className="text-lg md:text-xl leading-relaxed px-4 md:px-0 text-[#5C4B3C] pt-4" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
-                                At Mind Craft Wellness, we believe in the power of authentic human connection and the transformative potential of a safe,
-                                nurturing therapeutic relationship. Our approach is rooted in the understanding that healing happens within the context
-                                of genuine care and understanding.
+                            <p className="text-lg md:text-xl leading-relaxed px-4 md:px-0 text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
+                                At Mind Craft Wellness, we believe in the power of authentic human connection and the transformative potential of a safe, nurturing therapeutic relationship. Our approach is rooted in the understanding that healing happens within the context of genuine care and understanding.
                             </p>
-                            <p className="text-lg md:text-xl leading-relaxed px-4 md:px-0 text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
-                                We are committed to creating a space where you feel truly seen, heard, and supported on your journey toward
-                                greater self-awareness, healing, and growth.
+                            <p className="text-lg md:text-xl leading-relaxed px-4 md:px-0 text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
+                                We are committed to creating a space where you feel truly seen, heard, and supported on your journey toward greater self-awareness, healing, and growth.
                             </p>
-                            <div className='flex justify-center lg:justify-start mb-6 md:mb-10 px-4 md:px-0'>
-                                <BookFreeConsultationBtn />
-                            </div>
                         </div>
 
-                        {/* Right side - Images */}
+                        {/* Right side - Illustration */}
                         <div className="ml-0 lg:ml-24 relative order-first lg:order-2">
-                            {/* Large background image */}
                             <div className="relative flex justify-center lg:justify-start">
                                 <img
-                                    src={AboutImg.src}
+                                    src={AboutPageBanner.src}
                                     alt="About Mind Craft Wellness"
-                                    className="w-[280px] md:w-[330px] h-[280px] md:h-[330px] object-cover lg:mt-24 shadow-lg"
-                                    style={{ borderRadius: '20px' }}
+                                    className="w-[380px] md:w-[450px] h-[380px] md:h-[450px] object-cover lg:mt-12 shadow-xs"
+                                    style={{ borderRadius: '20px', filter: 'blur(1px) brightness(0.95)' }}
                                 />
-
-                                {/* Two smaller images positioned on top */}
-
-                                <div className="absolute -top-3 md:-top-6 right-1 md:right-2 mr-24 md:mr-48">
-                                    <img
-                                        src={AboutImg2.src}
-                                        alt="Wellness space"
-                                        className="w-20 md:w-24 h-12 md:h-16 object-cover transform -rotate-6 shadow-lg"
-                                        style={{ borderRadius: '12px' }}
-                                    />
-                                </div>
-                                <div className="absolute -top-4 md:-top-8 -left-4 md:-left-8">
-                                    <img
-                                        src={AboutImg1.src}
-                                        alt="Therapy session"
-                                        className="w-36 md:w-48 h-24 md:h-32 object-cover transform -rotate-6 shadow-lg"
-                                        style={{ borderRadius: '16px' }}
-                                    />
-                                </div>
-
-
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div>
-                    <div className='bg-[#E8DBC9] w-full py-16 md:py-20'>
+                {/* My Story Section */}
+                <div className='bg-[#E8DBC9] w-full py-16 md:py-20'>
+                    <div className="max-w-6xl mx-auto px-4 md:px-8">
                         <div className="text-center mb-12 md:mb-16">
                             <div className="inline-flex items-center space-x-3 mb-6">
                                 <div className="w-8 md:w-12 h-0.5 bg-[#B6724F] opacity-40"></div>
-                                <span className="eyebrow-label">MEET THE FOUNDER</span>
+                                <span className="eyebrow-label">MEET AISHWARYA</span>
                                 <div className="w-8 md:w-12 h-0.5 bg-[#B6724F] opacity-40"></div>
                             </div>
-                            <h1 className='text-3xl md:text-4xl lg:text-5xl pb-4 text-center text-[#5C4B3C] px-4' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
-                                Hi, I&apos;m Aishwaraya Goud
+                            <h1 className='text-3xl md:text-4xl lg:text-5xl text-[#5C4B3C] mb-6' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
+                                My Story
                             </h1>
-                            <p className='text-lg md:text-xl text-center text-[#5C4B3C] block px-4' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
-                                Founder of Mind Craft Wellness,<br />
-                                and a certified AEDP and CBT therapist based in Gurgaon.
-                            </p>
                         </div>
-                        <div className='flex flex-col justify-center items-center gap-12 md:gap-16 mx-auto max-w-6xl px-4 relative'>
-                            <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center w-full">
+
+                        <div className='flex flex-col justify-center items-center gap-12 md:gap-16 mx-auto max-w-6xl relative'>
+                            <div className="flex flex-col md:grid md:grid-cols-2 gap-4 items-start w-full">
                                 <div className='relative w-full max-w-[400px] h-[450px] md:h-[500px] mx-auto md:mx-0 order-first md:order-1'>
                                     <img src={ProfilePic.src} className='w-full h-full object-cover shadow-lg' style={{ borderRadius: '20px' }} alt="Aishwaraya Goud - Founder of Mind Craft Wellness" />
                                 </div>
                                 <div className='space-y-6 order-last md:order-2'>
-                                    <p className='text-base md:text-lg text-left text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
-                                        Hi, I&apos;m Aishwarya, a trauma-informed therapist based in Gurgaon. My path into this work began with my own search for healing, which showed me how deeply we all long to be seen, understood, and supported.
-                                        Those experiences continue to shape how I sit with others—with warmth, curiosity, and respect for each person&apos;s pace.
+                                    <p className='text-2xl md:text-3xl text-[#5C4B3C] leading-relaxed' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
+                                        A therapist who believes healing is already <span style={{ color: '#B6724F' }}>within you.</span>
+                                    </p>
+                                    <p className='text-xl md:text-2xl text-[#5C4B3C] italic' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
+                                        I came to this work through my own experience of feeling unseen.
                                     </p>
                                     <p className='text-base md:text-lg text-left text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
-                                        I work with adults (21+) navigating trauma recovery, relationship well-being, identity questions, and the emotional challenges of conceiving, pregnancy, and postpartum.
+                                        My path into therapy began with my own search for understanding, a search that showed me how deeply we all long to be truly seen, heard, and supported. Those experiences continue to shape how I sit with others: with warmth, curiosity, and deep respect for each person&apos;s pace.
+                                    </p>
+                                    <p className='text-base md:text-lg text-left text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
+                                        I work with adults navigating trauma, relationship difficulties, identity questions, anxiety, burnout, and the emotional challenges of the perinatal period - conception, pregnancy, and postpartum.
                                     </p>
                                 </div>
                             </div>
@@ -136,31 +94,65 @@ const About = () => {
                             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center w-full">
                                 <div className='space-y-6 order-2 md:order-1'>
                                     <p className='text-base md:text-lg text-left text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
-                                        My approach is not about &ldquo;fixing,&rdquo; but about creating a safe, collaborative space where you can listen to yourself, gain clarity, and move toward the life you want.
-                                        Clients often tell me that therapy with me feels steady, supportive, and less like treatment—more like being accompanied through difficult terrain.
+                                        My approach is not about fixing you. It&apos;s about creating a safe, collaborative space where you can listen to yourself, gain clarity, and move toward the life you want.
                                     </p>
                                     <p className='text-base md:text-lg text-left text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
-                                        Outside the therapy room, I love reading, tending to plants, exploring food and music, and planning my next beach trip. These small joys remind me of balance and presence—values I carry into my work too.
+                                        Clients often tell me that working with me feels steady and supportive — less like treatment, more like being accompanied through difficult terrain.
+                                    </p>
+                                    <p className='text-base md:text-lg text-left text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
+                                        Outside the therapy room, I love reading, tending to my plants, exploring food and music, and planning my next beach trip.
                                     </p>
                                 </div>
                                 <img src={Books.src} className='w-full max-w-[400px] h-[450px] md:h-[500px] object-cover mx-auto md:mx-0 shadow-lg order-1 md:order-2' style={{ borderRadius: '20px' }} alt="Aishwaraya Goud - Books in her space" />
                             </div>
-
                         </div>
-                        <DiagWaveConnector/>
+                    </div>
 
-                        {/* Educational Qualifications Section */}
-                        <div className="mt-12 md:mt-16 mb-8 md:mb-12 px-4">
-                            <div className="text-center mb-8 md:mb-12">
-                                <div className="inline-flex items-center space-x-3 mb-6">
-                                    <div className="w-8 md:w-12 h-0.5 bg-[#B6724F] opacity-40"></div>
-                                    <span className="eyebrow-label">CREDENTIALS</span>
-                                    <div className="w-8 md:w-12 h-0.5 bg-[#B6724F] opacity-40"></div>
-                                </div>
-                                <h2 className="text-3xl md:text-4xl text-[#5C4B3C] px-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
-                                    Educational Qualifications
-                                </h2>
+                    <DiagWaveConnector/>
+
+                    {/* My Orientation Section */}
+                    <div className="max-w-5xl mx-auto px-4 md:px-8 mt-16 md:mt-20">
+                        <div className="text-center mb-12 md:mb-16">
+                            <h2 className="text-3xl md:text-4xl text-[#5C4B3C] mb-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
+                                My Orientation
+                            </h2>
+                        </div>
+                        <div className="space-y-8">
+                            <div className="bg-[#F2E8DD] p-6 md:p-8 rounded-2xl">
+                                <p className='text-base md:text-lg text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
+                                    My work is rooted in <strong style={{ fontWeight: 500 }}>AEDP - Accelerated Experiential Dynamic Psychotherapy</strong>. In practice, that means we focus on reaching the emotional experience underneath your thoughts, not just talking about what happened.
+                                </p>
                             </div>
+                            <div className="bg-[#F2E8DD] p-6 md:p-8 rounded-2xl">
+                                <p className='text-base md:text-lg text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
+                                    Where useful, I draw on <strong style={{ fontWeight: 500 }}>CBT</strong> to work directly with thought patterns and behaviours that keep you stuck.
+                                </p>
+                            </div>
+                            <div className="bg-[#F2E8DD] p-6 md:p-8 rounded-2xl">
+                                <p className='text-base md:text-lg text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
+                                    Every session is <strong style={{ fontWeight: 500 }}>trauma-informed</strong>, meaning that it is paced around safety, never around a fixed agenda.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <DiagWaveConnector/>
+
+                    {/* Education & Certifications Section */}
+                    <div className="mt-12 md:mt-16 mb-8 md:mb-12 px-4 md:px-8">
+                        <div className="text-center mb-8 md:mb-12">
+                            <div className="inline-flex items-center space-x-3 mb-6">
+                                <div className="w-8 md:w-12 h-0.5 bg-[#B6724F] opacity-40"></div>
+                                <span className="eyebrow-label">CREDENTIALS</span>
+                                <div className="w-8 md:w-12 h-0.5 bg-[#B6724F] opacity-40"></div>
+                            </div>
+                            <h2 className="text-3xl md:text-4xl text-[#5C4B3C] mb-6" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
+                                Education & Certifications
+                            </h2>
+                            <p className="text-base md:text-lg text-[#5C4B3C] max-w-3xl mx-auto" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
+                                Every certification below reflects a deliberate commitment - to keep learning, stay current, and bring the best of evidence-based practice into every session.
+                            </p>
+                        </div>
                             <div className="max-w-4xl mx-auto">
                                 <ul className="space-y-6">
                                     <li className="flex items-start space-x-4 md:space-x-6">
@@ -268,21 +260,42 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                    
-                    {/* Our Story, Our Space Section */}
-                    <OurStoryOurSpace/>
-
-                        
                     </div>
                 </div>
 
-                {/* Our Values Section */}
-                <OurValues className="bg-[#F2E8DD]" />
+                {/* The Space Section - Our Story, Our Space */}
+                <OurStoryOurSpace/>
 
                 <Testimonials category="about us" />
+
+                {/* Whenever You're Ready Section */}
+                <div className="bg-[#E8DBC9] py-16 md:py-20 px-4 md:px-8">
+                    <div className="max-w-4xl mx-auto text-center">
+                        <h2 className="text-3xl md:text-4xl text-[#5C4B3C] mb-6" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300, fontStyle: 'italic' }}>
+                            Whenever you&apos;re ready.
+                        </h2>
+                        <p className="text-base md:text-lg text-[#5C4B3C] mb-4" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
+                            If something you&apos;ve read here resonated with you, I&apos;d be honoured to be part of your journey.
+                        </p>
+                        <p className="text-base md:text-lg text-[#5C4B3C] mb-8" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
+                            Whether you&apos;re ready to begin therapy or simply have a few questions, you&apos;re welcome to reach out.
+                        </p>
+                        <BookFreeConsultationBtn />
+                        <div className="flex flex-col md:flex-row items-center justify-center gap-6 mt-8 text-sm md:text-base text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                            <a href="/faqs" className="hover:text-[#B6724F] transition-colors duration-300">
+                                Still have questions? → read our FAQs
+                            </a>
+                            <span className="hidden md:inline text-[#B6724F]">|</span>
+                            <a href="/Blog" className="hover:text-[#B6724F] transition-colors duration-300">
+                                Want to learn more? → explore our Resources
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
                 <Footer />
             </div>
-        </div>
         </div>
     )
 }

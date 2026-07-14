@@ -5,6 +5,7 @@ import Image from 'next/image';
 import ProfilePic from '../Assets/images/Profile-pic.jpg';
 import couch from '../Assets/images/Couch.jpg';
 import AboutPage from '../Assets/images/AboutPage.jpg';
+import OurStory3 from '../Assets/images/OurStory3.jpg';
 import Testimonials from './Testimonials/Testimonials';
 import HowItWorks from './HowItWorks';
 import Footer from './Footer';
@@ -16,7 +17,7 @@ const HomePage = () => {
     return (
         <div className='bg-[#F2E8DD] relative'>
             {/* Landing page section with text overlay */}
-            <div className='relative w-full overflow-hidden h-[400px] md:h-[500px] lg:h-[600px]' style={{ margin: 0, padding: 0 }}>
+            <div className='relative w-screen overflow-hidden h-[60vh] md:h-[70vh] lg:h-[80vh]' style={{ margin: 0, padding: 0, marginLeft: 'calc(-50vw + 50%)', marginRight: 'calc(-50vw + 50%)' }}>
                 {/* Decorative elements for landing page */}
                 <div className="absolute top-20 left-10 opacity-15 z-10">
                     <div className="w-16 h-20 border border-white rounded-lg transform rotate-12"></div>
@@ -34,15 +35,12 @@ const HomePage = () => {
                 </div>
 
                 <Image
-                    src="/Assets/images/HomePageOption1.png"
+                    src={OurStory3}
                     alt="Mind Craft Wellness - Therapy that holds, heals, and grows"
-                    width={1920}
-                    height={1080}
                     className='w-full h-full'
                     style={{
                         objectFit: 'cover',
-                        objectPosition: 'center center',
-                        transform: 'scale(1.05)'
+                        objectPosition: 'center center'
                     }}
                     priority
                 />

@@ -78,15 +78,15 @@ const Testimonials = ({category}: TestimonialsProps) => {
             id: 2,
             category: 'landing page',
             text: `Ever since I was young, all I heard was how therapy was a waste of time—a money-making scheme not to be entertained during times of turmoil—so I never gave it another thought. But choosing to tune out that noise and take a leap of faith has changed my life in ways I couldn't have imagined. 
-                  With Aishwarya, I've found a safe space, genuine care, and the kind of support I didn't even know I was missing.`,
+                  With Aishwaraya, I've found a safe space, genuine care, and the kind of support I didn't even know I was missing.`,
             author: "A.S.",
             role: "22 years old, Male, India (Online & In-person Therapy)"
         },
         {
             id: 4,
             category: 'about us',
-            text: `Whilst I would consider myself relatively new into therapy, the experience has been super insightful and telling - especially with Aishwarya. Working with her has helped me develop the skills that I need to handle situations independently. 
-                   Aishwarya’s gentle approach to psychotherapy has really helped me ease into the process and truly make the most out of my experience.`,            
+            text: `Whilst I would consider myself relatively new into therapy, the experience has been super insightful and telling - especially with Aishwaraya. Working with her has helped me develop the skills that I need to handle situations independently.
+                   Aishwaraya's gentle approach to psychotherapy has really helped me ease into the process and truly make the most out of my experience.`,            
             author: "M.L.",
             role: "19,  female, Dubai, UAE (United Arab Emirates) / Spain (Online Therapy)"
         },
@@ -100,7 +100,7 @@ const Testimonials = ({category}: TestimonialsProps) => {
         {
             id: 7,
             category: 'specialities',
-            text: `I have been working with Aishwarya for over a year through psychotherapy to manage my anxiety, and my experience has been excellent. 
+            text: `I have been working with Aishwaraya for over a year through psychotherapy to manage my anxiety, and my experience has been excellent.
                   I attend in-person sessions with her, and she stands out as a psychologist who truly applies effective psychological practices. Her approach is both genuine and practical, and the serene, thoughtfully designed environment of her clinic further enhances the sense of calm and comfort during each session.`,
             author: "Anonymous",
             role: "India (In-person Therapy)"
@@ -108,8 +108,8 @@ const Testimonials = ({category}: TestimonialsProps) => {
         {
             id: 8,
             category: 'specialities',
-            text: `I had the privilege of first seeking guidance from Aishwarya in 2022 , during one of the most tumultuous and transformative chapters of my life. Her support guided me through a toxic relationship, moments of deep self-doubt, deep seated resentment with my family and some of the hardest emotional battles I’ve faced.
-                    What I cherish most is that she didn’t just help me heal—she gave me tools I didn’t even know I desperately needed: the ability to set and honor healthy boundaries.`,
+            text: `I had the privilege of first seeking guidance from Aishwaraya in 2022 , during one of the most tumultuous and transformative chapters of my life. Her support guided me through a toxic relationship, moments of deep self-doubt, deep seated resentment with my family and some of the hardest emotional battles I've faced.
+                    What I cherish most is that she didn't just help me heal—she gave me tools I didn't even know I desperately needed: the ability to set and honor healthy boundaries.`,
             author: "M.L.",
             role: "Female, 25 Years Old, Gurgaon (In-person Therapy)"
         },
@@ -204,7 +204,7 @@ const Testimonials = ({category}: TestimonialsProps) => {
 
                 <div className='text-center block py-8 pl-8'>
                         <Link href="/testimonials">
-                            <button className="bg-white/20 backdrop-blur-sm text-sm rounded-full text-white p-2 cursor-pointer shadow-lg w-72 h-12 m-2 hover:bg-white/30 transition-all duration-300 transform hover:scale-105 uppercase tracking-wider border border-white/30" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500, letterSpacing: '0.08em' }}>
+                            <button className="bg-white/20 backdrop-blur-sm text-sm rounded-full text-[#5C4B3C] p-2 cursor-pointer shadow-lg w-72 h-12 m-2 hover:bg-white/30 transition-all duration-300 transform hover:scale-105 uppercase tracking-wider border border-white/30" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500, letterSpacing: '0.08em' }}>
                                 <div className="flex justify-center items-center">
                                     <span className='mr-1'>Read More Testimonials</span>
                                     <span><IconChevronRight stroke={1} size={18} /></span>
@@ -212,64 +212,6 @@ const Testimonials = ({category}: TestimonialsProps) => {
                             </button>
                         </Link>
                     </div>
-            
-
-            {/* Dots indicator */}
-            {/* <div className="flex justify-center mt-8 gap-2">
-                {[0, 1].map((dotIndex) => (
-                    <button
-                        key={dotIndex}
-                        onClick={() => setCurrentIndex(dotIndex * 2)}
-                        className={`w-3 h-3 rounded-full transition-all duration-300 ${currentIndex === dotIndex * 2 ? 'bg-[#345041]' : 'bg-gray-300'
-                            }`}
-                    />
-                ))}
-            </div> */}
-
-            {/* Statistics Section */}
-            <div className="bg-[#F2E8DD] p-6 md:p-8 my-12 md:my-16 mx-4 md:mx-8" style={{ borderRadius: '20px' }}>
-                <div className="text-center mb-6 md:mb-8">
-                    <h3 className="text-xl md:text-2xl text-[#2B231C] mb-2 px-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}><p>{"Supporting clients since January 2020"}</p></h3>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
-                    <div className="text-center" ref={clientsRef}>
-                        <div className="text-3xl md:text-4xl text-[#B6724F] mb-2" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
-                            <span className="inline-block min-w-[60px] md:min-w-[80px]">
-                                {clientsCount}+
-                            </span>
-                        </div>
-                        <div className="flex flex-col text-sm md:text-base text-[#5C4B3C] px-2" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 400 }}>
-                            <div>
-                                {"Clients Supported"}
-                            </div>
-                            <div>{"(Indian & International)"}</div>
-                        </div>
-                    </div>
-
-                    <div className="text-center" ref={therapyHRSRef}>
-                        <div className="text-3xl md:text-4xl text-[#B6724F] mb-2" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
-                            <span className="inline-block min-w-[60px] md:min-w-[80px]">
-                                {therapyHRS}+
-                            </span>
-                        </div>
-                        <div className=" flex flex-col text-sm md:text-base text-[#5C4B3C] px-2" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 400 }}>
-                            <div>{"Therapy Hours Conducted"}</div>
-                            <div className="div">{"(Online & In-Person Sessions)"}</div>
-                        </div>
-                    </div>
-
-                    <div className="text-center">
-                        <div className="text-3xl md:text-4xl text-[#B6724F] mb-2" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
-                            <span className="text-3xl md:text-4xl">98%</span>
-                        </div>
-                        <div className="text-sm md:text-base text-[#5C4B3C] px-2" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 400 }}>
-                            <div>{"Client Satisfaction"}</div>
-                            <div className="text-xs text-[#5C4B3C]/80">{"(Based on qualitative client feedback)"}</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
         </div>
     );

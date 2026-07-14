@@ -19,7 +19,7 @@ const TestimonialsPage = () => {
         },
         {
             id: 2,
-            text: "Ever since I was young, all I heard was how therapy was a waste of time—a money-making scheme not to be entertained during times of turmoil—so I never gave it another thought. But choosing to tune out that noise and take a leap of faith has changed my life in ways I couldn't have imagined. With Aishwarya, I've found a safe space, genuine care, and the kind of support I didn't even know I was missing.",
+            text: "Ever since I was young, all I heard was how therapy was a waste of time—a money-making scheme not to be entertained during times of turmoil—so I never gave it another thought. But choosing to tune out that noise and take a leap of faith has changed my life in ways I couldn't have imagined. With Aishwaraya, I've found a safe space, genuine care, and the kind of support I didn't even know I was missing.",
             author: "A.S.",
             role: "22 years old, Male, India (Online & In-person Therapy)",
             category: "Landing Page"
@@ -34,14 +34,14 @@ const TestimonialsPage = () => {
         // About Page Testimonials
         {
             id: 4,
-            text: "I have been working with Aishwarya for over a year through psychotherapy to manage my anxiety, and my experience has been excellent. I attend in-person sessions with her, and she stands out as a psychologist who truly applies effective psychological practices. Her approach is both genuine and practical, and the serene, thoughtfully designed environment of her clinic further enhances the sense of calm and comfort during each session.",
+            text: "I have been working with Aishwaraya for over a year through psychotherapy to manage my anxiety, and my experience has been excellent. I attend in-person sessions with her, and she stands out as a psychologist who truly applies effective psychological practices. Her approach is both genuine and practical, and the serene, thoughtfully designed environment of her clinic further enhances the sense of calm and comfort during each session.",
             author: "S.B.",
             role: "Female, 25 Years Old, Gurgaon (In-person Therapy)",
             category: "About Page"
         },
         {
             id: 5,
-            text: "Whilst I would consider myself relatively new into therapy, the experience has been super insightful and telling - especially with Aishwarya. Working with her has helped me develop the skills that I need to handle situations independently and has given me a chance to chat with someone so kind and caring, when I'm feeling down. Aishwarya's gentle approach to psychotherapy has really helped me ease into the process and truly make the most out of my experience.",
+            text: "Whilst I would consider myself relatively new into therapy, the experience has been super insightful and telling - especially with Aishwaraya. Working with her has helped me develop the skills that I need to handle situations independently and has given me a chance to chat with someone so kind and caring, when I'm feeling down. Aishwaraya's gentle approach to psychotherapy has really helped me ease into the process and truly make the most out of my experience.",
             author: "M.L.",
             role: "19, female, Dubai, UAE (United Arab Emirates) / Spain (Online Therapy)",
             category: "About Page"
@@ -56,21 +56,21 @@ const TestimonialsPage = () => {
         // Specialties Page Testimonials
         {
             id: 7,
-            text: "I have been Ms. Aishwarya's client for over 2 years now and I have experienced immense self reflection, growth and increase in self esteem during this time. Not only have I been able to work on my relationships and my difficulties to manage my work, but also my anxieties and past traumas. I would highly recommend Aishwarya because she is a professional who keeps evolving and working hard to help clients (new and old) grow and gain the most out of their therapy. In addition, she is the right combination of being a kind and flexible, yet stern and disciplined professional. I highly recommend Aishwarya!",
+            text: "I have been Ms. Aishwaraya's client for over 2 years now and I have experienced immense self reflection, growth and increase in self esteem during this time. Not only have I been able to work on my relationships and my difficulties to manage my work, but also my anxieties and past traumas. I would highly recommend Aishwaraya because she is a professional who keeps evolving and working hard to help clients (new and old) grow and gain the most out of their therapy. In addition, she is the right combination of being a kind and flexible, yet stern and disciplined professional. I highly recommend Aishwaraya!",
             author: "S.K.",
             role: "Female, New Delhi (Online therapy)",
             category: "Specialties Page"
         },
         {
             id: 8,
-            text: "I'm so grateful to have found Aishwarya as my therapist. I've seen others before but this was the first time things really clicked. Each session feels so comfortable and relaxed- it really feels like I'm talking to a big sister. A lot of therapists proclaim to have a no judgement policy, but this was the first time I actually felt that was true. The topics we explore together, and particularly, her words on those topics, resonate with me far beyond the session itself. While I don't have the privilege of taking her in person sessions, the space is so well done and cosy. If you're around NCR, the trip is worth it!",
+            text: "I'm so grateful to have found Aishwaraya as my therapist. I've seen others before but this was the first time things really clicked. Each session feels so comfortable and relaxed- it really feels like I'm talking to a big sister. A lot of therapists proclaim to have a no judgement policy, but this was the first time I actually felt that was true. The topics we explore together, and particularly, her words on those topics, resonate with me far beyond the session itself. While I don't have the privilege of taking her in person sessions, the space is so well done and cosy. If you're around NCR, the trip is worth it!",
             author: "S.V.",
             role: "25, Female, Chennai, India. (Online & In-person Therapy)",
             category: "Specialties Page"
         },
         {
             id: 9,
-            text: "I had the privilege of first seeking guidance from Aishwarya in 2022, during one of the most tumultuous and transformative chapters of my life. Her support guided me through a toxic relationship, moments of deep self-doubt, deep seated resentment with my family and some of the hardest emotional battles I've faced. What I cherish most is that she didn't just help me heal—she gave me tools I didn't even know I desperately needed: the ability to set and honor healthy boundaries. That understanding has changed my life in ways I can't overstate. Because of her guidance, I've grown into a version of myself that is stronger, happier, and more self-respecting. I will always be grateful for the clarity, compassion, and wisdom she brought into my life when I needed it most.",
+            text: "I had the privilege of first seeking guidance from Aishwaraya in 2022, during one of the most tumultuous and transformative chapters of my life. Her support guided me through a toxic relationship, moments of deep self-doubt, deep seated resentment with my family and some of the hardest emotional battles I've faced. What I cherish most is that she didn't just help me heal—she gave me tools I didn't even know I desperately needed: the ability to set and honor healthy boundaries. That understanding has changed my life in ways I can't overstate. Because of her guidance, I've grown into a version of myself that is stronger, happier, and more self-respecting. I will always be grateful for the clarity, compassion, and wisdom she brought into my life when I needed it most.",
             author: "M.L.",
             role: "Female, 25 Years Old, Gurgaon (In-person Therapy)",
             category: "Specialties Page"
@@ -148,19 +148,19 @@ const TestimonialsPage = () => {
         },
         {
             id: 2,
-            text: "I have been in therapy with Aishwarya for past 5 months. Her ability to quickly grasp and diagnose my years long struggles in professional, interpersonal relations and mental blockages helped me immensely, providing a roadmap to understanding and healing. She has a compassionate demeanor and insightful approach which made each and every session transformative for me. I wholeheartedly recommend her for anyone seeking counselling and therapy.",
+            text: "I have been in therapy with Aishwaraya for past 5 months. Her ability to quickly grasp and diagnose my years long struggles in professional, interpersonal relations and mental blockages helped me immensely, providing a roadmap to understanding and healing. She has a compassionate demeanor and insightful approach which made each and every session transformative for me. I wholeheartedly recommend her for anyone seeking counselling and therapy.",
             rating: 5,
             date: "2024"
         },
         {
             id: 3,
-            text: "Aishwarya is excellent in her approach and a very dedicated and good therapist. I would recommend her to everyone. Her approach works very well for me and her openness and flexibility to try new techniques or towards the needs of the client, as a professional is what I like the most about her!",
+            text: "Aishwaraya is excellent in her approach and a very dedicated and good therapist. I would recommend her to everyone. Her approach works very well for me and her openness and flexibility to try new techniques or towards the needs of the client, as a professional is what I like the most about her!",
             rating: 5,
             date: "2024"
         },
         {
             id: 4,
-            text: "I've been seeing Aishwarya for a long time now, and I can honestly say she has made a profound difference in my life. From the very first session, she created a safe and welcoming space where I felt truly heard and understood. She is a wonderful listener—patient, compassionate, and fully present. I've been working through issues related to anxiety and perfectionism, and her gentle, thoughtful approach has helped me gain insight into patterns I wasn't even fully aware of. She doesn't rush to offer advice but instead helps guide me to my own realizations, which has been incredibly empowering. What I appreciate most is her calming presence. No matter how overwhelmed I feel going into a session, I always leave feeling more grounded and hopeful. Her support has been instrumental in helping me manage my anxiety and let go of the unrealistic standards I've held myself to for so long.",
+            text: "I've been seeing Aishwaraya for a long time now, and I can honestly say she has made a profound difference in my life. From the very first session, she created a safe and welcoming space where I felt truly heard and understood. She is a wonderful listener—patient, compassionate, and fully present. I've been working through issues related to anxiety and perfectionism, and her gentle, thoughtful approach has helped me gain insight into patterns I wasn't even fully aware of. She doesn't rush to offer advice but instead helps guide me to my own realizations, which has been incredibly empowering. What I appreciate most is her calming presence. No matter how overwhelmed I feel going into a session, I always leave feeling more grounded and hopeful. Her support has been instrumental in helping me manage my anxiety and let go of the unrealistic standards I've held myself to for so long.",
             rating: 5,
             date: "2025"
         },
@@ -178,7 +178,7 @@ const TestimonialsPage = () => {
         },
         {
             id: 7,
-            text: "I'm so grateful to have found Aishwarya as my therapist. I've seen others before but this was the first time things really clicked. Each session feels so comfortable and relaxed- it really feels like I'm talking to a big sister. A lot of therapists proclaim to have a no judgement policy, but this was the first time I actually felt that was true. The topics we explore together, and particularly, her words on those topics, resonate with me far beyond the session itself.",
+            text: "I'm so grateful to have found Aishwaraya as my therapist. I've seen others before but this was the first time things really clicked. Each session feels so comfortable and relaxed- it really feels like I'm talking to a big sister. A lot of therapists proclaim to have a no judgement policy, but this was the first time I actually felt that was true. The topics we explore together, and particularly, her words on those topics, resonate with me far beyond the session itself.",
             rating: 5,
             date: "2025"
         },

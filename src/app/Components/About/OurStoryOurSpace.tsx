@@ -1,8 +1,6 @@
 import OurStory from '../../Assets/images/OurStory.jpg';
-import OurSpace from '../../Assets/images/OurSpace.jpg';
 import OurStory2 from '../../Assets/images/OurStory2.jpg';
-import OurSpace2 from '../../Assets/images/OurSpace2.jpg';
-import OurStory3 from '../../Assets/images/OurStory2.jpg';
+import OurStory3 from '../../Assets/images/OurStory3.jpg';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
@@ -17,7 +15,7 @@ const OurStoryOurSpace = () => {
     const [activeImage, setActiveImage] = useState(0);
 
     const images = [
-        OurStory, OurSpace, OurStory2, OurSpace2, OurStory3
+        OurStory, OurStory2, OurStory3
     ];
 
     const slideLeftImage = () => {
@@ -29,44 +27,28 @@ const OurStoryOurSpace = () => {
     }
 
 return <div className="bg-[#F2E8DD] py-16 md:py-20">
-            {/* Our Story, Our Space Section */}
+            {/* The Space Section */}
             <div className="max-w-7xl mx-auto px-4 md:px-8">
                 <div className="text-center mb-12 md:mb-16">
-                    <div className="inline-flex items-center space-x-3 mb-6">
-                        <div className="w-8 md:w-12 h-0.5 bg-[#B6724F] opacity-40"></div>
-                        <span className="eyebrow-label">THE BEGINNING</span>
-                        <div className="w-8 md:w-12 h-0.5 bg-[#B6724F] opacity-40"></div>
-                    </div>
                     <h2 className="text-3xl md:text-4xl lg:text-5xl text-[#5C4B3C] mb-4 px-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
-                        Our Story, Our Space
+                        The Space
                     </h2>
+                    <p className="text-xl md:text-2xl text-[#5C4B3C] italic max-w-3xl mx-auto" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
+                        A room designed for real conversations.
+                    </p>
                 </div>
 
-                {/* Combined Section: Text Left, Image Carousel Right */}
-                <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-                    {/* Left side - Combined Text Content */}
-                    <div className="space-y-8">
-                        <div>
-                            <h3 className="text-2xl md:text-3xl text-[#5C4B3C] mb-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
-                                Our Story
-                            </h3>
-                            <p className="text-base md:text-lg leading-relaxed text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
-                                Mind Craft Wellness was founded in 2022 with a simple vision — to make therapy more personal, accessible, and human. What began as a solo practice has grown into a team of therapists committed to putting clients first.
-                            </p>
-                        </div>
-
-                        <div>
-                            <h3 className="text-2xl md:text-3xl text-[#5C4B3C] mb-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
-                                Our Space
-                            </h3>
-                            <p className="text-base md:text-lg leading-relaxed text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
-                                Located in the heart of Gurgaon, our clinic is designed to feel welcoming and safe — a quiet pause from the rush of daily life. With two thoughtfully curated therapy rooms and calming details, the space is built to help you feel at ease the moment you step in. At Mind Craft Wellness, inclusivity and sensitivity are at the heart of our work. We welcome people of all backgrounds, identities, and life experiences, ensuring therapy is a space where trust, openness, and growth can unfold.
-                            </p>
-                        </div>
+                {/* Section: Text on Top, Image Carousel Below */}
+                <div className="flex flex-col items-center">
+                    {/* Text Content on Top */}
+                    <div className="max-w-4xl mx-auto mb-12 md:mb-16 px-4">
+                        <p className="text-base md:text-lg leading-relaxed text-[#5C4B3C] text-center" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
+                            Located in Gurgaon, the clinic is designed to feel welcoming from the moment you step in, a quiet pause from the rush of daily life. Warm textures, natural light, and a calm atmosphere make it easier to slow down and be present.
+                        </p>
                     </div>
 
-                    {/* Right side - Image Carousel */}
-                    <div className="relative w-full">
+                    {/* Image Carousel in the Middle */}
+                    <div className="relative w-full max-w-5xl mx-auto">
                         <div className="relative overflow-hidden shadow-lg w-full" style={{ borderRadius: '20px' }}>
                             <div className="flex transition-transform duration-500 ease-in-out">
                                 {/* First Image */}
@@ -75,6 +57,9 @@ return <div className="bg-[#F2E8DD] py-16 md:py-20">
                                         src={images[activeImage]}
                                         alt="Mind Craft Wellness Clinic Space"
                                         className="w-full h-[400px] md:h-[500px] object-cover"
+                                        width={1200}
+                                        height={500}
+                                        priority
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" style={{ borderRadius: '20px' }}></div>
                                 </div>
