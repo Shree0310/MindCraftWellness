@@ -66,7 +66,7 @@ const About = () => {
                         <div className="text-center mb-12 md:mb-16">
                             <div className="inline-flex items-center space-x-3 mb-6">
                                 <div className="w-8 md:w-12 h-0.5 bg-[#B6724F] opacity-40"></div>
-                                <span className="eyebrow-label">MEET AISHWARYA</span>
+                                <span className="eyebrow-label">MEET AISHWARAYA</span>
                                 <div className="w-8 md:w-12 h-0.5 bg-[#B6724F] opacity-40"></div>
                             </div>
                             <h1 className='text-3xl md:text-4xl lg:text-5xl text-[#5C4B3C] mb-6' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
