@@ -62,10 +62,10 @@ const posts = await sanityAPIClient.getAllPosts();
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-12 md:mb-16">
                     <h2 className="text-3xl md:text-4xl text-[#5C4B3C] mb-4 md:mb-6 px-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
-                        Our Space & Journey
+                        Reflections, in between sessions.
                     </h2>
                     <p className="text-base md:text-lg text-[#5C4B3C] max-w-3xl mx-auto px-4" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
-                        Explore the serene environment where healing begins and witness the journey of transformation through our carefully curated spaces.
+                        Occasional writing on therapy, and the everyday work of being human from the human and therapist in me.
                     </p>
                 </div>
 

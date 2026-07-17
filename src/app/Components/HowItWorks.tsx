@@ -115,7 +115,7 @@ const HowItWorks = ({className, children}:{
 
                     <div className="relative md:mt-24 mt-12">
                         <div className="rounded-lg max-h-[650px] w-[552px] overflow-hidden">
-                            <Image src={HowMCWWorks} className='md:w-full max-w-[350px] md:max-w-[552px]  h-full object-cover rotate-180' alt="Therapy session" loading="lazy" placeholder="blur" sizes="(max-width: 768px) 350px, 552px" />
+                            <Image src={HowMCWWorks} className='md:w-full max-w-[350px] md:max-w-[552px]  h-full object-cover rotate-180' alt="Therapy session" priority placeholder="blur" sizes="(max-width: 768px) 350px, 552px" />
                         </div>
                     </div>
                 </div>

@@ -77,7 +77,7 @@ const About = () => {
                         <div className='flex flex-col justify-center items-center gap-12 md:gap-16 mx-auto max-w-6xl relative'>
                             <div className="flex flex-col md:grid md:grid-cols-2 gap-4 items-start w-full">
                                 <div className='relative w-full max-w-[400px] h-[450px] md:h-[500px] mx-auto md:mx-0 order-first md:order-1'>
-                                    <Image src={ProfilePic} className='w-full h-full object-cover shadow-lg' style={{ borderRadius: '20px' }} alt="Aishwaraya Goud - Founder of Mind Craft Wellness" loading="lazy" placeholder="blur" sizes="(max-width: 768px) 100vw, 400px" />
+                                    <Image src={ProfilePic} className='w-full h-full object-cover shadow-lg' style={{ borderRadius: '20px' }} alt="Aishwaraya Goud - Founder of Mind Craft Wellness" priority placeholder="blur" sizes="(max-width: 768px) 100vw, 400px" />
                                 </div>
                                 <div className='space-y-6 order-last md:order-2'>
                                     <p className='text-2xl md:text-3xl text-[#5C4B3C] leading-relaxed' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
