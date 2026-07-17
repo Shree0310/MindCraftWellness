@@ -30,11 +30,11 @@ export default function BookNow() {
             <div className="max-w-4xl mx-auto px-4 md:px-8 py-16 md:py-20">
 
                 {/* Header Section */}
-                <div className="mb-16">
-                    <h1 className="text-4xl md:text-5xl text-[#2B231C] mb-6" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
-                        Book a Session
+                <div className="mb-16 text-left">
+                    <h1 className="text-[10px] md:text-xs tracking-widest mb-8" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 600, letterSpacing: '0.2em', color: '#B6724F' }}>
+                        BOOK A SESSION
                     </h1>
-                    <h2 className="text-2xl md:text-3xl text-[#5C4B3C] mb-8" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl text-[#5C4B3C] mb-8 text-left" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                         Taking the first step can feel like a big one.
                     </h2>
                     <div className="space-y-4 text-lg text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
