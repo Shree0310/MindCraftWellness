@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { IconChevronCompactDown } from "@tabler/icons-react";
+import { ChevronDown } from "lucide-react";
 
 type FAQItemProps = {
     question: string;
@@ -9,18 +9,28 @@ type FAQItemProps = {
 const FAQItem = ({ question, answer }: FAQItemProps) => {
     const [isExpanded, setIsExpanded] = useState(false);
 
-    return <div className="div">
-        <div className={`flex justify-between shadow-2xl max-w-[880px] w-full cursor-pointer rounded-4xl py-2 px-3 ${isExpanded ? 'bg-[#cfe7c6]': '' }`}
-              onClick={() => setIsExpanded(!isExpanded) }>
-            <h2 className="flex justify-start text-xl  drop-shadow-gray-500 text-gray-700">{question}</h2>
-            <IconChevronCompactDown 
-                stroke={4} 
-                className={`w-6 h-4 my-2 cursor-pointer transition-transform duration-200  
-                    ${isExpanded ? 'rotate-180' : ''}`}/>
+    return (
+        <div className={`border-b border-[#E8DBC9] transition-colors duration-300 ${isExpanded ? 'bg-[#FAF6F0]' : 'bg-transparent'}`} style={{ borderRadius: isExpanded ? '12px' : '0' }}>
+            <button
+                onClick={() => setIsExpanded(!isExpanded)}
+                className="w-full py-6 px-6 flex justify-between items-center transition-colors"
+            >
+                <h3 className="text-left text-lg md:text-xl text-[#2B231C] pr-4" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 400 }}>
+                    {question}
+                </h3>
+                <ChevronDown
+                    className={`flex-shrink-0 transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}
+                    size={24}
+                    color="#B6724F"
+                />
+            </button>
+            <div className={`overflow-hidden transition-all duration-300 ${isExpanded ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                <div className="pb-6 px-6 text-base md:text-lg text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
+                    {answer}
+                </div>
+            </div>
         </div>
-        <div className="div">
-            {isExpanded && <p className="py-8 text-lg mx-8 font-sans">{answer}</p>}
-        </div>
-    </div>
+    );
 }
+
 export default FAQItem;
