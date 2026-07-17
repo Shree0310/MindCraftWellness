@@ -39,9 +39,9 @@ const Footer = ({className}:{className?: string}) => {
                                 <li><a href="/About" className="text-white/80 hover:text-white hover:underline transition-colors duration-300"><p>{"About Us"}</p></a></li>
                                 <li><a href="/what-we-work-with" className="text-white/80 hover:text-white hover:underline transition-colors duration-300"><p>{"What We Work With"}</p></a></li>
                                 <li><a href="/testimonials" className="text-white/80 hover:text-white hover:underline transition-colors duration-300"><p>{"Testimonials"}</p></a></li>
-                                <li><a href="/faqs" className="text-white/80 hover:text-white hover:underline transition-colors duration-300"><p>{"FAQs"}</p></a></li>
+                                <li><a href="/FAQs" className="text-white/80 hover:text-white hover:underline transition-colors duration-300"><p>{"FAQs"}</p></a></li>
                                 <li><a href="/book-now" className="text-white/80 hover:text-white hover:underline transition-colors duration-300"><p>{"Book Now"}</p></a></li>
-                                <li><a href="/Careers" className="text-white/80 hover:text-white hover:underline transition-colors duration-300"><p>{"Careers"}</p></a></li>
+                                <li><a href="/Blog" className="text-white/80 hover:text-white hover:underline transition-colors duration-300"><p>{"Blog"}</p></a></li>
                             </ul>
                         </div>
 
@@ -134,9 +134,7 @@ const Footer = ({className}:{className?: string}) => {
                                 <div className="text-white/90 text-sm leading-relaxed" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                                     <strong><p>{"Mind Craft Wellness does not provide crisis intervention services."}</p></strong>
                                     <p>{"If you are experiencing a mental health crisis, suicidal thoughts, or need immediate assistance,"}</p>
-                                    <p>{"please contact emergency services or a crisis helpline. We recommend referring to our"}</p>
-                                    <a href="#" className="text-white underline hover:text-[#F2E8DD] transition-colors duration-300"><p>{" Resources page"}</p></a>
-                                    <p>{"for crisis intervention information and emergency contacts."}</p>
+                                    <p>{"please contact emergency services or a crisis helpline immediately."}</p>
                                 </div>
                             </div>
                         </div>

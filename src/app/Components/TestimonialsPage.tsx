@@ -97,42 +97,60 @@ const TestimonialsPage = () => {
     const googleReviews = [
         {
             id: 1,
+            text: "I've been seeing Aishwarya for a long time now, and I can honestly say she has made a profound difference in my life. From the very first session, she created a safe and welcoming space where I felt truly heard and understood.\n\nShe is a wonderful listener—patient, compassionate, and fully present. Her gentle, thoughtful approach has helped me gain insight into patterns I wasn't even fully aware of. She doesn't rush to offer advice but instead helps guide me to my own realizations, which has been incredibly empowering.\n\nWhat I appreciate most is her calming presence. No matter how overwhelmed I feel going into a session, I always leave feeling more grounded and hopeful. Her support has been instrumental in helping me manage my anxiety and let go of the unrealistic standards I've held myself to for so long.",
+            rating: 5,
+            date: "2026"
+        },
+        {
+            id: 2,
+            text: "Absolutely incredible! Helped me get through a tough time with care and empathy and really helped me understand myself better. Highly recommend her.",
+            rating: 5,
+            date: "2026"
+        },
+        {
+            id: 3,
+            text: "Working with Aishwaraya has been a genuinely meaningful experience for me, and I'm deeply grateful for the therapeutic journey I've had with her.\n\nShe brings a rare combination of kindness, honesty, clarity, emotional depth, and grounded presence to the process. She does not just listen on the surface, she understands deeply, notices subtle emotional patterns, and helps bring clarity to things that can be difficult to recognize or express on your own.\n\nI have found her to be thoughtful, perceptive, patient, emotionally attuned, and sincere in her approach. She creates a space where honesty feels possible and where difficult emotions can be explored without feeling judged, rushed, or misunderstood.\n\nWhat I value most is that her approach never feels generic. Her observations are meaningful, her questions are thoughtful, and the work feels real, warm, and grounded.\n\nI would wholeheartedly recommend Aishwaraya to anyone looking for a therapist who is warm, insightful, deeply attentive, and genuinely skilled at creating a safe and meaningful space for inner work.",
+            rating: 5,
+            date: "2026"
+        },
+        {
+            id: 4,
             text: "Absolutely incredible! Helped me get through a tough time with care and empathy and really helped me understand myself better. I highly recommend her.",
             rating: 5,
             date: "10th September 2025"
         },
         {
-            id: 2,
+            id: 5,
             text: "I have been working with Aishwarya for over a year through psychotherapy to manage my anxiety, and my experience has been excellent. I attend in-person sessions with her, and she stands out as a psychologist who truly applies effective psychological practices. Her approach is both genuine and practical, and the serene, thoughtfully designed environment of her clinic further enhances the sense of calm and comfort during each session.",
             rating: 5,
             date: "2025"
         },
         {
-            id: 3,
+            id: 6,
             text: "My experience with Aishwarya has been good. She is a great listener and comes in with advice and insights only when required, lets you find your own way out of stress, anxiety, and grief.",
             rating: 4,
             date: "2025"
         },
         {
-            id: 4,
+            id: 7,
             text: "Aishwaraya has been my therapist for almost 2 years now. We've closely worked together on various aspects of my life. I find her approach to be well documented, detail oriented and empathy driven. I'd recommend her to anyone seeking a compassionate, thoughtful and constructive person to help you see things in a new light P.S her clinic in Gurgaon has the best aesthetic vibe!",
             rating: 5,
             date: "20th July 2024"
         },
         {
-            id: 5,
+            id: 8,
             text: "I've been seeing Aishwarya for therapy for several months now, and I can confidently say she's been instrumental in helping me navigate some challenging times. I highly recommend her to anyone seeking a compassionate and skilled therapist.",
             rating: 5,
             date: "29th May 2024"
         },
         {
-            id: 6,
+            id: 9,
             text: "I have been in therapy with Aishwarya for past 5 months. Her ability to quickly grasp and diagnose my years long struggles in professional, interpersonal relations and mental blockages helped me immensely, providing a roadmap to understanding and healing. She has a compassionate demeanor and insightful approach which made each and every session transformative for me. I wholeheartedly recommend her for anyone seeking counselling and therapy.",
             rating: 5,
             date: "27th May 2024"
         },
         {
-            id: 7,
+            id: 10,
             text: "It has really been a great experience to consult her for a range of mental health issues. She patiently listened to me without any sort of judgment or prejudices. Her approach towards councelling is properly structured and well documented which has been quite helpful to deal with my problems. I feel a lot better and confident now. I would certainly recommend her.",
             rating: 5,
             date: "24th May, 2022"
@@ -199,6 +217,69 @@ const TestimonialsPage = () => {
             text: "I'm able to rediscover my innate self . It's very easy to connect with her. Her suggestive measures are effective and easy to follow",
             rating: 5,
             date: "2023"
+        }
+    ];
+
+    const directClientReviews = [
+        {
+            id: 1,
+            text: "Therapy for me has worked like a magic pill. It's given me a deeper understanding of my feelings, my thoughts, and consequently my actions. It has also been a safe outlet to release both the micro and macro emotions I'd been holding inside.\n\nThrough this process, I've learned the value of being authentic and vulnerable. We don't always need to be the 'tough one.' Sometimes, it's perfectly okay to step back, simply observe, and let things pass.",
+            author: "Anonymous",
+            role: "In-person Therapy sessions"
+        },
+        {
+            id: 2,
+            text: "Ever since I was young, all I heard was how therapy was a waste of time—a money-making scheme not to be entertained during times of turmoil—so I never gave it another thought. But choosing to tune out that noise and take a leap of faith has changed my life in ways I couldn't have imagined. With Aishwarya, I've found a safe space, genuine care, and the kind of support I didn't even know I was missing.",
+            author: "A.S.",
+            role: "22 years old, Male, India (Online & In-person Therapy)"
+        },
+        {
+            id: 3,
+            text: "I've been working with Aishwarya for a year now, and the journey has been truly life-changing. Over this time, I've quit smoking—a habit I never thought I could break—and learned how to be more present, self-aware, and in control of my emotions. My anxiety levels have significantly reduced, and I feel more at peace with myself than I have in years.\n\nWhat I value most about our sessions is Aishwarya's ability to create a safe, non-judgmental space where I can openly share my thoughts",
+            author: "Anonymous",
+            role: "India (In-person Therapy)"
+        },
+        {
+            id: 4,
+            text: "Whilst I would consider myself relatively new into therapy, the experience has been super insightful and telling - especially with Aishwarya. Working with her has helped me develop the skills that I need to handle situations independently and has given me a chance to chat with someone so kind and caring, when I'm feeling down. Aishwarya's gentle approach to psychotherapy has really helped me ease into the process and truly make the most out of my experience.",
+            author: "M.L.",
+            role: "19, female, Dubai, UAE (United Arab Emirates) / Spain (Online Therapy)"
+        },
+        {
+            id: 5,
+            text: "Had incredible experience though our sessions;\nShe was very empathetic & helpful through some of the very hard periods of my life. Incredibly grounded & professional; Highly recommend her.",
+            author: "47, Male",
+            role: "Startup Founder, India (In-person Therapy)"
+        },
+        {
+            id: 6,
+            text: "I have been working with Aishwarya for over a year through psychotherapy to manage my anxiety, and my experience has been excellent. I attend in-person sessions with her, and she stands out as a psychologist who truly applies effective psychological practices. Her approach is both genuine and practical, and the serene, thoughtfully designed environment of her clinic further enhances the sense of calm and comfort during each session.",
+            author: "S.B.",
+            role: "Female, 25 Years Old, Gurgaon (In-person Therapy)"
+        },
+        {
+            id: 7,
+            text: "I had the privilege of first seeking guidance from Aishwarya in 2022 , during one of the most tumultuous and transformative chapters of my life. Her support guided me through a toxic relationship, moments of deep self-doubt, deep seated resentment with my family and some of the hardest emotional battles I've faced.\n\nWhat I cherish most is that she didn't just help me heal—she gave me tools I didn't even know I desperately needed: the ability to set and honor healthy boundaries. That understanding has changed my life in ways I can't overstate.\n\nBecause of her guidance, I've grown into a version of myself that is stronger, happier, and more self-respecting. I will always be grateful for the clarity, compassion, and wisdom she brought into my life when I needed it most.",
+            author: "M.L.",
+            role: "Female, 25 Years Old, Gurgaon (In-person Therapy)"
+        },
+        {
+            id: 8,
+            text: "I have been Ms. Aishwarya's client for over 2 years now and I have experienced immense self reflection, growth and increase in self esteem during this time. Not only have I been able to work on my relationships and my difficulties to manage my work, but also my anxieties and past traumas. I would highly recommend Aishwarya because she is a professional who keeps evolving and working hard to help clients (new and old) grow and gain the most out of their therapy. In addition, she is the right combination of being a kind and flexible, yet stern and disciplined professional. I highly recommend Aishwarya!",
+            author: "S.K.",
+            role: "Female, New Delhi (Online therapy)"
+        },
+        {
+            id: 9,
+            text: "So I started my therapy when I was not in a good place in life mentally. I'd been contemplating about it for months but one day I just went for it without any second thoughts and I can gladly say it was the best decision I made. Aishwaraya being my therapist was the second best decision I'd made because from the very first session itself I felt so comfortable sharing anything everything with her, which is huge because I have difficulty opening about my issues.\n\nThe whole process of starting therapy and taking sessions has been very beneficial for me so far! I've had better energy and a better outlook towards most situations in life! Aishwaraya has helped me and is still helping me get better with my relationships, be it romantic or family. I've gained a lot of perspective about my childhood trauma and I feel I'm better equipped now to deal with certain situations. She really empathises and listens to me when I need it and that makes a world of a difference, after each session I step out a little lighter and a little happier!\n\nTo anyone out there still contemplating, my advice is to just go for it, at least give it a shot because if you never try, you'll never know!",
+            author: "V.S.",
+            role: "Male, 29 Year Old, Gurgaon (In-person Therapy)"
+        },
+        {
+            id: 10,
+            text: "I've been seeing Aishwarya for a long time now, and I can honestly say she has made a profound difference in my life. From the very first session, she created a safe and welcoming space where I felt truly heard and understood.\n\nShe is a wonderful listener—patient, compassionate, and fully present. I've been working through issues related to anxiety and perfectionism, and her gentle, thoughtful approach has helped me gain insight into patterns I wasn't even fully aware of. She doesn't rush to offer advice but instead helps guide me to my own realizations, which has been incredibly empowering.\n\nWhat I appreciate most is her calming presence. No matter how overwhelmed I feel going into a session, I always leave feeling more grounded and hopeful. Her support has been instrumental in helping me manage my anxiety and let go of the unrealistic standards I've held myself to for so long.\n\nIf you're looking for a therapist who is kind, attentive, and genuinely committed to helping you grow, I couldn't recommend Aishwarya more highly.",
+            author: "A.S.",
+            role: "Female, 33 Year Old, Gurgaon (In-person Therapy)"
         }
     ];
 
@@ -340,6 +421,35 @@ const TestimonialsPage = () => {
                         </div>
                     </div>
 
+                    {/* Direct Client Reviews Section */}
+                    <div className="max-w-7xl mx-auto px-8 mb-16">
+                        <h2 className="text-3xl font-bold text-[#345041] mb-8 text-center" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif' }}>
+                            Direct Client Testimonials
+                        </h2>
+                        <div className="space-y-8">
+                            {directClientReviews.map((review) => (
+                                <div key={review.id} className="bg-[#FAF6F0] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-[#B6724F]">
+                                    <blockquote className="text-lg leading-relaxed text-[#2B231C] mb-6" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', whiteSpace: 'pre-line' }}>
+                                        &ldquo;{review.text}&rdquo;
+                                    </blockquote>
+                                    <div className="flex items-start space-x-3 border-t border-[#E8DBC9] pt-4">
+                                        <div className="flex flex-col">
+                                            <span className="text-base font-semibold text-[#5C4B3C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif' }}>{review.author}</span>
+                                            <span className="text-sm text-[#5C4B3C] opacity-80" style={{ fontFamily: 'var(--font-dm-sans), sans-serif' }}>{review.role}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Consent Disclaimer */}
+                    <div className="max-w-7xl mx-auto px-8 mb-16">
+                        <p className="text-sm text-center text-[#5C4B3C] opacity-70 italic" style={{ fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+                            We have received consent from our clients to share these testimonials.
+                        </p>
+                    </div>
+
                     {/* Call to Action */}
                     <div className="bg-gradient-to-br from-[#345041] to-[#2a4033] text-white rounded-3xl p-12 text-center">
                         <h2 className="text-4xl font-bold mb-6">
@@ -348,9 +458,14 @@ const TestimonialsPage = () => {
                         <p className="text-xl mb-8 leading-relaxed opacity-90">
                             Join hundreds of clients who have found healing and growth at Mind Craft Wellness.
                         </p>
-                        <Link href="/book-now" className="bg-white text-[#345041] px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        <Link href="/book-now" className="bg-white text-[#345041] px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-block">
                             Book Your Free Consultation
                         </Link>
+                        <div className='flex justify-center mt-6'>
+                            <Link href="/FAQs" className='text-white hover:text-[#F2E8DD] transition-colors text-base opacity-90' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                                Still have questions? → read our FAQs
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>

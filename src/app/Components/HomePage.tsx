@@ -371,9 +371,6 @@ const HomePage = () => {
                         <Link href="/FAQs" className='text-[#B6724F] hover:text-[#95573A] transition-colors'>
                             Still have questions? → read our FAQs
                         </Link>
-                        <Link href="/resources" className='text-[#B6724F] hover:text-[#95573A] transition-colors'>
-                            Want to learn more? → explore our Resources
-                        </Link>
                     </div>
                 </div>
             </div>

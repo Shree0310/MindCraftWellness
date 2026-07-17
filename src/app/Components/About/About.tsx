@@ -286,12 +286,8 @@ const About = () => {
                         </p>
                         <BookFreeConsultationBtn />
                         <div className="flex flex-col md:flex-row items-center justify-center gap-6 mt-8 text-sm md:text-base text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
-                            <a href="/faqs" className="hover:text-[#B6724F] transition-colors duration-300">
+                            <a href="/FAQs" className="hover:text-[#B6724F] transition-colors duration-300">
                                 Still have questions? → read our FAQs
-                            </a>
-                            <span className="hidden md:inline text-[#B6724F]">|</span>
-                            <a href="/Blog" className="hover:text-[#B6724F] transition-colors duration-300">
-                                Want to learn more? → explore our Resources
                             </a>
                         </div>
                     </div>

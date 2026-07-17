@@ -39,8 +39,6 @@ Burnout often hides behind endless to-do lists and the sense that no amount of e
             ],
             description: `Relationships are where our oldest wounds tend to show up.
 
-Maybe you find yourself stuck in recurring conflicts, feeling like you're never understood, or shutting down when things get hard. Sometimes it looks like wanting closeness and sometimes it looks like needing space — feeling overwhelmed when someone gets too near.
-
 It can also show up as a tendency to please, to avoid conflict at all costs, or to carry the weight of other people's feelings because saying "no" feels impossible.
 
 These patterns aren't random. They often trace back to early attachment experiences and unmet needs that shaped how we learned to stay safe in connection. As children, we generally take the shape of the container we are born into - the environment, parental dynamics, financial circumstances, life events at that time.`,
@@ -57,13 +55,13 @@ These patterns aren't random. They often trace back to early attachment experien
                 "This isn't what I imagined.",
                 "I love my baby but I feel like I've lost myself."
             ],
-            specialisation: "Advanced training in Perinatal Mental Health from NIMHANS (India) and PSI Collective (Washington, DC). This is an area of specialisation.",
+            specialisation: "Advanced training in Perinatal Mental Health from NIMHANS (India) and PSI Collective (Washington, DC).",
             description: `Pregnancy and postpartum can bring joy — and also anxiety, loneliness, guilt, and overwhelm. If you've ever thought "Why am I not happier?" or "This isn't what I imagined," you are not alone. There's nothing wrong with you.
 
 The journey to parenthood can stir unexpected emotions — hope, fear, grief, and everything in between. Whether you're navigating fertility struggles, pregnancy changes, postpartum shifts, grief from miscarriage, or adjusting to life with a baby, this is a space to feel, grieve, question, or wonder — without judgment.
 
-In perinatal/postpartum therapy, we also explore how to stay connected to your own identity, and how to redefine it while embracing the all-encompassing role of parenthood.`,
-            howWork: "I work with individuals through fertility challenges, conception, pregnancy, and the postpartum period. Sessions are paced carefully, with attention to a client's erratic availability. I also work with non-birthing partners who often carry invisible stress during this period.",
+I work with individuals through fertility challenges, conception, pregnancy, and the postpartum period. Sessions are paced carefully, with attention to a client's erratic availability. I also work with non-birthing partners who often carry invisible stress during this period.`,
+            howWork: "In perinatal/postpartum therapy, we also explore how to stay connected to your own identity, and how to redefine it while embracing the all-encompassing role of parenthood.",
             bgColor: "bg-[#B6724F]",
             textColor: "text-white"
         },
@@ -88,7 +86,7 @@ Trauma often lives in the body and shows up quietly, long after the experience t
         {
             number: "05",
             title: "PERSONAL GROWTH",
-            heading: "Self-Worth & Confidence",
+            heading: "Self-Worth & Confidence Challenges",
             tag: "SELF-WORTH",
             quotes: [
                 "No matter what I achieve, it never feels enough.",
@@ -334,6 +332,11 @@ At some point, they made sense. What once kept you safe can start to feel limiti
                                     BOOK A FREE CONSULTATION →
                                 </button>
                             </Link>
+                            <div className='flex justify-center mt-8'>
+                                <Link href="/FAQs" className='text-[#B6724F] hover:text-[#95573A] transition-colors text-base' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                                    Still have questions? → read our FAQs
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
