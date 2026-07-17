@@ -160,8 +160,11 @@ export default function BookNow() {
 
                             {/* Inspirational text block */}
                             <div className="bg-[#E8DBC9] p-6 md:p-8" style={{ borderRadius: '20px' }}>
+                                <h4 className="text-base md:text-lg mb-3 text-[#2B231C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
+                                    You don&apos;t have to have it all figured out.
+                                </h4>
                                 <p className="text-sm leading-relaxed text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.6' }}>
-                                    You don&apos;t have to have it all figured out. There&apos;s no right way to begin. Whether you book a call, send a WhatsApp message, or simply sit with this page for a while — all of that is okay.
+                                    There&apos;s no right way to begin. Whether you book a call, send a WhatsApp message, or simply sit with this page for a while — all of that is okay.
                                 </p>
                             </div>
                         </div>
@@ -209,16 +212,16 @@ export default function BookNow() {
                         </div>
 
                         {/* Have More Questions box */}
-                        <div className="bg-[#FAF6F0] p-5 md:p-6" style={{ borderRadius: '20px' }}>
-                            <h4 className="text-lg text-[#2B231C] mb-2" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
+                        <div className="bg-[#FAF6F0] p-6 md:p-8" style={{ borderRadius: '20px' }}>
+                            <h4 className="text-xl md:text-2xl text-[#2B231C] mb-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
                                 Have more questions?
                             </h4>
-                            <p className="text-sm text-[#5C4B3C] mb-3" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.6' }}>
+                            <p className="text-base text-[#5C4B3C] mb-5" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
                                 You can explore the complete FAQ section for more on therapy, confidentiality, online sessions, cancellations, and the therapeutic process.
                             </p>
                             <Link
                                 href="/FAQs"
-                                className="inline-flex items-center text-[#B6724F] hover:text-[#95573A] transition-colors text-sm"
+                                className="inline-flex items-center text-[#B6724F] hover:text-[#95573A] transition-colors text-base"
                                 style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500 }}
                             >
                                 → Read the FAQs
