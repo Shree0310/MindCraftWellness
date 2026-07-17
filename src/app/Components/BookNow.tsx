@@ -15,7 +15,7 @@ export default function BookNow() {
     };
 
     return (
-        <div className="bg-[#FAF6F0] min-h-screen">
+        <div className="bg-[#F2E8DD] min-h-screen">
             <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
             {/* Blur the whole page when menu is open */}
             <div
@@ -27,19 +27,23 @@ export default function BookNow() {
             >
 
             {/* Main Content */}
-            <div className="max-w-4xl mx-auto px-4 md:px-8 py-16 md:py-20">
+            <div className="max-w-7xl mx-auto px-4 md:px-6 py-16 md:py-20">
 
                 {/* Header Section */}
                 <div className="mb-16 text-left">
                     <h1 className="text-[10px] md:text-xs tracking-widest mb-8" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 600, letterSpacing: '0.2em', color: '#B6724F' }}>
                         BOOK A SESSION
                     </h1>
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl text-[#5C4B3C] mb-8 text-left" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
-                        Taking the first step can feel like a big one.
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl mb-8 text-left text-[#5C4B3C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
+                        Taking the first step<br />
+                        can feel like <span className="text-[#B6724F]">a big one.</span>
                     </h2>
-                    <div className="space-y-4 text-lg text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
+                    <div className="space-y-4 text-base text-[#5C4B3C] text-left" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
                         <p>
-                            Whether you&apos;re feeling certain, curious, or a little anxious, you&apos;re welcome here. Beginning therapy doesn&apos;t require having everything figured out, it simply begins with a conversation.
+                            Whether you&apos;re feeling certain, curious, or a little anxious, you&apos;re welcome here.
+                        </p>
+                        <p>
+                            Beginning therapy doesn&apos;t require having everything figured out, it simply begins with a conversation.
                         </p>
                         <p className="font-medium" style={{ fontWeight: 400 }}>
                             There are two ways we can get started.
@@ -47,108 +51,186 @@ export default function BookNow() {
                     </div>
                 </div>
 
-                {/* Option 1: Book complimentary consultation */}
-                <div className="bg-[#F2E8DD] p-8 md:p-10 mb-12" style={{ borderRadius: '20px' }}>
-                    <h3 className="text-2xl md:text-3xl text-[#2B231C] mb-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
-                        Option 1: Book a complimentary 15-minute consultation
-                    </h3>
-                    <p className="text-lg text-[#5C4B3C] mb-6" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
-                        If you&apos;d like to understand how I work, ask questions, or see whether we&apos;d be a good fit before committing to therapy, you&apos;re welcome to book a free 15-minute consultation.
-                    </p>
-                    <p className="text-base text-[#5C4B3C] mb-8 italic" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
-                        The calendar below shows my available slots.
-                    </p>
+                {/* Option 1: Book complimentary consultation + Availability & Fees */}
+                <div className="mb-12">
+                    <div className="grid md:grid-cols-3 gap-6">
+                        {/* Calendar Embed in lighter cream box */}
+                        <div className="md:col-span-2 bg-[#FAF6F0] p-6 md:p-8" style={{ borderRadius: '20px' }}>
+                            <h3 className="text-[10px] md:text-xs tracking-widest mb-6" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 600, letterSpacing: '0.2em', color: '#B6724F' }}>
+                                OPTION 1
+                            </h3>
+                            <h4 className="text-2xl md:text-3xl text-[#2B231C] mb-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
+                                Book a complimentary 15-minute consultation
+                            </h4>
+                            <p className="text-base text-[#5C4B3C] mb-6" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
+                                If you&apos;d like to understand how I work, ask questions, or see whether we&apos;d be a good fit before committing to therapy — you&apos;re welcome to book a free 15-minute consultation.
+                            </p>
 
-                    {/* Calendar Embed */}
-                    <div className="bg-white p-4" style={{ borderRadius: '16px' }}>
-                        <iframe
-                            width="100%"
-                            height="560"
-                            title="Book Your Consultation"
-                            src="https://www.tealfeed.com/goud_387923/connect/call?callType=67120307b554f31cdc8d94f9&embed=true&theme=light&brandColor=008080&hideDescription=false"
-                            frameBorder="0"
-                            allowFullScreen
-                            className="rounded-xl"
-                        >
-                        </iframe>
+                            <iframe
+                                width="100%"
+                                height="350"
+                                title="Book Your Consultation"
+                                src="https://www.tealfeed.com/goud_387923/connect/call?callType=67120307b554f31cdc8d94f9&embed=true&theme=light&brandColor=008080&hideDescription=false"
+                                frameBorder="0"
+                                allowFullScreen
+                                className="rounded-xl"
+                            >
+                            </iframe>
+
+                            <div className="text-center mt-4">
+                                <p className="text-sm text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                                    Having trouble with the calendar?
+                                    <a
+                                        href="https://www.tealfeed.com/goud_387923/connect/call?callType=67120307b554f31cdc8d94f9"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-[#B6724F] hover:text-[#95573A] underline ml-1"
+                                        style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 400 }}
+                                    >
+                                        Open in new tab
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Right column with 3 stacked boxes */}
+                        <div className="space-y-6">
+                            {/* Availability & Fees in terracotta box */}
+                            <div className="bg-[#B6724F] p-8 md:p-10 text-white" style={{ borderRadius: '20px' }}>
+                                <h4 className="text-xs tracking-widest mb-6" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 600, letterSpacing: '0.2em' }}>
+                                    AVAILABILITY & FEES
+                                </h4>
+                                <h5 className="text-lg mb-8" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
+                                    Session details
+                                </h5>
+                                <div className="space-y-6">
+                                    <div>
+                                        <div className="flex justify-between items-start pb-6">
+                                            <span className="text-sm" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                                                Consultation hours
+                                            </span>
+                                            <div className="text-right">
+                                                <p className="text-sm text-white/90" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                                                    Wed – Sat
+                                                </p>
+                                                <p className="text-sm text-white/90" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                                                    12:00 PM – 6:00 PM IST
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className="border-t border-white/20"></div>
+                                    </div>
+                                    <div>
+                                        <div className="flex justify-between items-center pb-6">
+                                            <span className="text-sm" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                                                Session duration
+                                            </span>
+                                            <p className="text-sm text-white/90" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                                                60 minutes
+                                            </p>
+                                        </div>
+                                        <div className="border-t border-white/20"></div>
+                                    </div>
+                                    <div>
+                                        <div className="flex justify-between items-center pb-6">
+                                            <span className="text-sm" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                                                Fee per session
+                                            </span>
+                                            <p className="text-xl text-white" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 400 }}>
+                                                ₹3,500
+                                            </p>
+                                        </div>
+                                        <div className="border-t border-white/20"></div>
+                                    </div>
+                                    <div className="flex justify-between items-start">
+                                        <span className="text-sm" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                                            Free consultation
+                                        </span>
+                                        <div className="text-right">
+                                            <p className="text-sm text-white/90" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                                                15 minutes
+                                            </p>
+                                            <p className="text-sm text-white/90" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                                                complimentary
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Inspirational text block */}
+                            <div className="bg-[#E8DBC9] p-6 md:p-8" style={{ borderRadius: '20px' }}>
+                                <p className="text-sm leading-relaxed text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.6' }}>
+                                    You don&apos;t have to have it all figured out. There&apos;s no right way to begin. Whether you book a call, send a WhatsApp message, or simply sit with this page for a while — all of that is okay.
+                                </p>
+                            </div>
+                        </div>
                     </div>
+                </div>
 
-                    <div className="text-center mt-4">
-                        <p className="text-sm text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
-                            Having trouble with the calendar?
+                {/* OR Divider */}
+                <div className="grid md:grid-cols-3 gap-6 mb-12">
+                    <div className="md:col-span-2 flex items-center justify-center">
+                        <div className="flex-grow border-t border-[#E8DBC9]"></div>
+                        <span className="px-6 text-lg text-[#5C4B3C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
+                            OR
+                        </span>
+                        <div className="flex-grow border-t border-[#E8DBC9]"></div>
+                    </div>
+                    <div className="hidden md:block"></div>
+                </div>
+
+                {/* Option 2 and Have More Questions - Side by Side */}
+                <div className="mb-16">
+                    <div className="grid md:grid-cols-3 gap-6">
+                        {/* Option 2: WhatsApp */}
+                        <div className="md:col-span-2 bg-[#FAF6F0] p-8 md:p-10" style={{ borderRadius: '20px' }}>
+                            <h3 className="text-[10px] md:text-xs tracking-widest mb-6" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 600, letterSpacing: '0.2em', color: '#B6724F' }}>
+                                OPTION 2
+                            </h3>
+                            <h4 className="text-2xl md:text-3xl text-[#2B231C] mb-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
+                                Reach out on WhatsApp
+                            </h4>
+                            <p className="text-base text-[#5C4B3C] mb-6" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
+                                If you&apos;re ready to schedule your first therapy session, or if you&apos;d simply prefer speaking over WhatsApp — you&apos;re welcome to reach out directly.
+                            </p>
                             <a
-                                href="https://www.tealfeed.com/goud_387923/connect/call?callType=67120307b554f31cdc8d94f9"
+                                href="https://wa.me/919859080910"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-[#B6724F] hover:text-[#95573A] underline ml-1"
-                                style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 400 }}
+                                className="inline-flex items-center bg-[#25D366] text-white px-8 py-4 rounded-full hover:bg-[#20BA5A] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                                style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500, letterSpacing: '0.05em' }}
                             >
-                                Open in new tab
+                                <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                </svg>
+                                Message on WhatsApp
                             </a>
-                        </p>
-                    </div>
-                </div>
-
-                {/* Option 2: WhatsApp */}
-                <div className="bg-[#E8DBC9] p-8 md:p-10 mb-16" style={{ borderRadius: '20px' }}>
-                    <h3 className="text-2xl md:text-3xl text-[#2B231C] mb-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
-                        Option 2: Reach out on WhatsApp
-                    </h3>
-                    <p className="text-lg text-[#5C4B3C] mb-6" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
-                        If you&apos;re ready to schedule your first therapy session, or if you&apos;d simply prefer speaking over WhatsApp, you&apos;re welcome to reach out directly.
-                    </p>
-                    <a
-                        href="https://wa.me/919859080910"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center bg-[#25D366] text-white px-8 py-4 rounded-full hover:bg-[#20BA5A] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-                        style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500, letterSpacing: '0.05em' }}
-                    >
-                        <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                        </svg>
-                        Message on WhatsApp
-                    </a>
-                </div>
-
-                {/* Availability & Fees */}
-                <div className="bg-white border-2 border-[#E8DBC9] p-8 md:p-10 mb-16" style={{ borderRadius: '20px' }}>
-                    <h3 className="text-2xl md:text-3xl text-[#2B231C] mb-8" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
-                        Availability & Fees
-                    </h3>
-                    <div className="grid md:grid-cols-3 gap-8">
-                        <div>
-                            <h4 className="text-lg text-[#2B231C] mb-2" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 500 }}>
-                                Consultation Hours
-                            </h4>
-                            <p className="text-base text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
-                                Wednesday – Saturday<br />
-                                12:00 PM – 6:00 PM (IST)
-                            </p>
                         </div>
-                        <div>
-                            <h4 className="text-lg text-[#2B231C] mb-2" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 500 }}>
-                                Session Duration
+
+                        {/* Have More Questions box */}
+                        <div className="bg-[#FAF6F0] p-5 md:p-6" style={{ borderRadius: '20px' }}>
+                            <h4 className="text-lg text-[#2B231C] mb-2" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
+                                Have more questions?
                             </h4>
-                            <p className="text-base text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
-                                60 minutes
+                            <p className="text-sm text-[#5C4B3C] mb-3" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.6' }}>
+                                You can explore the complete FAQ section for more on therapy, confidentiality, online sessions, cancellations, and the therapeutic process.
                             </p>
-                        </div>
-                        <div>
-                            <h4 className="text-lg text-[#2B231C] mb-2" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 500 }}>
-                                Fee
-                            </h4>
-                            <p className="text-base text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
-                                ₹3,500 per session
-                            </p>
+                            <Link
+                                href="/FAQs"
+                                className="inline-flex items-center text-[#B6724F] hover:text-[#95573A] transition-colors text-sm"
+                                style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500 }}
+                            >
+                                → Read the FAQs
+                            </Link>
                         </div>
                     </div>
                 </div>
 
                 {/* Questions Section - Accordions */}
                 <div className="mb-16">
-                    <h3 className="text-3xl md:text-4xl text-[#2B231C] mb-10" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
-                        Questions you might have
+                    <h3 className="text-[10px] md:text-xs tracking-widest mb-10" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 600, letterSpacing: '0.2em', color: '#B6724F' }}>
+                        QUESTIONS YOU MIGHT HAVE
                     </h3>
 
                     <div className="space-y-0">
@@ -305,27 +387,13 @@ export default function BookNow() {
                             </div>
                         </div>
                     </div>
-
-                    {/* Have more questions? */}
-                    <div className="bg-[#F2E8DD] p-6 md:p-8" style={{ borderRadius: '16px' }}>
-                        <h4 className="text-xl text-[#2B231C] mb-3" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
-                            Have more questions?
-                        </h4>
-                        <p className="text-base text-[#5C4B3C] mb-4" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
-                            You can explore our complete FAQ section for more information about therapy, confidentiality, online sessions, cancellations, and the therapeutic process.
-                        </p>
-                        <Link
-                            href="/FAQs"
-                            className="inline-flex items-center text-[#B6724F] hover:text-[#95573A] transition-colors"
-                            style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500 }}
-                        >
-                            → Read the FAQs
-                        </Link>
-                    </div>
                 </div>
 
-                {/* Final CTA - Ready when you are */}
-                <div className="mb-16">
+            </div>
+
+            {/* Final CTA - Ready when you are */}
+            <div className="bg-[#E8DBC9] w-full py-12 md:py-16">
+                <div className="max-w-7xl mx-auto px-4 md:px-6">
                     <h3 className="text-3xl md:text-4xl mb-6 text-center text-[#B6724F]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                         Ready when you are.
                     </h3>
@@ -364,7 +432,6 @@ export default function BookNow() {
                         </a>
                     </div>
                 </div>
-
             </div>
 
             <Footer />

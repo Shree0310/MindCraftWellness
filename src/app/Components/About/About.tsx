@@ -3,7 +3,7 @@
 // import Link from 'next/link';
 import Header from "../Header";
 import Image from 'next/image';
-import AboutPageBanner from '../../Assets/images/AboutPageBanner.png'
+import HowItWorks from '../../Assets/images/HowItWorks.jpg'
 import AboutImg1 from '../../Assets/images/About2.png'
 import AboutImg2 from '../../Assets/images/About 5.png'
 import ProfilePic from '../../Assets/images/Profile-pic2.jpg';
@@ -29,7 +29,7 @@ const About = () => {
                         : "transition-filter duration-300"
                     }`}
                 >
-            <div className="bg-[#F2E8DD] text-black w-full font-sans py-16 md:py-20 overflow-x-hidden flex-grow">
+            <div className="bg-[#F2E8DD] text-black w-full font-sans py-8 md:py-12 overflow-x-hidden flex-grow">
                 {/* Opening Section */}
                 <div className="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-20">
                     <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
@@ -47,13 +47,13 @@ const About = () => {
                         <div className="ml-0 lg:ml-24 relative order-first lg:order-2">
                             <div className="relative flex justify-center lg:justify-start">
                                 <Image
-                                    src={AboutPageBanner}
+                                    src={HowItWorks}
                                     alt="About Mind Craft Wellness"
-                                    className="w-[380px] md:w-[450px] h-[380px] md:h-[450px] object-cover lg:mt-12 shadow-xs"
-                                    style={{ borderRadius: '20px', filter: 'blur(1px) brightness(0.95)' }}
+                                    className="w-full md:w-[350px] h-auto object-contain lg:mt-12 shadow-xs"
+                                    style={{ borderRadius: '20px', transform: 'rotate(-90deg)' }}
                                     loading="lazy"
                                     placeholder="blur"
-                                    sizes="(max-width: 768px) 380px, 450px"
+                                    sizes="(max-width: 768px) 100vw, 350px"
                                 />
                             </div>
                         </div>
@@ -198,8 +198,8 @@ const About = () => {
                                         <div className="flex items-start space-x-4">
                                             <div className="w-3 h-3 bg-[#B6724F] rounded-full mt-2 flex-shrink-0"></div>
                                             <div>
-                                                <span className="text-lg text-[#5C4B3C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>Essential Skills Course</span>
-                                                <p className="text-base text-[#5C4B3C] mt-1" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>AEDP Institute, New York (June 2025 to February 2026)</p>
+                                                <span className="text-lg text-[#5C4B3C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>AEDP Essential Skills (Level 2)</span>
+                                                <p className="text-base text-[#5C4B3C] mt-1" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>AEDP Institute, New York (June 2025 to June 2026)</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start space-x-4">
