@@ -185,14 +185,14 @@ const About = () => {
                         </div>
 
                         {/* Additional Certifications & Trainings Section */}
-                        <div className="mb-16 md:mb-20 px-4">
+                        <div className="mb-16 md:mb-20">
                             <div className="text-center mb-8 md:mb-12">
-                                <h2 className="text-3xl md:text-4xl text-[#5C4B3C] px-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
+                                <h2 className="text-3xl md:text-4xl text-[#5C4B3C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                                     Additional Certifications & Trainings
                                 </h2>
                                 <div className="w-16 h-0.5 bg-[#B6724F] mx-auto mt-6 opacity-40"></div>
                             </div>
-                            <div className="max-w-5xl mx-auto">
+                            <div className="max-w-5xl mx-auto px-4">
                                 <div className="grid md:grid-cols-2 gap-8 md:gap-12">
                                     <div className="space-y-6">
                                         <div className="flex items-start space-x-4">

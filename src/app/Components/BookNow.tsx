@@ -397,8 +397,8 @@ export default function BookNow() {
             {/* Final CTA - Ready when you are */}
             <div className="bg-[#E8DBC9] w-full py-12 md:py-16">
                 <div className="max-w-7xl mx-auto px-4 md:px-6">
-                    <h3 className="text-3xl md:text-4xl mb-6 text-center text-[#B6724F]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
-                        Ready when you are.
+                    <h3 className="text-3xl md:text-4xl mb-6 text-center text-[#2B231C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
+                        <span className="text-[#B6724F]">Ready</span> when you are.
                     </h3>
                     <p className="text-lg md:text-xl mb-10 text-center text-[#2B231C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
                         Whether you&apos;d like to start with a conversation or book your first session, you can choose whichever feels most comfortable.
