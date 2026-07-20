@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Link from 'next/link';
 import { useState } from "react";
 import { IconChevronDown } from '@tabler/icons-react';
+import Testimonials from './Testimonials/Testimonials';
 
 export default function BookNow() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -435,6 +436,11 @@ export default function BookNow() {
                         </a>
                     </div>
                 </div>
+            </div>
+
+            {/* Testimonials Section */}
+            <div className='bg-[#B6724F] h-full w-full text-white relative overflow-hidden py-12 md:py-16'>
+                <Testimonials category='book now' />
             </div>
 
             <Footer />

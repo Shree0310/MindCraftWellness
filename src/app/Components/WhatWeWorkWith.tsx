@@ -4,6 +4,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Link from 'next/link';
 import { useState } from "react";
+import Testimonials from './Testimonials/Testimonials';
 
 const WhatWeWorkWith = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,7 +31,7 @@ Burnout often hides behind endless to-do lists and the sense that no amount of e
         {
             number: "02",
             title: "CONNECTION & INTIMACY",
-            heading: "Relationship Difficulties",
+            heading: "Self-worth & Confidence Challenges",
             tag: "RELATIONSHIPS",
             quotes: [
                 "I keep ending up in the same arguments, no matter who I'm with.",
@@ -60,8 +61,8 @@ These patterns aren't random. They often trace back to early attachment experien
 
 The journey to parenthood can stir unexpected emotions — hope, fear, grief, and everything in between. Whether you're navigating fertility struggles, pregnancy changes, postpartum shifts, grief from miscarriage, or adjusting to life with a baby, this is a space to feel, grieve, question, or wonder — without judgment.
 
-I work with individuals through fertility challenges, conception, pregnancy, and the postpartum period. Sessions are paced carefully, with attention to a client's erratic availability. I also work with non-birthing partners who often carry invisible stress during this period.`,
-            howWork: "In perinatal/postpartum therapy, we also explore how to stay connected to your own identity, and how to redefine it while embracing the all-encompassing role of parenthood.",
+In perinatal/postpartum therapy, we also explore how to stay connected to your own identity, and how to redefine it while embracing the all-encompassing role of parenthood.`,
+            howWork: "I work with individuals through fertility challenges, conception, pregnancy, and the postpartum period. Sessions are paced carefully, with attention to a client's erratic availability. I also work with non-birthing partners who often carry invisible stress during this period.",
             bgColor: "bg-[#B6724F]",
             textColor: "text-white"
         },
@@ -340,6 +341,12 @@ At some point, they made sense. What once kept you safe can start to feel limiti
                         </div>
                     </div>
                 </div>
+
+                {/* Testimonials Section */}
+                <div className='bg-[#B6724F] h-full w-full text-white relative overflow-hidden py-12 md:py-16'>
+                    <Testimonials category='specialities' />
+                </div>
+
                 <Footer className="bg-[#5C4B3C]" />
             </div>
         </div>

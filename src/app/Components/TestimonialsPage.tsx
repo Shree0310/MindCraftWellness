@@ -247,7 +247,7 @@ const TestimonialsPage = () => {
         },
         {
             id: 5,
-            text: "Had incredible experience though our sessions;\nShe was very empathetic & helpful through some of the very hard periods of my life. Incredibly grounded & professional; Highly recommend her.",
+            text: "Had incredible experience though our sessions;\nShe was very empathetic & helpful through some of the very hard periods of my life.\nIncredibly grounded & professional; Highly recommend her.",
             author: "47, Male",
             role: "Startup Founder, India (In-person Therapy)"
         },

@@ -36,7 +36,7 @@ const Footer = ({className}:{className?: string}) => {
                         <div>
                             <h4 className="text-lg mb-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}><p>{"Quick Links"}</p></h4>
                             <ul className="space-y-2" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
-                                <li><a href="/About" className="text-white/80 hover:text-white hover:underline transition-colors duration-300"><p>{"About Us"}</p></a></li>
+                                <li><a href="/About" className="text-white/80 hover:text-white hover:underline transition-colors duration-300"><p>{"About"}</p></a></li>
                                 <li><a href="/what-we-work-with" className="text-white/80 hover:text-white hover:underline transition-colors duration-300"><p>{"What We Work With"}</p></a></li>
                                 <li><a href="/testimonials" className="text-white/80 hover:text-white hover:underline transition-colors duration-300"><p>{"Testimonials"}</p></a></li>
                                 <li><a href="/FAQs" className="text-white/80 hover:text-white hover:underline transition-colors duration-300"><p>{"FAQs"}</p></a></li>

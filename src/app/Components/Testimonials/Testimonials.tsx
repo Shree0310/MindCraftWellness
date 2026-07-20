@@ -83,7 +83,7 @@ Through this process, I've learned the value of being authentic and vulnerable. 
             role: "22 years old, Male, India (Online & In-person Therapy)"
         },
         {
-            id: 4,
+            id: 3,
             category: 'about us',
             text: `I've been working with Aishwarya for a year now, and the journey has been truly life-changing. Over this time, I've quit smoking—a habit I never thought I could break—and learned how to be more present, self-aware, and in control of my emotions. My anxiety levels have significantly reduced, and I feel more at peace with myself than I have in years.
 
@@ -92,21 +92,21 @@ What I value most about our sessions is Aishwarya's ability to create a safe, no
             role: "India (In-person Therapy)"
         },
         {
-            id: 5,
+            id: 4,
             category: 'about us',
             text: `Whilst I would consider myself relatively new into therapy, the experience has been super insightful and telling - especially with Aishwarya. Working with her has helped me develop the skills that I need to handle situations independently and has given me a chance to chat with someone so kind and caring, when I'm feeling down. Aishwarya's gentle approach to psychotherapy has really helped me ease into the process and truly make the most out of my experience.`,
             author: "M.L.",
             role: "19, female, Dubai, UAE (United Arab Emirates) / Spain (Online Therapy)"
         },
         {
-            id: 7,
+            id: 5,
             category: 'specialities',
             text: `I have been Ms. Aishwarya's client for over 2 years now and I have experienced immense self reflection, growth and increase in self esteem during this time. Not only have I been able to work on my relationships and my difficulties to manage my work, but also my anxieties and past traumas. I would highly recommend Aishwarya because she is a professional who keeps evolving and working hard to help clients (new and old) grow and gain the most out of their therapy. In addition, she is the right combination of being a kind and flexible, yet stern and disciplined professional. I highly recommend Aishwarya!`,
             author: "S.K.",
             role: "Female, New Delhi (Online therapy)"
         },
         {
-            id: 8,
+            id: 6,
             category: 'specialities',
             text: `So I started my therapy when I was not in a good place in life mentally. I'd been contemplating about it for months but one day I just went for it without any second thoughts and I can gladly say it was the best decision I made. Aishwaraya being my therapist was the second best decision I'd made because from the very first session itself I felt so comfortable sharing anything everything with her, which is huge because I have difficulty opening about my issues.
 
@@ -117,7 +117,7 @@ To anyone out there still contemplating, my advice is to just go for it, at leas
             role: "Male, 29 Year Old, Gurgaon (In-person Therapy)"
         },
         {
-            id: 9,
+            id: 7,
             category: 'book now',
             text: `I've been seeing Aishwarya for a long time now, and I can honestly say she has made a profound difference in my life. From the very first session, she created a safe and welcoming space where I felt truly heard and understood.
 
@@ -130,7 +130,7 @@ If you're looking for a therapist who is kind, attentive, and genuinely committe
             role: "Female, 33 Year Old, Gurgaon (In-person Therapy)"
         },
         {
-            id: 10,
+            id: 8,
             category: 'book now',
             text: `So I started my therapy when I was not in a good place in life mentally. I'd been contemplating about it for months but one day I just went for it without any second thoughts and I can gladly say it was the best decision I made. Aishwaraya being my therapist was the second best decision I'd made because from the very first session itself I felt so comfortable sharing anything everything with her, which is huge because I have difficulty opening about my issues.
 
@@ -145,7 +145,6 @@ To anyone out there still contemplating, my advice is to just go for it, at leas
     const { count: clientsCount, ref: clientsRef } = useCountUp(200, 2500);
     const { count: therapyHRS, ref: therapyHRSRef} =useCountUp(1563, 2500);
     const {count: ClientSatisfaction, ref: clientSatisfactionRef} = useCountUp(98, 3000);
-    const [activeCategoryIndex, setActiveCategoryIndex] = useState(0);
 
     useEffect(() => {
         console.log(groupedTestimonials);
@@ -162,21 +161,7 @@ To anyone out there still contemplating, my advice is to just go for it, at leas
     },{} as Record<string, typeof testimonials> );
 
     const categories = Object.keys(groupedTestimonials);
-
-    const slideRightTestimonials = () => {
-        setActiveCategoryIndex((prev) => {
-            return prev >= categories.length -1 ? 0 : prev + 1;
-        });
-    }
-
-    const slideLeftTestimonials = () => {
-        setActiveCategoryIndex((prev) => {
-            return prev <= 0 ? categories.length-1 : prev - 1;
-        });
-    }
-
-    const currCategory = categories[activeCategoryIndex];
-    const testimonialsToShow = groupedTestimonials[currCategory] || [];
+    const testimonialsToShow = category ? groupedTestimonials[category] || [] : [];
 
     return (
         <div className="py-12 md:py-20 px-4 md:px-8">
@@ -202,31 +187,11 @@ To anyone out there still contemplating, my advice is to just go for it, at leas
                             key={testimonial.id}
                             category= {testimonial.category}
                             id={testimonial.id}
-                            text={testimonial.text} 
+                            text={testimonial.text}
                             author= {testimonial.author}
                             role={testimonial.role}
                         />
                     ))}
-                    {/* Navigation Arrows */}
-                                <button
-                                    onClick={() => slideRightTestimonials()}
-                                    className="hidden md:block absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/80 cursor-pointer hover:bg-white text-[#345041] p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
-                                    aria-hidden="false"
-                                >
-                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                    </svg>
-                                </button>
-
-                                <button
-                                    onClick={() => slideLeftTestimonials()}
-                                    className="hidden md:block absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/80 hover:bg-white text-[#345041] p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
-                                    aria-hidden="false"
-                                >
-                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                                    </svg>
-                                </button>
                 </div>
 
                 <div className='text-center block py-8 pl-8'>
