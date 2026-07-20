@@ -30,20 +30,20 @@ Burnout often hides behind endless to-do lists and the sense that no amount of e
         },
         {
             number: "02",
-            title: "CONNECTION & INTIMACY",
-            heading: "Self-worth & Confidence Challenges",
-            tag: "RELATIONSHIPS",
+            title: "PERSONAL GROWTH",
+            heading: "Self-Worth & Confidence Challenges",
+            tag: "SELF-WORTH",
             quotes: [
-                "I keep ending up in the same arguments, no matter who I'm with.",
-                "I want closeness but when it gets real, I pull away.",
-                "I say yes to everyone but I'm exhausted and resentful."
+                "No matter what I achieve, it never feels enough.",
+                "I constantly need reassurance from others to feel okay.",
+                "I say yes to everything and I don't know how to stop."
             ],
-            description: `Relationships are where our oldest wounds tend to show up.
+            description: `Struggles with self-worth can show up in ways that aren't always obvious.
 
-It can also show up as a tendency to please, to avoid conflict at all costs, or to carry the weight of other people's feelings because saying "no" feels impossible.
+Feeling like you're never doing enough. Constantly comparing yourself to others. Seeking validation, fearing failure, or feeling like your sense of value depends entirely on achievement, roles, or other people's approval. Sometimes it shows up as saying yes when you want to say no — or feeling guilty for prioritising your own needs.
 
-These patterns aren't random. They often trace back to early attachment experiences and unmet needs that shaped how we learned to stay safe in connection. As children, we generally take the shape of the container we are born into - the environment, parental dynamics, financial circumstances, life events at that time.`,
-            howWork: "Therapy offers a space to notice these patterns without judgment — to understand what purpose they served, and to work through the fears or beliefs that keep them alive. Together, we explore what gets in the way of authentic connection, so your relationships can feel safer, more nourishing, and more aligned with what you truly want.",
+These patterns often come from early experiences — from the messages we received (or didn't receive) about being lovable and worthy. Over time, they can create an inner voice that says: "You're not good enough."`,
+            howWork: "We work to uncover and transform the beliefs keeping you stuck in self-doubt. The goal isn't to become someone else — it's to reconnect with the version of you that already feels whole, enough, and grounded in your own value.",
             bgColor: "bg-[#F2E8DD]"
         },
         {

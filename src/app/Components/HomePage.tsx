@@ -269,7 +269,7 @@ const HomePage = () => {
                     </div>
 
                     <div className='text-left block py-8'>
-                        <Link href="/what-we-work-with">
+                        <Link href="/what-I-work-with">
                             <button className="bg-[#B6724F] text-sm rounded-full text-white px-6 py-3 cursor-pointer shadow-lg hover:bg-[#95573A] transition-all duration-300 transform hover:scale-105 uppercase tracking-wider" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500, letterSpacing: '0.08em' }}>
                                 See Everything I Work With
                             </button>

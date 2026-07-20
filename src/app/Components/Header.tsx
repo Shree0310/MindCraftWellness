@@ -16,7 +16,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: { isMenuOpen: boolean; setIsMenuO
         },
         {
             title:"what I work with",
-            href:"/what-we-work-with"
+            href:"/what-I-work-with"
         },
         {
             title:"Blog",
