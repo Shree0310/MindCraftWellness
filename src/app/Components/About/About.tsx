@@ -45,15 +45,15 @@ const About = () => {
 
                         {/* Right side - Illustration */}
                         <div className="ml-0 lg:ml-24 relative order-first lg:order-2">
-                            <div className="relative flex justify-center lg:justify-start">
+                            <div className="relative flex justify-center lg:justify-start w-full max-w-[300px] md:max-w-[350px] mx-auto lg:mx-0">
                                 <Image
                                     src={HowItWorks}
                                     alt="About Mind Craft Wellness"
-                                    className="w-full md:w-[350px] h-auto object-contain lg:mt-12 shadow-xs"
+                                    className="w-full h-auto object-contain lg:mt-12 shadow-xs"
                                     style={{ borderRadius: '20px', transform: 'rotate(-90deg)' }}
                                     loading="lazy"
                                     placeholder="blur"
-                                    sizes="(max-width: 768px) 100vw, 350px"
+                                    sizes="(max-width: 768px) 300px, 350px"
                                 />
                             </div>
                         </div>
@@ -76,8 +76,8 @@ const About = () => {
 
                         <div className='flex flex-col justify-center items-center gap-12 md:gap-16 mx-auto max-w-6xl relative'>
                             <div className="flex flex-col md:grid md:grid-cols-2 gap-4 items-start w-full">
-                                <div className='relative w-full max-w-[400px] h-[450px] md:h-[500px] mx-auto md:mx-0 order-first md:order-1'>
-                                    <Image src={ProfilePic} className='w-full h-full object-cover shadow-lg' style={{ borderRadius: '20px' }} alt="Aishwaraya Goud - Founder of Mind Craft Wellness" priority placeholder="blur" sizes="(max-width: 768px) 100vw, 400px" />
+                                <div className='relative w-full max-w-[400px] h-[450px] md:h-[500px] mx-auto md:mx-0 order-first md:order-1 overflow-hidden' style={{ borderRadius: '20px' }}>
+                                    <Image src={ProfilePic} className='shadow-lg' style={{ objectFit: 'cover', objectPosition: 'center center' }} alt="Aishwaraya Goud - Founder of Mind Craft Wellness" priority placeholder="blur" sizes="(max-width: 768px) 100vw, 400px" fill />
                                 </div>
                                 <div className='space-y-6 order-last md:order-2'>
                                     <p className='text-2xl md:text-3xl text-[#5C4B3C] leading-relaxed' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
@@ -107,7 +107,9 @@ const About = () => {
                                         Outside the therapy room, I love reading, tending to my plants, exploring food and music, and planning my next beach trip.
                                     </p>
                                 </div>
-                                <Image src={Books} className='w-full max-w-[400px] h-[450px] md:h-[500px] object-cover mx-auto md:mx-0 shadow-lg order-1 md:order-2' style={{ borderRadius: '20px' }} alt="Aishwaraya Goud - Books in her space" loading="lazy" placeholder="blur" sizes="(max-width: 768px) 100vw, 400px" />
+                                <div className='relative w-full max-w-[400px] h-[450px] md:h-[500px] mx-auto md:mx-0 shadow-lg order-1 md:order-2 overflow-hidden' style={{ borderRadius: '20px' }}>
+                                    <Image src={Books} style={{ objectFit: 'cover', objectPosition: 'center center' }} alt="Aishwaraya Goud - Books in her space" loading="lazy" placeholder="blur" sizes="(max-width: 768px) 100vw, 400px" fill />
+                                </div>
                             </div>
                         </div>
                     </div>

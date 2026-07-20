@@ -37,10 +37,9 @@ const HomePage = () => {
                 <Image
                     src={OurStory3}
                     alt="Mind Craft Wellness - Therapy that holds, heals, and grows"
-                    className='w-full h-full'
+                    className='w-full h-full object-cover'
                     style={{
-                        objectFit: 'cover',
-                        objectPosition: 'center center'
+                        objectPosition: 'center 30%'
                     }}
                     priority
                     placeholder="blur"
@@ -279,16 +278,17 @@ const HomePage = () => {
             </div>
 
             {/* Quote Image Section */}
-            <div className="relative w-full overflow-hidden">
+            <div className="relative w-full overflow-hidden min-h-[400px] max-h-[600px]">
                 {/* Background Image */}
                 <Image
                     src={AboutPage}
                     alt="Therapy session at MindCraft Wellness"
-                    className="w-full h-auto object-cover"
-                    style={{ minHeight: '400px', maxHeight: '600px', objectFit: 'cover' }}
+                    className="w-full h-full object-cover"
+                    style={{ objectPosition: 'center center' }}
                     loading="lazy"
                     placeholder="blur"
                     sizes="100vw"
+                    fill
                 />
 
                 {/* Translucent Overlay */}
