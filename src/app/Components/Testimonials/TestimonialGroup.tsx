@@ -11,15 +11,15 @@ const TestimonialGroup = ({category,id,text,author, role}: TestimonialGroupProps
     return <div className="div">
         <div key={id} className="relative group w-full md:w-auto">
             {/* Enhanced Conversation bubble */}
-            <div className="bg-white rounded-3xl p-6 md:p-8 max-w-[450px] md:w-[450px] md:h-[500px] max-h-[500px] shadow-xl hover:shadow-2xl w-full mx-auto md:mx-0 relative transition-all duration-300 transform hover:scale-105 border border-gray-100 flex flex-col overflow-hidden">
+            <div className="bg-white rounded-3xl p-6 md:p-8 max-w-[450px] md:w-[450px] md:min-h-[500px] shadow-xl hover:shadow-2xl w-full mx-auto md:mx-0 relative transition-all duration-300 transform hover:scale-105 border border-gray-100 flex flex-col overflow-hidden">
                 {/* Speech bubble tail */}
                 <div className="absolute -bottom-3 left-6 md:left-8 w-0 h-0 border-l-[12px] md:border-l-[15px] border-r-[12px] md:border-r-[15px] border-t-[12px] md:border-t-[15px] border-l-transparent border-r-transparent border-t-white"></div>
 
                 {/* Enhanced Quote mark */}
                 <div className="text-4xl md:text-6xl text-[#E7CDBF] mb-1 md:mb-1 opacity-80 flex-shrink-0">&ldquo;</div>
 
-                {/* Enhanced Testimonial text - scrollable container */}
-                <div className="flex-1 overflow-y-auto mb-4 md:mb-6 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+                {/* Enhanced Testimonial text */}
+                <div className="flex-1 mb-4 md:mb-6">
                     <p className="text-gray-700 text-sm md:text-base leading-relaxed font-medium">
                         {text}
                     </p>

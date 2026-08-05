@@ -22,7 +22,7 @@ const WhatWeWorkWith = () => {
             ],
             description: `Life today moves fast, and the pressure to keep up can feel relentless.
 
-For some, this shows up as anxiety — a constant hum of worry about work, relationships, health, or the future. For others, it's the heaviness of depression, where even simple tasks feel exhausting and joy seems out of reach.
+For some, this shows up as anxiety — a constant hum of worry about work, relationships, health, or the future. For others, it's the heaviness of depression, where even simple tasks feel exhausting, and joy seems out of reach.
 
 Burnout often hides behind endless to-do lists and the sense that no amount of effort is ever enough — leaving you mentally foggy and emotionally drained. Whether it feels like restlessness, sadness, or complete numbness, these experiences are signals, not flaws. They are signs that something within you needs care and attention.`,
             howWork: "We begin by getting in touch with how your body is expressing its discomfort and saturation. From there, we co-create a path — both to build coping with what's happening now, and to explore what you internally need from all that life is asking of you.",
@@ -30,20 +30,22 @@ Burnout often hides behind endless to-do lists and the sense that no amount of e
         },
         {
             number: "02",
-            title: "PERSONAL GROWTH",
-            heading: "Self-Worth & Confidence Challenges",
-            tag: "SELF-WORTH",
+            title: "CONNECTION & INTIMACY",
+            heading: "Relationship Difficulties",
+            tag: "RELATIONSHIP DIFFICULTIES",
             quotes: [
-                "No matter what I achieve, it never feels enough.",
-                "I constantly need reassurance from others to feel okay.",
-                "I say yes to everything and I don't know how to stop."
+                "I keep ending up in the same arguments, no matter who I'm with.",
+                "I want closeness but when it gets real, I pull away.",
+                "I say yes to everyone but I'm exhausted and resentful."
             ],
-            description: `Struggles with self-worth can show up in ways that aren't always obvious.
+            description: `Relationships are where our oldest wounds tend to show up.
 
-Feeling like you're never doing enough. Constantly comparing yourself to others. Seeking validation, fearing failure, or feeling like your sense of value depends entirely on achievement, roles, or other people's approval. Sometimes it shows up as saying yes when you want to say no — or feeling guilty for prioritising your own needs.
+Maybe you find yourself stuck in recurring conflicts, feeling like you're never understood, or shutting down when things get hard. Sometimes it looks like wanting closeness and sometimes it looks like needing space — feeling overwhelmed when someone gets too near.
 
-These patterns often come from early experiences — from the messages we received (or didn't receive) about being lovable and worthy. Over time, they can create an inner voice that says: "You're not good enough."`,
-            howWork: "We work to uncover and transform the beliefs keeping you stuck in self-doubt. The goal isn't to become someone else — it's to reconnect with the version of you that already feels whole, enough, and grounded in your own value.",
+It can also show up as a tendency to please, to avoid conflict at all costs, or to carry the weight of other people's feelings because saying "no" feels impossible.
+
+These patterns aren't random. They often trace back to early attachment experiences and unmet needs that shaped how we learned to stay safe in connection. As children, we generally take the shape of the container we are born into — the environment, parental dynamics, financial circumstances, life events at that time.`,
+            howWork: "Therapy offers a space to notice these patterns without judgment — to understand what purpose they served, and to work through the fears or beliefs that keep them alive. Together, we explore what gets in the way of authentic connection, so your relationships can feel safer, more nourishing, and more aligned with what you truly want.",
             bgColor: "bg-[#F2E8DD]"
         },
         {
@@ -57,12 +59,14 @@ These patterns often come from early experiences — from the messages we receiv
                 "I love my baby but I feel like I've lost myself."
             ],
             specialisation: "Advanced training in Perinatal Mental Health from NIMHANS (India) and PSI Collective (Washington, DC).",
-            description: `Pregnancy and postpartum can bring joy — and also anxiety, loneliness, guilt, and overwhelm. If you've ever thought "Why am I not happier?" or "This isn't what I imagined," you are not alone. There's nothing wrong with you.
+            description: `Pregnancy and postpartum can bring joy — and also anxiety, loneliness, guilt, and overwhelm. If you've ever thought "Why am I not happier?" or "This isn't what I imagined," you are not alone.
 
-The journey to parenthood can stir unexpected emotions — hope, fear, grief, and everything in between. Whether you're navigating fertility struggles, pregnancy changes, postpartum shifts, grief from miscarriage, or adjusting to life with a baby, this is a space to feel, grieve, question, or wonder — without judgment.
+There's nothing wrong with you.
 
-In perinatal/postpartum therapy, we also explore how to stay connected to your own identity, and how to redefine it while embracing the all-encompassing role of parenthood.`,
-            howWork: "I work with individuals through fertility challenges, conception, pregnancy, and the postpartum period. Sessions are paced carefully, with attention to a client's erratic availability. I also work with non-birthing partners who often carry invisible stress during this period.",
+The journey to parenthood can stir unexpected emotions of hope, fear, grief, and everything in between. Whether you're navigating fertility struggles, pregnancy changes, postpartum shifts, grief from miscarriage, or adjusting to life with a baby, this is a space to feel, grieve, question, or wonder without judgment.
+
+I work with individuals through fertility challenges, conception, pregnancy, and the postpartum period. Sessions are paced carefully, with attention to a client's erratic availability. I also work with non-birthing partners who often carry invisible stress during this period.`,
+            howWork: "In perinatal/postpartum therapy, we explore how to stay connected to your own identity, and how to redefine it while embracing the all-encompassing role of parenthood, whether you're a mom or a dad.",
             bgColor: "bg-[#B6724F]",
             textColor: "text-white"
         },
@@ -76,19 +80,19 @@ In perinatal/postpartum therapy, we also explore how to stay connected to your o
                 "I don't even know if what I went through counts as trauma.",
                 "I feel like something is wrong with me and I don't know why."
             ],
-            description: `Trauma isn't only about what happened to you it's also about what didn't happen.
+            description: `Trauma isn't only about what happened to you — it's also about what didn't happen.
 
-It can arise from overwhelming events like accidents, abuse, or loss. But just as often, it comes from the absence of what you deeply needed: comfort, safety, protection, or being truly seen and understood. When these essential experiences are missing when no one is there to soothe you, protect you, or affirm who you are it can leave an imprint just as deep as any visible wound.
+It can arise from overwhelming events like accidents, abuse, or loss. But just as often, it comes from the absence of what you deeply needed: comfort, safety, protection, or being truly seen and understood. When these essential experiences are missing — when no one is there to soothe you, protect you, or affirm who you are — it can leave an imprint just as deep as any visible wound.
 
-Trauma often lives in the body and shows up quietly, long after the experience through anxiety, relationship struggles, hypervigilance, numbness, or the feeling that something is fundamentally "wrong" with you.`,
+Trauma often lives in the body and shows up quietly, long after the experience — through anxiety, relationship struggles, hypervigilance, numbness, or the feeling that something is fundamentally "wrong" with you.`,
             howWork: "We work gently and at your pace to process both what happened and what didn't happen — helping you reclaim a sense of safety, connection, and wholeness. Every session is trauma-informed, so sensitivity and personalised attention are always part of how I show up.",
             bgColor: "bg-[#F2E8DD]"
         },
         {
             number: "05",
             title: "PERSONAL GROWTH",
-            heading: "Self-Worth & Confidence Challenges",
-            tag: "SELF-WORTH",
+            heading: "Self-Worth & Confidence",
+            tag: "SELF-WORTH & CONFIDENCE",
             quotes: [
                 "No matter what I achieve, it never feels enough.",
                 "I constantly need reassurance from others to feel okay.",
@@ -172,9 +176,14 @@ At some point, they made sense. What once kept you safe can start to feel limiti
                         <div className="max-w-6xl mx-auto">
                             <div className="flex flex-wrap gap-3 justify-center">
                                 {sections.map((section, idx) => (
-                                    <span key={idx} className="px-4 py-2 text-[#5C4B3C] text-xs md:text-sm" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500 }}>
+                                    <a
+                                        key={idx}
+                                        href={`#section-${idx}`}
+                                        className="px-4 py-2 text-[#5C4B3C] text-xs md:text-sm hover:bg-[#B6724F] hover:text-white transition-all duration-300 rounded-full cursor-pointer"
+                                        style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500 }}
+                                    >
                                         {section.tag}
-                                    </span>
+                                    </a>
                                 ))}
                             </div>
                         </div>
@@ -182,18 +191,27 @@ At some point, they made sense. What once kept you safe can start to feel limiti
 
                     {/* Sections */}
                     {sections.map((section, idx) => (
-                        <div key={idx} className={`${section.bgColor} py-16 md:py-20 px-4 md:px-8`}>
+                        <div key={idx} id={`section-${idx}`} className={`${section.bgColor} py-16 md:py-20 px-4 md:px-8 scroll-mt-20`}>
                             <div className="max-w-6xl mx-auto">
                                 <div className="grid md:grid-cols-2 gap-12 md:gap-16">
                                     {/* Conditional Column Order for Sections 02 and 05 */}
                                     {(idx === 1 || idx === 4) ? (
                                         <>
-                                            {/* Left Column - Heading & Content for Section 02 */}
+                                            {/* Left Column - Heading & Content for Section 02 and 05 */}
                                             <div className="space-y-8">
                                                 <div>
                                                     <h2 className={`text-2xl md:text-3xl lg:text-4xl mb-6 ${section.textColor || 'text-[#5C4B3C]'}`} style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
-                                                        Relationship<br />
-                                                        <span style={{ color: '#B6724F' }}>Difficulties</span>
+                                                        {idx === 1 ? (
+                                                            <>
+                                                                Relationship<br />
+                                                                <span style={{ color: '#B6724F' }}>Difficulties</span>
+                                                            </>
+                                                        ) : (
+                                                            <>
+                                                                Self-Worth &<br />
+                                                                <span style={{ color: '#B6724F' }}>Confidence</span>
+                                                            </>
+                                                        )}
                                                     </h2>
                                                     <div className={`text-base md:text-lg leading-relaxed space-y-4 ${section.textColor || 'text-[#5C4B3C]'}`} style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                                                         {section.description.split('\n\n').map((para, pIdx) => (
@@ -308,13 +326,13 @@ At some point, they made sense. What once kept you safe can start to feel limiti
                     <div className="bg-[#F8F3ED] py-16 md:py-20 px-4 md:px-8">
                         <div className="max-w-4xl mx-auto text-center space-y-8">
                             <p className="text-base md:text-lg leading-relaxed text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
-                                This list has only attempted to cover some of the different human experiences within these areas — but being human means there is much more individual variation and humanness in how we feel and express things, far beyond any label.
-                            </p>
-                            <p className="text-base md:text-lg leading-relaxed text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
-                                If you found yourself reflected in any of these experiences, there is no shame in reaching out for support in this period.
+                                This list has only attempted to cover some of the different human experiences within these areas, but being human means there is much more individual variation and humanness in how we feel and express things, far beyond any label.
                             </p>
                             <p className="text-base md:text-lg leading-relaxed text-[#5C4B3C] italic" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                                 If any of this sounds like what you've been feeling, you're not alone.
+                            </p>
+                            <p className="text-base md:text-lg leading-relaxed text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                                If you found yourself reflected in any of these experiences, there is no shame in reaching out for support in this period.
                             </p>
                         </div>
                     </div>
@@ -329,8 +347,8 @@ At some point, they made sense. What once kept you safe can start to feel limiti
                                 Reach out anyway.
                             </p>
                             <Link href="/book-now">
-                                <button className="bg-[#B6724F] text-white px-8 md:px-10 py-4 md:py-5 rounded-full text-base md:text-lg hover:bg-[#95573A] transition-all duration-300 shadow-lg hover:shadow-xl" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500, letterSpacing: '0.05em' }}>
-                                    BOOK A FREE CONSULTATION →
+                                <button className="bg-[#B6724F] text-white px-8 md:px-10 py-4 md:py-5 rounded-full text-base md:text-lg hover:bg-[#95573A] transition-all duration-300 shadow-lg hover:shadow-xl" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500 }}>
+                                    Book a Consultation →
                                 </button>
                             </Link>
                             <div className='flex justify-center mt-8'>

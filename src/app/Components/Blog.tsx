@@ -126,11 +126,10 @@ const posts = await sanityAPIClient.getAllPosts();
         {/* Book Free Consultation Section */}
         <div className="bg-[#E8DBC9] py-12 md:py-20 px-4 md:px-8 mb-8 md:mb-16">
             <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-2xl md:text-4xl text-[#5C4B3C] mb-4 md:mb-6 px-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
-                    Ready to Begin Your Healing Journey?
-                </h2>
-                <p className="text-lg md:text-xl text-[#5C4B3C] mb-6 md:mb-8 max-w-2xl mx-auto px-4" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
-                    Take the first step towards a more peaceful and fulfilling life. Book your free consultation today.
+                <p className="text-lg md:text-xl text-[#5C4B3C] mb-6 md:mb-8 max-w-2xl mx-auto px-4 leading-relaxed" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                    If something you've read here resonated with you, I'd be honoured to be part of your journey.
+                    <br />
+                    Whether you're ready to begin therapy or simply have a few questions, you're welcome to reach out.
                 </p>
                 <BookFreeConsultationBtn />
             </div>

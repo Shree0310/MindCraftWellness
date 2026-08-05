@@ -184,50 +184,30 @@ export default function BookNow() {
                     <div className="hidden md:block"></div>
                 </div>
 
-                {/* Option 2 and Have More Questions - Side by Side */}
+                {/* Option 2: WhatsApp */}
                 <div className="mb-16">
-                    <div className="grid md:grid-cols-3 gap-6">
-                        {/* Option 2: WhatsApp */}
-                        <div className="md:col-span-2 bg-[#FAF6F0] p-8 md:p-10" style={{ borderRadius: '20px' }}>
-                            <h3 className="text-[10px] md:text-xs tracking-widest mb-6" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 600, letterSpacing: '0.2em', color: '#B6724F' }}>
-                                OPTION 2
-                            </h3>
-                            <h4 className="text-2xl md:text-3xl text-[#2B231C] mb-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
-                                Reach out on WhatsApp
-                            </h4>
-                            <p className="text-base text-[#5C4B3C] mb-6" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
-                                If you&apos;re ready to schedule your first therapy session, or if you&apos;d simply prefer speaking over WhatsApp — you&apos;re welcome to reach out directly.
-                            </p>
-                            <a
-                                href="https://wa.me/919859080910"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center bg-[#25D366] text-white px-8 py-4 rounded-full hover:bg-[#20BA5A] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-                                style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500, letterSpacing: '0.05em' }}
-                            >
-                                <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                                </svg>
-                                Message on WhatsApp
-                            </a>
-                        </div>
-
-                        {/* Have More Questions box */}
-                        <div className="bg-[#FAF6F0] p-6 md:p-8" style={{ borderRadius: '20px' }}>
-                            <h4 className="text-xl md:text-2xl text-[#2B231C] mb-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
-                                Have more questions?
-                            </h4>
-                            <p className="text-base text-[#5C4B3C] mb-5" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
-                                You can explore the complete FAQ section for more on therapy, confidentiality, online sessions, cancellations, and the therapeutic process.
-                            </p>
-                            <Link
-                                href="/FAQs"
-                                className="inline-flex items-center text-[#B6724F] hover:text-[#95573A] transition-colors text-base"
-                                style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500 }}
-                            >
-                                → Read the FAQs
-                            </Link>
-                        </div>
+                    <div className="bg-[#FAF6F0] p-8 md:p-10" style={{ borderRadius: '20px' }}>
+                        <h3 className="text-[10px] md:text-xs tracking-widest mb-6" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 600, letterSpacing: '0.2em', color: '#B6724F' }}>
+                            OPTION 2
+                        </h3>
+                        <h4 className="text-2xl md:text-3xl text-[#2B231C] mb-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
+                            Reach out on WhatsApp
+                        </h4>
+                        <p className="text-base text-[#5C4B3C] mb-6" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
+                            If you&apos;re ready to schedule your first therapy session, or if you&apos;d simply prefer speaking over WhatsApp — you&apos;re welcome to reach out directly.
+                        </p>
+                        <a
+                            href="https://wa.me/919859080910"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center bg-[#25D366] text-white px-8 py-4 rounded-full hover:bg-[#20BA5A] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                            style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500, letterSpacing: '0.05em' }}
+                        >
+                            <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                            Message on WhatsApp
+                        </a>
                     </div>
                 </div>
 
@@ -390,6 +370,58 @@ export default function BookNow() {
                                 </div>
                             </div>
                         </div>
+
+                        {/* Question 6 */}
+                        <div className="border-b border-[#E8DBC9]">
+                            <button
+                                onClick={() => toggleAccordion(5)}
+                                className="w-full py-6 flex justify-between items-center transition-colors"
+                            >
+                                <h4 className="text-base md:text-lg text-[#2B231C] text-left normal-case" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 400 }}>
+                                    I tried therapy before, but it wasn&apos;t a good experience. How do I know if it&apos;s worth trying again?
+                                </h4>
+                                <IconChevronDown
+                                    className={`flex-shrink-0 ml-4 transition-transform duration-300 ${openAccordion === 5 ? 'rotate-180' : ''}`}
+                                    size={24}
+                                    color="#B6724F"
+                                />
+                            </button>
+                            <div className={`overflow-hidden transition-all duration-300 ${openAccordion === 5 ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className="pb-6 space-y-4 text-base md:text-lg text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
+                                    <p>
+                                        Many people I work with are returning to therapy after an experience that left them feeling unheard, judged, or stuck. If that&apos;s true for you, it makes sense to feel hesitant about trying again.
+                                    </p>
+                                    <p>
+                                        I also know how exhausting and vulnerable it can feel to open up to someone new, especially after your trust has been shaken. If you&apos;re asking this question, I want to acknowledge the courage it has taken to even consider trying again.
+                                    </p>
+                                    <p>
+                                        Not every therapist will be the right fit, and that&apos;s okay. In our first few sessions, we&apos;re not only exploring what brings you to therapy—you&apos;re also getting a sense of how I work and whether you feel safe, understood, and able to be yourself with me.
+                                    </p>
+                                    <p>
+                                        Finding the right person to walk alongside you through a difficult chapter of your life isn&apos;t always easy. But you deserve care, support, and a space where you don&apos;t have to carry things alone. Sometimes, finding that space means giving yourself permission to keep looking until you find the right fit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Have More Questions - After FAQs */}
+                <div className="mb-16 mt-12">
+                    <div className="bg-[#E8DBC9] p-8 md:p-10 text-center" style={{ borderRadius: '20px' }}>
+                        <h4 className="text-2xl md:text-3xl text-[#2B231C] mb-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
+                            Have more questions?
+                        </h4>
+                        <p className="text-base md:text-lg text-[#5C4B3C] mb-6 max-w-2xl mx-auto" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
+                            You can explore the complete FAQ section for more on therapy, confidentiality, online sessions, cancellations, and the therapeutic process.
+                        </p>
+                        <Link
+                            href="/FAQs"
+                            className="inline-flex items-center text-[#B6724F] hover:text-[#95573A] transition-colors text-lg"
+                            style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500 }}
+                        >
+                            → Read the FAQs
+                        </Link>
                     </div>
                 </div>
 

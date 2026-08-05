@@ -17,12 +17,12 @@ const FAQs = () => {
     {
         category: "Getting Started with Therapy",
         question: "Why can't I just talk to a friend? What does a therapist do differently?",
-        answer: "Talking to a friend can bring comfort, but therapy offers something deeper. A therapist creates a safe, steady space where you can slow down and explore what's happening beneath the surface, the emotions, patterns, and body responses that often go unnoticed. Unlike friends who may offer advice or reassurance, a therapist helps you feel, make sense of, and work through what's difficult, so that healing and change can unfold at your pace."
+        answer: "Talking to a friend can bring comfort, but therapy offers something deeper. A therapist creates a safe, steady space where you can slow down and explore what's happening beneath the surface— the emotions, patterns, and body responses that often go unnoticed. Unlike friends who may offer advice or reassurance, a therapist helps you feel, make sense of, and work through what's difficult—so that healing and change can unfold at your pace."
     },
     {
         category: "Getting Started with Therapy",
         question: "What happens in therapy?",
-        answer: "Therapy is a safe, non-judgemental, confidential space to talk about what's going on in your life and your feelings, relationships, stressors, or patterns you'd like to change. In your first few sessions, your therapist will get to know you, understand your background, and help you set goals for your healing or growth. As you continue, therapy becomes a process of exploring your emotions and experiences more deeply. You'll learn to understand yourself better, express feelings safely, and find new ways to cope or relate. Sometimes sessions feel light and reflective; other times, they may touch deeper emotions and your therapist will support you through all of it. You don't need to know what to say or how to 'do' therapy. Just bring yourself because therapy unfolds through conversation, reflection, and connection."
+        answer: "Therapy is a safe, non-judgemental, confidential space to talk about what's going on in your life—your feelings, relationships, stressors, or patterns you'd like to change. In your first few sessions, your therapist will get to know you, understand your background, and help you set goals for your healing or growth. As you continue, therapy becomes a process of exploring your emotions and experiences more deeply. You'll learn to understand yourself better, express feelings safely, and find new ways to cope or relate. Sometimes sessions feel light and reflective; other times, they may touch deeper emotions—and your therapist will support you through all of it. You don't need to know what to say or how to 'do' therapy. Just bring yourself—because therapy unfolds through conversation, reflection, and connection."
     },
     {
         category: "Getting Started with Therapy",
@@ -42,17 +42,17 @@ const FAQs = () => {
     {
         category: "Getting Started with Therapy",
         question: "What should I look for in a therapist?",
-        answer: "When choosing a therapist, you might consider: Qualifications - Look for a Master's degree or higher in Psychology, Counselling, or Clinical Psychology from a recognised institution in India or abroad. Certifications - Additional training in trauma, different therapies, or body-based work can be valuable. Experience - Ask about their years of practice and the kinds of concerns they typically work with. Supervision - This means the therapist consults regularly with a senior professional to ensure ethical, reflective, and high-quality practice, where no identifying information of the client is shared. Personal therapy - Therapists who have been or are in therapy themselves tend to work with greater empathy and self-awareness. At Mind Craft Wellness, all our therapists are in regular supervision and personal therapy. We see this as an ethical and essential part of providing safe, emotionally present, and effective care."
+        answer: "When choosing a therapist, you might consider:\nQualifications - Look for a Master's degree or higher in Psychology, Counselling, or Clinical Psychology from a recognised institution in India or abroad.\nCertifications - Additional training in trauma, different therapies, or body-based work can be valuable.\nExperience - Ask about their years of practice and the kinds of concerns they typically work with.\nSupervision - This means the therapist consults regularly with a senior professional to ensure ethical, reflective, and high-quality practice, where no identifying information of the client is shared.\nPersonal therapy - Therapists who have been or are in therapy themselves tend to work with greater empathy and self-awareness."
     },
     {
         category: "Getting Started with Therapy",
-        question: "What is the experience of your therapists at Mind Craft Wellness?",
-        answer: "Our therapists come from diverse training backgrounds and experience levels, ranging from 100 therapy hours to over 3,000 hours. Each therapist is qualified, trauma-informed, and regularly receives supervision to ensure high-quality care."
+        question: "What is the experience of the therapist at Mind Craft Wellness?",
+        answer: "The therapist has over 6 years of clinical experience and has worked with over 100+ clients. She is a qualified trauma-informed therapist and regularly receives supervision to ensure high-quality care."
     },
     {
         category: "Getting Started with Therapy",
-        question: "Are the therapists at Mind Craft Wellness trauma-informed?",
-        answer: "Yes. All our therapists are trauma-informed and trained to work sensitively with emotional regulation, safety, and body-based awareness in the therapy process."
+        question: "Is the therapist at Mind Craft Wellness trauma-informed?",
+        answer: "Yes. The therapist is trauma-informed and trained to work sensitively with emotional regulation, safety, and body-based awareness in the therapy process."
     },
     {
         category: "Getting Started with Therapy",
@@ -74,22 +74,22 @@ const FAQs = () => {
     {
         category: "Understanding Therapy Approaches and Therapists",
         question: "What is counselling or psychotherapy?",
-        answer: "Therapy is a collaborative process that helps you understand yourself, your emotions, and your relationships more deeply. Sessions are about more than just talking; they're about being gently supported to notice, feel, and process your experiences in a safe and compassionate way. Over time, this helps you build clarity, confidence, and emotional ease in your daily life. Depending on your needs, therapy can be short-term (focused on specific concerns) or long-term (deeper emotional or relational work). Our therapists at Mind Craft Wellness integrate evidence-based and experiential approaches to support your healing and growth."
+        answer: "Therapy is a collaborative process that helps you understand yourself, your emotions, and your relationships more deeply. Sessions are about more than just talking; they're about being gently supported to notice, feel, and process your experiences in a safe and compassionate way. Over time, this helps you build clarity, confidence, and emotional ease in your daily life. Depending on your needs, therapy can be short-term (focused on specific concerns) or long-term (deeper emotional or relational work). The therapist at Mind Craft Wellness integrates evidence-based and experiential approaches to support your healing and growth."
     },
     {
         category: "Understanding Therapy Approaches and Therapists",
         question: "What does 'safe' therapy really mean?",
-        answer: "A 'safe' therapy space means you can show up exactly as you are without fear of being judged, criticised, or dismissed. It's a place where your feelings, thoughts, and experiences are met with respect, empathy, and confidentiality. Safety also means that your therapist moves at your pace. You are not pushed to share more than you're ready for. In trauma-informed therapy, safety is built through trust, consistency, clear boundaries, and collaboration so you always know what to expect and feel in control of your process. At its core, safe therapy isn't just about privacy, it's about feeling emotionally, mentally, and relationally held as you do the work of healing."
+        answer: "A 'safe' therapy space means you can show up exactly as you are—without fear of being judged, criticised, or dismissed. It's a place where your feelings, thoughts, and experiences are met with respect, empathy, and confidentiality. Safety also means that your therapist moves at your pace. You are not pushed to share more than you're ready for. In trauma-informed therapy, safety is built through trust, consistency, clear boundaries, and collaboration—so you always know what to expect and feel in control of your process. At its core, safe therapy isn't just about privacy—it's about feeling emotionally, mentally, and relationally held as you do the work of healing."
     },
     {
         category: "Understanding Therapy Approaches and Therapists",
         question: "Are therapists really non-judgmental?",
-        answer: "Therapists are trained to listen with curiosity and compassion, not judgment. Therapy is meant to be a space where you can share anything, even thoughts or feelings you might not feel comfortable saying elsewhere and still feel respected and accepted. That said, therapists are also human. What makes therapy different is that a therapist is aware of their own biases and continuously works on them through supervision and personal therapy. At Mind Craft Wellness, all our therapists are in regular supervision and their own therapy helps them stay reflective, grounded, and genuinely open-minded with clients. So while no human being is completely without judgment, therapists are trained and supported to notice, reflect on, and move beyond their biases to hold space for you with understanding rather than opinion."
+        answer: "Therapists are trained to listen with curiosity and compassion, not judgment. Therapy is meant to be a space where you can share anything—even thoughts or feelings you might not feel comfortable saying elsewhere—and still feel respected and accepted. That said, therapists are also human. What makes therapy different is that a therapist is aware of their own biases and continuously works on them through supervision and personal therapy. The therapist at Mind Craft Wellness is in regular supervision and their own therapy—this helps them stay reflective, grounded, and genuinely open-minded with clients. So while no human being is completely without judgment, therapists are trained and supported to notice, reflect on, and move beyond their biases—to hold space for you with understanding rather than opinion."
     },
     {
         category: "Understanding Therapy Approaches and Therapists",
         question: "What is AEDP (Accelerated Experiential Dynamic Psychotherapy)?",
-        answer: "AEDP is a form of therapy that focuses on helping people feel safe enough to experience and process their emotions rather than avoid them. It rests on the belief that we are wired for healing and that, in a safe and attuned relationship, even painful emotions can become pathways for transformation. Therapists using AEDP pay close attention to emotional and bodily cues, helping you move from distress to a sense of relief, strength, and connection."
+        answer: "AEDP is a form of therapy that focuses on helping people feel safe enough to experience and process their emotions rather than avoid them. It rests on the belief that we are wired for healing—and that, in a safe and attuned relationship, even painful emotions can become pathways for transformation. Therapists using AEDP pay close attention to emotional and bodily cues, helping you move from distress to a sense of relief, strength, and connection."
     },
     {
         category: "Understanding Therapy Approaches and Therapists",
@@ -104,99 +104,109 @@ const FAQs = () => {
     {
         category: "Understanding Therapy Approaches and Therapists",
         question: "Why are there so many different approaches in therapy? How do they matter?",
-        answer: "Different approaches reflect different ways of understanding human experience. Some focus on thoughts, others on emotions, body awareness, relationships, or unconscious patterns. Each has its own tools, but the heart of therapy lies in the relationship between therapist and client. What truly matters is that you feel safe, supported, and seen that the specific approach is simply the language your therapist uses to help you get there. Think of it as though multiple different roads leading to the same destination, the different routes being the different approaches therapists take in sessions."
+        answer: "Different approaches reflect different ways of understanding human experience. Some focus on thoughts, others on emotions, body awareness, relationships, or unconscious patterns. Each has its own tools—but the heart of therapy lies in the relationship between therapist and client. What truly matters is that you feel safe, supported, and seen—that the specific approach is simply the language your therapist uses to help you get there. Think of it as though multiple different roads leading to the same destination, the different routes being the different approaches therapists take in sessions."
     },
     {
         category: "Understanding Therapy Approaches and Therapists",
         question: "How do I choose which therapy approach is right for me?",
-        answer: "You don't have to know that before you begin. Many therapists, including ours at Mind Craft Wellness, integrate different approaches based on your needs and pace. What's most important is how you feel in the session safe, understood, and able to be honest. If something isn't working, you can share that with your therapist; good therapy is collaborative and responsive regardless of the approach."
+        answer: "You don't have to know that before you begin. The therapist at Mind Craft Wellness integrates different approaches based on your needs and pace. What's most important is how you feel in the session—safe, understood, and able to be honest. If something isn't working, you can share that with your therapist; good therapy is collaborative and responsive regardless of the approach."
     },
     {
         category: "Understanding Therapy Approaches and Therapists",
         question: "How do I choose the right therapist?",
-        answer: "Finding the right therapist is often about comfort and connection. Look for someone whose style, values, age, gender, and experience resonate with you. It's okay to ask about their qualifications, certifications, approach, and experience with your concerns. We encourage clients to trust their gut. The right fit often shows up in how easy it feels to be honest even about what isn't working. Sharing feedback with your therapist and feeling heard in return is an essential part of the process, and a good sign that you're in a supportive therapeutic relationship."
+        answer: "Finding the right therapist is often about comfort and connection. Look for someone whose style, values, age, gender, and experience resonate with you. It's okay to ask about their qualifications, certifications, approach, and experience with your concerns. We encourage clients to trust their gut. The right fit often shows up in how easy it feels to be honest—even about what isn't working. Sharing feedback with your therapist and feeling heard in return is an essential part of the process, and a good sign that you're in a supportive therapeutic relationship."
     },
     {
         category: "Understanding Therapy Approaches and Therapists",
         question: "What kinds of problems can therapy help with?",
-        answer: "Therapy can support a wide range of emotional and relational concerns. At Mind Craft Wellness, we work with: Anxiety, panic, and chronic stress; Depression and low mood; Relationship and boundary difficulties; Past trauma, abuse, or neglect; Fertility, perinatal, and postpartum emotional health; Self-esteem, identity, or life transitions; Emotional numbness, overthinking, or disconnection; Burnout and work-related stress; Personal growth and self-understanding. Therapy helps not only with 'problems' but also with building a deeper connection to yourself expanding your capacity for joy, love, and authenticity."
+        answer: "Therapy can support a wide range of emotional and relational concerns. At Mind Craft Wellness, we work with:\nAnxiety, panic, and chronic stress\nDepression and low mood\nRelationship and boundary difficulties\nPast trauma, abuse, or neglect\nFertility, perinatal, and postpartum emotional health\nSelf-esteem, identity, or life transitions\nEmotional numbness, overthinking, or disconnection\nBurnout and work-related stress\nPersonal growth and self-understanding\nTherapy helps not only with 'problems'—but also with building a deeper connection to yourself—expanding your capacity for joy, love, and authenticity."
     },
 
-    // Our Services & Accessibility
+    // Our Services and Accessibility
     {
-        category: "Our Services & Accessibility",
+        category: "Our Services and Accessibility",
         question: "What services do you offer?",
-        answer: "At Mind Craft Wellness, we offer: Individual therapy for adults above 22 years of age; Trauma-informed psychotherapy; Fertility and perinatal mental health support; Emotional regulation and stress management therapy; Therapist supervision and consultation; Employee wellbeing workshops."
+        answer: "At Mind Craft Wellness, we offer:\nIndividual therapy for adults above 22 years of age\nTrauma-informed psychotherapy\nFertility and perinatal mental health support\nEmotional regulation and stress management therapy\nTherapist supervision and consultation\nEmployee wellbeing workshops"
     },
     {
-        category: "Our Services & Accessibility",
+        category: "Our Services and Accessibility",
+        question: "Do you offer couples therapy or family therapy?",
+        answer: "We currently only work with clients individually, we do not offer couples therapy or family therapy at the moment."
+    },
+    {
+        category: "Our Services and Accessibility",
         question: "Do you offer online and in-person therapy?",
         answer: "Yes. We offer both online and in-person sessions at our Gurgaon-based clinic. You can choose whichever format feels more comfortable or accessible to you."
     },
     {
-        category: "Our Services & Accessibility",
+        category: "Our Services and Accessibility",
         question: "Can I walk in, or do I need to pre-book a session?",
         answer: "All sessions are by appointment only. We do not accept walk-ins, as each session is reserved in advance to ensure your therapist's availability."
     },
     {
-        category: "Our Services & Accessibility",
+        category: "Our Services and Accessibility",
         question: "Do you provide home visits?",
         answer: "No, we currently do not provide home visits. For those unable to travel, we recommend scheduling an online session."
     },
     {
-        category: "Our Services & Accessibility",
+        category: "Our Services and Accessibility",
         question: "What are your office timings?",
-        answer: "Our therapy sessions are typically scheduled between 10:30 AM and 6 PM (5pm to 6pm is the last session for the day), Monday to Saturday. Therapist availability may vary, and appointments are confirmed in advance."
+        answer: "Our therapy sessions are typically scheduled between 12 PM and 6 PM, Wednesday to Saturday. Therapist availability may vary, and appointments are confirmed in advance."
     },
     {
-        category: "Our Services & Accessibility",
+        category: "Our Services and Accessibility",
         question: "Is there wheel-chair access?",
         answer: "Yes. Although we are located on the 2nd floor of a building there is a lift through which our clinic can be accessed."
     },
     {
-        category: "Our Services & Accessibility",
+        category: "Our Services and Accessibility",
         question: "Is there parking available?",
         answer: "Yes. There is an empty parking space plot right opposite the building in which the clinic is located. For discretion, the clinic is located in a residential building."
     },
 
-    // Bookings, Fees & Payments
+    // Booking, Fees, Payments, and Cancellation Policy
     {
-        category: "Bookings, Fees & Payments",
+        category: "Booking, Fees, Payments, and Cancellation Policy",
         question: "I want to talk before I book. How can I reach you?",
-        answer: "You can reach out to us via our website contact form, email, or WhatsApp (we respond quickest to whatsapp messages). Once you share a brief idea of what you're looking for, our team will guide you through the next steps for booking a session. Additionally you can also use the Tealfeed calendar link provided on the website to book a free 15-min consultation call with one of our therapists."
+        answer: "You can reach out to us via our website contact form, email, or WhatsApp (we respond quickest to WhatsApp messages). Once you share a brief idea of what you're looking for, our team will guide you through the next steps for booking a session. Additionally, you can also use the Tealfeed calendar link provided on the website to book a free 15-min consultation call."
     },
     {
-        category: "Bookings, Fees & Payments",
+        category: "Booking, Fees, Payments, and Cancellation Policy",
         question: "When do I make the payment?",
         answer: "Once you reach out, we'll share a session booking link. You'll be asked to make the payment in advance to confirm your appointment."
     },
     {
-        category: "Bookings, Fees & Payments",
+        category: "Booking, Fees, Payments, and Cancellation Policy",
         question: "What payment modes do you accept?",
-        answer: "We currently only accept UPI and bank transfers."
+        answer: "We currently accept cash, UPI and bank transfers."
     },
     {
-        category: "Bookings, Fees & Payments",
+        category: "Booking, Fees, Payments, and Cancellation Policy",
+        question: "How much does a therapy session cost?",
+        answer: "The session fee is ₹3,500 for individual therapy sessions."
+    },
+    {
+        category: "Booking, Fees, Payments, and Cancellation Policy",
         question: "Do you offer any discounts on the service fee?",
         answer: "No, we do not offer discounts. Our fees reflect the professional training, preparation, and reflective supervision that go into offering each session."
     },
     {
-        category: "Bookings, Fees & Payments",
+        category: "Booking, Fees, Payments, and Cancellation Policy",
         question: "What is your cancellation policy?",
         answer: "We have a 24-hour cancellation policy. Any changes to your appointment can be made with at least 24 hours' notice. If notice is given in time, your payment can be refunded (within 5 - 7 business days) or carried forward to your next session. If less than 24 hours' notice is given, the session is charged in full regardless of the reason for the cancellation."
     },
     {
-        category: "Bookings, Fees & Payments",
+        category: "Booking, Fees, Payments, and Cancellation Policy",
         question: "Why do you have a cancellation fee?",
         answer: "A therapy session is a reserved time created specifically for you. Late cancellations mean another client in need may not be able to use that slot. The cancellation fee helps maintain fairness and respect for the therapist's time and practice."
     },
     {
-        category: "Bookings, Fees & Payments",
+        category: "Booking, Fees, Payments, and Cancellation Policy",
         question: "What if I have an emergency and need to cancel at the last minute?",
         answer: "We understand emergencies happen. However, to maintain fairness and professional boundaries, the cancellation policy and fee applies irrespective of the reason. Please proceed with booking only if you feel comfortable with this policy."
     },
     {
-        category: "Bookings, Fees & Payments",
+        category: "Booking, Fees, Payments, and Cancellation Policy",
         question: "What if the therapist cancels my session?",
         answer: "If your therapist needs to cancel due to illness or emergency, you will be offered either a refund or reschedule at your convenience."
     },
@@ -205,7 +215,7 @@ const FAQs = () => {
     {
         category: "Other Common Questions",
         question: "Do you prescribe medication?",
-        answer: "No. Our therapists are psychologists, not psychiatrists, and do not prescribe medication. If medication seems necessary, we may refer you to a trusted psychiatrist for consultation."
+        answer: "No. The therapist is a psychologist, not a psychiatrist, and does not prescribe medication. If medication seems necessary, we may refer you to a trusted psychiatrist for consultation."
     },
     {
         category: "Other Common Questions",
@@ -214,8 +224,8 @@ const FAQs = () => {
     },
     {
         category: "Other Common Questions",
-        question: "What languages do your therapists offer sessions in?",
-        answer: "Sessions are primarily conducted in English and Hindi, depending on the therapist's comfort and your preference."
+        question: "What languages are therapy sessions offered in?",
+        answer: "Sessions are primarily conducted in English and Hindi."
     },
     {
         category: "Other Common Questions",
@@ -230,17 +240,12 @@ const FAQs = () => {
     {
         category: "Other Common Questions",
         question: "How do I prepare for my first session?",
-        answer: "There's no special preparation needed. You can simply come as you are. It might help to reflect on what's been troubling you lately or what you hope to gain from therapy but your therapist will guide the process at your pace."
-    },
-    {
-        category: "Other Common Questions",
-        question: "How much does a therapy session cost?",
-        answer: "Session fees vary based on the therapist's experience. Session fee starts at 1500 per hour and goes up to 3500 per hour for individual therapy. We'll share the fee details once you reach out, so you can choose a therapist and schedule that suits you best."
+        answer: "There's no special preparation needed. You can simply come as you are. It might help to reflect on what's been troubling you lately or what you hope to gain from therapy—but your therapist will guide the process at your pace."
     },
     {
         category: "Other Common Questions",
         question: "What if I don't feel comfortable with my therapist?",
-        answer: "It's completely okay. You can discuss your concerns openly with your therapist or request to switch to another therapist within our team or you will be provided with referrals for other therapists who don't work at Mind Craft Wellness. Finding the right fit is an important part of the process and we honestly value that you get the support and help you need whether it is within our organisation or outside of it."
+        answer: "It's completely okay. You can discuss your concerns openly with your therapist or you will be provided with referrals for other therapists who don't work at Mind Craft Wellness. Finding the right fit is an important part of the process and we honestly value that you get the support and help you need—whether it is within our organisation or outside of it."
     }
 ];
 
@@ -311,6 +316,27 @@ const FAQs = () => {
                 </div>
             </div>
 
+            {/* Navigation Section */}
+            <div className="bg-[#F8F3ED] py-8 px-4 md:px-8 border-b border-[#E8DBC9]">
+                <div className="max-w-5xl mx-auto">
+                    <div className="flex flex-wrap gap-3 justify-center">
+                        {uniqueCategories.map((category, idx) => {
+                            const categoryId = category.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+                            return (
+                                <a
+                                    key={idx}
+                                    href={`#${categoryId}`}
+                                    className="px-4 py-2 text-[#5C4B3C] text-xs md:text-sm hover:bg-[#B6724F] hover:text-white transition-all duration-300 rounded-full cursor-pointer"
+                                    style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500 }}
+                                >
+                                    {category}
+                                </a>
+                            );
+                        })}
+                    </div>
+                </div>
+            </div>
+
             {/* FAQ Content */}
             <div className="max-w-5xl mx-auto px-4 md:px-6 py-16 md:py-20">
                 {results && results.length > 0 ? (
@@ -318,8 +344,9 @@ const FAQs = () => {
                         {uniqueCategories.map(category => {
                             const filteredResults = results.filter(faq => faq.category === category);
                             if (filteredResults.length === 0) return null;
+                            const categoryId = category.toLowerCase().replace(/[^a-z0-9]+/g, '-');
                             return (
-                                <div key={category}>
+                                <div key={category} id={categoryId} className="scroll-mt-20">
                                     <h3 className="text-2xl md:text-3xl text-[#2B231C] mb-8" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
                                         {category}
                                     </h3>

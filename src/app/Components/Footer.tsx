@@ -1,6 +1,8 @@
 "use client"
 
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+import ImageOfMap from "@/app/Assets/images/ImageOfMap.jpg";
 
 const Footer = ({className}:{className?: string}) => {
     return (
@@ -114,14 +116,14 @@ const Footer = ({className}:{className?: string}) => {
                     {/* Map Section */}
                     <div className="mb-12">
                         <h4 className="text-lg mb-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}><p>{"Find Us"}</p></h4>
-                        <a href="https://maps.app.goo.gl/qwQTr2csPZBWyDAw5" target="_blank" rel="noopener noreferrer" className="block bg-[#B6724F] p-4 text-center hover:bg-[#95573A] transition-colors duration-300" style={{ borderRadius: '16px' }}>
-                            <div className="w-full h-48 bg-[#95573A] rounded flex items-center justify-center">
-                                <div className="text-center">
-                                    <span className="text-4xl mb-2 block">📍</span>
-                                    <span className="text-white text-lg" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 400 }}><p>{"Click to view on Google Maps"}</p></span>
-                                    <span className="text-white/80 text-sm" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}><p>{"Mind Craft Wellness, Gurgaon"}</p></span>
-                                </div>
-                            </div>
+                        <a href="https://maps.app.goo.gl/qwQTr2csPZBWyDAw5" target="_blank" rel="noopener noreferrer" className="block overflow-hidden hover:opacity-90 transition-opacity duration-300" style={{ borderRadius: '16px' }}>
+                            <Image
+                                src={ImageOfMap}
+                                alt="Mind Craft Wellness Location Map - Gurgaon, Haryana"
+                                className="w-full h-auto"
+                                style={{ borderRadius: '16px' }}
+                                priority={false}
+                            />
                         </a>
                     </div>
 

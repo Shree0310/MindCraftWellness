@@ -451,18 +451,18 @@ const TestimonialsPage = () => {
                     </div>
 
                     {/* Call to Action */}
-                    <div className="bg-gradient-to-br from-[#345041] to-[#2a4033] text-white rounded-3xl p-12 text-center">
-                        <h2 className="text-4xl font-bold mb-6">
+                    <div className="bg-[#E8DBC9] text-[#5C4B3C] p-12 text-center">
+                        <h2 className="text-4xl font-bold mb-6" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                             Ready to Start Your Healing Journey?
                         </h2>
-                        <p className="text-xl mb-8 leading-relaxed opacity-90">
+                        <p className="text-xl mb-8 leading-relaxed" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                             Join hundreds of clients who have found healing and growth at Mind Craft Wellness.
                         </p>
-                        <Link href="/book-now" className="bg-white text-[#345041] px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-block">
-                            Book Your Free Consultation
+                        <Link href="/book-now" className="bg-[#B6724F] text-white px-10 py-4 rounded-full text-lg hover:bg-[#95573A] transition-all duration-300 shadow-lg hover:shadow-xl inline-block" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500 }}>
+                            Book a Consultation →
                         </Link>
                         <div className='flex justify-center mt-6'>
-                            <Link href="/FAQs" className='text-white hover:text-[#F2E8DD] transition-colors text-base opacity-90' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                            <Link href="/FAQs" className='text-[#B6724F] hover:text-[#95573A] transition-colors text-base' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                                 Still have questions? → read our FAQs
                             </Link>
                         </div>
