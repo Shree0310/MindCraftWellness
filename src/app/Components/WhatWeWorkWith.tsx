@@ -91,7 +91,7 @@ Trauma often lives in the body and shows up quietly, long after the experience â
         {
             number: "05",
             title: "PERSONAL GROWTH",
-            heading: "Self-Worth & Confidence",
+            heading: "Self-Worth & Confidence Challenges",
             tag: "SELF-WORTH & CONFIDENCE",
             quotes: [
                 "No matter what I achieve, it never feels enough.",
@@ -209,7 +209,7 @@ At some point, they made sense. What once kept you safe can start to feel limiti
                                                         ) : (
                                                             <>
                                                                 Self-Worth &<br />
-                                                                <span style={{ color: '#B6724F' }}>Confidence</span>
+                                                                <span style={{ color: '#B6724F' }}>Confidence Challenges</span>
                                                             </>
                                                         )}
                                                     </h2>

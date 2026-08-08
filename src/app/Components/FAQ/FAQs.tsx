@@ -42,7 +42,7 @@ const FAQs = () => {
     {
         category: "Getting Started with Therapy",
         question: "What should I look for in a therapist?",
-        answer: "When choosing a therapist, you might consider:\nQualifications - Look for a Master's degree or higher in Psychology, Counselling, or Clinical Psychology from a recognised institution in India or abroad.\nCertifications - Additional training in trauma, different therapies, or body-based work can be valuable.\nExperience - Ask about their years of practice and the kinds of concerns they typically work with.\nSupervision - This means the therapist consults regularly with a senior professional to ensure ethical, reflective, and high-quality practice, where no identifying information of the client is shared.\nPersonal therapy - Therapists who have been or are in therapy themselves tend to work with greater empathy and self-awareness."
+        answer: "When choosing a therapist, you might consider:\n\n• Qualifications - Look for a Master's degree or higher in Psychology, Counselling, or Clinical Psychology from a recognised institution in India or abroad.\n• Certifications - Additional training in trauma, different therapies, or body-based work can be valuable.\n• Experience - Ask about their years of practice and the kinds of concerns they typically work with.\n• Supervision - This means the therapist consults regularly with a senior professional to ensure ethical, reflective, and high-quality practice, where no identifying information of the client is shared.\n• Personal therapy - Therapists who have been or are in therapy themselves tend to work with greater empathy and self-awareness."
     },
     {
         category: "Getting Started with Therapy",
