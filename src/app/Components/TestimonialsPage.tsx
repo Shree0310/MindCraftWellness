@@ -458,7 +458,7 @@ const TestimonialsPage = () => {
                         <p className="text-xl mb-8 leading-relaxed" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                             Join hundreds of clients who have found healing and growth at Mind Craft Wellness.
                         </p>
-                        <Link href="/book-now" className="bg-[#B6724F] text-white px-10 py-4 rounded-full text-lg hover:bg-[#95573A] transition-all duration-300 shadow-lg hover:shadow-xl inline-block" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500 }}>
+                        <Link href="/book-now" className="bg-[#B6724F] text-white px-8 py-4 rounded-full text-lg hover:bg-[#95573A] transition-all duration-300 shadow-lg hover:shadow-xl inline-block" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500, textTransform: 'none' }}>
                             Book a Consultation →
                         </Link>
                         <div className='flex justify-center mt-6'>

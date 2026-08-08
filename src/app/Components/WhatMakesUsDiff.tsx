@@ -132,8 +132,8 @@ const WhatMakesUsDiff = () => {
                 <div className="text-center mt-16">
                     <div className="inline-flex items-center space-x-4 bg-[#F2E8DD] rounded-full md:px-8 px-4 md:py-4 py-2 shadow-lg">
                         <span className="text-[#2B231C] md:text-lg text-sm" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 400 }}><p>{"Ready to experience the difference?"}</p></span>
-                        <Link href="/book-now" className="bg-[#B6724F] md:text-sm text-xs text-white md:px-6 px-4 md:py-2 py-1 rounded-full hover:bg-[#95573A] transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg uppercase tracking-wider" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500, letterSpacing: '0.08em' }}>
-                            Book Your Session
+                        <Link href="/book-now" className="bg-[#B6724F] text-lg text-white px-8 py-4 rounded-full hover:bg-[#95573A] transition-all duration-300 shadow-lg hover:shadow-xl" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500, textTransform: 'none' }}>
+                            Book a Consultation →
                         </Link>
                     </div>
                 </div>

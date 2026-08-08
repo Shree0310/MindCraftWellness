@@ -361,8 +361,8 @@ const HomePage = () => {
 
                     <div className='text-center block py-4'>
                         <Link href="/book-now">
-                            <button className="bg-[#B6724F] text-sm rounded-full text-white px-8 py-4 cursor-pointer shadow-lg hover:bg-[#95573A] transition-all duration-300 transform hover:scale-105 uppercase tracking-wider" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500, letterSpacing: '0.08em' }}>
-                                Book a Free Consultation
+                            <button className="bg-[#B6724F] text-lg rounded-full text-white px-8 py-4 cursor-pointer shadow-lg hover:bg-[#95573A] transition-all duration-300 hover:shadow-xl" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500, textTransform: 'none' }}>
+                                Book a Consultation →
                             </button>
                         </Link>
                     </div>

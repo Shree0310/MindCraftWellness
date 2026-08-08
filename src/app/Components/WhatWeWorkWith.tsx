@@ -347,7 +347,7 @@ At some point, they made sense. What once kept you safe can start to feel limiti
                                 Reach out anyway.
                             </p>
                             <Link href="/book-now">
-                                <button className="bg-[#B6724F] text-white px-8 md:px-10 py-4 md:py-5 rounded-full text-base md:text-lg hover:bg-[#95573A] transition-all duration-300 shadow-lg hover:shadow-xl" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500 }}>
+                                <button className="bg-[#B6724F] text-white px-8 md:px-10 py-4 md:py-5 rounded-full text-base md:text-lg hover:bg-[#95573A] transition-all duration-300 shadow-lg hover:shadow-xl" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500, textTransform: 'none' }}>
                                     Book a Consultation →
                                 </button>
                             </Link>
