@@ -5,9 +5,11 @@ import Footer from "./Footer";
 import Link from 'next/link';
 import { useState } from "react";
 import Testimonials from './Testimonials/Testimonials';
+import { useScrollAnimation } from './useScrollAnimation';
 
 const WhatWeWorkWith = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    useScrollAnimation();
 
     const sections = [
         {
@@ -158,13 +160,13 @@ At some point, they made sense. What once kept you safe can start to feel limiti
                     {/* Hero Section */}
                     <div className="bg-[#F2E8DD] py-16 md:py-24 px-4 md:px-8">
                         <div className="max-w-6xl mx-auto">
-                            <h1 className="text-[10px] md:text-xs tracking-widest mb-8" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 600, letterSpacing: '0.2em', color: '#B6724F' }}>
+                            <h1 data-reveal className="text-[10px] md:text-xs tracking-widest mb-8" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 600, letterSpacing: '0.2em', color: '#B6724F' }}>
                                 WHAT I WORK WITH
                             </h1>
-                            <p className="text-3xl md:text-4xl lg:text-5xl text-[#5C4B3C] mb-12 text-left" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300, fontStyle: 'italic' }}>
+                            <p data-reveal data-delay="100" className="text-3xl md:text-4xl lg:text-5xl text-[#5C4B3C] mb-12 text-left" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300, fontStyle: 'italic' }}>
                                 These are <span style={{ fontStyle: 'normal', color: '#B6724F' }}>human experiences<span style={{ fontStyle: 'italic' }}>,</span></span><br />not diagnoses.
                             </p>
-                            <div className="text-lg md:text-xl leading-relaxed text-[#5C4B3C] max-w-3xl text-left space-y-4" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                            <div data-reveal data-delay="200" className="text-lg md:text-xl leading-relaxed text-[#5C4B3C] max-w-3xl text-left space-y-4" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
                                 <p>Over the last five years, I've had the privilege of working with people through some of life's most challenging and transformative moments.</p>
                                 <p>The concerns below aren't labels — they're an attempt to help you recognise yourself. If something resonates, that's enough of a reason to reach out.</p>
                             </div>
@@ -193,7 +195,7 @@ At some point, they made sense. What once kept you safe can start to feel limiti
                     {sections.map((section, idx) => (
                         <div key={idx} id={`section-${idx}`} className={`${section.bgColor} py-16 md:py-20 px-4 md:px-8 scroll-mt-20`}>
                             <div className="max-w-6xl mx-auto">
-                                <div className="grid md:grid-cols-2 gap-12 md:gap-16">
+                                <div data-reveal className="grid md:grid-cols-2 gap-12 md:gap-16">
                                     {/* Conditional Column Order for Sections 02 and 05 */}
                                     {(idx === 1 || idx === 4) ? (
                                         <>

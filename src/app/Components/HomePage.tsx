@@ -12,8 +12,11 @@ import Footer from './Footer';
 import DiagWaveConnector from './SVGs/DiagWaveConnector';
 import WhatMakesUsDiff from './WhatMakesUsDiff';
 import { IconChevronRight } from '@tabler/icons-react';
+import { useScrollAnimation } from './useScrollAnimation';
 
 const HomePage = () => {
+    useScrollAnimation();
+
     return (
         <div className='bg-[#F2E8DD] relative'>
             {/* Landing page section with text overlay */}
@@ -48,18 +51,18 @@ const HomePage = () => {
             {/* HERO SECTION - Life can be messy */}
             <div className='relative max-w-5xl mx-auto px-4 md:px-8 py-20 md:py-28'>
                 <div className='text-left'>
-                    <h1 className='text-2xl md:text-3xl lg:text-4xl mb-8 md:mb-10 text-[#2B231C]' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
+                    <h1 data-reveal className='text-2xl md:text-3xl lg:text-4xl mb-8 md:mb-10 text-[#2B231C]' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                         Life can be messy. So can being human.
                     </h1>
 
                     <div className='space-y-6 text-base md:text-lg leading-relaxed text-[#5C4B3C]' style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
-                        <p>
+                        <p data-reveal data-delay="100">
                             To feel deeply. To struggle. To question yourself. To grieve. To feel anxious, angry, lonely, or uncertain - these aren&apos;t signs that something is wrong with you. They&apos;re part of being human.
                         </p>
-                        <p>
+                        <p data-reveal data-delay="200">
                             We all find ways to protect ourselves from life&apos;s challenges. Sometimes those ways help us. Sometimes they leave us feeling stuck, overwhelmed, or disconnected.
                         </p>
-                        <p>
+                        <p data-reveal data-delay="300">
                             If you&apos;ve been carrying something that feels too heavy to hold alone, therapy offers a space to slow down, make sense of your experience, and reconnect with yourself - with curiosity, compassion, and care.
                         </p>
                     </div>
@@ -71,7 +74,7 @@ const HomePage = () => {
                 <div className="max-w-6xl mx-auto px-4 md:px-8">
                     <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                         {/* Left side - Image */}
-                        <div className="order-2 md:order-1 flex justify-center md:justify-start">
+                        <div data-reveal className="order-2 md:order-1 flex justify-center md:justify-start">
                             <div className="w-64 md:w-80 lg:w-96">
                                 <Image
                                     src={ProfilePic}
@@ -86,7 +89,7 @@ const HomePage = () => {
                         </div>
 
                         {/* Right side - Text Content */}
-                        <div className="order-1 md:order-2">
+                        <div data-reveal data-delay="200" className="order-1 md:order-2">
                             <h2 className='text-2xl md:text-3xl mb-6 text-white' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                                 Hi, I&apos;m Aishwaraya.
                             </h2>
@@ -119,16 +122,16 @@ const HomePage = () => {
             {/* MY APPROACH Section */}
             <div className="bg-[#E8DBC9] py-16 md:py-20 px-4 md:px-8">
                 <div className="max-w-4xl mx-auto">
-                    <div className="mb-6">
+                    <div data-reveal className="mb-6">
                         <span className="eyebrow-label">MY APPROACH</span>
                     </div>
 
-                    <h2 className='text-2xl md:text-3xl mb-10 text-[#2B231C]' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
+                    <h2 data-reveal data-delay="100" className='text-2xl md:text-3xl mb-10 text-[#2B231C]' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                         Therapy that&apos;s practical about something deeply human.
                     </h2>
 
                     {/* Couch Image */}
-                    <div className="mb-10">
+                    <div data-reveal data-delay="200" className="mb-10">
                         <Image
                             src={couch}
                             alt="Therapy couch at MindCraft Wellness"
@@ -142,7 +145,7 @@ const HomePage = () => {
 
                     <div className="space-y-6">
                         {/* We work toward what's underneath */}
-                        <div className="bg-white border-l-4 border-[#95573A] p-6 shadow-md" style={{ borderRadius: '12px' }}>
+                        <div data-reveal className="bg-white border-l-4 border-[#95573A] p-6 shadow-md" style={{ borderRadius: '12px' }}>
                             <h3 className='text-xl mb-3 text-[#2B231C]' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
                                 We work toward what&apos;s underneath
                             </h3>
@@ -152,7 +155,7 @@ const HomePage = () => {
                         </div>
 
                         {/* We also work with thought patterns */}
-                        <div className="bg-white border-l-4 border-[#95573A] p-6 shadow-md" style={{ borderRadius: '12px' }}>
+                        <div data-reveal data-delay="100" className="bg-white border-l-4 border-[#95573A] p-6 shadow-md" style={{ borderRadius: '12px' }}>
                             <h3 className='text-xl mb-3 text-[#2B231C]' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
                                 We also work with thought patterns
                             </h3>
@@ -162,7 +165,7 @@ const HomePage = () => {
                         </div>
 
                         {/* Sessions are collaborative */}
-                        <div className="bg-white border-l-4 border-[#95573A] p-6 shadow-md" style={{ borderRadius: '12px' }}>
+                        <div data-reveal data-delay="200" className="bg-white border-l-4 border-[#95573A] p-6 shadow-md" style={{ borderRadius: '12px' }}>
                             <h3 className='text-xl mb-3 text-[#2B231C]' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
                                 Sessions are collaborative, not prescriptive
                             </h3>
@@ -172,7 +175,7 @@ const HomePage = () => {
                         </div>
 
                         {/* Pacing is led by safety */}
-                        <div className="bg-white border-l-4 border-[#95573A] p-6 shadow-md" style={{ borderRadius: '12px' }}>
+                        <div data-reveal data-delay="300" className="bg-white border-l-4 border-[#95573A] p-6 shadow-md" style={{ borderRadius: '12px' }}>
                             <h3 className='text-xl mb-3 text-[#2B231C]' style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
                                 Pacing is led by safety
                             </h3>
@@ -187,15 +190,15 @@ const HomePage = () => {
             {/* WHAT I WORK WITH Section */}
             <div className="bg-[#FAF6F0] py-16 md:py-20 px-4 md:px-8">
                 <div className="max-w-3xl mx-auto">
-                    <div className="mb-8">
+                    <div data-reveal className="mb-8">
                         <span className="eyebrow-label">WHAT I WORK WITH</span>
                     </div>
 
-                    <h2 className="text-2xl md:text-3xl mb-10 text-[#2B231C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
+                    <h2 data-reveal data-delay="100" className="text-2xl md:text-3xl mb-10 text-[#2B231C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                         The human challenges I see most often.
                     </h2>
 
-                    <div className="bg-white shadow-lg overflow-hidden" style={{ borderRadius: '16px' }}>
+                    <div data-reveal data-delay="200" className="bg-white shadow-lg overflow-hidden" style={{ borderRadius: '16px' }}>
                         {/* Anxiety & overthinking */}
                         <div className="p-6 hover:bg-[#95573A] hover:text-white transition-all duration-300 group cursor-pointer">
                             <h3 className="text-lg mb-2 text-[#2B231C] group-hover:text-white transition-colors" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>

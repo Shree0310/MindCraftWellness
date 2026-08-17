@@ -6,10 +6,12 @@ import Link from 'next/link';
 import { useState } from "react";
 import { IconChevronDown } from '@tabler/icons-react';
 import Testimonials from './Testimonials/Testimonials';
+import { useScrollAnimation } from './useScrollAnimation';
 
 export default function BookNow() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [openAccordion, setOpenAccordion] = useState<number | null>(0); // First accordion open by default
+    useScrollAnimation();
 
     const toggleAccordion = (index: number) => {
         setOpenAccordion(openAccordion === index ? null : index);

@@ -3,9 +3,11 @@ import { useEffect, useState } from "react";
 import Footer from "../Footer";
 import Header from "../Header";
 import FAQItem from "./FAQItem";
+import { useScrollAnimation } from '../useScrollAnimation';
 
 const FAQs = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    useScrollAnimation();
 
     const faqData = [
     // Getting Started with Therapy
@@ -288,18 +290,18 @@ const FAQs = () => {
             {/* Header Section */}
             <div className="bg-[#E8DBC9] w-full py-16 md:py-20">
                 <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
-                    <h1 className="text-[10px] md:text-xs tracking-widest mb-6" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 600, letterSpacing: '0.2em', color: '#B6724F' }}>
+                    <h1 data-reveal className="text-[10px] md:text-xs tracking-widest mb-6" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 600, letterSpacing: '0.2em', color: '#B6724F' }}>
                         FREQUENTLY ASKED QUESTIONS
                     </h1>
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl mb-8 text-[#2B231C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
+                    <h2 data-reveal data-delay="100" className="text-3xl md:text-4xl lg:text-5xl mb-8 text-[#2B231C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                         Questions you might have
                     </h2>
-                    <p className="text-base md:text-lg text-[#5C4B3C] mb-10 max-w-3xl mx-auto" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
+                    <p data-reveal data-delay="200" className="text-base md:text-lg text-[#5C4B3C] mb-10 max-w-3xl mx-auto" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
                         Find answers to common questions about therapy, our approach, and what to expect from your sessions at Mind Craft Wellness.
                     </p>
 
                     {/* Search Box */}
-                    <div className="max-w-xl mx-auto">
+                    <div data-reveal data-delay="300" className="max-w-xl mx-auto">
                         <input
                             type="text"
                             placeholder="Search questions..."

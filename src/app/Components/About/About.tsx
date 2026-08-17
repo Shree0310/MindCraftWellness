@@ -14,9 +14,11 @@ import { useState } from 'react';
 import Footer from '../Footer';
 import DiagWaveConnector from "../SVGs/DiagWaveConnector";
 import OurStoryOurSpace from "./OurStoryOurSpace";
+import { useScrollAnimation } from '../useScrollAnimation';
 
 const About = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    useScrollAnimation();
 
     return (
         <div className="min-h-screen flex flex-col">
@@ -34,7 +36,7 @@ const About = () => {
                 <div className="max-w-7xl mx-auto px-4 md:px-8 mb-16 md:mb-20">
                     <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
                         {/* Left side - Text content */}
-                        <div className="space-y-6 md:space-y-8 order-last lg:order-1">
+                        <div data-reveal className="space-y-6 md:space-y-8 order-last lg:order-1">
                             <p className="text-lg md:text-xl leading-relaxed px-4 md:px-0 text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
                                 At Mind Craft Wellness, we believe in the power of authentic human connection and the transformative potential of a safe, nurturing therapeutic relationship. Our approach is rooted in the understanding that healing happens within the context of genuine care and understanding.
                             </p>
@@ -44,7 +46,7 @@ const About = () => {
                         </div>
 
                         {/* Right side - Illustration */}
-                        <div className="ml-0 lg:ml-24 relative order-first lg:order-2">
+                        <div data-reveal data-delay="200" className="ml-0 lg:ml-24 relative order-first lg:order-2">
                             <div className="relative flex justify-center lg:justify-start w-full max-w-[300px] md:max-w-[350px] mx-auto lg:mx-0">
                                 <Image
                                     src={HowItWorks}
@@ -63,7 +65,7 @@ const About = () => {
                 {/* My Story Section */}
                 <div className='bg-[#E8DBC9] w-full py-16 md:py-20'>
                     <div className="max-w-6xl mx-auto px-4 md:px-8">
-                        <div className="text-center mb-12 md:mb-16">
+                        <div data-reveal className="text-center mb-12 md:mb-16">
                             <div className="inline-flex items-center space-x-3 mb-6">
                                 <div className="w-8 md:w-12 h-0.5 bg-[#B6724F] opacity-40"></div>
                                 <span className="eyebrow-label">MEET AISHWARAYA</span>

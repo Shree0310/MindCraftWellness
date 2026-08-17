@@ -4,9 +4,11 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Link from 'next/link';
 import { useState } from "react";
+import { useScrollAnimation } from './useScrollAnimation';
 
 const TestimonialsPage = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    useScrollAnimation();
     
     const allTestimonials = [
         // Landing Page Testimonials
