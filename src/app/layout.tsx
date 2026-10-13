@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, DM_Sans } from "next/font/google";
 import "./globals.css";
+import MaternityNotification from "./Components/MaternityNotification";
 
 // Fraunces for headings - weight 300 (light)
 const fraunces = Fraunces({
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body
         className={`${fraunces.variable} ${dmSans.variable} antialiased`}
       >
+        <MaternityNotification />
         {children}
       </body>
     </html>

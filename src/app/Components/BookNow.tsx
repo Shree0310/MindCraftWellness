@@ -48,16 +48,15 @@ export default function BookNow() {
                         <p>
                             Beginning therapy doesn&apos;t require having everything figured out, it simply begins with a conversation.
                         </p>
-                        <p className="font-medium" style={{ fontWeight: 400 }}>
+                        {/* <p className="font-medium" style={{ fontWeight: 400 }}>
                             There are two ways we can get started.
-                        </p>
+                        </p> */}
                     </div>
                 </div>
 
-                {/* Option 1: Book complimentary consultation + Availability & Fees */}
-                <div className="mb-12">
+                {/* TEMPORARILY COMMENTED OUT - Calendar Embed in lighter cream box */}
+                {/* <div className="mb-12">
                     <div className="grid md:grid-cols-3 gap-6">
-                        {/* Calendar Embed in lighter cream box */}
                         <div className="md:col-span-2 bg-[#FAF6F0] p-6 md:p-8" style={{ borderRadius: '20px' }}>
                             <h3 className="text-[10px] md:text-xs tracking-widest mb-6" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 600, letterSpacing: '0.2em', color: '#B6724F' }}>
                                 OPTION 1
@@ -95,103 +94,92 @@ export default function BookNow() {
                                 </p>
                             </div>
                         </div>
+                    </div>
+                </div> */}
 
-                        {/* Right column with 3 stacked boxes */}
+                {/* Availability & Fees box - full width */}
+                <div className="mb-12">
+                    <div className="bg-[#B6724F] p-8 md:p-10 text-white" style={{ borderRadius: '20px' }}>
+                        <h4 className="text-xs tracking-widest mb-6" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 600, letterSpacing: '0.2em' }}>
+                            AVAILABILITY & FEES
+                        </h4>
+                        <h5 className="text-lg mb-8" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
+                            Session details
+                        </h5>
                         <div className="space-y-6">
-                            {/* Availability & Fees in terracotta box */}
-                            <div className="bg-[#B6724F] p-8 md:p-10 text-white" style={{ borderRadius: '20px' }}>
-                                <h4 className="text-xs tracking-widest mb-6" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 600, letterSpacing: '0.2em' }}>
-                                    AVAILABILITY & FEES
-                                </h4>
-                                <h5 className="text-lg mb-8" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
-                                    Session details
-                                </h5>
-                                <div className="space-y-6">
-                                    <div>
-                                        <div className="flex justify-between items-start pb-6">
-                                            <span className="text-sm" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
-                                                Consultation hours
-                                            </span>
-                                            <div className="text-right">
-                                                <p className="text-sm text-white/90" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
-                                                    Wed – Sat
-                                                </p>
-                                                <p className="text-sm text-white/90" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
-                                                    12:00 PM – 6:00 PM IST
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div className="border-t border-white/20"></div>
-                                    </div>
-                                    <div>
-                                        <div className="flex justify-between items-center pb-6">
-                                            <span className="text-sm" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
-                                                Session duration
-                                            </span>
-                                            <p className="text-sm text-white/90" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
-                                                60 minutes
-                                            </p>
-                                        </div>
-                                        <div className="border-t border-white/20"></div>
-                                    </div>
-                                    <div>
-                                        <div className="flex justify-between items-center pb-6">
-                                            <span className="text-sm" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
-                                                Fee per session
-                                            </span>
-                                            <p className="text-xl text-white" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 400 }}>
-                                                ₹3,500
-                                            </p>
-                                        </div>
-                                        <div className="border-t border-white/20"></div>
-                                    </div>
-                                    <div className="flex justify-between items-start">
-                                        <span className="text-sm" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
-                                            Free consultation
-                                        </span>
-                                        <div className="text-right">
-                                            <p className="text-sm text-white/90" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
-                                                15 minutes
-                                            </p>
-                                            <p className="text-sm text-white/90" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
-                                                complimentary
-                                            </p>
-                                        </div>
+                            <div>
+                                <div className="flex justify-between items-start pb-6">
+                                    <span className="text-sm" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                                        Consultation hours
+                                    </span>
+                                    <div className="text-right">
+                                        <p className="text-sm text-white/90" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                                            Wed – Sat
+                                        </p>
+                                        <p className="text-sm text-white/90" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                                            12:00 PM – 6:00 PM IST
+                                        </p>
                                     </div>
                                 </div>
+                                <div className="border-t border-white/20"></div>
                             </div>
-
-                            {/* Inspirational text block */}
-                            <div className="bg-[#E8DBC9] p-6 md:p-8" style={{ borderRadius: '20px' }}>
-                                <h4 className="text-base md:text-lg mb-3 text-[#2B231C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
-                                    You don&apos;t have to have it all figured out.
-                                </h4>
-                                <p className="text-sm leading-relaxed text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.6' }}>
-                                    There&apos;s no right way to begin. Whether you book a call, send a WhatsApp message, or simply sit with this page for a while — all of that is okay.
-                                </p>
+                            <div>
+                                <div className="flex justify-between items-center pb-6">
+                                    <span className="text-sm" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                                        Session duration
+                                    </span>
+                                    <p className="text-sm text-white/90" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                                        60 minutes
+                                    </p>
+                                </div>
+                                <div className="border-t border-white/20"></div>
+                            </div>
+                            <div>
+                                <div className="flex justify-between items-center pb-6">
+                                    <span className="text-sm" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                                        Fee per session
+                                    </span>
+                                    <p className="text-xl text-white" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 400 }}>
+                                        ₹3,500
+                                    </p>
+                                </div>
+                                <div className="border-t border-white/20"></div>
+                            </div>
+                            <div className="flex justify-between items-start">
+                                <span className="text-sm" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                                    Free consultation
+                                </span>
+                                <div className="text-right">
+                                    <p className="text-sm text-white/90" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                                        15 minutes
+                                    </p>
+                                    <p className="text-sm text-white/90" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
+                                        complimentary
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                {/* OR Divider */}
-                <div className="grid md:grid-cols-3 gap-6 mb-12">
-                    <div className="md:col-span-2 flex items-center justify-center">
-                        <div className="flex-grow border-t border-[#E8DBC9]"></div>
-                        <span className="px-6 text-lg text-[#5C4B3C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
-                            OR
-                        </span>
-                        <div className="flex-grow border-t border-[#E8DBC9]"></div>
+                {/* Inspirational text block - full width */}
+                <div className="mb-16">
+                    <div className="bg-[#E8DBC9] p-6 md:p-8" style={{ borderRadius: '20px' }}>
+                        <h4 className="text-base md:text-lg mb-3 text-[#2B231C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
+                            You don&apos;t have to have it all figured out.
+                        </h4>
+                        <p className="text-sm leading-relaxed text-[#5C4B3C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.6' }}>
+                            There&apos;s no right way to begin. Whether you book a call, send a WhatsApp message, or simply sit with this page for a while — all of that is okay.
+                        </p>
                     </div>
-                    <div className="hidden md:block"></div>
                 </div>
 
-                {/* Option 2: WhatsApp */}
+                {/* WhatsApp Contact */}
                 <div className="mb-16">
                     <div className="bg-[#FAF6F0] p-8 md:p-10" style={{ borderRadius: '20px' }}>
-                        <h3 className="text-[10px] md:text-xs tracking-widest mb-6" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 600, letterSpacing: '0.2em', color: '#B6724F' }}>
+                        {/* <h3 className="text-[10px] md:text-xs tracking-widest mb-6" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 600, letterSpacing: '0.2em', color: '#B6724F' }}>
                             OPTION 2
-                        </h3>
+                        </h3> */}
                         <h4 className="text-2xl md:text-3xl text-[#2B231C] mb-4" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 400 }}>
                             Reach out on WhatsApp
                         </h4>
@@ -436,12 +424,12 @@ export default function BookNow() {
                         <span className="text-[#B6724F]">Ready</span> when you are.
                     </h3>
                     <p className="text-lg md:text-xl mb-10 text-center text-[#2B231C]" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300, lineHeight: '1.8' }}>
-                        Whether you&apos;d like to start with a conversation or book your first session, you can choose whichever feels most comfortable.
+                        Reach out on WhatsApp when you&apos;re ready to start the conversation.
                     </p>
 
-                    <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-                        {/* Option 1: Book Consultation Button */}
-                        <a
+                    <div className="flex justify-center items-center">
+                        {/* TEMPORARILY COMMENTED OUT - Option 1: Book Consultation Button */}
+                        {/* <a
                             href="https://www.tealfeed.com/goud_387923/connect/call?callType=67120307b554f31cdc8d94f9"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -453,9 +441,9 @@ export default function BookNow() {
 
                         <span className="text-lg text-[#5C4B3C]" style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                             or
-                        </span>
+                        </span> */}
 
-                        {/* Option 2: WhatsApp Button */}
+                        {/* WhatsApp Button */}
                         <a
                             href="https://wa.me/919859080910"
                             target="_blank"
