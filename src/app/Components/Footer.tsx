@@ -149,9 +149,9 @@ const Footer = ({className}:{className?: string}) => {
                                 <p>{"© 2024 Mind Craft Wellness. All rights reserved."}</p>
                             </div>
                             <div className="flex space-x-6 text-sm" style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 300 }}>
-                                <a href="#" className="text-white/80 hover:text-white transition-colors duration-300"><p>{"Privacy Policy"}</p></a>
-                                <a href="#" className="text-white/80 hover:text-white transition-colors duration-300"><p>{"Terms of Service"}</p></a>
-                                <a href="#" className="text-white/80 hover:text-white transition-colors duration-300"><p>{"Cookie Policy"}</p></a>
+                                <a href="/privacy-policy" className="text-white/80 hover:text-white transition-colors duration-300"><p>{"Privacy Policy"}</p></a>
+                                <a href="/terms-of-service" className="text-white/80 hover:text-white transition-colors duration-300"><p>{"Terms of Service"}</p></a>
+                                <a href="/cookie-policy" className="text-white/80 hover:text-white transition-colors duration-300"><p>{"Cookie Policy"}</p></a>
                                 <a href="#" className="text-white/80 hover:text-white transition-colors duration-300"><p>{"Accessibility"}</p></a>
                             </div>
                         </div>
