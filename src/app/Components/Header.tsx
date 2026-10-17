@@ -11,6 +11,10 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: { isMenuOpen: boolean; setIsMenuO
     const pathname = usePathname();
     const navItems = [
         {
+            title:"Home",
+            href:"/"
+        },
+        {
             title:"About",
             href:"/About"
         },
