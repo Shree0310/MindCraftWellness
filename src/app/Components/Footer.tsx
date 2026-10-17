@@ -152,7 +152,7 @@ const Footer = ({className}:{className?: string}) => {
                                 <a href="/privacy-policy" className="text-white/80 hover:text-white transition-colors duration-300"><p>{"Privacy Policy"}</p></a>
                                 <a href="/terms-of-service" className="text-white/80 hover:text-white transition-colors duration-300"><p>{"Terms of Service"}</p></a>
                                 <a href="/cookie-policy" className="text-white/80 hover:text-white transition-colors duration-300"><p>{"Cookie Policy"}</p></a>
-                                <a href="#" className="text-white/80 hover:text-white transition-colors duration-300"><p>{"Accessibility"}</p></a>
+                                <a href="/accessibility" className="text-white/80 hover:text-white transition-colors duration-300"><p>{"Accessibility"}</p></a>
                             </div>
                         </div>
                     </div>
