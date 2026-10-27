@@ -97,7 +97,7 @@ const SingleBlogPage = async ({
 
 // Default Template
 const DefaultTemplate = ({ blog }: { blog: BlogPost }) => (
-    <article className="bg-gradient-to-t from-[#ee7e1b] to-[#e9e0d3] min-h-screen">
+    <article className="bg-[#e9e0d3] min-h-screen">
         <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
             
             <Link href="/Blog" className="inline-flex items-center text-[#345041] hover:text-[#2a4033] mb-8 transition-colors">
