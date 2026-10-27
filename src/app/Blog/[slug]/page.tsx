@@ -1,9 +1,10 @@
 import { sanityAPIClient } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import { BlogPost } from "@/types/blog";
-import { PortableText } from "next-sanity";
+import { PortableText, PortableTextComponents } from "next-sanity";
 import Link from "next/link";
 import BlogPostWrapper from "./BlogPostWrapper";
+import Image from "next/image";
 
 const categoryColors: Record<string, string> = {
     'mental-health': 'bg-blue-100 text-blue-800',
@@ -21,6 +22,31 @@ const categoryLabels: Record<string, string> = {
     'self-care': 'Self-Care',
     'therapy-tips': 'Therapy Tips',
     'wellness': 'Wellness',
+};
+
+// Custom components for PortableText to handle images
+const portableTextComponents: PortableTextComponents = {
+    types: {
+        image: ({ value }) => {
+            if (!value?.asset?._ref) {
+                return null;
+            }
+            return (
+                <div className="my-8 rounded-lg overflow-hidden shadow-md">
+                    <img
+                        src={urlFor(value).width(800).url()}
+                        alt={value.alt || 'Blog image'}
+                        className="w-full h-auto"
+                    />
+                    {value.alt && (
+                        <p className="text-sm text-gray-600 text-center mt-2 italic">
+                            {value.alt}
+                        </p>
+                    )}
+                </div>
+            );
+        },
+    },
 };
 
 
@@ -119,7 +145,7 @@ const DefaultTemplate = ({ blog }: { blog: BlogPost }) => (
                     [&>ol]:list-decimal [&>ol]:pl-6 [&>ol]:mb-4
                     [&>blockquote]:border-l-4 [&>blockquote]:border-[#ee7e1b] [&>blockquote]:pl-4 [&>blockquote]:italic
                 ">
-                    {blog.body && <PortableText value={blog.body} />}
+                    {blog.body && <PortableText value={blog.body} components={portableTextComponents} />}
                 </div>
             </div>
 
@@ -179,7 +205,7 @@ const FeaturedTemplate = ({ blog }: { blog: BlogPost }) => (
                     [&>ol]:list-decimal [&>ol]:pl-6 [&>ol]:mb-6
                     [&>blockquote]:border-l-4 [&>blockquote]:border-[#ee7e1b] [&>blockquote]:pl-6 [&>blockquote]:italic [&>blockquote]:text-xl
                 ">
-                    {blog.body && <PortableText value={blog.body} />}
+                    {blog.body && <PortableText value={blog.body} components={portableTextComponents} />}
                 </div>
             </div>
         </div>
@@ -228,7 +254,7 @@ const MinimalTemplate = ({ blog }: { blog: BlogPost }) => (
                     [&>ul>li:before]:content-['—'] [&>ul>li:before]:absolute [&>ul>li:before]:left-0
                     [&>blockquote]:border-l-2 [&>blockquote]:border-[#345041] [&>blockquote]:pl-6 [&>blockquote]:italic [&>blockquote]:my-8
                 ">
-                    {blog.body && <PortableText value={blog.body} />}
+                    {blog.body && <PortableText value={blog.body} components={portableTextComponents} />}
                 </div>
             </div>
 

@@ -1,14 +1,27 @@
 "use client"
 
 import Link from "next/link";
-// remove local useState import
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { IconX } from "@tabler/icons-react";
 import { usePathname } from "next/navigation";
 
 
 const Header = ({ isMenuOpen, setIsMenuOpen }: { isMenuOpen: boolean; setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>> }) => {
     const pathname = usePathname();
+
+    // Prevent body scroll when menu is open
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+
+        // Cleanup function to restore scroll on unmount
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, [isMenuOpen]);
     const navItems = [
         {
             title:"Home",
