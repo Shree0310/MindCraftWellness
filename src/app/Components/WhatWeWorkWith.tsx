@@ -200,7 +200,7 @@ At some point, they made sense. What once kept you safe can start to feel limiti
                                     {(idx === 1 || idx === 4) ? (
                                         <>
                                             {/* Left Column - Heading & Content for Section 02 and 05 */}
-                                            <div className="space-y-8">
+                                            <div className="space-y-8 md:order-1 order-2">
                                                 <div>
                                                     <h2 className={`text-2xl md:text-3xl lg:text-4xl mb-6 ${section.textColor || 'text-[#5C4B3C]'}`} style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 300 }}>
                                                         {idx === 1 ? (
@@ -233,7 +233,7 @@ At some point, they made sense. What once kept you safe can start to feel limiti
                                             </div>
 
                                             {/* Right Column - Number, Title & Quotes for Section 02 */}
-                                            <div className="space-y-6">
+                                            <div className="space-y-6 md:order-2 order-1">
                                                 <div className="mb-6">
                                                     <span className={`text-6xl md:text-7xl tracking-wider ${section.textColor || 'text-[#95573A]'} opacity-30`} style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 500, letterSpacing: '0.15em' }}>
                                                         {section.number}
